@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Pedido [
+    <!ELEMENT Pedido (Destino+, Ordenante+, Observaciones+, Contenido+)>
+    <!ELEMENT Destino (Nombre+, Direccion+, Ciudad+, CodPostal+)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Direccion (#PCDATA)>
+    <!ELEMENT Ciudad (#PCDATA)>
+    <!ELEMENT CodPostal (#PCDATA)>
+    <!ELEMENT Ordenante (Nombre+, Direccion+, Ciudad+, CodPostal+)>
+    <!ELEMENT Observaciones (#PCDATA)>
+    <!ELEMENT Contenido (Producto+)>
+    <!ELEMENT Producto (Nombre+, Cantidad+, Precio+, Observaciones?)>
+    <!ELEMENT Cantidad (#PCDATA)>
+    <!ELEMENT Precio (#PCDATA)>
+
+    <!ATTLIST Pedido xmlns CDATA #REQUIRED>
+    <!ATTLIST Pedido fecha CDATA #REQUIRED>
+    <!ATTLIST Producto codigo CDATA #REQUIRED>
+]>
+<Pedido xmlns="http://www.miempresa.org/pedidos"
+        fecha="1999-10-20">
+  <Destino>
+    <Nombre>Alicia Abad</Nombre>
+    <Direccion>Plaza de la Duquesa 12</Direccion>
+    <Ciudad>Albacete</Ciudad>
+    <CodPostal>05020</CodPostal>
+  </Destino>
+  <Ordenante>
+    <Nombre>Roberto Movilla</Nombre>
+    <Direccion>General Ricardos 56</Direccion>
+    <Ciudad>Madrid</Ciudad>
+    <CodPostal>28055</CodPostal>
+  </Ordenante>
+  <Observaciones>Es urgente, el césped está muy alto</Observaciones>
+  <Contenido>
+    <Producto codigo="872-AA">
+      <Nombre>Cortadora de cesped</Nombre>
+      <Cantidad>1</Cantidad>
+      <Precio>148.95</Precio>
+      <Observaciones>Confirmar que es eléctrica</Observaciones>
+    </Producto>
+    <Producto codigo="926-FH">
+      <Nombre>Podadora</Nombre>
+      <Cantidad>3</Cantidad>
+      <Precio>7.98</Precio>
+    </Producto>
+  </Contenido>
+</Pedido>

@@ -1,0 +1,38 @@
+public static void main(String[] args) throws InterruptedException {
+        int repet = 0;
+        while (repet == 0) {
+            System.out.println(" ");
+            System.out.println("Elije que ejercicio va a ejecutar");
+            System.out.println("(Para cerrar el bucle pulse 8)");
+            int menu = sc.nextInt();
+            switch (menu) {
+                case 1:
+                    ej1();
+                    break;
+                case 2:
+                    ej2();
+                    break;
+                case 3:
+                    ej3();
+                    break;
+                case 4:
+                    ej4();
+                    break;
+                case 5:
+                    ej5();
+                    break;
+                case 6:
+                    ej6();
+                    break;
+                case 7:
+                    ej7();
+                    break;
+                case 8:
+                    repet = 1;
+                    break;
+                default:
+                    System.out.println(menu + " no es una opción, vuelve a intentarlo");
+            }
+            sleep(2000);
+        }
+    }

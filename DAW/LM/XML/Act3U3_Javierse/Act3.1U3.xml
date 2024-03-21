@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="evento">
+        <xs:sequence>
+            <xs:element name="evento" minOccurs="0">
+                <xs:complexType>
+                    <xs:attribute name="id-evento" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:ID">
+                                <xs:pattern value="[A-Za-z][A-Za-z][A-Za-z][A-Za-z][0-9][0-9]"></xs:pattern>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="hora">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="0"/>
+                        <xs:maxInclusive value="23"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="dia_semana">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="lunes"/>
+                        <xs:enumeration value="martes"/>
+                        <xs:enumeration value="miercoles"/>
+                        <xs:enumeration value="jueves"/>
+                        <xs:enumeration value="viernes"/>
+                        <xs:enumeration value="sabado"/>
+                        <xs:enumeration value="domingo"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

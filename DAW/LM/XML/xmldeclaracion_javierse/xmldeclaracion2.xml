@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE especies [
+    <!ELEMENT especies (especie+)>
+    <!ELEMENT familia (#PCDATA)>
+    <!ELEMENT distribucion (zona+)>
+    <!ELEMENT zona (#PCDATA)>
+    <!ELEMENT especie (nombre+, familia+, distribucion+)>
+    <!ELEMENT nombre (#PCDATA)>
+
+    <!ATTLIST especie identificador ID #REQUIRED>
+    <!ATTLIST especie estado (extinto|amenazado|sin-peligro) #REQUIRED>
+    <!ATTLIST nombre nombre-cientifico CDATA #REQUIRED>
+]>
+<especies>
+<especie identificador="1" estado="amenazado">
+<nombre nombre-cientifico="Monachus monachus">Foca monje</nombre>
+<familia>Phocidae</familia>
+<distribucion>
+<zona>Costa Atlántica</zona>
+<zona>Costa Mediterránea</zona>
+</distribucion>
+</especie>
+</especies>

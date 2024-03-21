@@ -1,0 +1,111 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    margin-left: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+th{
+    padding: 5px;
+}
+fieldset{
+    padding: 15px;
+    margin-right: 5%;
+}
+.tit{
+    color: white;
+    background-color: #900c3f;
+}
+.mod{
+    background-color: white;
+}
+.nom{
+    background-color: white;
+}
+.enl{
+    background-color: white;
+}
+.titulo{
+    color: white;
+    box-sizing: border-box;
+    background-color: #581845;
+    border: 0%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+.oferta{
+    display: flex;
+    gap: 100px;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    background-color: #c70039;
+}
+.ofertaitem{
+    overflow: hidden;
+    margin-top: -15px;
+    color: white;
+    border-radius: 10px;
+    background-color: #581845;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.ofertaitem:hover{
+    background-color: #c70039;
+}
+.hs{
+    margin-bottom: 20px; 
+    margin-left: 20px; 
+    margin-top: 20px; 
+    color: #900c3f;
+}
+.imagdiv{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #daf7a6;
+    padding: 5px;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imag{
+    width: 350px;
+    align-self: center;
+    border-color: #ffc300;
+    border-style: solid;
+    border-width: 5px;
+}
+footer{
+    background-color: #ffc300;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 98.45%;
+    margin-top: 20px;
+}
+td, th{
+    border: #900c3f 1px solid;
+    border-collapse: collapse;
+}
+label, legend, .pp{
+    color: white;
+    padding: 10px;
+}
+input{
+    background-color: #daf7a6;
+}
+button{
+    background-color: #ffc300;
+    height: 50px;
+    width: 100px;
+    border-width: 0;
+}
+fieldset{
+    border-color: #ffc300;
+}

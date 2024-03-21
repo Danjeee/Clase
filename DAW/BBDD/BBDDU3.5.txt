@@ -1,0 +1,37 @@
+*CONCIERTO (titulo, fecha, hora, duración, temporada //, año//)
+	PK: titulo
+	FK: temporada -> TEMPORADA(nombre, año)
+	FK: interprete -> INTERPRETE(nombre)
+
+**TEMPORADA (nombre, año. f_ini, f_fin)
+	PK: nombre, año
+
+PROGRAMA (titulo_programa, estilo, concierto)
+	PK: titulo_programa
+	FK: concierto -> CONCIERTO(titulo)
+
+INTERPRETE (nombre, cv, instrumento, tipo, componentes, director, grupo)
+	PK: nombre
+	FK:concierto -> CONCIERTO(titulo)
+	FK: grupo -> INTERPRETE(nombre)
+
+INTERPRETAR (concierto, interprete)
+	FK: concierto -> CONCIERTO(titulo)
+	FK: interprete -> INTERPRETE(nombre)
+
+ENTRADA (num, asiento, precio, fila, concierto, asiento)
+	PK: num
+	FK: concierto -> CONCIERTO(titulo)
+	UK: concierto//
+	VNN: concierto
+
+PIEZA (nombre, autor, dirección, tipo, programa)
+	PK: nombre
+	FK: programa -> PROGRAMA(titulo_programa)
+	UK: programa
+	VNN: programa
+
+
+
+
+// (entre // = esta mal, *=corregido **=bien) //

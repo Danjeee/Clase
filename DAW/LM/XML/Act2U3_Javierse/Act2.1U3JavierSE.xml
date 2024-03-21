@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="libro">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="autor" type="xs:string"/>
+            <xs:element name="genero" type="xs:string"/>
+            <xs:element name="numero_de_paginas" type="xs:integer"/>
+            <xs:element name="descripcion" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

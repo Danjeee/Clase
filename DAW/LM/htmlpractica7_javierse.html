@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Practica 7</title>
+</head>
+
+<body>
+    <form>
+        <fieldset style="margin-left: 40%; margin-right: 40%;">
+            <legend>Datos personales:</legend>
+            <label for="nombre"><strong>Nombre: </strong></label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"><br>
+            <label for="apellidos"><strong>Apellidos: </strong></label><br>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus dos apellidos"><br>
+            <label for="fechan"><strong>Fecha nacimiento: </strong></label><br>
+            <input type="date" id="fechan" name="fechan" placeholder="Escriba su fecha nacimiento dd/mm/aaaa"><br>
+            <label for="nif"><strong>N.I.F.: </strong></label><br>
+            <input type="text" id="nif" name="nif" placeholder="Escriba su N.I.F. -9 numeros y letra sin guion"
+                pattern="[0-9]{9}[A-Za-z]"><br>
+            <label for="tlf"><strong>Telefono: </strong></label><br>
+            <input type="tel" id="tlf" name="tlf" placeholder="Escriba su telefono" pattern="[0-9]{9}"><br>
+            <label for="email"><strong>Correo electronico: </strong></label><br>
+            <input type="email" id="email" name="email" placeholder="Escriba su email" style="margin-bottom: 15px;"><br>
+            <label for="dir"><strong>Direccion: </strong></label><br>
+            <input type="text" id="dir" name="dir" placeholder="Escriba su direccion donde reside"><br>
+            <label for="pob"><strong>Ponlacion: </strong></label><br>
+            <input type="text" id="pob" name="pob" placeholder="Escriba su poblacion donde reside"><br>
+            <label for="prov"><strong>Provincia: </strong></label><br>
+            <input type="text" id="prov" name="prov" placeholder="Escriba su provincia donde reside"
+                style="margin-bottom: 15px;"><br>
+            <p style="margin-bottom: 0%;"><strong>Sexo:</strong></p>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="sexo" value="mujer" style="margin-bottom: 15px;">
+            <label for="mujer">Mujer</label><br>
+            <label for="estudio"><strong>Estudios:</strong></label>
+            <input list="estudio" name="estudio" placeholder="E.S.O." style="margin-bottom: 15px;"><br>
+            <datalist id="estudio">
+                <option value="Primaria"></option>
+                <option value="E.S.O."></option>
+                <option value="FPGM"></option>
+                <option value="FPGS"></option>
+                <option value="Bachillerato"></option>
+                <option value="Universidad"></option>
+                <option value="Otro"></option>
+            </datalist>
+            <p style="margin-bottom: 0%;"><strong>Observaciones: </strong></p>
+            <textarea name="Observaciones" rows="10" cols="30" placeholder="Escriba cualquier observacion de interes"
+                style="margin-bottom: 15px;"></textarea>
+            <h2>Usuario y contrasena elegidos</h2>
+            <label for="usuario"><strong>Usuario:</strong></label>
+            <input type="text" name="usuario" minlength="5" maxlength="10" placeholder="Max. 10/Min. 5"><br>
+            <label for="contrasena"><strong>Contrasena: </strong></label>
+            <input type="password" name="contraseña" minlength="5" maxlength="10" placeholder="Max. 10/Min. 5"
+                style="margin-top: 15px;"><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>

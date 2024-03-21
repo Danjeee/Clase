@@ -1,0 +1,45 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="cartelera">
+        <xs:sequence>
+            <xs:element name="pelicula" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titulo" type="xs:string"/>
+                        <xs:element name="titulo_original" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                        <xs:element name="nacionalidad" type="xs:string"/>
+                        <xs:element name="genero" type="xs:string"/>
+                        <xs:element name="clasificacion">
+                            <xs:complexType>
+                                <xs:attribute name="edad" default="tp">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="8"/>
+                                            <xs:enumeration value="12"/>
+                                            <xs:enumeration value="16"/>
+                                            <xs:enumeration value="18"/>
+                                            <xs:enumeration value="tp"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="sinopsis" type="xs:string"/>
+                        <xs:element name="director" type="xs:string"/>
+                        <xs:element name="reparto">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="actor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="web" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                        <xs:element name="cartel" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="xs:ID" use="required"/>
+        <xs:attribute name="duracion" type="xs:integer"/>
+        <xs:attribute name="anyo" type="xs:integer" default="2003"/>
+    </xs:complexType>
+</xs:schema>

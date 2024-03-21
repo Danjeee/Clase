@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Custom";
+    src: url("fuente.otf") format("opentype")
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    background-color: none;
+    color: white;
+}
+.separar{
+    margin-top: 500px;
+}
+
+.titS {
+    background: rgb(13,166,4);
+    background: linear-gradient(90deg, rgba(13,166,4,1) 0%, rgba(84,236,106,1) 50%, rgba(142,255,170,1) 100%);
+    padding-top: 10%;
+    padding-bottom: 7%;
+    font-size: 60px;
+    font-family: "Custom";
+    text-align: center;
+    border-bottom-width: 10px;
+    border-bottom-color: black;
+    border-bottom-style:double;
+}
+.titSP {
+    background-image: url(img/estrellastit.jpg);
+    color: white;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 7%;
+    font-size: 50px;
+    font-family: "Custom";
+    text-align: center;
+    border-bottom-width: 10px;
+    border-bottom-color: white;
+    border-bottom-style:double;
+}
+
+.txt {
+    font-size: 17px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    float: left;
+    margin: 5%;
+    margin-top: -15%;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.txt p{
+    position: relative;
+    top: 26.67%;
+}
+.txt:hover {
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 120px;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.pic {
+    width: 500px;
+    height: 750px;
+    object-fit: fill;
+
+}
+
+.pic-ctn {
+    width: 100%;
+    height: 200px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 15vh;
+}
+
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 250px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+.textoS{
+    background-color: #0f5b0c;
+    border-width: 10px;
+    border-color: black;
+    border-style:double;
+    text-align: center;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 30px;
+}
+.textoSP{
+    background-image: url(img/estrellas.jpg);
+    border-width: 10px;
+    border-color: white;
+    border-style:double;
+    text-align: center;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 30px;
+}

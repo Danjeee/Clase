@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE receta [
+    <!ELEMENT receta (nombre+, ingredientes+, elaboracion+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT elaboracion (#PCDATA)>
+    <!ELEMENT ingredientes (ingrediente+)>
+    <!ELEMENT ingrediente (#PCDATA)>
+
+    <!ATTLIST receta raciones CDATA #REQUIRED>
+    <!ATTLIST receta dificultad (baja|media|alta) media #REQUIRED>
+    <!ATTLIST ingrediente cantidad CDATA>
+    <!ATTLIST ingrediente unidad (unidades|kilogramos)>
+]>
+<receta raciones="6" dificultad="media">
+<nombre>Tortilla</nombre>
+<ingredientes>
+<ingrediente cantidad="1" unidad="kilogramo">Patata</ingrediente>
+<ingrediente cantidad="8" unidad="unidades">Huevo</ingrediente>
+<ingrediente cantidad="1" unidad="unidades">Cebolla</ingrediente>
+<ingrediente>Aceite de oliva</ingrediente>
+<ingrediente>Sal</ingrediente>
+</ingredientes>
+<elaboracion>
+Se pelan las patatas...
+</elaboracion>
+</receta>
+
+
+
+<!-- https://www.w3schools.com/xml/xml_elements.asp DTD -->

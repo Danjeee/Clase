@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14213d;
+}
+
+#cart {
+  margin:auto;
+  width:500px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:#14213d;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+.nav li a:hover {
+  background-color:#4776dd;
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
+}
+
+.text span {
+  font-size: 35px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #fff;
+  animation: zoomup 3s linear infinite;
+
+  animation-delay: calc(100ms * (var(--i)));
+}
+
+@keyframes zoomup {
+
+  0%,
+  100% {
+    color: #00c2ba;
+    filter: blur(1px);
+    text-shadow: 0 0 10px #00c2ba, 0 0 20px #00c2ba, 0 0 30px #00c2ba,
+      0 0 40px #00c2ba, 0 0 60px #00c2ba, 0 0 80px #00c2ba, 0 0 100px #00c2ba,
+      0 0 120px #00c2ba;
+  }
+
+  5%,
+  95% {
+    filter: blur(0);
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+.estrenos {
+  color: white;
+  background-color: #14213d;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.shrek {
+  background-image: url(img/shrekportada.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  transition: 2s;
+  margin-right: 50px;
+  margin-left: 20%;
+}
+
+.spaceball {
+  background-image: url(img/spaceballsportada.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  transition: 2s;
+  margin-right: 50px;
+}
+
+.bocadillo {
+  background-image: url(img/bocadilloportada.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  transition: 2s;
+  margin-right: 20%;
+}
+
+.bocadillo:hover,
+.shrek:hover,
+.spaceball:hover {
+  width: 450px;
+  height: 600px;
+  filter: drop-shadow(0 0 50px rgb(50, 50, 255));
+}
+
+.listaestrenos {
+  color: white;
+  background-color: #14213d;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 75px;
+}

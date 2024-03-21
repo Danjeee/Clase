@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mercado
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="mercado.xsd"
+>
+    <moneda id-moneda="BTC">
+        <nombre>Bitcoin</nombre>
+        <par>USD</par>
+        <valor>66162.42</valor>
+        <fecha>2021-11-08</fecha>
+        <hora>18:40:37</hora>
+        <grafico tipo="minuto" />
+        <cerrado />
+    </moneda>
+    <moneda id-moneda="SHI">
+        <nombre>Shiba Inu</nombre>
+        <par>EUR</par>
+        <valor>0.000056</valor>
+        <fecha>2021-11-08</fecha>
+        <hora>19:01:42</hora>
+        <grafico tipo="hora" />
+        <sin_cerrar />
+    </moneda>
+</mercado>

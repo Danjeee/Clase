@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+    <Nombre_y_apellidos>Javier Soriano Esparza</Nombre_y_apellidos>
+    <Año_nacimiento>2005</Año_nacimiento>
+    <Residencia>
+        <Ciudad>Valencia</Ciudad>
+        <País>España</País>
+    </Residencia>
+    <Contacto>
+        <Telefono>111222333</Telefono>
+        <Correo_electronico>sarandongapichibiripichibiri@gmail.com</Correo_electronico>
+        <Linkedin>https://linkedin.com</Linkedin>
+        <Descripción>Alumno DAW</Descripción>
+    </Contacto>
+    <Competencias>
+        <Inglés nivel="intermedio"></Inglés>
+    </Competencias>
+    <Formacion>
+        <ESO>
+            <Centro>CVP+</Centro>
+            <Año>2020</Año>
+        </ESO>
+        <SMR>
+            <Centro>IES Camp de morvedre</Centro>
+            <Año>2023</Año>
+        </SMR>
+    </Formacion>
+    <Experiencia>
+        <Practicas>
+            <Lugar>Sagunto</Lugar>
+            <Empresa>IES Jorge Juan</Empresa>
+            <Año_inicio>2023</Año_inicio>
+            <Año_fin>2023</Año_fin>
+        </Practicas>
+    </Experiencia>
+</cv>

@@ -1,0 +1,31 @@
+<!DOCTYPE Libro [
+<!ELEMENT Libro (Titulo, Contenido, Copyright)>
+<!ATTLIST Libro 
+  xmlns CDATA #REQUIRED
+>
+<!ELEMENT Titulo (#PCDATA)>
+<!ELEMENT Contenido ((Capitulo+, Separacion?)+)>
+<!ELEMENT Capitulo (Tema, Seccion+)>
+<!ATTLIST Capitulo
+      materia (XML|Java) "Java"
+>
+<!ELEMENT Tema (#PCDATA)>
+<!ELEMENT Seccion (#PCDATA)>
+<!ATTLIST Seccion
+      apartados CDATA #REQUIRED
+      dificil (si|no) "no"
+>
+<!ELEMENT Separacion EMPTY>
+<!ELEMENT Copyright (#PCDATA)>
+]>
+<Libro xmlns="http://www.miempresa.org/libro1">
+      <Titulo>Libro 1</Titulo>
+      <Contenido>
+            <Capitulo materia="Java">
+                  <Tema>Programacion</Tema>
+                  <Seccion apartados="6" dificil="no">Informatica</Seccion>
+            </Capitulo>
+            <Separacion />
+      </Contenido>
+      <Copyright>Infohelp.com</Copyright>
+</Libro>

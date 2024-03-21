@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mercado">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="moneda" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:integer"/>
+                            <xs:element name="par">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="USD"/>
+                                        <xs:enumeration value="EUR"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="valor" type="xs:float"/>
+                            <xs:element name="fecha" type="xs:date"/>
+                            <xs:element name="hora" type="xs:time"/>
+                            <xs:element name="grafico" default="hora">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="hora"/>
+                                        <xs:enumeration value="minuto"/>
+                                        <xs:enumeration value="dia"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:choice>
+                                <xs:element name="cerrado"/>
+                                <xs:element name="sin_cerrar"/>
+                            </xs:choice>
+                        </xs:sequence>
+                        <xs:attribute name="id-moneda">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="[A-Z][A-Z][A-Z]"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

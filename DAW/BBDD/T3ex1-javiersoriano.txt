@@ -1,0 +1,39 @@
+CLIENTE (numero, DNI, nombre, ciudad, f_nac, sucursal, descuento)
+	CP=numero
+	CAlt=DNI
+	VNN=DNI
+	CAJ=sucursal -> SUCURSAL(numero)
+	//VNN=sucursal
+
+TARJETA (numero, nombre, f_vencimiento, codigo, cliente)
+	CP=numero
+	CAJ=cliente -> CLIENTE(codigo)
+	//VNN=cliente
+
+SUCURSAL (numero, domicilio, ciudad)
+	CP=numero
+
+ TRABAJO (sucursal, empleado, dia, horario)
+	CP=(sucursal, empleado)
+	CAJ=sucursal -> SUCURSAL(numero)
+	CAJ=empleado -> EMPLEADO(codigo)
+
+EMPLEADO (codigo, DNI, nombre, domicilio (calle, numero, ciudad), telefono)
+	CP=codigo
+	CAlt=DNI
+	VNN=DNI
+	VNN=telefono
+
+PRODUCTO (codigo, descripcion, color, coste, fabrica)
+	CP=codigo
+	CAJ=fabrica -> FABRICA(CUIT)
+	CU=fabrica
+
+ VENTA (sucursal, producto, PrecioVenta)
+	CAJ=sucursal -> SUCURSAL(numero)
+	CAJ=producto -> PRODUCTO(codigo)
+
+FABRICA (CUIT, nombre, pais, gerente, plantilla, producto)
+	CP=CUIT
+	CAJ=producto -> PRODUCTO(codigo)
+	CU=producto

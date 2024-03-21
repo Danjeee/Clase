@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videoclub>
+    <!-- ejemplo de pelicula sin actores (animada) -->
+    <pelicula id="P1A">
+        <nombre>Los minions</nombre>
+        <genero>Comedia</genero>
+        <duracion>90</duracion>
+        <reparto>
+            <director>illumination</director>
+        </reparto>
+    </pelicula>
+    <!-- ejemplo de la misma pelicula pero otra copia (otro id) -->
+    <pelicula id="P1B">
+        <nombre>Los minions</nombre>
+        <genero>Comedia</genero>
+        <duracion>90</duracion>
+        <reparto>
+            <director>illumination</director>
+        </reparto>
+    </pelicula>
+    <!-- ejemplo de pelicula cualquiera -->
+    <pelicula id="P2C">
+        <nombre>Las estrafalarias aventuras del dr comedia</nombre>
+        <genero>Comedia</genero>
+        <duracion>100</duracion>
+        <reparto>
+            <director>Joan Pradells</director>
+            <actor>Steve carrey</actor>
+            <actor>Jhonny deep</actor>
+        </reparto>
+    </pelicula>
+    <pelicula id="P7U">
+    <nombre>Star Wars III</nombre>
+    <genero>Ciencia ficcion</genero>
+    <duracion>120</duracion>
+    <reparto>
+        <director>Steve williams</director>
+        <actor>Luke Skywalker</actor>
+        <actor>Obiwan Kenobi</actor>
+    </reparto>
+    </pelicula>
+    <!-- Ejemplo de usuario con pelicula alquilada -->
+    <usuario DNI="43567893G">
+        <nombre>Juan</nombre>
+        <apellidos>Garcia Gomez</apellidos>
+        <alquiler>
+            <pelicula id="P1A">Los minions</pelicula>
+        </alquiler>
+    </usuario>
+    <!-- ejemplo de usuario registrado pero sin alquiler -->
+    <usuario DNI="77452269K">
+        <nombre>Julian</nombre>
+        <apellidos>Oliveira Torrente</apellidos>
+    </usuario>
+    <!-- ejemplo de usuario con mulrimples peliculas alquiladas -->
+    <usuario DNI="43567893G">
+        <nombre>Juan</nombre>
+        <apellidos>Garcia Gomez</apellidos>
+        <alquiler>
+            <pelicula id="P2C">Las estrafalarias aventuras del dr comedia</pelicula>
+            <pelicula id="P7U">Star wars III</pelicula>
+        </alquiler>
+    </usuario>
+</videoclub>

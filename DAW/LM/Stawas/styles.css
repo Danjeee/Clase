@@ -1,0 +1,110 @@
+@font-face {
+    font-family: font1;
+    src: url(soloist1.ttf);
+}
+body{
+    background-image: url(estrellas.jpg);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    top: 0;
+    font-size: 25px;
+    left: 28.5%;
+    width:50%;
+    justify-self: center;
+    text-align: center;
+    transform: perspective(600px) rotateX(45deg);
+    perspective-origin: 50% 100%;
+    position: fixed;
+}
+.hacemucho{
+    text-align: left;
+    color: cornflowerblue;
+    font-size: 50px;
+    animation: hace linear;
+    animation-duration: 6.5s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.est{
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));; 
+    width: 100%; 
+    height: 300px; 
+    position: fixed; 
+    top: -50px; 
+    left: 0;
+    margin-top: 0;
+    padding: 0;
+    z-index: 1;
+    opacity: 1;
+}
+.tit{
+    height: 678px;
+    width: 2048px;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: titulo linear;
+    animation-duration: 5s;
+    animation-delay: 6.5s;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+.text{
+    animation: scrolltext linear;
+    animation-duration: 60s;
+    animation-iteration-count: 1;
+    font-size: 20px;
+    color: gold;
+    line-height: 40px;
+    font-size: 30px;
+    animation-delay: 8s;
+    font-weight: bold;
+    position: absolute;
+    font-family: font1;
+    opacity: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+@keyframes scrolltext{
+    from{
+        opacity: 1;
+        margin-top: 150%;    
+    }
+    to{
+        margin-top: -1000%;
+        opacity: 1;    
+    }
+}
+@keyframes hace{
+    from{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes titulo {
+    from{
+        opacity: 1;
+        height: 678px;
+        width: 2048px;
+    }
+    to{
+        opacity: 1;
+        height: 1px;
+        width: 3.02064896755px;
+    }
+}

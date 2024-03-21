@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cines Armando Guerra</title>
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<header>
+    <div class="container">
+        <div class="text">
+            <span style="--i:1">C</span>
+            <span style="--i:2">i</span>
+            <span style="--i:3">n</span>
+            <span style="--i:4">e</span>
+            <span style="--i:5">s</span>
+            <span style="--i:6; margin-left: 50px;">A</span>
+            <span style="--i:7">r</span>
+            <span style="--i:8">m</span>
+            <span style="--i:9">a</span>
+            <span style="--i:10">n</span>
+            <span style="--i:11">d</span>
+            <span style="--i:12">o</span>
+            <span style="--i:13; margin-left: 50px;">B</span>
+            <span style="--i:14">r</span>
+            <span style="--i:15">o</span>
+            <span style="--i:16">n</span>
+            <span style="--i:17">c</span>
+            <span style="--i:18">a</span>
+        </div>
+    </div>
+    <div id="cart" onmouseenter="move()" onmouseleave="move()">
+        <ul class="nav">
+            <li><a href="">Cartelera:</a>
+                <ul>
+                    <li><a href="Shrek/shrek.html">Shrek</a>
+                        <ul>
+                            <li><a href="https://www.youtube.com/embed/B88JfTyJ1Fw">Trailer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Spaceballs/spaceballs.html">La loca historia de las galaxias</a>
+                        <ul>
+                            <li><a href="https://www.youtube.com/embed/JZez1JD6Q3Y">Trailer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Bocadillo/bocadillo.html">Bocadillo</a>
+                        <ul>
+                            <li><a href="https://www.youtube.com/embed/gE3eX42vs7o">Trailer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">???</a>
+                <ul>
+                    <li><a href="https://www.ismycomputeronfire.com/">Joan aptuebame porfa tengo 7 hijos y cobro 200€ al mes ten piedad</a></li>
+                </ul>
+            </li>
+    </div>
+</header>
+
+<body id="a" style="background-size: cover; background-color: #264fa7;">
+    <section id='b' style="display: flex; margin-top: 50px;">
+        <section class="shrek" onmouseover="chbg1()" onmouseout="chbgdef()"><a href="Shrek/shrek.html"
+                style="width: 100%; height: 100%;"></a></section>
+        <section class="spaceball" onmouseover="chbg2()" onmouseout="chbgdef()"><a href="Spaceballs/spaceballs.html"
+                style="width: 100%; height: 100%;"></a></section>
+        <section class="bocadillo" onmouseover="chbg3()" onmouseout="chbgdef()"><a href="Bocadillo/bocadillo.html"
+                style="width: 100%; height: 100%;"></a></section>
+    </section>
+    <section>
+        <h2 class="estrenos">Estrenos:</h2>
+        <p class="listaestrenos">Wonka, Ocho apellidos marroquís, Napoleón, La navidad en sus manos, Wish: El poder de
+            los deseos, Champions, Los juegos del hambre, Camino a belén</p>
+    </section>
+</body>
+
+</html>

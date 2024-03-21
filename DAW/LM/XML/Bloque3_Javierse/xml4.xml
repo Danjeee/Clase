@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centro>
+    <Nombre></Nombre>
+    <Direccion></Direccion>
+    <Poblacion></Poblacion>
+    <Telefono></Telefono>
+    <Trabajadores>
+        <Personal>
+            <Nombre></Nombre>
+            <Apellidos></Apellidos>
+            <DNI></DNI>
+            <Direccion></Direccion>
+            <Telefono></Telefono>
+        </Personal>
+        <Administracion>
+            <Conserjeria Ubicacion="" Num_miembros="" Horario=""></Conserjeria>
+            <Secretaria Ubicacion="" Num_miembros="" Horario=""></Secretaria>
+        </Administracion>
+        <Servicios>
+            <Limpieza Ubicacion="" Num_miembros=""></Limpieza>
+            <Mantenimiento Ubicacion="" Num_miembros=""></Mantenimiento>
+            <Cafeteria Ubicacion="" Num_miembros=""></Cafeteria>
+        </Servicios>
+        <Cuerpo_docente>
+            <Directora nombre=""></Directora>
+            <Coordinadora nombre=""></Coordinadora>
+            <Jefe_estudios nombre=""></Jefe_estudios>
+            <Secretario nombre=""></Secretario>
+            <Informatica Ubicacion="" Num_miembros="" CargaLectiva=""></Informatica>
+            <Matematicas Ubicacion="" Num_miembros="" CargaLectiva=""></Matematicas>
+            <Historia Ubicacion="" Num_miembros="" CargaLectiva=""></Historia>
+            <Geografia Ubicacion="" Num_miembros="" CargaLectiva=""></Geografia>
+        </Cuerpo_docente>
+    </Trabajadores>
+    <Alumnado>
+        <Alumno>
+            <Nombre></Nombre>
+            <Apellidos></Apellidos>
+            <NIA></NIA>
+            <Nota_media></Nota_media>
+            <Telefono></Telefono>
+        </Alumno>
+        <Ciclos>
+            <DAW modalidad="" curso="" num_alumnos=""></DAW>
+            <ASIR modalidad="" curso="" num_alumnos=""></ASIR>
+            <DAM modalidad="" curso="" num_alumnos=""></DAM>
+            <A3D modalidad="" curso="" num_alumnos=""></A3D>
+        </Ciclos>
+        <ESO>
+            <Eso1 Grupo="" Num_alumnos="" Especialidad=""></Eso1>
+            <Eso2 Grupo="" Num_alumnos="" Especialidad=""></Eso2>
+            <Eso3 Grupo="" Num_alumnos="" Especialidad=""></Eso3>
+            <Eso4 Grupo="" Num_alumnos="" Especialidad=""></Eso4>
+        </ESO>
+        <Bachillerato>
+            <Bach1 Grupo="" Num_alumnos="" Especialidad=""></Bach1>
+            <Bach2 Grupo="" Num_alumnos="" Especialidad=""></Bach2>
+        </Bachillerato>
+    </Alumnado>
+</centro>

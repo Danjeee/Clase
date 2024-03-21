@@ -1,0 +1,24 @@
+Empleat (cod_empleat, dni, nombre, n_dpto, superior)
+	CP=cod_empleat
+	CU=dni
+	VNN=dni
+	CAJ=n_dpto -> DEPARTAMENT(n_dpto)
+	CAJ=superior -> EMPLEAT(cod_empleat)
+
+Familiar (Nombre)
+	CP= nombre, cod_emp
+	CAJ=cod_emp -> EMPLEAT(cod_empleat)
+
+Departament (n_dpto, nombre)
+	CP = n_dpto
+
+Treballa (cod_empleat, n_proy, horas)
+	CP=(cod_empleat, n_proy)
+	CAJ=cod_empleat -> EMPLEAT(cod_empleat)
+	CAJ=n_proy -> PROYECTE(n_proy)
+
+Proyecte (n_proy, nombre, n_dpto)
+	CP = n_proy
+	CAJ=n_dpto -> DEPARTAMENT(n_dpto)
+
+Supervisa (cod_empleat S, cod_empleat)

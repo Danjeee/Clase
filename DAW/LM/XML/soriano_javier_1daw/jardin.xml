@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jardin [
+	ELEMENT jardin (+arbol)
+	ELEMENT arbol (+nombre, +nombre_cientifico, +zonas, ?tipo_hoja)
+	ELEMENT nombre (CDATA)
+	ELEMENT nombre_cientifico (CDATA)
+	ELEMENT zonas (+zona)
+	ELEMENT zona (CDATA default="norte")
+	ELEMENT tipo_hoja (CDATA)
+	ATTRIBUTE id-arbol (ID) required
+	ATTRIBUTE nombre (CDATA) required
+	ATTRIBUTE cantidad (PCDATA)
+]>
+<jardin>
+    <arbol id-arbol="a006">
+   	 <nombre>Pino carrasco</nombre>
+   	 <nombre_cientifico>Pinus halepensis</nombre_cientifico>
+   	 <zonas>
+   		 <zona nombre="norte" cantidad="16"/>    
+   		 <zona nombre="este" cantidad="8"/>    
+   	 </zonas>
+   	 <tipo_hoja>acícula</tipo_hoja>
+    </arbol>
+    <arbol id-arbol="a017">
+   	 <nombre>Palmera datilera</nombre>
+   	 <nombre_cientifico>Phoenix dactylifera</nombre_cientifico>
+   	 <zonas>
+   		 <zona nombre="sur" cantidad="24"/>    
+   	 </zonas>
+    </arbol>
+</jardin>
