@@ -32,14 +32,33 @@ where codigo_cliente = 50;
 delete from cliente
 where codigo_cliente not in (select codigo_cliente from pedido);
 
-/*8. Incrementa en un 20% el precio de los productos que no tengan pedidos.
-9. Borra los pagos del cliente con menor límite de crédito.
-10. Establece a 0 el límite de crédito del cliente que menos unidades pedidas tenga del producto 11679.
-11. Modifica la tabla detalle_pedido para incorporar un campo numérico llamado total_linea y actualiza
+/*8. Incrementa en un 20% el precio de los productos que no tengan pedidos.*/
+update producto
+set precio = precio*1.20
+where codigo_producto not in (select codigo_producto from detalle_pedido);
+
+/*9. Borra los pagos del cliente con menor límite de crédito.*/
+delete from pago
+where codigo_cliente = (select codigo_cliente from cliente where limite_credito = (select min(limite_credito) from cliente));
+
+/*10. Establece a 0 el límite de crédito del cliente que menos unidades pedidas tenga del producto 11679.*/
+update cliente
+set limite_credito = 0
+where codigo_cliente = (select codigo_cliente from pedido join detalle_pedido on pedido.codigo_pedido = detalle_pedido.codigo_pedido where codigo_producto = 11679 group by codigo_producto asc limit 1);
+
+/*11. Modifica la tabla detalle_pedido para incorporar un campo numérico llamado total_linea y actualiza
 todos sus registros para calcular su valor con la fórmula:
-total_linea = precio_unidad*cantidad * (1 + (iva/100));
-12. Borra el cliente con menor límite de crédito. ¿Es posible borrarlo con una sola consulta? ¿Por qué?
-13. Inserta una oficina con sede en Castellón y tres empleados que sean representantes de ventas.
+total_linea = precio_unidad*cantidad * (1 + (iva/100));*/
+alter table detalle_pedido
+add column total_linea int unsigned;
+update detalle_pedido
+set total_linea = precio_unidad*cantidad * (1 + (iva/100));
+
+/*12. Borra el cliente con menor límite de crédito. ¿Es posible borrarlo con una sola consulta? ¿Por qué?*/
+delete from cliente
+where codigo_cliente = (select codigo_cliente from cliente where limite_credito = (select min(limite_credito) from cliente));
+
+/*13. Inserta una oficina con sede en Castellón y tres empleados que sean representantes de ventas.
 14. Inserta tres clientes que tengan como representantes de ventas los empleados que hemos creado
 en el paso anterior.
 15. Borra uno de los clientes y comprueba si hubo cambios en las tablas relacionadas. Si no hubo
