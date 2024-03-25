@@ -15,7 +15,7 @@
    <children>
       <Label alignment="BOTTOM_LEFT" prefHeight="11.0" prefWidth="197.0" text="Nombre" />
       <TextField promptText="Nombre..." fx:id="nombre" />
-      <Label prefWidth="199.0" text="Apellidos" />
+      <Label prefWidth="199.0" text="Apellidos"/>
       <TextField promptText="Apellido/s..." fx:id="apellidos" />
       <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="200.0" spacing="50.0">
          <children>
@@ -23,7 +23,7 @@
             <Button onAction="#clean" text="Limpiar" />
          </children>
       </HBox>
-      <Button mnemonicParsing="false" text="Salir" />
+      <Button mnemonicParsing="false" text="Salir" onAction="#cerrarapp" />
       <BorderPane prefHeight="0.0" prefWidth="200.0" />
    </children>
 </VBox>

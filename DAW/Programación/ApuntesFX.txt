@@ -1,0 +1,13 @@
+ @FXML private Alert alerta(String tipo, String header, String titulo, String cont){
+        Alert a = new Alert(Alert.AlertType.valueOf(tipo));
+        a.setHeaderText(header);
+        a.setTitle(titulo);
+        a.setContentText(cont);
+        return a;
+    }
+
+@FXML
+    private void handleClosing() {
+        Stage stage = (Stage) apellidos.getScene().getWindow();
+        stage.setOnCloseRequest(e -> cerrarapp());
+    }
