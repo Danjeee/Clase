@@ -10,7 +10,6 @@ import java.util.Scanner;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -59,6 +58,7 @@ public class HelloController implements Initializable{
     }
 
     private void closeTab(Tab t, Boolean newt) {
+        handleClosing();
         Alert alerta = alerta("CONFIRMATION", null, "Exit", "¿Desea guardar antes de salir?");
         alerta.showAndWait();
         if (alerta.getResult().getButtonData() == ButtonData.OK_DONE) {
@@ -105,6 +105,7 @@ public class HelloController implements Initializable{
             }
             fr.close();
             sc.close();
+            cont.getSelectionModel().select(t1);
         } catch (IOException e) {
             System.out.println(e);
         }
@@ -112,13 +113,13 @@ public class HelloController implements Initializable{
 
     @FXML
     protected void changename(){
+        handleClosing();
         narch.setText(cont.getSelectionModel().getSelectedItem().getText());
     }
 
     @FXML
     protected void newfile() {
         handleClosing();
-        Stage stage = (Stage) narch.getScene().getWindow();
         TextArea a = new TextArea();
         Tab t1 = new Tab("New", a);
         if (ntabs == 0) {
@@ -131,6 +132,7 @@ public class HelloController implements Initializable{
         cont.getTabs().add(t1);
         t1.setOnCloseRequest(e -> closeTab(t1, true));
         a.setText("");
+        cont.getSelectionModel().select(t1);
     }
 
     @Override

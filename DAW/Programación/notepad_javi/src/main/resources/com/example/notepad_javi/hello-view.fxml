@@ -28,7 +28,7 @@
             </MenuBar>
          </top>
          <bottom>
-            <Label fx:id="narch" text="Label" BorderPane.alignment="CENTER" />
+            <Label fx:id="narch" text="No file opened / created" BorderPane.alignment="CENTER" />
          </bottom>
          <center>
             <TabPane fx:id="cont" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS" BorderPane.alignment="CENTER" />
