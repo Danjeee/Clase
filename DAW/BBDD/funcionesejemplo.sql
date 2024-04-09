@@ -9,7 +9,23 @@ delimiter ;
 call hola();
 delimiter $$
 drop procedure if exists num$$
-create procedure num(in i INTEGER, out a varchar(50))
+create procedure num(i integer)
+begin
+	declare resultado VARCHAR(50);
+	if i=0 then
+		set resultado = "Cero";
+	elseif i>0 then
+		set resultado = "Positivo";
+	else set resultado = "Negativo";
+    end if;
+    select resultado;
+end
+$$
+delimiter ;
+call num(5);
+delimiter $$
+drop procedure if exists nu2m$$
+create procedure num2(in i INTEGER, out a varchar(50))
 begin
 	declare resultado VARCHAR(50);
 	if i=0 then
@@ -22,7 +38,7 @@ begin
 end
 $$
 delimiter ;
-call num(-2,@res);
+call num2(-2,@res);
 select @res;
 delimiter $$
 drop procedure if exists nota1$$
