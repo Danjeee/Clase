@@ -24,7 +24,7 @@ $$
 delimiter ;
 call num(5);
 delimiter $$
-drop procedure if exists nu2m$$
+drop procedure if exists num2$$
 create procedure num2(in i INTEGER, out a varchar(50))
 begin
 	declare resultado VARCHAR(50);
@@ -74,7 +74,7 @@ begin
         when i >=6 and i<7 then set resultado ="Bien";
         when i >=7 and i<9 then set resultado="Notable";
         when i>=9 then set resultado = "Sobresaliente";
-        else set resultado = "Error";
+		else set resultado = "Error";
 	end case;
     set a = resultado;
 end
