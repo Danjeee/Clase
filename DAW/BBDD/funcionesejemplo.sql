@@ -97,3 +97,20 @@ $$
 delimiter ;
 call nota2(8,@res);
 select @res;
+delimiter aña
+drop procedure if exists suma aña
+create procedure suma(in num INTEGER, out a INTEGER)
+begin
+	declare i integer;
+    set i = 1;
+    set a = 1;
+	repeat
+		set a = a * i;
+        set i = i + 1;
+    until i > num
+    end repeat;
+end
+aña
+delimiter ;
+call suma(8,@a);
+select @a;
