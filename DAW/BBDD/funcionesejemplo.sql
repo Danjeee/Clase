@@ -1,3 +1,6 @@
+/*
+EJERCICIO 1
+*/
 delimiter $$
 drop procedure if exists hola$$
 create procedure hola()
@@ -7,6 +10,9 @@ end
 $$
 delimiter ;
 call hola();
+/*
+EJERCICIO 2
+*/
 delimiter $$
 drop procedure if exists num$$
 create procedure num(i integer)
@@ -23,6 +29,9 @@ end
 $$
 delimiter ;
 call num(5);
+/*
+EJERCICIO 3
+*/
 delimiter $$
 drop procedure if exists num2$$
 create procedure num2(in i INTEGER, out a varchar(50))
@@ -40,6 +49,9 @@ $$
 delimiter ;
 call num2(-2,@res);
 select @res;
+/*
+EJERCICIO 4
+*/
 delimiter $$
 drop procedure if exists nota1$$
 create procedure nota1(in i INTEGER, out a varchar(50))
@@ -63,6 +75,9 @@ $$
 delimiter ;
 call nota1(8,@res);
 select @res;
+/*
+EJERCICIO 5
+*/
 delimiter $$
 drop procedure if exists nota2$$
 create procedure nota2(in i INTEGER, out a varchar(50))
