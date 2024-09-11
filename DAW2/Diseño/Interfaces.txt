@@ -1,0 +1,21 @@
+--------- VSCode ----------
+Tipo: Ayuda al desarrollo de aplicaciones informáticas
+
+- Parte superior
+	- Botones más utiles en la esquina superior izquierda, destacan el de file y edit (los primeros)
+	- En el centro una barra de busqueda con capacidad de ejecutar comandos
+	- En la derecha botones para cambiar rapidamente la distribución
+- Izquierda
+	- Archivos (Viene abierto por defecto y es lo que más se usa)	
+	- Barra de busqueda para buscar dentro del archivo
+	- Control de versiones con git
+	- Run and debug (En mi opinion sobra porque luego aparece otro boton)
+	- Extensiones
+	- Usuario
+	- Configuración (En mi opinion lo pondria debajo de extensiones)
+- Centro
+	- Codigo y multiples ventanas (lo importante)
+- Abajo
+	- Extensiones activas y terminal en caso de tener uno abierto
+
+-----------  ------------
