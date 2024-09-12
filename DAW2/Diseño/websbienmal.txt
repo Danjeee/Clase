@@ -1,0 +1,17 @@
+Bien: https://www.metrovalencia.es
+Mal: http://praxisstricker.de
+
+Cosas Mal
+	- Distribución
+	- Tipografía
+	- Bad kern
+	- Subrayado
+	- Bordes
+	- Color de letras
+	- Contraste de color
+	- Distribución
+
+Cosas Bien (No centrarse mucho en ello)
+	- Tipografía
+	- Distribución
+	- Colores
