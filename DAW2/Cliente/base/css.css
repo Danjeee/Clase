@@ -1,10 +1,9 @@
-body {
+body{
     padding: 0;
     margin: 0;
     background-color: #4b074b;
 }
-
-header {
+header{
     display: flex;
     flex-direction: row;
     height: 7vh;
@@ -16,16 +15,14 @@ header {
     border-width: 10px;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: 0;   
 }
-
-header p {
+header p{
     font-size: 35px;
     margin-left: auto;
     margin-right: auto;
 }
-
-footer {
+footer{
     position: fixed;
     bottom: 0;
     display: flex;
@@ -37,17 +34,15 @@ footer {
     border-color: #711e70;
     border-style: groove;
     border-width: 10px;
-    align-items: center;
+    align-items: center;   
 }
-
-footer p {
+footer p{
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
 }
-
-#main * *{
-    width: 90px;
+#main #butts *{
+    width: 200px;
     height: 50px;
     background-color: #711e70;
     border-color: black;
@@ -61,24 +56,46 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
-#main p{
+#main #butts *:hover{
+    background-color: #a622a9;
+    cursor: pointer;
+}
+#main #selected{
+    width: 200px;
+    height: 50px;
+    background-color: #711e70;
+    border-color: black;
+    border-style: groove;
+    border-width: 5px;
     margin-left: auto;
     margin-right: auto;
-}
-#main env{
-    margin-right: auto;
-}
-#main input{
-    margin-left: auto;
-}
-#main *{
-    display: flex;
-    gap: 25px;
-    margin-top: 15px;
-    color: white;
+    margin-bottom: -30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-#main {
+#main #cont{
+    width: 1000px;
+    height: 500px;
+    background-color: #711e70;
+    border-color: black;
+    border-style: groove;
+    border-width: 5px;
+}
+#cont *{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+#main{
     height: 85.8vh;
     width: 100vw;
     margin-top: 7vh;
@@ -86,4 +103,11 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-top: 40px;
+    gap: 25px;
+}
+#main *{
+    color: white;
+    display: flex;
+    gap: 30px;
 }
