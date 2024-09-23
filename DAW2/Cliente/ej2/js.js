@@ -9,6 +9,9 @@ let tablamult = 1
 let bonolotoselected = 0
 var bononums = []
 var win = []
+var num1 = 0
+var num2 = 0
+var num3 = 0
 
 let ej1 = document.getElementById("1")
 let ej2 = document.getElementById("2")
@@ -44,8 +47,18 @@ function act1() {
     act1p = 1
     resetEL()
     selected(1)
-    let var1 = prompt("Elije un numero")
-    let var2 = prompt("Elije otro numero")
+    num1 = prompt("Elije el numero 1")
+    while (Number.isNaN(num1 - 1)) {
+        num1 = prompt("Elije el numero 1")
+    }
+    num2 = prompt("Elije el numero 2")
+    while (Number.isNaN(num2 - 1)) {
+        num2 = prompt("Elije el numero 2")
+    }
+    num3 = prompt("Elije el numero 3")
+    while (Number.isNaN(num3 - 1)) {
+        num3 = prompt("Elije el numero 3")
+    }
     let op = document.getElementById("o")
     let sum = document.getElementById("s")
     let res = document.getElementById("r")
@@ -54,27 +67,27 @@ function act1() {
     let mod = document.getElementById("mod")
     let inc = document.getElementById("inc")
     let dec = document.getElementById("dec")
-    let inc1 = var1 - (-1)
-    let inc2 = var2 - (-1)
-    let suma = var1 - (-var2);
-    let dec1 = var1 - 1
-    let dec2 = var2 - 1
-    let rest = var1 - var2
-    let multt = var1 * var2
-    let divvi = var1 / var2
-    let mood = var1 % var2
-    op.innerHTML = "Los numeros introducidos son " + var1 + " y " + var2
-    sum.innerHTML = "La suma de " + var1 + " y " + var2 + " es: " + suma
-    res.innerHTML = "La resta de " + var1 + " y " + var2 + " es: " + rest
-    inc.innerHTML = "El incremento de " + var1 + " y " + var2 + " es: " + inc1 + " y " + inc2 + " respectivamente"
-    mult.innerHTML = "La multiplicacion de " + var1 + " y " + var2 + " es: " + multt
-    if (var2 == 0) {
-        divi.innerHTML = "La division de " + var1 + " y " + var2 + " no se puede ejecutar porque el segundo numero es 0"
+    let inc1 = num1 - (-1)
+    let inc2 = num2 - (-1)
+    let suma = num1 - (-num2);
+    let dec1 = num1 - 1
+    let dec2 = num2 - 1
+    let rest = num1 - num2
+    let multt = num1 * num2
+    let divvi = num1 / num2
+    let mood = num1 % num2
+    op.innerHTML = "Los numeros introducidos son " + num1 + " y " + num2
+    sum.innerHTML = "La suma de " + num1 + " y " + num2 + " es: " + suma
+    res.innerHTML = "La resta de " + num1 + " y " + num2 + " es: " + rest
+    inc.innerHTML = "El incremento de " + num1 + " y " + num2 + " es: " + inc1 + " y " + inc2 + " respectivamente"
+    mult.innerHTML = "La multiplicacion de " + num1 + " y " + num2 + " es: " + multt
+    if (num2 == 0) {
+        divi.innerHTML = "La division de " + num1 + " y " + num2 + " no se puede ejecutar porque el segundo numero es 0"
     } else {
-        divi.innerHTML = "La division de " + var1 + " y " + var2 + " es: " + divvi
+        divi.innerHTML = "La division de " + num1 + " y " + num2 + " es: " + divvi
     }
-    mod.innerHTML = "El modulo de " + var1 + " y " + var2 + " es: " + mood
-    dec.innerHTML = "El decremento de " + var1 + " y " + var2 + " es: " + dec1 + " y " + dec2 + " respectivamente"
+    mod.innerHTML = "El modulo de " + num1 + " y " + num2 + " es: " + mood
+    dec.innerHTML = "El decremento de " + num1 + " y " + num2 + " es: " + dec1 + " y " + dec2 + " respectivamente"
     but1.innerHTML = "Ej1: Mayor"
     but1.removeEventListener('click', act1)
     but1.addEventListener('click', a1p2)
@@ -82,16 +95,12 @@ function act1() {
 function a1p2() {
     clear(document.getElementById("1"))
     act1p = 2
-    var1 = []
-    var1[0] = prompt("Elija el primer numero")
-    var1[1] = prompt("Elija el segundo numero")
-    var1[2] = prompt("Elija el tercer numero")
-    document.getElementById("r").innerHTML = "Los numeros introducidos son " + var1[0] + ", " + var1[1] + " y " + var1[2]
-    document.getElementById("m").innerHTML = "El numero mayor es " + Math.max(var1[0], var1[1], var1[2])
-    but1.innerHTML = "Ej1: Tabla de multiplicar (" + var1[1] + ")"
+    document.getElementById("r").innerHTML = "Los numeros introducidos son " + num1 + ", " + num2 + " y " + num3
+    document.getElementById("m").innerHTML = "El numero mayor es " + Math.max(num1, num2, num3)
+    but1.innerHTML = "Ej1: Tabla de multiplicar (" + num2 + ")"
     but1.removeEventListener('click', a1p2)
     but1.addEventListener('click', a1p3)
-    tablamult = var1[1]
+    tablamult = num2
 }
 function a1p3() {
     act1p = 0
@@ -260,13 +269,31 @@ function writebono() {
         alt4.innerHTML = alt4.innerHTML + "<br>Numeros ganadores:"
         for (let i = 0; i < win.length; i++) {
             alt4.innerHTML = alt4.innerHTML + " " + win[i]
-            
+
         }
-        var comp = Math.floor(Math.random()*48+1)
-        alt4.innerHTML = alt4.innerHTML + "<br>Numero complementario: "+comp
-        var rein = Math.floor(Math.random()*8+1)
-        alt4.innerHTML = alt4.innerHTML + "<br>Reintegro: "+rein
-        if (win == bononums){
+        var comp = Math.floor(Math.random() * 48 + 1)
+        alt4.innerHTML = alt4.innerHTML + "<br>Numero complementario: " + comp
+        var rein = Math.floor(Math.random() * 8 + 1)
+        alt4.innerHTML = alt4.innerHTML + "<br>Reintegro: " + rein
+        var contador = 0
+        for (let i = 0; i < win.length; i++) {
+            for (let j = 0; j < bononums.length; j++) {
+                if (bononums[j] == win[i]){
+                    contador++
+                }
+                
+            }
+        }
+        alt4.innerHTML = alt4.innerHTML + "<br>Has acertado "+contador+" numeros"
+        for (let i = 0; i < win.length; i++) {
+            if (comp == win[i]){
+                alt4.innerHTML = alt4.innerHTML + " y el complementario"
+            }
+        }
+        if (win[win.length] == rein) {
+            alt4.innerHTML = alt4.innerHTML + " y tambien el reintegro"
+        }
+        if (win == bononums) {
             alert("¡Has ganado el bonoloto!")
         } else {
             alert("No has ganado el bonoloto :c")
