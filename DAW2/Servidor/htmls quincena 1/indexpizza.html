@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza</title>
+        <style>
+            body{
+                background-color: #680200;
+            }
+            body .d{
+                width: 90vw;
+                height: 90vh;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                background-color: #FED09D;
+                margin-left: 5vw;
+                margin-right: 5vw;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            body .d h1{
+                color: #680200;
+                background-color: #FD6701;
+                width: 95%;
+                text-align: center;
+                font-style: italic;
+                font-weight: bold;
+            }
+            .form{
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
+            }
+            form div{
+                display: flex;
+                flex-direction: row;
+            }
+            form div div{
+                width: 200px;
+                height: 200px;
+            }
+            label{
+                color: white;
+                text-align: center;
+                padding: 6px;
+                background-color: #680200;
+            }
+            input{
+                margin: 6px;
+            }
+            .cont div label{
+                width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="d">
+            <h1>- Pedido de Pizza -</h1>
+            <div class="form">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                    <br>
+                    <label for="dir">Dirección</label>
+                    <input type="text" name="dir">
+                    <br>
+                    <div class="cont">
+                        <div>
+                            <label for="ing">Ingredientes</label>
+                        </div>
+                        <div>
+                            <label for="tam">Tamaño</label>
+                        </div>
+                        <div>
+                            <label for="pago">Forma de pago</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

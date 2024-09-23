@@ -1,9 +1,10 @@
-body{
+body {
     padding: 0;
     margin: 0;
     background-color: #4b074b;
 }
-header{
+
+header {
     display: flex;
     flex-direction: row;
     height: 7vh;
@@ -15,14 +16,16 @@ header{
     border-width: 10px;
     align-items: center;
     position: fixed;
-    top: 0;   
+    top: 0;
 }
-header p{
+
+header p {
     font-size: 35px;
     margin-left: auto;
     margin-right: auto;
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0;
     display: flex;
@@ -34,14 +37,16 @@ footer{
     border-color: #711e70;
     border-style: groove;
     border-width: 10px;
-    align-items: center;   
+    align-items: center;
 }
-footer p{
+
+footer p {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
 }
-#main #butts *{
+
+#main #butts * {
     width: 200px;
     height: 50px;
     background-color: #711e70;
@@ -52,15 +57,18 @@ footer p{
     align-items: center;
     justify-content: center;
 }
-#main div{
+
+#main div {
     margin-left: auto;
     margin-right: auto;
 }
-#main #butts *:hover{
+
+#main #butts *:hover {
     background-color: #a622a9;
     cursor: pointer;
 }
-#main #selected{
+
+#main #selected {
     width: 200px;
     height: 50px;
     background-color: #711e70;
@@ -69,13 +77,59 @@ footer p{
     border-width: 5px;
     margin-left: auto;
     margin-right: auto;
+    margin: 0;
     margin-bottom: -30px;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-#main #cont{
+.f div div {
+    background-color: black;
+    color: white;
+    width: 15px;
+    height: 15px;
+}
+
+.f div div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 15px;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: black;
+    background-color: #a622a9;
+    color: #4b074b;
+}
+
+.f div .selectable:hover {
+    background-color: #4b074b;
+    cursor: pointer;
+}
+
+#gui{
+    padding: 0;
+    gap: 0;
+}
+#alt4{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    margin-top: -30px;
+    background-color: #711e70;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+    z-index: -1;
+    width: 465px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #cont {
     width: 1000px;
     height: 500px;
     background-color: #711e70;
@@ -83,7 +137,8 @@ footer p{
     border-style: groove;
     border-width: 5px;
 }
-#cont *{
+
+#cont * {
     width: 1000px;
     height: 500px;
     position: absolute;
@@ -95,12 +150,14 @@ footer p{
     gap: 10px;
     color: white;
 }
-#cont * *{
+
+#cont * * {
     position: relative;
     margin-top: -7px;
     margin-bottom: -7px;
 }
-#main{
+
+#main {
     height: 85.8vh;
     width: 100vw;
     margin-top: 7vh;
@@ -111,7 +168,8 @@ footer p{
     padding-top: 40px;
     gap: 25px;
 }
-#main *{
+
+#main * {
     color: white;
     display: flex;
     gap: 30px;
