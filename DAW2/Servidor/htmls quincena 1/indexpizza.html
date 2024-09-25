@@ -1,85 +1,158 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pizza</title>
-        <style>
-            body{
-                background-color: #680200;
-            }
-            body .d{
-                width: 90vw;
-                height: 90vh;
-                margin-top: 5vh;
-                margin-bottom: 5vh;
-                background-color: #FED09D;
-                margin-left: 5vw;
-                margin-right: 5vw;
-                padding: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
-            body .d h1{
-                color: #680200;
-                background-color: #FD6701;
-                width: 95%;
-                text-align: center;
-                font-style: italic;
-                font-weight: bold;
-            }
-            .form{
-                display: flex;
-                justify-content: left;
-                flex-direction: column;
-            }
-            form div{
-                display: flex;
-                flex-direction: row;
-            }
-            form div div{
-                width: 200px;
-                height: 200px;
-            }
-            label{
-                color: white;
-                text-align: center;
-                padding: 6px;
-                background-color: #680200;
-            }
-            input{
-                margin: 6px;
-            }
-            .cont div label{
-                width: 100%;
-            }
 
-        </style>
-    </head>
-    <body>
-        <div class="d">
-            <h1>- Pedido de Pizza -</h1>
-            <div class="form">
-                <form action="">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
-                    <br>
-                    <label for="dir">Dirección</label>
-                    <input type="text" name="dir">
-                    <br>
-                    <div class="cont">
+<head>
+    <title>Pizza</title>
+    <style>
+        body {
+            background-color: #680200;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body .d {
+            width: 850px;
+            height: 540px;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            background-color: #FED09D;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        body .d h1 {
+            color: #680200;
+            background-color: #FD6701;
+            width: 95%;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .form {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        form div div {
+            width: 200px;
+            height: 120px;
+        }
+
+        label {
+            color: white;
+            text-align: center;
+            padding: 6px;
+            background-color: #680200;
+        }
+
+        input {
+            margin: 6px;
+        }
+
+        .cont div label {
+            width: 100%;
+        }
+
+        .cont div {
+            display: flexbox;
+            flex-direction: column;
+        }
+
+        .cont div div {
+            display: flexbox;
+            flex-direction: row;
+            height: auto;
+            align-items: center;
+        }
+        select{
+            margin: 20px;
+        }
+        textarea{
+            width: 100%;
+            height: 200px;
+        }
+        .espc{
+            display: flexbox;
+            flex-direction: column;
+            margin-bottom: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d">
+        <h1>- Pedido de Pizza -</h1>
+        <div class="form">
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+                <br>
+                <label for="dir">Dirección</label>
+                <input type="text" name="dir">
+                <br>
+                <div class="cont">
+                    <div>
+                        <label>Ingredientes</label>
                         <div>
-                            <label for="ing">Ingredientes</label>
+                            <input type="checkbox" name="ing1" value="Queso">
+                            Queso
                         </div>
                         <div>
-                            <label for="tam">Tamaño</label>
+                            <input type="checkbox" name="ing2" value="Pimiento">
+                            Pimiento
                         </div>
                         <div>
-                            <label for="pago">Forma de pago</label>
+                            <input type="checkbox" name="ing3" value="Cebolla">
+                            Cebolla
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div>
+                        <label for="tam">Tamaño</label>
+                        <div>
+                            <input type="radio" name="tam" value="Pequeña">
+                            Pequeña
+                        </div>
+                        <div>
+                            <input type="radio" name="tam" value="Mediana">
+                            Mediana
+                        </div>
+                        <div>
+                            <input type="radio" name="tam" value="Grande">
+                            Grande
+                        </div>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="pago">Forma de pago</label>
+                        <select name="pago">
+                            <option value="VISA">VISA</option>
+                            <option value="Cheque">Cheque</option>
+                            <option value="Contado">Contado</option>
+                            <option value="Metalico">Metalico</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="espc">
+                    <label for="esp">Instrucciones especiales</label>
+                </div>
+                <br>
+                <textarea name="esp"></textarea>
+            </form>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
