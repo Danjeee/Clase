@@ -1,0 +1,5 @@
+ServletScope1.class
+com\javier\ejemploambitos\JakartaRestConfiguration.class
+com\javier\ejemploambitos\resources\JakartaEE8Resource.class
+ServletScope3.class
+ServletScope2.class
