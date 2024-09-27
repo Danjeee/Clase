@@ -277,6 +277,8 @@ function writebono() {
         alt4.innerHTML = alt4.innerHTML + "<br>Reintegro: " + rein
         var contador = 0
         for (let i = 0; i < win.length; i++) {
+            let windiv = document.getElementById("b"+win[i])
+                windiv.style.borderColor = "#ffffff"
             for (let j = 0; j < bononums.length; j++) {
                 if (bononums[j] == win[i]){
                     contador++
@@ -285,12 +287,13 @@ function writebono() {
             }
         }
         alt4.innerHTML = alt4.innerHTML + "<br>Has acertado "+contador+" numeros"
-        for (let i = 0; i < win.length; i++) {
-            if (comp == win[i]){
+        for (let i = 0; i < bononums.length; i++) {
+            if (comp == bononums[i]){
+                
                 alt4.innerHTML = alt4.innerHTML + " y el complementario"
             }
         }
-        if (win[win.length] == rein) {
+        if (bononums[bononums.length] == rein) {
             alt4.innerHTML = alt4.innerHTML + " y tambien el reintegro"
         }
         if (win == bononums) {
@@ -298,6 +301,8 @@ function writebono() {
         } else {
             alert("No has ganado el bonoloto :c")
         }
+        let compdiv = document.getElementById("b"+comp)
+                compdiv.style.borderColor = "#ffa500"
     }
 }
 
