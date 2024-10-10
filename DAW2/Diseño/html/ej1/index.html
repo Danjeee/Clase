@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Treslibros</title>
+</head>
+
+<body id="body" onload="{document.getElementById('body').style.backgroundColor='#b9cfe8'}">
+    <h1>Javier Soriano Esparza</h1>
+    <h2>Ejercicio 1</h2>
+    <h3>Tienda de libros</h3>
+    <table border="2">
+        <tr>
+            <th colspan="2">Meow: a nobel</th>
+            <th colspan="2">328 pages</th>
+            <th colspan="2">Como hablar a tu perro de temas importantes</th>
+        </tr>
+        <tr>
+            <td><a target="_blank" href="http://goku.com"><img src="img/meow.jpg" alt="Meow" height="300px"
+                        width="200px"></a></td>
+            <td>
+                <p>Meow meow meow meow meow meow meow meow moew</p>
+            </td>
+            <td><img src="img/nwo.jpg" alt="Nword" height="300px" width="200px"></td>
+            <td>
+                <p>Nada que opinar sinceramente</p>
+            </td>
+            <td><img src="img/perro.jpg" alt="Perro" height="300px" width="200px"></td>
+            <td>
+                <p>Un perro tiene que estar bien informado</p>
+            </td>
+        </tr>
+    </table>
+    <h2>Formulario de contacto</h2>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="true" maxlength="50">
+            <br>
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <br>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellido1 Apellido2" maxlength="100" required="true">
+            <br>
+            <br>
+            <label for="mail">Email:</label>
+            <br>
+            <input type="email" name="mail" id="mail" placeholder="example@dominio.com" maxlength="100" required="true">
+            <br>
+            <br>
+            <label for="edad">Edad:</label>
+            <br>
+            <input type="number" name="edad" id="edad" required="true" min="0" max="200">
+        </fieldset>
+        <fieldset>
+            <legend>Información</legend>
+            <label for="motivo">Motivo del contacto:</label>
+            <br>
+            <select name="motivo" id="motivo" required="true">
+                <option value="dev">Devolver un libro</option>
+                <option value="inf">Informar de un problema</option>
+                <option value="Sug">Sugerencias</option>
+                <option value="lib">Sugerir un libro</option>
+                <option value="otr">Otro</option>
+            </select>
+            <br>
+            <br>
+            <label for="ta">Informacion extra (opcional)</label>
+            <br>
+            
+            <textarea name="ta" id="ta"></textarea>
+            <br>
+            <br>
+            <label for="libro">¿Tiene que ver con alguno de nuestros libros?</label>
+            <br>
+            
+            <input type="checkbox" name="meow" id="meow">
+            <label for="meow">Meow: a nobel</label>
+            <br>
+            <input type="checkbox" name="pages" id="pages">
+            <label for="pages">328 pages</label>
+            <br>
+            <input type="checkbox" name="perro" id="perro">
+            <label for="perro">Como hablar con tu perro</label>
+            <br>
+        </fieldset>
+        <input type="submit" name="env" id="env" value="Enviar">
+    </form>
+</body>
+
+</html>

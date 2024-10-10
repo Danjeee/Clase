@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formulario 2</title>
+        <style>
+            *{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <strong>Usted indicó la siguiente información:</strong>
+        <br>
+        <strong th:text="'Pelicula: '+ ${alquiler.nombre}"/>
+        <br>
+        <strong th:text="'Dias de alquiler: '+ ${alquiler.dias}"/>
+        <br>
+        <strong th:text="'Edad Cliente: '+ ${alquiler.edad}"/>
+        <br>
+        <strong th:text="'Forma de pago: '+ ${alquiler.pago}"/>
+        <br>
+		<strong th:if="${alquiler.extra != null}" th:text="${alquiler.extra}"/>
+        <strong>¡Disfrute de la pelicula!</strong>
+    </body>
+</html>
