@@ -20,7 +20,10 @@
         <br>
         <strong th:text="'Forma de pago: '+ ${alquiler.pago}"/>
         <br>
-		<strong th:if="${alquiler.extra != null}" th:text="${alquiler.extra}"/>
+		<div th:if="${alquiler.extra} != ''">
+			<strong  th:text="${alquiler.extra}"/>
+			<br>
+		</div>
         <strong>¡Disfrute de la pelicula!</strong>
     </body>
 </html>

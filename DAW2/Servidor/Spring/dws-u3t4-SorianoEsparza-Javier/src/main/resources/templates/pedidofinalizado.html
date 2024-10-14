@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css.css">
+	<title>Gracias por pedir en nuestra pizzeria</title>
+</head>
+
+<body>
+	<div class="d2">
+		<h1>Pizzeria Javi</h1>
+
+		<h2>Nombre y Direccion</h2>
+		<p th:text="'Nombre: '+${pedido.nombre}"></p>
+		<p th:text="'Dirección: '+${pedido.direccion}"></p>
+		<h2>Ingredientes</h2>
+		<p th:text="${pedido.ingredientes}"></p>
+		<h2>Tamaño</h2>
+		<p th:text="${pedido.tam}"></p>
+		<h2>Pago</h2>
+		<p th:text="${pedido.pago}"></p>
+		<h2 th:if="${pedido.extra} != ''">Extras</h2>
+		<p th:if="${pedido.extra} != ''" th:text="${pedido.extra}"></p>
+	</div>
+</body>
+
+</html>

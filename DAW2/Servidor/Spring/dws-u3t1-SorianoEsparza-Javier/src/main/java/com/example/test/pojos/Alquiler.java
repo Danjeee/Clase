@@ -37,4 +37,8 @@ public class Alquiler {
 	public void setExtra(String extra) {
 		this.extra = extra;
 	}
+	public Alquiler() {
+		super();
+		this.extra = "";
+	}
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <title>Pedido Pizza</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="d">
+        <h1>- Pedido de Pizza -</h1>
+        <div class="form">
+            <form th:action="@{/pedidofinalizado}" th:object="${pedido}" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" th:field="*{nombre}">
+                <br>
+                <label for="dir">Dirección</label>
+                <input type="text" name="dir" th:field="*{direccion}">
+                <br>
+                <div class="cont">
+                    <div>
+                        <label>Ingredientes</label>
+                        <div>
+                            <input type="checkbox" name="ing1" value="Queso" th:field="*{ingredientes}" th:value="Queso">
+                            Queso
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ing2" value="Pimiento" th:field="*{ingredientes}" th:value="Pimiento">
+                            Pimiento
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ing3" value="Cebolla" th:field="*{ingredientes}" th:value="Cebolla">
+                            Cebolla
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tam">Tamaño</label>
+                        <div>
+                            <input type="radio" name="tam" value="Pequeña" th:field="*{tam}">
+                            Pequeña
+                        </div>
+                        <div>
+                            <input type="radio" name="tam" value="Mediana" th:field="*{tam}">
+                            Mediana
+                        </div>
+                        <div>
+                            <input type="radio" name="tam" value="Grande" th:field="*{tam}">
+                            Grande
+                        </div>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="pago">Forma de pago</label>
+                        <select name="pago" th:field="*{pago}">
+                            <option value="VISA">VISA</option>
+                            <option value="Cheque">Cheque</option>
+                            <option value="Contado">Contado</option>
+                            <option value="Metalico">Metalico</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="espc">
+                    <label for="esp">Instrucciones especiales</label>
+                </div>
+                <br>
+                <textarea name="esp" th:field="*{extra}"></textarea>
+				<input type="submit" value="Pedir">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

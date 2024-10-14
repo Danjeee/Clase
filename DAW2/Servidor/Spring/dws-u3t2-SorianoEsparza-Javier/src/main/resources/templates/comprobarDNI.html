@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Comprobar DNI Javi</title>
+	</head>
+	<body>
+		<form th:action="@{/muestraDatosAlumno}" th:object="${alumno}" method="post">
+			<label for="dni">Introduce un dni</label>
+			<br>
+			<input type="text" id="dni" th:field="*{DNI}" placeholder="Ej. 123" required="true">
+			<input type="submit" value="Buscar">
+		</form>
+	</body>
+</html>

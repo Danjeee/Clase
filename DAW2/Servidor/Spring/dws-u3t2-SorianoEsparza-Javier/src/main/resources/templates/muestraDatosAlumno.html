@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${alumno.nombre}"></title>
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+	<h1>Los datos del alumno son:</h1>
+	<br>
+	<div>
+		<strong>Nombre: </strong>
+		<p th:text="${alumno.nombre}"></p>
+	</div>
+	<div>
+		<strong>Primer apellido: </strong>
+		<p th:text="${alumno.apellido1}"></p>
+	</div>
+	<div>
+		<strong>Segundo apellido: </strong>
+		<p th:text="${alumno.apellido2}"></p>
+	</div>
+	<div>
+		<strong>DNI: </strong>
+		<p th:text="${alumno.DNI}"></p>
+	</div>
+</body>
+
+</html>

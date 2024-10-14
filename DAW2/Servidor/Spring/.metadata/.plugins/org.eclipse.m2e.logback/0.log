@@ -2458,3 +2458,718 @@ Caused by: org.eclipse.core.runtime.OperationCanceledException: null
 2024-10-10 13:11:43,057 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-10-10 13:11:43,061 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-10-10 13:11:43,070 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:03:29,549 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-14 10:04:22,529 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:04:22,626 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 10:04:22,726 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:06:48,725 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:06:48,749 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:06:48,812 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:07:20,652 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:07:20,669 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:07:20,695 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:08:34,321 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:08:34,326 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:08:34,337 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:10:57,032 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:10:57,034 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:10:57,040 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:11:51,904 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:11:51,907 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:11:51,912 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:13:18,058 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:13:18,063 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:13:18,077 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:14:05,307 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:14:05,318 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 10:14:05,329 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:14:34,048 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:14:34,051 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:14:34,057 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:15:17,562 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:15:17,564 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:15:17,570 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:15:51,728 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:15:51,730 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:15:51,737 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:15:59,635 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:15:59,638 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:15:59,644 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:27:35,458 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:27:35,461 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:27:35,467 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:27:41,114 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:27:41,118 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:27:41,125 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:27:50,515 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:27:50,519 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:27:50,529 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:28:05,480 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:28:05,483 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:28:05,490 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:28:37,116 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:28:37,119 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:28:37,125 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:28:43,332 [Worker-23: Launching dws-u3t1-SorianoEsparza-Javier - DwsU3t1SorianoEsparzaJavierApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:28:43,334 [Worker-23: Launching dws-u3t1-SorianoEsparza-Javier - DwsU3t1SorianoEsparzaJavierApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:28:43,341 [Worker-23: Launching dws-u3t1-SorianoEsparza-Javier - DwsU3t1SorianoEsparzaJavierApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:29:06,648 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:29:06,651 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:29:06,658 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:29:37,142 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:29:37,145 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:29:37,150 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:30:32,777 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:30:32,781 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:30:32,788 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:30:56,167 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:30:56,170 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:30:56,176 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:32:40,169 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:32:40,172 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:32:40,177 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:33:36,875 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:33:36,878 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:33:36,884 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:33:39,660 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:33:39,663 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:33:39,668 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:35:03,293 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:35:03,296 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:35:03,303 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:35:09,109 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:35:09,112 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:35:09,120 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:36:02,169 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:36:02,171 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:36:02,179 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:36:23,491 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:36:23,494 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:36:23,499 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:36:54,566 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:36:54,569 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:36:54,575 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:37:50,348 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:37:50,351 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:37:50,362 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:37:58,655 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:37:58,657 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:37:58,663 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:38:37,466 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:38:37,470 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:38:37,476 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:39:26,232 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:39:26,235 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:39:26,241 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:39:59,633 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:39:59,636 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:39:59,641 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:40:13,181 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:40:13,184 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:40:13,189 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:40:30,727 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:40:30,730 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:40:30,735 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:41:50,853 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:41:50,856 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:41:50,862 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:42:18,850 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:42:18,852 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:42:18,858 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:42:21,915 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:42:21,918 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:42:21,926 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:44:07,911 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:44:07,916 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:44:07,922 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:44:14,115 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:44:14,122 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-10-14 10:44:14,128 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:45:25,814 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:45:25,818 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:45:25,825 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t1-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:47:08,423 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javi:dws-u3t2-SorianoEsparza-Javier:0.0.1-SNAPSHOT @ D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\pom.xml.
+2024-10-14 10:47:09,540 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t2-SorianoEsparza-Javier/src/main/java
+2024-10-14 10:47:09,543 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t2-SorianoEsparza-Javier/src/main/resources
+2024-10-14 10:47:09,548 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t2-SorianoEsparza-Javier/src/main/resources
+2024-10-14 10:47:09,552 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t2-SorianoEsparza-Javier/src/test/java
+2024-10-14 10:47:09,553 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t2-SorianoEsparza-Javier/src/test/resources
+2024-10-14 10:47:10,143 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2024-10-14 10:47:10,152 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-10-14 10:47:10,643 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javi:dws-u3t2-SorianoEsparza-Javier:0.0.1-SNAPSHOT @ D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\pom.xml.
+2024-10-14 10:47:11,470 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t2-SorianoEsparza-Javier/src/main/java
+2024-10-14 10:47:11,471 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t2-SorianoEsparza-Javier/src/main/resources
+2024-10-14 10:47:11,473 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t2-SorianoEsparza-Javier/src/main/resources
+2024-10-14 10:47:11,473 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t2-SorianoEsparza-Javier/src/test/java
+2024-10-14 10:47:11,475 [Worker-13: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t2-SorianoEsparza-Javier/src/test/resources
+2024-10-14 10:47:11,951 [Worker-13: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2024-10-14 10:47:12,392 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:47:12,413 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:47:12,418 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:47:42,032 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:47:42,038 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:47:42,042 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:48:13,333 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:48:13,339 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:48:13,344 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:48:20,698 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:48:20,703 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:48:20,706 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:48:57,393 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:48:57,399 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:48:57,404 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:50:01,958 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:50:01,964 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:50:01,968 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:50:21,208 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:50:21,215 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:50:21,219 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:50:44,627 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:50:44,634 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:50:44,638 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:51:55,624 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:51:55,629 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:51:55,633 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:52:33,713 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:52:33,718 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:52:33,722 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:53:03,878 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:53:03,882 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:53:03,886 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:53:16,011 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:53:16,016 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:53:16,021 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:53:55,193 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:53:55,198 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:53:55,202 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:54:26,167 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:54:26,173 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:54:26,177 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:54:36,371 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:54:36,375 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:54:36,379 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:54:41,053 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:54:41,057 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:54:41,061 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:55:19,938 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:55:19,943 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:55:19,948 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:55:43,087 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:55:43,092 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:55:43,095 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:55:47,919 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:55:47,926 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:55:47,931 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:55:57,555 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:55:57,560 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:55:57,564 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:56:18,740 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:56:18,744 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:56:18,750 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:56:59,774 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:56:59,778 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:56:59,782 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:57:07,520 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:57:07,524 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:57:07,528 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:57:08,824 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:57:08,828 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:57:08,833 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:57:23,901 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:57:23,918 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:57:23,944 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:57:49,117 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:57:49,123 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:57:49,127 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:58:05,515 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:58:05,520 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:58:05,525 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:58:14,136 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:58:14,140 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:58:14,144 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:58:18,751 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:58:18,756 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:58:18,760 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:58:26,658 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:58:26,663 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:58:26,667 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:58:40,957 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:58:40,963 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:58:40,967 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:59:09,808 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:59:09,813 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:59:09,817 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:59:40,670 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:59:40,675 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:59:40,678 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 10:59:56,989 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 10:59:56,993 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 10:59:56,997 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:35:54,044 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:35:54,056 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:35:54,060 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:36:07,327 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:36:07,335 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:36:07,338 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:36:32,136 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:36:32,139 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:36:32,146 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:37:51,938 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:37:51,940 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:37:51,945 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:38:08,432 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:38:08,434 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:38:08,440 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:38:10,502 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:38:10,504 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:38:10,510 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:38:37,065 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:38:37,068 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:38:37,076 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:38:43,776 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:38:43,778 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:38:43,784 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:38:50,905 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:38:50,910 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:38:50,918 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:40:08,676 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:40:08,679 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:40:08,685 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:40:28,656 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:40:28,659 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:40:28,664 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:41:19,861 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:41:19,866 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:41:19,874 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:42:44,571 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:42:44,573 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:42:44,580 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:42:58,198 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:42:58,201 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:42:58,207 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:43:17,974 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:43:17,976 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:43:17,983 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:43:19,045 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:43:19,047 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:43:19,052 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:44:10,444 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:44:10,447 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:44:10,452 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:45:22,748 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:45:22,751 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:45:22,758 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:46:14,157 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:46:14,160 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:46:14,166 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:47:18,166 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:47:18,169 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:47:18,174 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:47:48,237 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:47:48,239 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:47:48,244 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:48:44,101 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:48:44,103 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:48:44,107 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:48:47,880 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:48:47,883 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:48:47,888 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:48:53,873 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:48:53,875 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:48:53,880 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:49:56,873 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:49:56,879 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:49:56,884 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:50:12,546 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:50:12,552 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:50:12,557 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:50:27,260 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:50:27,266 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:50:27,271 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:51:14,431 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:51:14,435 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:51:14,440 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:51:26,674 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:51:26,678 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:51:26,683 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:52:29,513 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:52:29,520 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:52:29,529 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:52:30,948 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:52:30,953 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:52:30,958 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:52:46,219 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:52:46,224 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:52:46,229 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:52:49,484 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:52:49,489 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:52:49,494 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:53:00,849 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:53:00,853 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:53:00,858 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:53:34,562 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:53:34,567 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:53:34,573 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:53:43,859 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:53:43,864 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:53:43,870 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:54:23,188 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:54:23,193 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:54:23,198 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:55:19,793 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:55:19,799 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:55:19,804 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:55:59,004 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:55:59,011 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:55:59,016 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:57:56,731 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:57:56,735 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:57:56,741 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:58:35,430 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:58:35,436 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:58:35,441 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:58:36,629 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:58:36,637 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 11:58:36,642 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:59:08,375 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:59:08,377 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:59:08,382 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:59:27,202 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:59:27,205 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:59:27,212 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 11:59:52,533 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 11:59:52,535 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 11:59:52,541 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:02:03,003 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:02:03,006 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:02:03,011 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:03:27,467 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:03:27,470 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:03:27,476 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:03:50,856 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:03:50,858 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:03:50,864 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:04:07,537 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:04:07,539 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:04:07,545 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:04:30,416 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:04:30,421 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:04:30,426 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:04:39,049 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:04:39,054 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:04:39,060 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:04:43,163 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:04:43,168 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:04:43,173 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:04:48,172 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:04:48,177 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:04:48,182 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:05:54,667 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:05:54,671 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:05:54,676 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:06:32,563 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:06:32,567 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:06:32,572 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:06:41,566 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:06:41,571 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:06:41,576 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:06:55,228 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:06:55,233 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:06:55,237 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:07:00,188 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:07:00,194 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:07:00,232 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:07:13,467 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:07:13,472 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:07:13,477 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:07:53,170 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:07:53,172 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:07:53,179 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:07:59,842 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:07:59,846 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:07:59,852 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:09:15,192 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:09:15,194 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:09:15,199 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:09:46,215 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:09:46,217 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:09:46,222 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:10:06,016 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:10:06,019 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:10:06,025 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:10:58,728 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:10:58,731 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:10:58,737 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:11:16,718 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:11:16,720 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:11:16,726 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:11:36,291 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:11:36,294 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:11:36,299 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:11:52,957 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:11:52,960 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:11:52,965 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:12:37,169 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:12:37,172 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:12:37,178 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:13:21,669 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:13:21,672 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:13:21,677 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:13:35,335 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:13:35,338 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:13:35,345 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:13:51,242 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:13:51,245 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:13:51,251 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:14:51,395 [Worker-46: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javi:dws-u3t4-SorianoEsparza-Javier:0.0.1-SNAPSHOT @ D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\pom.xml.
+2024-10-14 12:14:52,296 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t4-SorianoEsparza-Javier/src/main/java
+2024-10-14 12:14:52,297 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t4-SorianoEsparza-Javier/src/main/resources
+2024-10-14 12:14:52,302 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t4-SorianoEsparza-Javier/src/main/resources
+2024-10-14 12:14:52,305 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t4-SorianoEsparza-Javier/src/test/java
+2024-10-14 12:14:52,307 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t4-SorianoEsparza-Javier/src/test/resources
+2024-10-14 12:14:52,781 [Worker-46: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2024-10-14 12:14:52,785 [Worker-46: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-10-14 12:14:53,242 [Worker-46: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javi:dws-u3t4-SorianoEsparza-Javier:0.0.1-SNAPSHOT @ D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\pom.xml.
+2024-10-14 12:14:54,066 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t4-SorianoEsparza-Javier/src/main/java
+2024-10-14 12:14:54,067 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t4-SorianoEsparza-Javier/src/main/resources
+2024-10-14 12:14:54,069 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t4-SorianoEsparza-Javier/src/main/resources
+2024-10-14 12:14:54,069 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dws-u3t4-SorianoEsparza-Javier/src/test/java
+2024-10-14 12:14:54,070 [Worker-46: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dws-u3t4-SorianoEsparza-Javier/src/test/resources
+2024-10-14 12:14:54,547 [Worker-46: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2024-10-14 12:14:54,898 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:14:54,915 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:14:54,921 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:15:52,053 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:15:52,060 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:15:52,065 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:16:06,728 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:16:06,733 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:16:06,737 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:16:12,735 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:16:12,740 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:16:12,743 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:18:28,217 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:18:28,223 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:18:28,228 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:19:25,526 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:19:25,532 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:19:25,536 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:19:50,880 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:19:50,882 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:19:50,888 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:19:59,433 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:19:59,435 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:19:59,441 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:20:28,201 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:20:28,203 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:20:28,209 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:20:30,544 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:20:30,547 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:20:30,551 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:20:36,137 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:20:36,139 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:20:36,146 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:20:54,139 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:20:54,143 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:20:54,149 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:20:58,089 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:20:58,091 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:20:58,096 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:21:24,224 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:21:24,227 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:21:24,232 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:21:50,472 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:21:50,474 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:21:50,479 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:21:58,517 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:21:58,519 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:21:58,524 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:22:09,441 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:22:09,443 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:22:09,448 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:22:16,736 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:22:16,740 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:22:16,746 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:22:56,351 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:22:56,353 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:22:56,359 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:24:24,241 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:24:24,244 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:24:24,249 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:24:34,897 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:24:34,899 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:24:34,905 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:24:45,285 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:24:45,288 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:24:45,293 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:26:11,698 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:26:11,701 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:26:11,706 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:26:22,662 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:26:22,665 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:26:22,669 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:27:20,154 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:27:20,162 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:27:20,168 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:27:28,369 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:27:28,374 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:27:28,379 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:27:29,470 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:27:29,475 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:27:29,481 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:27:59,829 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:27:59,834 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:27:59,839 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:28:08,258 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:28:08,265 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:28:08,272 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:28:22,784 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:28:22,788 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:28:22,793 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:28:59,938 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:28:59,943 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:28:59,948 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:29:47,853 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:29:47,858 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:29:47,863 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:30:07,177 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:30:07,182 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:30:07,187 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:30:13,447 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:30:13,452 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:30:13,457 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:30:30,375 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:30:30,380 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:30:30,385 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:30:35,966 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:30:35,970 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:30:35,975 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:30:58,057 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:30:58,061 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:30:58,066 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:31:20,707 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:31:20,712 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:31:20,718 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:31:30,294 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:31:30,299 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:31:30,304 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:32:50,510 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:32:50,517 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:32:50,522 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:34:28,667 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:34:28,669 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:34:28,675 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:39:05,621 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:39:05,624 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:39:05,629 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:39:19,713 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:39:19,715 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:39:19,721 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:39:34,925 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:39:34,927 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:39:34,933 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:40:03,646 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:40:03,648 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:40:03,654 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:41:14,587 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:41:14,590 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:41:14,596 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:41:27,604 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:41:27,606 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:41:27,612 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:41:38,580 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:41:38,582 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:41:38,588 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:41:55,477 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:41:55,480 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-10-14 12:41:55,488 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:42:00,295 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:42:00,297 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:42:00,303 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t2-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:43:27,618 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:43:27,623 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:43:27,632 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:43:57,643 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:43:57,646 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:43:57,651 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:44:20,077 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:44:20,084 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-10-14 12:44:20,090 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:45:28,304 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:45:28,307 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:45:28,312 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:45:58,954 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:45:58,957 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:45:58,963 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:46:22,199 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:46:22,204 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:46:22,211 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:47:32,858 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:47:32,861 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:47:32,866 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:48:04,192 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:48:04,195 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:48:04,200 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:48:32,348 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:48:32,353 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:48:32,363 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:48:55,604 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:48:55,606 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:48:55,612 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:48:58,675 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:48:58,677 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:48:58,683 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:49:44,958 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:49:44,961 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:49:44,966 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:50:03,154 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:50:03,157 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:50:03,163 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:51:27,406 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:51:27,409 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:51:27,416 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:51:45,459 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:51:45,462 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:51:45,471 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:52:12,117 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:52:12,123 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:52:12,132 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:52:37,757 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:52:37,762 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:52:37,769 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:53:41,647 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:53:41,651 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:53:41,657 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:53:49,860 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:53:49,866 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:53:49,876 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:54:18,056 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:54:18,060 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:54:18,066 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:54:20,901 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:54:20,904 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:54:20,909 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:54:56,137 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:54:56,139 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:54:56,144 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:56:43,869 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:56:43,876 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:56:43,889 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:57:02,814 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:57:02,817 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:57:02,823 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 12:57:10,813 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 12:57:10,816 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 12:57:10,822 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 13:00:07,789 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 13:00:07,795 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 13:00:07,803 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 13:00:19,279 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 13:00:19,282 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 13:00:19,287 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 13:01:34,504 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 13:01:34,508 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 13:01:34,513 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources
+2024-10-14 13:01:41,325 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-14 13:01:41,328 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-14 13:01:41,334 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\dws-u3t4-SorianoEsparza-Javier\src\test\resources

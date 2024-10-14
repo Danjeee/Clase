@@ -24,7 +24,7 @@ public class CapturaDatosController {
 		mvc.addObject("alquiler", new Alquiler());
 		return mvc;
 	}
-	@PostMapping("/formulario2")
+	@PostMapping("/disfrutaDeLaPelicula")
 	public ModelAndView mostrar(@ModelAttribute Alquiler alquiler) {
 		ModelAndView mvc = new ModelAndView("formulario2");
 		if(alquiler.getExtra() != null && !alquiler.getExtra().equals("")) {
