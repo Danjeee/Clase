@@ -14,10 +14,10 @@
         <div class="form">
             <form th:action="@{/pedidofinalizado}" th:object="${pedido}" method="post">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" th:field="*{nombre}">
+                <input type="text" name="nombre" required="true" th:field="*{nombre}">
                 <br>
                 <label for="dir">Dirección</label>
-                <input type="text" name="dir" th:field="*{direccion}">
+                <input type="text" name="dir" required="true" th:field="*{direccion}">
                 <br>
                 <div class="cont">
                     <div>
@@ -38,15 +38,15 @@
                     <div>
                         <label for="tam">Tamaño</label>
                         <div>
-                            <input type="radio" name="tam" value="Pequeña" th:field="*{tam}">
+                            <input type="radio" required="true" name="tam" value="Pequeña" th:field="*{tam}">
                             Pequeña
                         </div>
                         <div>
-                            <input type="radio" name="tam" value="Mediana" th:field="*{tam}">
+                            <input type="radio" required="true" name="tam" value="Mediana" th:field="*{tam}">
                             Mediana
                         </div>
                         <div>
-                            <input type="radio" name="tam" value="Grande" th:field="*{tam}">
+                            <input type="radio" required="true" name="tam" value="Grande" th:field="*{tam}">
                             Grande
                         </div>
                         <br>
