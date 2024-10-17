@@ -3,6 +3,9 @@ package com.javi;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.javi.repository.entity.Cliente;
+import com.javi.repository.entity.Recomendacion;
+
 @SpringBootApplication
 public class Demo5Application {
 

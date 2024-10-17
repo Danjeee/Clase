@@ -3,17 +3,14 @@ package com.javi.repository.entity;
 import java.util.Objects;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
-public class Cliente {
-	private int id;
-	private String nif;
-	private String nombre;
-	private String apellidos;
-	private String clave;
-	private String email;
-	private Recomendacion recomendacion;
-	
+public class Recomendacion {
+	private long id;
+	private String observaciones;
+	@ToString.Exclude
+	private Cliente cliente;
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -22,7 +19,7 @@ public class Cliente {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Cliente other = (Cliente) obj;
+		Recomendacion other = (Recomendacion) obj;
 		return id == other.id;
 	}
 	@Override
