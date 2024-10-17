@@ -1,0 +1,238 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: ico;
+    src: url(../fonts/Iconic-Pictograms-Bold-trial.ttf);
+}
+
+body{
+    background-color: #73C4C3;
+}
+header div div{
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 25px;
+}
+header>div>div *{
+    margin-top: -17px;
+}
+header>div{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    gap: 50px;
+    background-color: #fff;
+    border: black 2px solid;
+    border-radius: 15px;
+}
+header button{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+header button:hover{
+    cursor: pointer;
+}
+header .ies{
+    position: fixed;
+    top:  20;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+ico {
+    font-family: ico;
+    font-size: 40px;
+    color: #275a5e;
+}
+
+* {
+    font-family: defaultFont;
+}
+
+.loginb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #275a5e, #54abad);
+    background-size: 400% 400%;
+
+    animation: gradient 5s ease infinite;
+}
+
+.logincont {
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: #275a5e 3px solid;
+    border-radius: 15px;
+
+}
+
+input[type=text],
+input[type=password] {
+    border-radius: 10px;
+    padding: 4px;
+    color: #275a5e;
+    border-color: #275a5e;
+    border-style: solid;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    filter: drop-shadow(0px 0px 10px #54abad);
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    padding: 4px;
+    background-color: #275a5e;
+    color: #54abad;
+    height: 60px;
+    border: #54abad 2px solid;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #54abad;
+    color: #275a5e;
+    border-color: #275a5e;
+}
+
+h1,
+h2,
+h3,
+label {
+    color: #275a5e;
+    font-weight: bold;
+}
+
+label {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.logincont div {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    position: absolute;
+    top: 77%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #54abad;
+    animation: colorswitch 20s ease infinite;
+}
+
+@keyframes colorswitch {
+    0% {
+        color: #54abad;
+    }
+
+    40% {
+        color: #275a5e;
+    }
+
+    100% {
+        color: #54abad;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 83% 0%
+    }
+
+    50% {
+        background-position: 18% 100%
+    }
+
+    100% {
+        background-position: 83% 0%
+    }
+}
+
+.logincont:hover~.effect {
+    animation: colorswitch 20s ease infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+    transition: 0.5s;
+
+}
+
+.effect {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    filter: blur(30px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: effectanim 5s infinite linear;
+    z-index: -1;
+
+
+}
+
+@keyframes effectanim {
+    0% {
+        top: calc(50% - 205px);
+        left: calc(50% - 380px);
+    }
+
+    25% {
+        top: calc(50% - 205px);
+        left: calc(50% + 380px);
+    }
+
+    50% {
+        top: calc(50% + 205px);
+        left: calc(50% + 380px);
+    }
+
+    75% {
+        left: calc(50% - 380px);
+        top: calc(50% + 205px);
+    }
+
+    100% {
+        top: calc(50% - 205px);
+        left: calc(50% - 380px);
+    }
+}
