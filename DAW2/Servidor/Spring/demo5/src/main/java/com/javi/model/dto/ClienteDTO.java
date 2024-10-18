@@ -48,6 +48,13 @@ public class ClienteDTO implements Serializable {
 	}
 	public static Cliente convertToEntity(ClienteDTO cliente) {
 		Cliente c = new Cliente();
+		c.setId(cliente.getId());
+		c.setNombre(cliente.getNombre());
+		c.setApellidos(cliente.getApellidos());
+		c.setNif(cliente.getNif());
+		c.setClave(cliente.getClave());
+		c.setEmail(cliente.getEmail());
+		c.setRecomendacion(RecomendacionDTO.convertToEntity(cliente.getRecomendacionDTO()));
 		return c;
 	}
 }
