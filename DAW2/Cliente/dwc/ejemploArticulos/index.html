@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Articulos</title>
+    <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
-    <div id="selectcont"><select name="opc1" id="opc1" onchange="doaction()" >
-        <option value="Selecciona que quieres mostrar" selected hidden>Selecciona que quieres mostrar</option>
-        <option value="TA">Todos los articulos</option>
-        <option value="TF">Articulos por familia</option>
-        <option value="TP">Articulos por proveedor</option>
-    </select></div>
+    <div id="selectcont">
+        <select name="opc1" id="opc1" onchange="doaction()">
+            <option value="Selecciona que quieres mostrar" selected hidden>Selecciona que quieres mostrar</option>
+            <option value="TA">Todos los articulos</option>
+            <option value="TF">Articulos por familia</option>
+            <option value="TP">Articulos por proveedor</option>
+        </select>
+    </div>
+    <div id="final"></div>
 </body>
 <script src="js.js" type="text/javascript"></script>
+
 </html>

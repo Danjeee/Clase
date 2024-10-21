@@ -1,0 +1,29 @@
+select{
+    height: 50px;
+    transition: 0.5s;
+    margin-bottom: 70px;
+}
+select:nth-child(2){
+    margin-left: 50px;
+}
+table *{
+    padding: 10px;
+}
+table,th,td{
+    border: #000, 2px, solid;
+    border-collapse: collapse;
+    transition: 0.5s;
+}
+th{
+    background-color: antiquewhite;
+}
+td:hover{
+    cursor: default;
+    background-color: bisque;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
