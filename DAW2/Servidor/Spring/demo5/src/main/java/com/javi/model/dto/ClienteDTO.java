@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 import com.javi.repository.entity.Cliente;
+import com.javi.repository.entity.Recomendacion;
 
 import lombok.Data;
 
@@ -32,18 +33,18 @@ public class ClienteDTO implements Serializable {
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-	private void set(Cliente c) {
+	private void set(Cliente c, ClienteDTO cdto) {
 		this.id = (c.getId());
 		this.nombre = (c.getNombre());
 		this.apellidos = (c.getApellidos());
 		this.nif = (c.getNif());
 		this.clave = (c.getClave());
 		this.email = (c.getEmail());
-		this.recomendacionDTO = (RecomendacionDTO.convertToDTO(c.getRecomendacion()));
+		this.recomendacionDTO = (RecomendacionDTO.convertToDTO(c.getRecomendacion(), cdto));
 	}
 	public static ClienteDTO convertToDTO(Cliente cliente) {
 		ClienteDTO c = new ClienteDTO();
-		c.set(cliente);
+		c.set(cliente, c);
 		return c;
 	}
 	public static Cliente convertToEntity(ClienteDTO cliente) {

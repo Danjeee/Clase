@@ -30,14 +30,14 @@ public class RecomendacionDTO implements Serializable{
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-	private void set(Recomendacion r) {
+	private void set(Recomendacion r, ClienteDTO c) {
 		this.id = (r.getId());
 		this.observaciones = (r.getObservaciones());
-		this.clienteDTO = (ClienteDTO.convertToDTO(r.getCliente()));
+		this.clienteDTO = c;
 	}
-	public static RecomendacionDTO convertToDTO(Recomendacion r) {
+	public static RecomendacionDTO convertToDTO(Recomendacion r, ClienteDTO c) {
 		RecomendacionDTO rdto = new RecomendacionDTO();
-		rdto.set(r);
+		rdto.set(r, c);
 		return rdto;
 	}
 	public static Recomendacion convertToEntity(RecomendacionDTO recomendacionDTO) {

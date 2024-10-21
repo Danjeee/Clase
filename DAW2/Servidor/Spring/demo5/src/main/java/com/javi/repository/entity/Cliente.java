@@ -29,4 +29,12 @@ public class Cliente {
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+	public void setCliente(int id, String nif, String nombre, String apellidos, String clave, String email) {
+		this.id = id;
+		this.nif = nif;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.clave = clave;
+		this.email = email;
+	}
 }

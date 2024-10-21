@@ -28,6 +28,6 @@ public class clienteServiceImpl implements clienteService {
 		for (Cliente c : listaClientes) {
 			listaClientesDTO.add(ClienteDTO.convertToDTO(c));
 		}
-		return null;
+		return listaClientesDTO;
 	}
 }

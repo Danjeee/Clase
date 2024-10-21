@@ -26,4 +26,8 @@ public class Recomendacion {
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+	public void setRecomendacion(long id, String observaciones) {
+		this.id = id;
+		this.observaciones = observaciones;
+	}
 }
