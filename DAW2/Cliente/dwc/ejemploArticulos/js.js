@@ -7,6 +7,8 @@ var tit = document.getElementById("tit")
 let selectcontbase = selectcont.innerHTML
 var familias
 var proveedores
+var mix
+var mixf = false;
 
 function procesarArticulos(opc, fam, prov) {
     let p = new XMLHttpRequest()
@@ -103,7 +105,7 @@ function selectFamilia() {
     s.addEventListener('change', function () {
         if (s.value != 'Selecciona una familia') {
             procesarArticulos("AF", s.value, null)
-            tit.innerHTML = "<h1>Familia: "+s.value+"</h1><img src='img/"+s.value+".png'>"
+            tit.innerHTML = "<h1>Familia: " + s.value + "</h1><img src='img/" + s.value + ".png'>"
         }
     })
 }
@@ -120,7 +122,7 @@ function selectProveedor() {
     s.addEventListener('change', function () {
         if (s.value != 'Selecciona un proveedor') {
             procesarArticulos("AP", null, s.value)
-            tit.innerHTML = "<h1>Proveedor: "+s.value+"</h1>"
+            tit.innerHTML = "<h1>Proveedor: " + s.value + "</h1>"
         }
     })
 }
@@ -134,26 +136,53 @@ function selectFamAndProveedor() {
     });
     let s2 = document.createElement('select')
     s2.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
-    Array.from(proveedores).forEach(e => {
-        s2.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
-    });
+    s2.disabled = true
     s.addEventListener('change', function () {
-        if (s.value != 'Selecciona una familia' && s2.value != 'Selecciona un proveedor') {
-            procesarArticulos("TT", s.value, s2.value)
-            tit.innerHTML = "<h1>Familia: "+s.value+", Proveedor: "+s2.value+"</h1><img src='img/"+s.value+".png'>"
+        s2.disabled = true
+        if (s.value != 'Selecciona una familia') {
+            encontrarProveedores(s.value)
+            if (mixf) {
+                console.log(mix)
+                s2.disabled = false
+                s2.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
+                mix.forEach(e => {
+                    s2.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
+                });
+                s2.addEventListener('change', function () {
+                    if (s.value != 'Selecciona una familia' && s2.value != 'Selecciona un proveedor') {
+                        procesarArticulos("TT", s.value, s2.value)
+                        tit.innerHTML = "<h1>Familia: " + s.value + ", Proveedor: " + s2.value + "</h1><img src='img/" + s.value + ".png'>"
+                    }
+                })
+            } else {
+                s2.disabled = true
+                s2.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
+            }
+        } else {
+            s2.disabled = true
         }
     })
-    s2.addEventListener('change', function () {
-        if (s.value != 'Selecciona una familia' && s2.value != 'Selecciona un proveedor') {
-            procesarArticulos("TT", s.value, s2.value)
-            tit.innerHTML = "<h1>Familia: "+s.value+", Proveedor: "+s2.value+"</h1><img src='img/"+s.value+".png'>"
-        }
-    })
+    
     selectcont.appendChild(s)
     selectcont.appendChild(s2)
 }
-function name(params) {
+function encontrarProveedores(a) {
     
+    let p = new XMLHttpRequest()
+    let parameters = "opcion=PF&familia=" + a
+    p.open('GET', "./consultarArticulos.php?" + parameters)
+    p.addEventListener('load', function () {
+        if (p.status == 200) {
+            mix = JSON.parse(p.responseText)
+            try {
+                mix.forEach(i => console.log("a"))
+                mixf = true
+            } catch (error) {
+                mixf = false
+            }
+        }
+    })
+    p.send()
 }
 loadProv()
 loadFamilias()

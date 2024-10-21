@@ -69,8 +69,8 @@ switch ($opc) {
          break;
     case "PF":
 // -- $sql="select idarticulo, familia, descripcion, precioventa, proveedor from articulos where proveedor = '".$pro."'";
-        $sql="SELECT idarticulo, familia, descripcion, precioventa, proveedor
-        FROM articulos WHERE proveedor=(SELECT idproveedor FROM proveedores WHERE nombre='".$pro."') AND familia=(SELECT idfamilia FROM familias WHERE nombre='".$fam."')";
+        $sql="SELECT DISTINCT p.nombre
+        FROM proveedores p inner join articulos a ON a.proveedor=p.idproveedor WHERE a.familia=(SELECT idfamilia FROM familias WHERE nombre='".$fam."')";
          break;
     case "FF":
         $sql="select imagen from familias where nombre='".$fam."'";
