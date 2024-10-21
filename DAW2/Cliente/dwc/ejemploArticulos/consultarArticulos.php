@@ -62,6 +62,16 @@ switch ($opc) {
         $sql="SELECT idarticulo, familia, descripcion, precioventa, proveedor
         FROM articulos WHERE proveedor=(SELECT idproveedor FROM proveedores WHERE nombre='".$pro."')";
          break;
+    case "TT":
+// -- $sql="select idarticulo, familia, descripcion, precioventa, proveedor from articulos where proveedor = '".$pro."'";
+        $sql="SELECT idarticulo, familia, descripcion, precioventa, proveedor
+        FROM articulos WHERE proveedor=(SELECT idproveedor FROM proveedores WHERE nombre='".$pro."') AND familia=(SELECT idfamilia FROM familias WHERE nombre='".$fam."')";
+         break;
+    case "PF":
+// -- $sql="select idarticulo, familia, descripcion, precioventa, proveedor from articulos where proveedor = '".$pro."'";
+        $sql="SELECT idarticulo, familia, descripcion, precioventa, proveedor
+        FROM articulos WHERE proveedor=(SELECT idproveedor FROM proveedores WHERE nombre='".$pro."') AND familia=(SELECT idfamilia FROM familias WHERE nombre='".$fam."')";
+         break;
     case "FF":
         $sql="select imagen from familias where nombre='".$fam."'";
         break;

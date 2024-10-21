@@ -3,8 +3,25 @@ select{
     transition: 0.5s;
     margin-bottom: 70px;
 }
-select:nth-child(2){
-    margin-left: 50px;
+.n{
+    text-align: right;
+}
+.s{
+    text-align: center;
+}
+.final{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.tit{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
 }
 table *{
     padding: 10px;

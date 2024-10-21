@@ -3,6 +3,7 @@
 let xmlfinal = document.getElementById('final')
 let xmlcont = "<table><tr><th>Id</th><th>Familia</th><th>Nombre</th><th>Proveedor</th><th>Precio</th></tr>"
 var selectcont = document.getElementById('selectcont')
+var tit = document.getElementById("tit")
 let selectcontbase = selectcont.innerHTML
 var familias
 var proveedores
@@ -52,11 +53,11 @@ function mostrarArticulos(resp) {
         var data = JSON.parse(resp)
         data.forEach(element => {
             xmlcont += "<tr>"
-            xmlcont += "<td>" + element.idarticulo + "</td>"
-            xmlcont += "<td>" + element.familia + "</td>"
-            xmlcont += "<td>" + element.descripcion + "</td>"
-            xmlcont += "<td>" + element.proveedor + "</td>"
-            xmlcont += "<td>" + element.precioventa + "</td>"
+            xmlcont += "<td class='n'>" + element.idarticulo + "</td>"
+            xmlcont += "<td class='n'>" + element.familia + "</td>"
+            xmlcont += "<td class='s'>" + element.descripcion + "</td>"
+            xmlcont += "<td class='n'>" + element.proveedor + "</td>"
+            xmlcont += "<td class='n'>" + element.precioventa + "</td>"
             xmlcont += "</tr>"
         });
         xmlcont += "</table>"
@@ -65,12 +66,13 @@ function mostrarArticulos(resp) {
         xmlfinal.innerHTML = "<h1>Lo sentimos, no hay articulos en esta categoria</h1>"
 
     }
-    
+
 }
 function doaction() {
 
     switch (document.getElementById("opc1").value) {
         case "TA":
+            tit.innerHTML = ""
             xmlfinal.innerHTML = ""
             selectcont.innerHTML = selectcontbase
             procesarArticulos("TA", null, null)
@@ -83,15 +85,15 @@ function doaction() {
         case "TP":
             selectProveedor()
             break;
+        case "TT":
+            selectFamAndProveedor()
+            break;
     }
 }
 function selectFamilia() {
-     xmlfinal.innerHTML = ""
-    if (document.getElementById('opc2') != null) {
-        selectcont.innerHTML = selectcontbase
-    }
+    xmlfinal.innerHTML = ""
+    selectcont.innerHTML = selectcontbase
     let s = document.createElement('select')
-    s.id = "opc2"
     s.innerHTML = "<option value='Selecciona una familia' selected hidden>Selecciona una familia</option>"
     Array.from(familias).forEach(e => {
         s.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
@@ -101,16 +103,14 @@ function selectFamilia() {
     s.addEventListener('change', function () {
         if (s.value != 'Selecciona una familia') {
             procesarArticulos("AF", s.value, null)
+            tit.innerHTML = "<h1>Familia: "+s.value+"</h1><img src='img/"+s.value+".png'>"
         }
     })
 }
 function selectProveedor() {
-     xmlfinal.innerHTML = ""
-    if (document.getElementById('opc2') != null) {
-        selectcont.innerHTML = selectcontbase
-    }
+    xmlfinal.innerHTML = ""
+    selectcont.innerHTML = selectcontbase
     let s = document.createElement('select')
-    s.id = "opc2"
     s.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
     Array.from(proveedores).forEach(e => {
         s.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
@@ -120,8 +120,40 @@ function selectProveedor() {
     s.addEventListener('change', function () {
         if (s.value != 'Selecciona un proveedor') {
             procesarArticulos("AP", null, s.value)
+            tit.innerHTML = "<h1>Proveedor: "+s.value+"</h1>"
         }
     })
+}
+function selectFamAndProveedor() {
+    xmlfinal.innerHTML = ""
+    selectcont.innerHTML = selectcontbase
+    let s = document.createElement('select')
+    s.innerHTML = "<option value='Selecciona una familia' selected hidden>Selecciona una familia</option>"
+    Array.from(familias).forEach(e => {
+        s.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
+    });
+    let s2 = document.createElement('select')
+    s2.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
+    Array.from(proveedores).forEach(e => {
+        s2.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
+    });
+    s.addEventListener('change', function () {
+        if (s.value != 'Selecciona una familia' && s2.value != 'Selecciona un proveedor') {
+            procesarArticulos("TT", s.value, s2.value)
+            tit.innerHTML = "<h1>Familia: "+s.value+", Proveedor: "+s2.value+"</h1><img src='img/"+s.value+".png'>"
+        }
+    })
+    s2.addEventListener('change', function () {
+        if (s.value != 'Selecciona una familia' && s2.value != 'Selecciona un proveedor') {
+            procesarArticulos("TT", s.value, s2.value)
+            tit.innerHTML = "<h1>Familia: "+s.value+", Proveedor: "+s2.value+"</h1><img src='img/"+s.value+".png'>"
+        }
+    })
+    selectcont.appendChild(s)
+    selectcont.appendChild(s2)
+}
+function name(params) {
+    
 }
 loadProv()
 loadFamilias()
