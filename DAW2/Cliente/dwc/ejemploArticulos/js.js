@@ -9,6 +9,9 @@ var familias
 var proveedores
 var mix
 var mixf = false;
+var data;
+var page = 0;
+let pagetxt = document.getElementById("pagetxt")
 
 function procesarArticulos(opc, fam, prov) {
     let p = new XMLHttpRequest()
@@ -52,8 +55,25 @@ function loadProv() {
 function mostrarArticulos(resp) {
     try {
         xmlcont = "<table><tr><th>Id</th><th>Familia</th><th>Nombre</th><th>Proveedor</th><th>Precio</th></tr>"
-        var data = JSON.parse(resp)
-        data.forEach(element => {
+        data = JSON.parse(resp)
+        if (data.length > 25) {
+            var dataaux = [];
+            for (let i = 0; i < 25; i++) {
+                dataaux.push(Array.from(data)[i])
+                
+
+            }
+            var nextbut = document.createElement('button')
+            nextbut.innerHTML = "->"
+            nextbut.id = "next"
+            nextbut.addEventListener('click', function(){
+            next()
+        })
+        document.body.appendChild(nextbut)
+        } else {
+            var dataaux = data;
+        }
+        dataaux.forEach(element => {
             xmlcont += "<tr>"
             xmlcont += "<td class='n'>" + element.idarticulo + "</td>"
             xmlcont += "<td class='n'>" + element.familia + "</td>"
@@ -64,14 +84,91 @@ function mostrarArticulos(resp) {
         });
         xmlcont += "</table>"
         xmlfinal.innerHTML = xmlcont
+        pagetxt.innerHTML = dataaux.length+"/"+data.length
     } catch (error) {
         xmlfinal.innerHTML = "<h1>Lo sentimos, no hay articulos en esta categoria</h1>"
 
     }
 
 }
+function next() {
+    page++
+    var erro = false;
+    var total = 0
+    var dataaux = [];
+    if ((page+1)*25>data.length) {
+        for (let i = 25 * page; i < data.length; i++) {
+            try {
+                dataaux.push(Array.from(data)[i])
+                total++
+            } catch (error) {
+                erro = true
+                break;
+            }
+        }
+        console.log("a")
+        if (document.getElementById("next") != null){
+            document.body.removeChild(document.getElementById("next"))
+        }
+    } else {
+        for (let i = 25 * page; i < 25 * (page + 1); i++) {
+            try {
+                dataaux.push(Array.from(data)[i])
+                total++
+            } catch (error) {
+                erro = true
+                break;
+            }
+        }
+    }
+    pagetxt.innerHTML = total+(page*25)+"/"+data.length
+
+    if (page!=1 && document.getElementById("prev") == null){
+        var prevbut = document.createElement('button')
+        prevbut.innerHTML = "<-"
+        prevbut.id = "prev"
+        prevbut.addEventListener('click', function(){
+            prev()
+        })
+        document.body.appendChild(prevbut)
+    }
+    xmlcont = "<table><tr><th>Id</th><th>Familia</th><th>Nombre</th><th>Proveedor</th><th>Precio</th></tr>"
+    dataaux.forEach(element => {
+        xmlcont += "<tr>"
+        xmlcont += "<td class='n'>" + element.idarticulo + "</td>"
+        xmlcont += "<td class='n'>" + element.familia + "</td>"
+        xmlcont += "<td class='s'>" + element.descripcion + "</td>"
+        xmlcont += "<td class='n'>" + element.proveedor + "</td>"
+        xmlcont += "<td class='n'>" + element.precioventa + "</td>"
+        xmlcont += "</tr>"
+    });
+    xmlcont += "</table>"
+    xmlfinal.innerHTML = xmlcont
+}
+function prev() {
+    page-=2
+    if (document.getElementById("next") != null){
+        var nextbut = document.createElement('button')
+        nextbut.innerHTML = "->"
+        nextbut.id = "next"
+        nextbut.addEventListener('click', function(){
+            next()
+        })
+        document.body.appendChild(nextbut)
+    }
+    if((page+1) == 0){
+        if (document.getElementById("prev") != null){
+            document.body.removeChild(document.getElementById("prev"))
+        }
+    }
+    next()
+}
 function doaction() {
 
+
+    if (document.getElementById("next") != null){
+        document.body.removeChild(document.getElementById("next"))
+    }
     switch (document.getElementById("opc1").value) {
         case "TA":
             tit.innerHTML = ""
@@ -162,12 +259,12 @@ function selectFamAndProveedor() {
             s2.disabled = true
         }
     })
-    
+
     selectcont.appendChild(s)
     selectcont.appendChild(s2)
 }
 function encontrarProveedores(a) {
-    
+
     let p = new XMLHttpRequest()
     let parameters = "opcion=PF&familia=" + a
     p.open('GET', "./consultarArticulos.php?" + parameters)

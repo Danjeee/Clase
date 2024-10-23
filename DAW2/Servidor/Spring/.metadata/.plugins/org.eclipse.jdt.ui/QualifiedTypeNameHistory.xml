@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="com.example.test.controllers.CapturaDatosController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
     <fullyQualifiedTypeName name="jakarta.annotation.PostConstruct"/>
     <fullyQualifiedTypeName name="com.javi.entities.Alumno"/>
@@ -35,7 +34,6 @@
     <fullyQualifiedTypeName name="lombok.ToString"/>
     <fullyQualifiedTypeName name="lombok.ToString.Exclude"/>
     <fullyQualifiedTypeName name="com.javi.model.dto.RecomendacionDTO"/>
-    <fullyQualifiedTypeName name="com.javi.repository.entity.Recomendacion"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="com.javi.web.controller.IndexController"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
@@ -46,10 +44,12 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.javi.service.clienteService"/>
     <fullyQualifiedTypeName name="com.javi.service.clienteServiceImpl"/>
-    <fullyQualifiedTypeName name="com.javi.model.dto.ClienteDTO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.javi.repository.dao.clienteRepository"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.javi.repository.entity.Cliente"/>
+    <fullyQualifiedTypeName name="com.javi.repository.entity.Recomendacion"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.javi.model.dto.ClienteDTO"/>
 </qualifiedTypeNameHistroy>

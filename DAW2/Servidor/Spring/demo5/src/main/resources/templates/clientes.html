@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+
+<head>
+	<title th:text="${n}"></title>
+</head>
+
+<body>
+	<h1 th:text="${n}"></h1>
+	<br>
+	<h2 th:if="${lista.isEmpty()}">No hay clientes</h2>
+	<br th:if="${lista.isEmpty()}">
+	<table th:if="${!lista.isEmpty()}" border="1">
+		<tr>
+			<th>Id</th>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+			<th>NIF</th>
+			<th>Correo Electronico</th>
+			<th>Editar</th>
+			<th>Eliminar</th>
+		</tr>
+		<tr th:each="cliente : ${lista}">
+			<td><a th:text="${cliente.id}" th:href="@{/clientes/${cliente.id}(idCliente=${cliente.id})}"></a></td>
+			<td th:text="${cliente.nombre}"></td>
+			<td th:text="${cliente.apellidos}"></td>
+			<td th:text="${cliente.nif}"></td>
+			<td th:text="${cliente.email}"></td>
+			<td><a th:href="@{/clientes/update/${cliente.id}(idCliente=${cliente.id})}">Editar</a></td>
+			<td><a th:href="@{/clientes/delete/${cliente.id}(idCliente=${cliente.id})}">Eliminar</a></td>
+		</tr>
+	</table>
+</body>
+
+</html>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://thymeleaf.org">
 	<head>
-		<title th:text="${aplicacion.nombre}"></title>
+		<title th:text="${n}"></title>
 	</head>
 	<body>
-		<h1 th:text="${aplicacion.nombre}"></h1>
+		<h1 th:text="${n}"></h1>
 		<br>
 		<a th:href="@{/clientes}">Gestion de clientes</a>
 		<br>
 		<p th:text="${asignatura}"></p>
 		<br>
-		<p th:text="${aplicacion.nombreAlumno}"></p>
+		<p th:text="${nA}"></p>
 	</body>
 </html>
