@@ -18,7 +18,6 @@
     <fullyQualifiedTypeName name="com.javi.entities.Alumno"/>
     <fullyQualifiedTypeName name="com.javi.controllers.AlumnoController"/>
     <fullyQualifiedTypeName name="com.javi.entities.Pedido"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="lombok.AccessLevel"/>
@@ -38,18 +37,19 @@
     <fullyQualifiedTypeName name="com.javi.web.controller.IndexController"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="com.javi.web.controller.ClienteController"/>
-    <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="com.javi.service.clienteService"/>
     <fullyQualifiedTypeName name="com.javi.service.clienteServiceImpl"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="com.javi.repository.dao.clienteRepository"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.javi.repository.entity.Cliente"/>
     <fullyQualifiedTypeName name="com.javi.repository.entity.Recomendacion"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+    <fullyQualifiedTypeName name="com.javi.service.clienteService"/>
+    <fullyQualifiedTypeName name="com.javi.repository.dao.clienteRepository"/>
     <fullyQualifiedTypeName name="com.javi.model.dto.ClienteDTO"/>
 </qualifiedTypeNameHistroy>

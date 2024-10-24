@@ -30,4 +30,13 @@ public class clienteServiceImpl implements clienteService {
 		}
 		return listaClientesDTO;
 	}
+
+	@Override
+	public void save(ClienteDTO cdto) {
+		log.info("Aqui salvamos el cliente");
+		cdto.getRecomendacionDTO().setId(findAll().size());
+		cdto.setId(findAll().size());
+		cr.save(ClienteDTO.convertToEntity(cdto));
+		
+	}
 }

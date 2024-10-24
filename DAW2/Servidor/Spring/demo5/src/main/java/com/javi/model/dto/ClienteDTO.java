@@ -55,7 +55,7 @@ public class ClienteDTO implements Serializable {
 		c.setNif(cliente.getNif());
 		c.setClave(cliente.getClave());
 		c.setEmail(cliente.getEmail());
-		c.setRecomendacion(RecomendacionDTO.convertToEntity(cliente.getRecomendacionDTO()));
+		c.setRecomendacion(RecomendacionDTO.convertToEntity(cliente.getRecomendacionDTO(), c));
 		return c;
 	}
 }

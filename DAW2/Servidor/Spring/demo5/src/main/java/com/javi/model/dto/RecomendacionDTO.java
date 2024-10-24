@@ -3,6 +3,7 @@ package com.javi.model.dto;
 import java.io.Serializable;
 import java.util.Objects;
 
+import com.javi.repository.entity.Cliente;
 import com.javi.repository.entity.Recomendacion;
 
 import lombok.Data;
@@ -40,11 +41,11 @@ public class RecomendacionDTO implements Serializable{
 		rdto.set(r, c);
 		return rdto;
 	}
-	public static Recomendacion convertToEntity(RecomendacionDTO recomendacionDTO) {
+	public static Recomendacion convertToEntity(RecomendacionDTO recomendacionDTO, Cliente c) {
 		Recomendacion r = new Recomendacion();
 		r.setId(recomendacionDTO.getId());
 		r.setObservaciones(recomendacionDTO.getObservaciones());
-		r.setCliente(ClienteDTO.convertToEntity(recomendacionDTO.getClienteDTO()));
+		r.setCliente(c);
 		return r;
 	}
 }

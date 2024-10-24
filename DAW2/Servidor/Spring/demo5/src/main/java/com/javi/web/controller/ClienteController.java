@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.javi.model.dto.ClienteDTO;
@@ -38,5 +40,21 @@ public class ClienteController {
 	mvc.addObject("n", aplicacion);
 	mvc.addObject("a", nombreAsignatura);
 	return mvc;
+	}
+	
+	@GetMapping("/clientes/add")
+	public ModelAndView add() {
+		ModelAndView mvc = new ModelAndView("clienteform");
+		mvc.addObject("clienteDTO", new ClienteDTO());
+		mvc.addObject("add", true);
+		return mvc;
+	}
+	@PostMapping("/clientes/save")
+	public ModelAndView save(@ModelAttribute("clienteDTO") ClienteDTO cdto) {
+		log.info("Salvando " +cdto);
+		cdto.getRecomendacionDTO().setClienteDTO(cdto);
+		cs.save(cdto);
+		ModelAndView mvc = new ModelAndView("redirect:/clientes");
+		return mvc;
 	}
 }

@@ -32,5 +32,10 @@ public class clienteRepositoryImp implements clienteRepository {
 		// TODO Auto-generated method stub
 		return datos;
 	}
+	@Override
+	public void save(Cliente cli) {
+		datos.add(cli);
+		
+	}
 
 }

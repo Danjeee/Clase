@@ -8,4 +8,6 @@ import com.javi.model.dto.ClienteDTO;
 
 public interface clienteService {
 	public List<ClienteDTO> findAll();
+
+	public void save(ClienteDTO cdto);
 }
