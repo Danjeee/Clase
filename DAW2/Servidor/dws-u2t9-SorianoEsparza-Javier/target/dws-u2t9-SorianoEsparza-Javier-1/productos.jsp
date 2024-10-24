@@ -136,23 +136,30 @@
             La epiquisima tienda del epiquisimo javi
             <a href="./carrito.jsp">Carrito</a>
             <%
-                if (!carrito.getData().isEmpty()) {
+                /*if (!carrito.getData().isEmpty()) {
                     Enumeration e = carrito.getData().keys();
                     int total = 0;
-                    while (e.hasMoreElements()) {
-                        total += (int) carrito.getData().get(e.nextElement());
+                    for (String ee : carrito.getData().keySet()){
+                    total += (int) carrito.getData().get(ee);
+                }*/
+                if (!carrito.getData().isEmpty()) {
+                    int total = 0;
+                    for (String ee : carrito.getData().keySet()){
+                    total += (int) carrito.getData().get(ee);
                     }
+                
             %>
             <div class="notif"><%=total%></div>
             <%
                 }
             %>
+            
         </div>
         <div class="cont">
             <%
                 request.setAttribute("cart", false);
                 DecimalFormat df = new DecimalFormat("#.##");
-                for (Producto p : ProductData.getData()) {
+                for (Producto p : Producto.getAllProducts()) {
             %>
             <div class="obj">
                 <form action="CarritoServlet" method="post">

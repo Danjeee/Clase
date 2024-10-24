@@ -159,11 +159,16 @@
             El epiquisimo carrito del epiquisimo javi
             <a href="./productos.jsp">Tienda</a>
             <%
-                if (!carrito.getData().isEmpty()) {
+                /*if (!carrito.getData().isEmpty()) {
                     Enumeration e = carrito.getData().keys();
                     int total = 0;
                     while (e.hasMoreElements()) {
                         total += (int) carrito.getData().get(e.nextElement());
+                    }*/
+                if (!carrito.getData().isEmpty()) {
+                    int total = 0;
+                    for (String ee : carrito.getData().keySet()){
+                    total += (int) carrito.getData().get(ee);
                     }
             %>
             <div class="notif"><%=total%></div>
@@ -175,20 +180,33 @@
             double preciototal = 0;
             DecimalFormat df = new DecimalFormat("#.##");
             request.setAttribute("cart", true);
-            Enumeration a = carrito.getData().keys();
-            while (a.hasMoreElements()) {
-                String clave = (String) a.nextElement();
+            for (String ee : carrito.getData().keySet()) {
+                String clave = ee;
                 double precio = 0.0;
                 String precioformat = "";
-                for (Producto p : ProductData.getData()) {
+                for (Producto p : Producto.getAllProducts()) {
                     if (p.getNombre().equals(clave)) {
                         precio = p.getPrecio();
                         precioformat = df.format(precio);
                     }
                 }
-                
+
                 int cant = (int) carrito.getData().get(clave);
                 preciototal += (precio * cant);
+            
+            /* while (a.hasMoreElements()) {
+                String clave = (String) a.nextElement();
+                double precio = 0.0;
+                String precioformat = "";
+                for (Producto p : Producto.getAllProducts()) {
+                    if (p.getNombre().equals(clave)) {
+                        precio = p.getPrecio();
+                        precioformat = df.format(precio);
+                    }
+                }
+
+                int cant = (int) carrito.getData().get(clave);
+                preciototal += (precio * cant);*/
         %>
         <div class="cont">
             <div class="obj">

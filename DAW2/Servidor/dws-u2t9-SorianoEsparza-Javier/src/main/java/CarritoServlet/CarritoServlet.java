@@ -4,7 +4,7 @@
  */
 package CarritoServlet;
 
-import pojos.Carrito;
+import pojos.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -12,7 +12,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import pojos.ProductData;
 
 /**
  *
@@ -34,7 +33,7 @@ public class CarritoServlet extends HttpServlet {
         if (request.getSession().getAttribute("carrito") == null) {
             request.setAttribute("cart", false);
             Carrito carrito = new Carrito();
-            ProductData.load();
+            Producto.loadAllProducts();
             request.getSession().setAttribute("carrito", carrito);
             RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/productos.jsp");
             rd.forward(request, response);

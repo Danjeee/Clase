@@ -1,6 +1,8 @@
 package pojos;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.Hashtable;
 
 /*
@@ -13,18 +15,28 @@ import java.util.Hashtable;
  */
 public class Carrito {
 
-    private Hashtable ht = new Hashtable();
+    
+    private HashMap<String, Integer> ht = new HashMap<String, Integer>();
+    //private Hashtable ht = new Hashtable();
 
-    public Hashtable getData() {
+    public HashMap<String, Integer> getData() {
         return ht;
     }
+
+    public void setHt(HashMap<String, Integer> ht) {
+        this.ht = ht;
+    }
+
+    /*public Hashtable getData() {
+        return ht;
+    }*/
 
     public Carrito() {
     }
 
-    public void setData(Hashtable ht) {
+    /*public void setData(Hashtable ht) {
         this.ht = ht;
-    }
+    }*/
 
     public void remove(String a) {
         if (a != null) {
