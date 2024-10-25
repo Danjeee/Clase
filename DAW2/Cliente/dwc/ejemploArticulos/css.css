@@ -1,21 +1,25 @@
-select{
+select {
     height: 50px;
     transition: 0.5s;
     margin-bottom: 70px;
 }
-.n{
+
+.n {
     text-align: right;
 }
-.s{
+
+.s {
     text-align: center;
 }
-.final{
+
+.final {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-.tit{
+
+.tit {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -23,24 +27,136 @@ select{
     align-items: center;
     width: 100%;
 }
-table *{
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+table * {
     padding: 10px;
 }
-table,th,td{
+
+table,
+th,
+td {
     border: #000, 2px, solid;
     border-collapse: collapse;
     transition: 0.5s;
 }
-th{
-    background-color: antiquewhite;
+
+th {
+    background-color: slateblue;
+    color: white;
 }
-td:hover{
+
+td:hover {
     cursor: default;
-    background-color: bisque;
+    background-color: slateblue;
+    color: white;
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 175px;
+    margin-bottom: 125px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 150px;
+    width: 100%;
+    background-color: slateblue;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: slateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1 {
+    color: white;
+    font-weight: bold;
+}
+
+select {
+    border-radius: 10px;
+    background-color: aliceblue;
+    
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select:focus {
+    animation: selectfocus 1s linear infinite;
+}
+
+@keyframes selectfocus {
+    0% {
+        border: slateblue 2px solid;
+        filter: drop-shadow(0px 0px 15px slateblue);
+    }
+
+    50% {
+        filter: none;
+    }
+
+    100% {
+        border: slateblue 2px solid;
+        filter: drop-shadow(0px 0px 15px slateblue);
+    }
+}
+
+.selected {
+    background-color: slateblue;
+    color: white;
+}
+
+.notselected {
+    background-color: aliceblue;
+    color: black;
+}
+
+#pagetxt {
+    font-size: bold;
+}
+
+button {
+    border: slateblue 2px solid;
+    background-color: aliceblue;
+    border-radius: 55px;
+    padding: 25px;
+    transition: 0.5s;
+}
+
+button:hover {
+    border: slateblue 2px solid;
+    background-color: slateblue;
+    color: white;
+    border-radius: 25px;
+    padding: 35px;
+    cursor: pointer;
 }

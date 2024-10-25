@@ -123,7 +123,7 @@ function next() {
     }
     pagetxt.innerHTML = total+(page*25)+"/"+data.length
 
-    if (page!=1 && document.getElementById("prev") == null){
+    if (page!=0 && document.getElementById("prev") == null){
         var prevbut = document.createElement('button')
         prevbut.innerHTML = "<-"
         prevbut.id = "prev"
@@ -147,7 +147,7 @@ function next() {
 }
 function prev() {
     page-=2
-    if (document.getElementById("next") != null){
+    if (document.getElementById("next") == null){
         var nextbut = document.createElement('button')
         nextbut.innerHTML = "->"
         nextbut.id = "next"
@@ -164,52 +164,90 @@ function prev() {
     next()
 }
 function doaction() {
-
-
+    
     if (document.getElementById("next") != null){
         document.body.removeChild(document.getElementById("next"))
+    }
+    if (document.getElementById("prev") != null){
+        document.body.removeChild(document.getElementById("prev"))
+    }
+    for (let i = 0; i < document.getElementById("opc1").childNodes.length; i++) {
+        if (document.getElementById("opc1").childNodes[i].value == document.getElementById("opc1").value) {
+            document.getElementById("opc1").childNodes[i].className = "selected"
+        } else {
+            document.getElementById("opc1").childNodes[i].className = "notselected"
+        }
+        
     }
     switch (document.getElementById("opc1").value) {
         case "TA":
             tit.innerHTML = ""
             xmlfinal.innerHTML = ""
-            selectcont.innerHTML = selectcontbase
+            if (document.getElementById("famselect") != null) {
+                selectcont.removeChild(document.getElementById("famselect"))
+            }
+            if (document.getElementById("provselect") != null) {
+                selectcont.removeChild(document.getElementById("provselect"))
+            }
+            document.getElementById("opc1").className = ""
+            
             procesarArticulos("TA", null, null)
 
             break;
         case "TF":
+            pagetxt.innerHTML = ""
+            document.getElementById("opc1").className = "selected"
             selectFamilia()
             break;
 
         case "TP":
+            pagetxt.innerHTML = ""
+            document.getElementById("opc1").className = "selected"
             selectProveedor()
-            break;
-        case "TT":
-            selectFamAndProveedor()
             break;
     }
 }
 function selectFamilia() {
     xmlfinal.innerHTML = ""
-    selectcont.innerHTML = selectcontbase
+    if (document.getElementById("famselect") != null) {
+        selectcont.removeChild(document.getElementById("famselect"))
+    }
+    if (document.getElementById("provselect") != null) {
+        selectcont.removeChild(document.getElementById("provselect"))
+    }
     let s = document.createElement('select')
+    s.id = "famselect"
     s.innerHTML = "<option value='Selecciona una familia' selected hidden>Selecciona una familia</option>"
     Array.from(familias).forEach(e => {
-        s.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
+        s.innerHTML += "<option value='" + e.imagen + "'>" + e.nombre + "</option>"
     });
 
     selectcont.appendChild(s)
     s.addEventListener('change', function () {
         if (s.value != 'Selecciona una familia') {
             procesarArticulos("AF", s.value, null)
-            tit.innerHTML = "<h1>Familia: " + s.value + "</h1><img src='img/" + s.value + ".png'>"
+            tit.innerHTML = "<h1>Familia: " + s.childNodes[s.selectedIndex].innerHTML + "</h1><img src='img/" + s.value + "'>"
+        }
+        for (let i = 0; i < document.getElementById("famselect").childNodes.length; i++) {
+            if (document.getElementById("famselect").childNodes[i].value == document.getElementById("famselect").value) {
+                document.getElementById("famselect").childNodes[i].className = "selected"
+            } else {
+                document.getElementById("famselect").childNodes[i].className = "notselected"
+            }
+            
         }
     })
 }
 function selectProveedor() {
     xmlfinal.innerHTML = ""
-    selectcont.innerHTML = selectcontbase
+    if (document.getElementById("famselect") != null) {
+        selectcont.removeChild(document.getElementById("famselect"))
+    }
+    if (document.getElementById("provselect") != null) {
+        selectcont.removeChild(document.getElementById("provselect"))
+    }
     let s = document.createElement('select')
+    s.id = "provselect"
     s.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
     Array.from(proveedores).forEach(e => {
         s.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
@@ -221,47 +259,15 @@ function selectProveedor() {
             procesarArticulos("AP", null, s.value)
             tit.innerHTML = "<h1>Proveedor: " + s.value + "</h1>"
         }
-    })
-}
-function selectFamAndProveedor() {
-    xmlfinal.innerHTML = ""
-    selectcont.innerHTML = selectcontbase
-    let s = document.createElement('select')
-    s.innerHTML = "<option value='Selecciona una familia' selected hidden>Selecciona una familia</option>"
-    Array.from(familias).forEach(e => {
-        s.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
-    });
-    let s2 = document.createElement('select')
-    s2.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
-    s2.disabled = true
-    s.addEventListener('change', function () {
-        s2.disabled = true
-        if (s.value != 'Selecciona una familia') {
-            encontrarProveedores(s.value)
-            if (mixf) {
-                console.log(mix)
-                s2.disabled = false
-                s2.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
-                mix.forEach(e => {
-                    s2.innerHTML += "<option value='" + e.nombre + "'>" + e.nombre + "</option>"
-                });
-                s2.addEventListener('change', function () {
-                    if (s.value != 'Selecciona una familia' && s2.value != 'Selecciona un proveedor') {
-                        procesarArticulos("TT", s.value, s2.value)
-                        tit.innerHTML = "<h1>Familia: " + s.value + ", Proveedor: " + s2.value + "</h1><img src='img/" + s.value + ".png'>"
-                    }
-                })
+        for (let i = 0; i < document.getElementById("provselect").childNodes.length; i++) {
+            if (document.getElementById("provselect").childNodes[i].value == document.getElementById("provselect").value) {
+                document.getElementById("provselect").childNodes[i].className = "selected"
             } else {
-                s2.disabled = true
-                s2.innerHTML = "<option value='Selecciona un proveedor' selected hidden>Selecciona un proveedor</option>"
+                document.getElementById("provselect").childNodes[i].className = "notselected"
             }
-        } else {
-            s2.disabled = true
+            
         }
     })
-
-    selectcont.appendChild(s)
-    selectcont.appendChild(s2)
 }
 function encontrarProveedores(a) {
 
