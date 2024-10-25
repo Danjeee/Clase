@@ -10,4 +10,8 @@ public interface clienteService {
 	public List<ClienteDTO> findAll();
 
 	public void save(ClienteDTO cdto);
+
+	public void delete(ClienteDTO cdto);
+	
+	public ClienteDTO findById(ClienteDTO cdto);
 }

@@ -26,8 +26,8 @@
 			<td th:text="${cliente.apellidos}"></td>
 			<td th:text="${cliente.nif}"></td>
 			<td th:text="${cliente.email}"></td>
-			<td><a th:href="@{/clientes/update/${cliente.id}(idCliente=${cliente.id})}">Editar</a></td>
-			<td><a th:href="@{/clientes/delete/${cliente.id}(idCliente=${cliente.id})}">Eliminar</a></td>
+			<td><a th:href="@{/clientes/update/{idCliente} (idCliente=${cliente.id})}">Editar</a></td>
+			<td><a th:href="@{/clientes/delete/{idCliente} (idCliente=${cliente.id})}">Eliminar</a></td>
 		</tr>
 	</table>
 	<a th:href="@{/clientes/add}">Nuevo cliente</a>

@@ -58,4 +58,8 @@ public class ClienteDTO implements Serializable {
 		c.setRecomendacion(RecomendacionDTO.convertToEntity(cliente.getRecomendacionDTO(), c));
 		return c;
 	}
+	public ClienteDTO() {
+		super();
+		id = -1;
+	}
 }

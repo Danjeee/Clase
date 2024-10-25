@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.javi.model.dto.ClienteDTO;
 import com.javi.repository.entity.Cliente;
 import com.javi.repository.entity.Recomendacion;
 
@@ -34,6 +35,21 @@ public class clienteRepositoryImp implements clienteRepository {
 	}
 	@Override
 	public void save(Cliente cli) {
+		datos.add(cli);
+		
+	}
+	@Override
+	public void delete(Cliente cli) {
+		datos.remove(cli);
+		
+	}
+	@Override
+	public Cliente findById(Cliente cli) {
+		return datos.get(datos.indexOf(cli));
+	}
+	@Override
+	public void update(Cliente cli) {
+		datos.remove(cli);
 		datos.add(cli);
 		
 	}

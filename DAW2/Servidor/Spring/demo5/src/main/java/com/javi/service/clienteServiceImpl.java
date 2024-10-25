@@ -33,10 +33,26 @@ public class clienteServiceImpl implements clienteService {
 
 	@Override
 	public void save(ClienteDTO cdto) {
-		log.info("Aqui salvamos el cliente");
-		cdto.getRecomendacionDTO().setId(findAll().size());
-		cdto.setId(findAll().size());
-		cr.save(ClienteDTO.convertToEntity(cdto));
+		if (cdto.getId() != -1) {
+			log.info("Aqui actualizamos el cliente");
+			cr.update(ClienteDTO.convertToEntity(cdto));
+		} else {
+			log.info("Aqui salvamos el cliente");
+			cdto.getRecomendacionDTO().setId(findAll().size());
+			cdto.setId(findAll().size());
+			cr.save(ClienteDTO.convertToEntity(cdto));
+		}
 		
+	}
+
+	@Override
+	public void delete(ClienteDTO cdto) {
+		cr.delete(ClienteDTO.convertToEntity(cdto));
+	}
+
+	@Override
+	public ClienteDTO findById(ClienteDTO cdto) {
+		Cliente cli = ClienteDTO.convertToEntity(cdto);
+		return ClienteDTO.convertToDTO(cr.findById(cli));
 	}
 }
