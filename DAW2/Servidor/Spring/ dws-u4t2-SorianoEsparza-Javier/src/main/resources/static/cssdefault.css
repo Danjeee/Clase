@@ -1,0 +1,110 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(Ubuntu-Regular.ttf);
+}
+*{
+    font-family: defaultFont;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #6a5acd, #5a96cd);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+form{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 500px;
+ 
+}
+fieldset{
+    padding: 40px;
+    border-radius: 15px;
+    border: slateblue 7px solid;
+    background-color: white;
+}
+input[type=text]{
+    border-radius: 5px;
+    height: 20px;
+    transition: 0.5s;
+    color: black;
+    border: slateblue 2px solid;
+}
+input[type=text]:focus{
+    background-color: slateblue;
+    color: white;
+    border: white 2px solid;
+}
+input[type=submit]{
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.5s;
+    background-color: white;
+    border: slateblue 2px solid;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    font-size: 30px;
+    background-color: slateblue;
+    color: white;
+    border-color: white;
+}
+tr{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+}
+table{
+    width: 100%;
+}
+td{
+    font-size: 25px;
+    font-weight: bold;
+}
+a{
+    font-size: 20px;
+}
+a:hover{
+    cursor: pointer;
+}
+
+a{
+    color: royalblue;
+    text-decoration: underline;
+    border-radius: 5px;
+    background-color: white;
+    border: #000 2px solid;
+    padding: 5px;
+    margin-top: 30px;
+}
+a:hover{
+    cursor: pointer;
+}
+fieldset:not(form>fieldset){
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+    font-size: 20px;
+}
+fieldset:not(form>fieldset)>p{
+    text-align: center;
+}
+legend{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
+    border: #6a5acd 4px solid;
+    border-radius: 15px;
+    ;
+}
