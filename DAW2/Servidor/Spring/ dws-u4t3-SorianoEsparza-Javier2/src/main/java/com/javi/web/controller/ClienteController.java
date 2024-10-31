@@ -121,9 +121,11 @@ public class ClienteController {
 		cdto = cs.findById(cdto);
 		ModelAndView mvc = new ModelAndView("cuentaform");
 		CuentaDTO cu = new CuentaDTO();
-		cu.setId(Integer.parseInt("1" + String.valueOf(idCliente) +""+ String.valueOf(cdto.getCuentasDTO().size())));
+		String id = "1" + String.valueOf(cdto.getId()) +""+ String.valueOf(cdto.getCuentasDTO().size());
+		cu.setId(Integer.parseInt(id));
+		log.info("id:"+id);
 		mvc.addObject("cuenta", cu);
-		log.info(String.valueOf(idCliente) +""+ String.valueOf(cdto.getCuentasDTO().size()));
+		
 		mvc.addObject("cliente", cs.findById(cdto));
 		mvc.addObject("add", true);
 		return mvc;
@@ -143,9 +145,54 @@ public class ClienteController {
 			cli.getCuentasDTO().set(cli.getCuentasDTO().indexOf(cdto), cdto);
 		}
 		cs.save(cli);
-		ModelAndView mvc = new ModelAndView("redirect:/clientes/"+idCliente);
+		ModelAndView mvc = new ModelAndView("redirect:/clientes/"+idCliente + "/cuentas");
 		return mvc;
 	}
+	@GetMapping("/clientes/{idCliente}/cuentas/update/{idCuenta}")
+	public ModelAndView updAcc(@PathVariable("idCuenta") int idCuenta , @PathVariable("idCliente") int idCliente) {
+		ClienteDTO cli = new ClienteDTO();
+		cli.setId(idCliente);
+		cli.setRecomendacionDTO(new RecomendacionDTO());
+		cli = cs.findById(cli);
+		CuentaDTO c = new CuentaDTO();
+		c.setId(idCuenta);
+		c = cli.findAccount(c);
+		ModelAndView mvc = new ModelAndView("cuentaform");
+		mvc.addObject("cuenta", c);
+		mvc.addObject("cliente", cs.findById(cli));
+		mvc.addObject("add", false);
+		return mvc;
+	}
+	@GetMapping("/clientes/{idCliente}/cuentas/delete/{idCuenta}")
+	public ModelAndView deleteAcc(@PathVariable("idCuenta") int idCuenta , @PathVariable("idCliente") int idCliente) {
+		ClienteDTO cli = new ClienteDTO();
+		cli.setId(idCliente);
+		cli.setRecomendacionDTO(new RecomendacionDTO());
+		cli = cs.findById(cli);
+		CuentaDTO c = new CuentaDTO();
+		c.setId(idCuenta);
+		cli.getCuentasDTO().remove(c);
+		cs.save(cli);
+		ModelAndView mvc = new ModelAndView("redirect:/clientes/"+idCliente +"/cuentas");
+		return mvc;
+	}
+	@GetMapping("/clientes/{idCliente}/cuentas/{idCuenta}")
+	public ModelAndView viewAcc(@PathVariable("idCuenta") int idCuenta , @PathVariable("idCliente") int idCliente) {
+		
+		ClienteDTO cli = new ClienteDTO();
+		cli.setId(idCliente);
+		cli.setRecomendacionDTO(new RecomendacionDTO());
+		cli = cs.findById(cli);
+		CuentaDTO c = new CuentaDTO();
+		c.setId(idCuenta);
+		c = cli.findAccount(c);
+		ModelAndView mvc = new ModelAndView("cuentaview");
+		mvc.addObject("cuenta", c);
+		mvc.addObject("cliente", cs.findById(cli));
+		return mvc;
+	}
+	
+	
 	
 	
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+
+<head>
+	<title th:text="${n}"></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{../../../cssdefault.css}">
+</head>
+
+<body>
+
+	<fieldset>
+		<legend>ID</legend>
+		<p th:text="${cuenta.id}"></p>
+	</fieldset>
+	<fieldset>
+		<legend>Nombre</legend>
+		<p th:text="${cuenta.nombre}"></p>
+	</fieldset>
+	<fieldset>
+		<legend>Saldo</legend>
+		<p th:text="${cuenta.saldo}" id="saldo"></p>
+	</fieldset>
+
+	<a th:href="@{/clientes/{idCliente}/cuentas/update/{idCuenta} (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Editar</a>
+	<a th:href="@{/clientes/{idCliente}/cuentas/delete/{idCuenta} (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Eliminar</a>
+	<a th:href="@{/clientes/{idCliente} (idCliente=${cliente.id})}">Volver</a>
+</body>
+<script>
+	let n = Number.parseFloat(document.getElementById("saldo").innerHTML)
+	document.getElementById("saldo").innerHTML = n.toFixed(2) + "€"
+</script>
+</html>
