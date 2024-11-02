@@ -17,6 +17,7 @@
 			<th>Id</th>
 			<th>Nombre</th>
 			<th>Saldo</th>
+			<th>Movimientos</th>
 			<th>Editar</th>
 			<th>Eliminar</th>
 		</tr>
@@ -26,6 +27,7 @@
 			</td>
 			<td th:text="${cuenta.nombre}"></td>
 			<td th:text="${cuenta.saldo}" class="saldo"></td>
+			<td><a th:href="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Ver Movimientos</a></td>
 			<td><a
 					th:href="@{/clientes/{idCliente}/cuentas/update/{idCuenta} (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Editar</a>
 			</td>

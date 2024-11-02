@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+
+<head>
+	<title th:text="${n}"></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{../cssdefault.css}">
+</head>
+
+<body>
+
+	<fieldset>
+		<legend>NIF</legend>
+		<p th:text="${cliente.nif}"></p>
+	</fieldset>
+	<fieldset>
+		<legend>Nombre</legend>
+		<p th:text="${cliente.nombre}"></p>
+	</fieldset>
+	<fieldset>
+		<legend>Apellidos</legend>
+		<p th:text="${cliente.apellidos}"></p>
+	</fieldset>
+	<fieldset>
+		<legend>Email</legend>
+		<p th:text="${cliente.email}"></p>
+	</fieldset>
+	<fieldset>
+		<legend>Observaciones</legend>
+		<p th:text="${cliente.recomendacionDTO.observaciones}"></p>
+	</fieldset>
+	<a th:href="@{/clientes/{idCliente}/cuentas (idCliente=${cliente.id})}">Ver cuentas</a>
+	<a th:href="@{/clientes/update/{idCliente} (idCliente=${cliente.id})}">Editar</a></td>
+	<a th:href="@{/clientes/delete/{idCliente} (idCliente=${cliente.id})}">Eliminar</a>
+	<a th:href="@{/clientes}">Volver</a>
+</body>
+
+</html>

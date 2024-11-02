@@ -1,5 +1,6 @@
 package com.javi.repository.entity;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 import lombok.Data;
@@ -12,6 +13,8 @@ public class Cuenta {
 	private float saldo;
 	@ToString.Exclude
 	private Cliente cliente;
+	private ArrayList<Movimiento> movimientos = new ArrayList<>();
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -23,10 +26,12 @@ public class Cuenta {
 		Cuenta other = (Cuenta) obj;
 		return id == other.id;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+
 	public void setCuenta(int id, String nombre, float saldo) {
 		this.id = id;
 		this.nombre = nombre;

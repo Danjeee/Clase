@@ -1,17 +1,22 @@
 package com.javi.repository.dao;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.javi.repository.entity.Cliente;
 import com.javi.repository.entity.Cuenta;
+import com.javi.service.CuentaServiceImpl;
 
 @Repository
 public class CuentaRepositoryImpl implements CuentaRepository {
 
+	private static final Logger log = LoggerFactory.getLogger(CuentaRepository.class);
+	
 	@Autowired
 	clienteRepository cr;
-	
+
 	@Override
 	public void save(Cuenta cuv) {
 		Cliente cli = cr.findById(cuv.getCliente());
@@ -23,7 +28,7 @@ public class CuentaRepositoryImpl implements CuentaRepository {
 	public Cuenta findById(Cuenta cu) {
 		for (Cliente c : cr.findAll()) {
 			for (Cuenta cuaux : c.getCuentas()) {
-				if (cuaux == cu) {
+				if (cuaux.equals(cu)) {
 					return cuaux;
 				}
 			}
@@ -31,13 +36,12 @@ public class CuentaRepositoryImpl implements CuentaRepository {
 		return null;
 	}
 
-
 	@Override
 	public void update(Cuenta cuv) {
 		Cliente cli = cr.findById(cuv.getCliente());
 		cli.getCuentas().set(cli.getCuentas().indexOf(cuv), cuv);
 		cr.update(cli);
-		
+
 	}
 
 	@Override
@@ -45,7 +49,7 @@ public class CuentaRepositoryImpl implements CuentaRepository {
 		Cliente cli = cr.findById(cuv.getCliente());
 		cli.getCuentas().remove(cli.getCuentas().indexOf(cuv));
 		cr.update(cli);
-		
+
 	}
 
 }

@@ -1,0 +1,24 @@
+
+
+
+
+
+
+public ObservableList<Clase1> getClase1(Conection con){
+	ObservableList<Clase1> obs = FXCollections.observableArrayList();
+	try{
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery((consulta));
+		while (rs.next()){
+			//Dato dato = rs.get(Tipodedato)("Columna")//
+
+			String nombre = rs.getString("nombre");
+			Int edad = rs.getInt("edad");
+			LocalDate fecha = rs.getDate("fecha").toLocalDate();
+			
+			Clase1 c = new Clase1(nombre, edad, fecha);
+
+			obs.add(c);
+		}
+	{
+}

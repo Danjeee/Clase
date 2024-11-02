@@ -9,9 +9,11 @@ import com.javi.repository.entity.Movimiento;
 
 public interface MovimientoRepository {
 	public void save(Movimiento mov);
+
 	public Movimiento findById(Movimiento mov);
+
 	public ArrayList<Movimiento> findByUser(Cliente cli);
+
 	public ArrayList<Movimiento> findByAccount(Cuenta cu);
-	
 
 }

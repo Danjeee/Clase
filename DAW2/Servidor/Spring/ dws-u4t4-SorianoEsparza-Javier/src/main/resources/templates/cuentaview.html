@@ -22,6 +22,7 @@
 		<p th:text="${cuenta.saldo}" id="saldo"></p>
 	</fieldset>
 
+	<a th:href="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Ver Movimientos</a>
 	<a th:href="@{/clientes/{idCliente}/cuentas/update/{idCuenta} (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Editar</a>
 	<a th:href="@{/clientes/{idCliente}/cuentas/delete/{idCuenta} (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Eliminar</a>
 	<a th:href="@{/clientes/{idCliente} (idCliente=${cliente.id})}">Volver</a>

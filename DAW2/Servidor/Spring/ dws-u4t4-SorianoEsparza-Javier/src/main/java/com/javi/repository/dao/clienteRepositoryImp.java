@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.javi.model.dto.ClienteDTO;
 import com.javi.repository.entity.Cliente;
 import com.javi.repository.entity.Cuenta;
+import com.javi.repository.entity.Movimiento;
 import com.javi.repository.entity.Recomendacion;
 
 @Repository
@@ -22,11 +23,11 @@ public class clienteRepositoryImp implements clienteRepository {
 		r1.setCliente(c1);
 		Cuenta cu1 = new Cuenta();
 		cu1.setCliente(c1);
-		String id = "1" + String.valueOf(c1.getId()) +""+ String.valueOf(c1.getCuentas().size());
+		String id = "1" + String.valueOf(c1.getId()) + "" + String.valueOf(c1.getCuentas().size());
 		cu1.setCuenta(Integer.parseInt(id), "Cuenta nomina", 100.0f);
 		c1.getCuentas().add(cu1);
 		Cuenta cu2 = new Cuenta();
-		id = "1" + String.valueOf(c1.getId()) +""+ String.valueOf(c1.getCuentas().size());
+		id = "1" + String.valueOf(c1.getId()) + "" + String.valueOf(c1.getCuentas().size());
 		cu2.setCuenta(Integer.parseInt(id), "Cuenta ahorros", 2000.0f);
 		cu2.setCliente(c1);
 		c1.getCuentas().add(cu2);
@@ -37,37 +38,54 @@ public class clienteRepositoryImp implements clienteRepository {
 		c2.setRecomendacion(r2);
 		r2.setCliente(c2);
 		Cuenta cu3 = new Cuenta();
-		id = "1" + String.valueOf(c2.getId()) +""+ String.valueOf(c2.getCuentas().size());
+		id = "1" + String.valueOf(c2.getId()) + "" + String.valueOf(c2.getCuentas().size());
 		cu3.setCuenta(Integer.parseInt(id), "Cuenta verde", 200.0f);
 		cu3.setCliente(c2);
 		c2.getCuentas().add(cu3);
+		Movimiento m = new Movimiento();
+		m.setId(0);
+		m.setIdEmisor(cu3.getId());
+		m.setIdReceptor(cu1.getId());
+		cu3.getMovimientos().add(m);
+		cu1.getMovimientos().add(m);
+		Movimiento m2 = new Movimiento();
+		m2.setId(1);
+		m2.setIdEmisor(cu3.getId());
+		m2.setIdReceptor(cu2.getId());
+		cu3.getMovimientos().add(m2);
+		cu1.getMovimientos().add(m2);
 		datos.add(c1);
 		datos.add(c2);
 	}
+
 	@Override
 	public List<Cliente> findAll() {
 		// TODO Auto-generated method stub
 		return datos;
 	}
+
 	@Override
 	public void save(Cliente cli) {
 		datos.add(cli);
-		
+
 	}
+
 	@Override
 	public void delete(Cliente cli) {
 		datos.remove(cli);
-		
+
 	}
+
 	@Override
 	public Cliente findById(Cliente cli) {
 		return datos.get(datos.indexOf(cli));
 	}
+
 	@Override
 	public void update(Cliente cli) {
 		int pos = datos.indexOf(cli);
 		datos.set(pos, cli);
-		
+
 	}
 
 }

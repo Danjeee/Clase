@@ -1,9 +1,11 @@
 package com.javi.model.dto;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 import com.javi.repository.entity.Cliente;
 import com.javi.repository.entity.Cuenta;
+import com.javi.repository.entity.Movimiento;
 
 import lombok.Data;
 import lombok.ToString;
@@ -15,6 +17,8 @@ public class CuentaDTO {
 	private float saldo;
 	@ToString.Exclude
 	private ClienteDTO clienteDTO;
+	private ArrayList<MovimientoDTO> movimientos = new ArrayList<>();
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -26,26 +30,34 @@ public class CuentaDTO {
 		CuentaDTO other = (CuentaDTO) obj;
 		return id == other.id;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+
 	public void setCuenta(int id, String nombre, float saldo) {
 		this.id = id;
 		this.nombre = nombre;
 		this.saldo = saldo;
 	}
+
 	private void set(Cuenta c) {
 		this.id = c.getId();
 		this.nombre = c.getNombre();
 		this.saldo = c.getSaldo();
+		for (Movimiento m : c.getMovimientos()) {
+			this.movimientos.add(MovimientoDTO.convertToDTO(m));
+		}
 	}
+
 	public static CuentaDTO convertToDTO(Cuenta cuenta, ClienteDTO cdto) {
 		CuentaDTO c = new CuentaDTO();
 		c.set(cuenta);
 		c.setClienteDTO(cdto);
 		return c;
 	}
+
 	public static Cuenta convertToEntity(CuentaDTO cdto, Cliente cli) {
 		Cuenta c = new Cuenta();
 		c.setId(cdto.getId());
@@ -53,5 +65,15 @@ public class CuentaDTO {
 		c.setSaldo(cdto.getSaldo());
 		c.setCliente(cli);
 		return c;
+	}
+	
+	public String toString() {
+		return this.id + " " + this.nombre + " " + this.clienteDTO.getNombre();
+	}
+
+	public CuentaDTO() {
+		
+		super();
+		this.id = -1;
 	}
 }

@@ -5,14 +5,18 @@ import java.util.Objects;
 import com.javi.repository.entity.Movimiento;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
 public class MovimientoDTO {
-	public long id;
-	public String tipo;
-	public CuentaDTO emisor;
-	public CuentaDTO receptor;
-	public float cant;
+	private long id;
+	private String tipo;
+	@ToString.Exclude
+	private int idEmisor;
+	@ToString.Exclude
+	private int idReceptor;
+	private float cant;
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -24,32 +28,37 @@ public class MovimientoDTO {
 		MovimientoDTO other = (MovimientoDTO) obj;
 		return id == other.id;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+
 	public void setMovimientoDTO(Movimiento mov) {
 		this.id = mov.getId();
 		this.tipo = mov.getTipo();
 		this.cant = mov.getCant();
-		this.emisor = CuentaDTO.convertToDTO(mov.getEmisor(), ClienteDTO.convertToDTO(mov.getEmisor().getCliente()));
-		this.receptor =  CuentaDTO.convertToDTO(mov.getReceptor(), ClienteDTO.convertToDTO(mov.getReceptor().getCliente()));
+		this.idEmisor = mov.getIdEmisor();
+		this.idReceptor = mov.getIdReceptor();
 	}
+
 	public static MovimientoDTO convertToDTO(Movimiento mov) {
 		MovimientoDTO mdto = new MovimientoDTO();
 		mdto.setMovimientoDTO(mov);
 		return mdto;
 	}
+
 	public static Movimiento convertToEntity(MovimientoDTO mdto) {
 		Movimiento mov = new Movimiento();
 		mov.setId(mdto.getId());
 		mov.setCant(mdto.getCant());
 		mov.setTipo(mdto.getTipo());
-		mov.setEmisor(CuentaDTO.convertToEntity(mdto.getEmisor(), ClienteDTO.convertToEntity(mdto.getEmisor().getClienteDTO())));
-		mov.setEmisor(CuentaDTO.convertToEntity(mdto.getReceptor(), ClienteDTO.convertToEntity(mdto.getReceptor().getClienteDTO())));
-		
+		mov.setIdEmisor(mdto.getIdEmisor());
+		mov.setIdReceptor(mdto.getIdReceptor());
+
 		return mov;
 	}
+
 	public MovimientoDTO() {
 		super();
 		id = -1;
