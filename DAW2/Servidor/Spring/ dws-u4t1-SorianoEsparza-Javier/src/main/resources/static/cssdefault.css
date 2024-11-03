@@ -32,14 +32,14 @@ fieldset{
     border: slateblue 7px solid;
     background-color: white;
 }
-input[type=text], input[type=number]{
+input[type=text]{
     border-radius: 5px;
     height: 20px;
     transition: 0.5s;
     color: black;
     border: slateblue 2px solid;
 }
-input[type=text]:focus, input[type=number]:focus{
+input[type=text]:focus{
     background-color: slateblue;
     color: white;
     border: white 2px solid;

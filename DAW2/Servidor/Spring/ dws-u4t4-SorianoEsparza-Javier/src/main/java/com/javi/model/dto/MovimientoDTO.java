@@ -2,6 +2,9 @@ package com.javi.model.dto;
 
 import java.util.Objects;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
 import com.javi.repository.entity.Movimiento;
 
 import lombok.Data;

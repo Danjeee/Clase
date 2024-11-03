@@ -137,9 +137,17 @@ public class CuentaController {
 		RecomendacionDTO rm = new RecomendacionDTO();
 		cli.setRecomendacionDTO(rm);
 		cu.setClienteDTO(cli);
-		cu = cus.findById(cu);
+		try {
+			cu = cus.findById(cu);
+		} catch (Exception e) {
+			return new ModelAndView("redirect:/clientes/error/404");
+		}
 		ModelAndView mvc = new ModelAndView("redirect:/clientes/"+cu.getClienteDTO().getId()+"/cuentas/"+idCuenta);
 		return mvc;
+	}
+	@GetMapping("/clientes/error/404")
+	public ModelAndView error404() {
+		return new ModelAndView("cuenta404");
 	}
 	
 }

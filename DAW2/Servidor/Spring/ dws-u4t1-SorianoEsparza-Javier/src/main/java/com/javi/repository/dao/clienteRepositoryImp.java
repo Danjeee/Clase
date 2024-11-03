@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import com.javi.model.dto.ClienteDTO;
 import com.javi.repository.entity.Cliente;
-import com.javi.repository.entity.Cuenta;
 import com.javi.repository.entity.Recomendacion;
 
 @Repository
@@ -20,16 +19,6 @@ public class clienteRepositoryImp implements clienteRepository {
 		r1.setRecomendacion(0, "nada");
 		c1.setRecomendacion(r1);
 		r1.setCliente(c1);
-		Cuenta cu1 = new Cuenta();
-		cu1.setCliente(c1);
-		String id = "1" + String.valueOf(c1.getId()) +""+ String.valueOf(c1.getCuentas().size());
-		cu1.setCuenta(Integer.parseInt(id), "Cuenta nomina", 100.0f);
-		c1.getCuentas().add(cu1);
-		Cuenta cu2 = new Cuenta();
-		id = "1" + String.valueOf(c1.getId()) +""+ String.valueOf(c1.getCuentas().size());
-		cu2.setCuenta(Integer.parseInt(id), "Cuenta ahorros", 2000.0f);
-		cu2.setCliente(c1);
-		c1.getCuentas().add(cu2);
 		Cliente c2 = new Cliente();
 		c2.setCliente(1, "2393D", "Javi", "Soriano Esparza", "0000", "javisores@example.com");
 		Recomendacion r2 = new Recomendacion();

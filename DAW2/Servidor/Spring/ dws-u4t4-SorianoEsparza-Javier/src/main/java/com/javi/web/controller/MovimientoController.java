@@ -86,8 +86,9 @@ public class MovimientoController {
 		CuentaDTO cu = new CuentaDTO();
 		cu.setId(mdto.getIdReceptor());
 		cu.setClienteDTO(cli);
-		
-		if (cs.findById(cu) == null) {
+		try {
+			cs.findById(cu);
+		} catch (Exception e) {
 			ModelAndView mvc = new ModelAndView("redirect:/clientes/error/404");
 			return mvc;
 		}
@@ -101,6 +102,9 @@ public class MovimientoController {
 		ModelAndView mvc = new ModelAndView("redirect:/clientes/"+idCliente+"/cuentas/"+idCuenta+"/movimientos");
 		return mvc;
 	}
-	
+	@GetMapping("/clientes/error/saldoInsuficiente")
+	public ModelAndView saldoInsuficiente() {
+		return new ModelAndView("saldoinsuficiente");
+	}
 	
 }

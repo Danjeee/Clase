@@ -19,6 +19,8 @@ import com.javi.service.clienteService;
 import com.javi.service.clienteServiceImpl;
 
 import ch.qos.logback.core.net.server.Client;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @Controller
 public class CuentaController {
@@ -86,8 +88,9 @@ public class CuentaController {
 		cli = cs.findById(cli);
 		CuentaDTO c = new CuentaDTO();
 		c.setId(idCuenta);
+		c.setClienteDTO(cli);
 		c = cus.findById(c);
-		log.info(c.toString());
+		log.info(c.toString() + "asdas");
 		ModelAndView mvc = new ModelAndView("cuentaform");
 		mvc.addObject("cuenta", c);
 		mvc.addObject("cliente", cs.findById(cli));
@@ -118,10 +121,33 @@ public class CuentaController {
 		cli = cs.findById(cli);
 		CuentaDTO c = new CuentaDTO();
 		c.setId(idCuenta);
+		c.setClienteDTO(cli);
 		c = cus.findById(c);
 		ModelAndView mvc = new ModelAndView("cuentaview");
 		mvc.addObject("cuenta", c);
 		mvc.addObject("cliente", cs.findById(cli));
 		return mvc;
 	}
+	
+	@GetMapping("/clientes/buscarcuenta/{idCuenta}")
+	public ModelAndView buscarCuenta(@PathVariable int idCuenta) {
+		CuentaDTO cu = new CuentaDTO();
+		cu.setId(idCuenta);
+		ClienteDTO cli = new ClienteDTO();
+		RecomendacionDTO rm = new RecomendacionDTO();
+		cli.setRecomendacionDTO(rm);
+		cu.setClienteDTO(cli);
+		try {
+			cu = cus.findById(cu);
+		} catch (Exception e) {
+			return new ModelAndView("redirect:/clientes/error/404");
+		}
+		ModelAndView mvc = new ModelAndView("redirect:/clientes/"+cu.getClienteDTO().getId()+"/cuentas/"+idCuenta);
+		return mvc;
+	}
+	@GetMapping("/clientes/error/404")
+	public ModelAndView error404() {
+		return new ModelAndView("cuenta404");
+	}
+	
 }

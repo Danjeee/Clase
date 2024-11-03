@@ -1,5 +1,6 @@
 package com.javi.repository.entity;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 import lombok.Data;

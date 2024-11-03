@@ -20,7 +20,6 @@
 			<th>Correo Electronico</th>
 			<th>Editar</th>
 			<th>Eliminar</th>
-			<th>Cuentas</th>
 		</tr>
 		<tr th:each="cliente : ${lista}">
 			<td><a th:text="${cliente.id}" th:href="@{/clientes/{idCliente} (idCliente=${cliente.id})}"></a></td>
@@ -30,7 +29,6 @@
 			<td th:text="${cliente.email}"></td>
 			<td><a th:href="@{/clientes/update/{idCliente} (idCliente=${cliente.id})}">Editar</a></td>
 			<td><a th:href="@{/clientes/delete/{idCliente} (idCliente=${cliente.id})}">Eliminar</a></td>
-			<td><a th:href="@{/clientes/{idCliente}/cuentas (idCliente=${cliente.id})}">Ver cuentas</a></td>
 		</tr>
 	</table>
 	<a th:href="@{/clientes/add}">Nuevo cliente</a>

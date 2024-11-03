@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.javi.model.dto.ClienteDTO;
 import com.javi.model.dto.CuentaDTO;
 import com.javi.repository.dao.CuentaRepository;
-import com.javi.repository.dao.clienteRepository;
+import com.javi.repository.dao.clienteRepository;import com.javi.repository.entity.Cliente;
 import com.javi.repository.entity.Cuenta;
 
 @Service
@@ -42,14 +42,9 @@ public class CuentaServiceImpl implements CuentaService {
 
 	@Override
 	public CuentaDTO findById(CuentaDTO cu) {
-		for (ClienteDTO c : clir.findAll()) {
-			for (CuentaDTO cuaux : c.getCuentasDTO()) {
-				if (cuaux.equals(cu)) {
-					return cuaux;
-				}
-			}
-		}
-		return null;
+		Cuenta c = cr.findById(CuentaDTO.convertToEntity(cu, ClienteDTO.convertToEntity(cu.getClienteDTO())));
+		
+		return CuentaDTO.convertToDTO(c, ClienteDTO.convertToDTO(c.getCliente()));
 	}
 
 }
