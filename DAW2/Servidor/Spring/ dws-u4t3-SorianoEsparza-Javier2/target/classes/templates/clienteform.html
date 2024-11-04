@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${add} ? 'Nuevo cliente' : 'Actualizar cliente'"></title>
+	<link th:if="${add}==false" rel="stylesheet" th:href="@{../../cssdefault.css}">
+	<link th:if="${add}" rel="stylesheet" th:href="@{../cssdefault.css}">
+</head>
+
+<body>
+	<br>
+	<br>
+	<form th:action="@{/clientes/save}" th:object="${clienteDTO}" method="POST">
+		<fieldset>
+			<legend th:text="${add} ? 'Nuevo cliente' : 'Actualizar cliente'"></legend>
+		<table border="0">
+			<tr th:if="!${add}">
+				<td>id</td>
+				<td> <input type="text" th:field="*{id}" readonly /> </td>
+			</tr>
+			<tr>
+				<td>Nombre</td>
+				<td> <input type="text" th:field="*{nombre}" required/> </td>
+			</tr>
+			<tr>
+				<td>Apellidos</td>
+				<td> <input type="text" th:field="*{apellidos}" required/> </td>
+			</tr>
+			<tr>
+				<td>NIF</td>
+				<td> <input type="text" th:field="*{nif}" required/> </td>
+			</tr>
+			<tr>
+				<td>Correo electrónico</td>
+				<td> <input type="text" th:field="*{email}" required/> </td>
+			</tr>
+			<tr>
+				<td>Clave seguridad</td>
+				<td> <input type="text" th:field="*{clave}" required/> </td>
+			</tr>
+			<tr>
+				<td>Observación</td>
+				<td> <input type="text" th:field="*{recomendacionDTO.observaciones}" required/> </td>
+			</tr>
+		</table>
+		<input type="submit" th:value="${add} ? 'Nuevo' : 'Actualizar'" />
+		</fieldset>
+	</form>
+	<br>
+	<a th:href="@{/clientes}">Volver a la lista de clientes</a>
+</body>
+
+</html>
