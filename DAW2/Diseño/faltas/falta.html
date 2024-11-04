@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/falta.css">
+    <title>Partes</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="imgs/avatar.png" alt="avatar" width="50px" height="50px">
+            <div>
+                <p>Nombre</p>
+                <p>Profesor</p>
+            </div>
+            <button>
+                <ico>u</ico>
+            </button>
+            <button>
+                <ico>q</ico>
+            </button>
+            <button>
+                <ico style="color: #900B09;">(</ico>
+            </button>
+            <button>
+                <ico>8</ico>
+            </button>
+        </div>
+        <img class="ies" src="imgs/iescamp.png" alt="icono camp" width="200px" height="100px">
+    </header>
+    <main>
+        <div id="cont">
+            <div id="info">
+                <table class="maininfo">
+                    <tr>
+                        <td>Alumno: Alumno1</td>
+                        <td>Fecha: 01/01/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Profesor: Nombre</td>
+                        <td>Grupo: 1ºESO</td>
+                    </tr>
+                </table>
+                <div>
+                    <h2>Area del profesor</h2>
+                    <input type="text" name="area" id="area" placeholder="Indica el area del profesor">
+                </div>
+                <div>
+                    <h2>Horas</h2>
+                    <table class="horas">
+                        <tr>
+                            <th>1º</th>
+                            <th>2º</th>
+                            <th>3º</th>
+                            <th>R</th>
+                            <th>5º</th>
+                            <th>6º</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="1h" id="1h"></td>
+                            <td><input type="checkbox" name="2h" id="2h"></td>
+                            <td><input type="checkbox" name="3h" id="3h"></td>
+                            <td><input type="checkbox" name="R" id="R"></td>
+                            <td><input type="checkbox" name="5h" id="5h"></td>
+                            <td><input type="checkbox" name="6h" id="6h"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div id="botones">
+                    <button>+</button>
+                    <p>Nuevo parte</p>
+                    <button><ico>t</ico></button>
+                    <p>Borrar parte</p>
+                    <button><ico>V</ico></button>
+                    <p>Enviar parte</p>
+                </div>
+                <div id="partes">
+                     <div class="closed"><p>Parte1 01/01/24</p><ico>i</ico></div>
+                     <div class="open"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

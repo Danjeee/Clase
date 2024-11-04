@@ -1,0 +1,258 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: ico;
+    src: url(../fonts/Iconic-Pictograms-Bold-trial.ttf);
+}
+
+* {
+    font-family: defaultFont;
+}
+
+ico {
+    font-family: ico;
+    font-size: 40px;
+    color: #275a5e;
+    transition: 0.5s;
+}
+
+/*
+*
+*
+* HEADER MAIN
+*
+*
+*/
+
+body{
+    background-color: #73C4C3;
+}
+header div div{
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 25px;
+}
+button>ico:hover{
+    color: #54abad;
+}
+header>div>div *{
+    margin-top: -17px;
+}
+header>div{
+    width: 400px;
+    min-width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    gap: 15px;
+    background-color: #fff;
+    border: black 2px solid;
+    border-radius: 15px;
+}
+header>div>img{
+    margin-right: 40px;
+}
+header button{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+header button:hover{
+    cursor: pointer;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+header .ies{
+    position: fixed;
+    top:  20;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 15px;
+    border: #275a5e 2px solid;
+    transition: 0.1s;
+}
+@media (max-width: 1000px){
+    header .ies{
+        left: 70%;
+    }
+}
+@media (max-width: 699px){
+    header .ies{
+        left: 25%;
+        top: 100px;
+        margin-bottom: 150px;
+    }
+}
+
+/*
+*
+*
+* MAIN
+*
+*
+*/
+main{
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#cont>div:not(#info){
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+#cont{
+    align-self: center;
+    width: 90%;
+    height: 72vh;
+    background-color: #fff;
+    border: #275a5e 2px solid;
+    border-radius: 15px;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+#cont>div{
+    display: flex;
+    flex-direction: row;
+}
+#cont>#info{
+    height: 150px;
+    width: 95%;
+    background-color: #fff;
+    border: #275a5e 2px solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+.maininfo{
+    height: 50%;
+    border-collapse: collapse;
+}
+.maininfo td{
+    border: #275a5e 1px solid;
+    text-align: center;
+    color: #275a5e;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+.maininfo tr td:first-of-type{
+    border-top: 0px;
+    border-left: 0px;
+}
+.maininfo tr td:last-of-type{
+    border-top: 0px;
+    border-right: 0px;
+
+}
+.maininfo tr:nth-child(2) td:nth-child(2),.maininfo tr:nth-child(2) td:nth-child(1){
+    border-bottom: 0px;
+
+}
+h2{
+    color: #275a5e;
+}
+input[type=text]{
+    color: #275a5e;
+    border: #275a5e 2px solid;
+    border-radius: 15px;
+    padding: 6px;
+}
+input[type=text]::placeholder{
+    color: #54abad;
+}
+.horas{
+    border-collapse: collapse;
+}
+.horas td, .horas th{
+    border: #275a5e 2px solid;
+    color: #275a5e;
+    padding: 3px;
+}
+#info>div{
+    text-align: center;
+}
+#botones{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+#botones>p{
+    margin-top: 2px;
+    margin-bottom: 50px;
+    color: #275a5e;
+}
+#botones>button{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: #275a5e 2px solid;
+    border-radius: 15px;
+    font-size: 40px;
+    color: #275a5e;
+    transition: 0.5s;
+}
+#botones>button:hover{
+    background-color: #54abad;
+    cursor: pointer;
+}
+#partes{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 20px;
+}
+.closed{
+    width: 100%;
+    height: 50px;
+    background-color: #54abad;
+    color: #275a5e;
+    text-align: left;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.closed p{
+    margin-left: 20px;
+}
+.closed ico{
+    margin-right: 20px;
+}
+.open{
+    width: 100%;
+    height: max-content;
+    background-color: #275a5e;
+}

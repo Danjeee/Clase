@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/mian.css">
     <title>Partes</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -13,12 +15,114 @@
                 <p>Nombre</p>
                 <p>Profesor</p>
             </div>
-            <button><ico>u</ico></button>
-            <button><ico>q</ico></button>
-            <button><ico style="color: #900B09;">(</ico></button>
-            <button><ico>8</ico></button>
+            <button>
+                <ico>u</ico>
+            </button>
+            <button>
+                <ico>q</ico>
+            </button>
+            <button>
+                <ico style="color: #900B09;">(</ico>
+            </button>
+            <button>
+                <ico>8</ico>
+            </button>
         </div>
         <img class="ies" src="imgs/iescamp.png" alt="icono camp" width="200px" height="100px">
     </header>
+    <main>
+        <div>
+            <div id="cursos">
+                <div>1ESO</div>
+                <div>2ESO</div>
+                <div class="selected">3ESO</div>
+                <div>4ESO</div>
+                <div class="more">^</div>
+            </div>
+            <search id="porgrupo">
+                <input type="text" name="gruposearch" id="gruposearch" placeholder="Buscar un grupo">
+                <ico>X</ico>
+            </search>
+            <search id="poralumno">
+                <input type="text" name="alumsearch" id="alumsearch" placeholder="Buscar un alumno en todos los grupos">
+                <ico>X</ico>
+            </search>
+        </div>
+        <div id="cont">
+            <titulo>
+                <h1 id="nomgrupo">GRUPO 3º ESO</h1>
+                <ico>8</ico>
+                <search>
+                    <input type="text" name="alumnoengrup" id="alumnoengrup" placeholder="Busca a un alumno en 3º ESO">
+                    <ico>X</ico>
+                </search>
+            </titulo>
+            <div id="alumnos">
+                <div class="alum">
+                    <img src="" alt="alum1">
+                    <div>
+                        <p>Alumno1, apellidos</p>
+                        <p>NIA</p>
+                    </div>
+                    <ico>X</ico>
+                    <ico>h</ico>
+                    <ico>i</ico>
+                    <a href="./falta.html"><ico>!</ico></a>
+                </div>
+                <div class="alum">
+                    <img src="" alt="alum2">
+                    <div>
+                        <p>Alumno2, apellidos</p>
+                        <p>NIA</p>
+                    </div>
+                    <ico>X</ico>
+                    <ico>h</ico>
+                    <ico>i</ico>
+                    <a href="./falta.html"><ico>!</ico></a>
+                </div>
+                <div class="alum">
+                    <img src="" alt="alum3">
+                    <div>
+                        <p>Alumno3, apellidos</p>
+                        <p>NIA</p>
+                    </div>
+                    <ico>X</ico>
+                    <ico>h</ico>
+                    <ico>i</ico>
+                    <a href="./falta.html"><ico>!</ico></a>
+                </div>
+                <div class="alum">
+                    <img src="" alt="alum4">
+                    <div>
+                        <p>Alumno4, apellidos</p>
+                        <p>NIA</p>
+                    </div>
+                    <ico>X</ico>
+                    <ico>h</ico>
+                    <ico>i</ico>
+                    <a href="./falta.html"><ico>!</ico></a>
+                </div>
+            </div>
+            <div id="paginacion">
+                <button class="bselected">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+            </div>
+            <fieldset id="tutor">
+                <legend>Tutor del grupo</legend>
+                <div class="prof">
+                    <img src="" alt="profe">
+                    <div>
+                        <p>Nombre, apellidos</p>
+                        <p>DNI</p>
+                    </div>
+                    <ico>q</ico>
+                    <ico>i</ico>
+                </div>
+            </fieldset>
+        </div>
+    </main>
 </body>
+
 </html>
