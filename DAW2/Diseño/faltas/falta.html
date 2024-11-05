@@ -22,7 +22,7 @@
                 <ico>q</ico>
             </button>
             <button>
-                <ico style="color: #900B09;">(</ico>
+                <ico style="color: #900B09;" onclick="window.open('./login.html', '_parent')">(</ico>
             </button>
             <button>
                 <ico>8</ico>
@@ -31,6 +31,7 @@
         <img class="ies" src="imgs/iescamp.png" alt="icono camp" width="200px" height="100px">
     </header>
     <main>
+        <button onclick="window.open('./main.html', '_parent')">Volver</button>
         <div id="cont">
             <div id="info">
                 <table class="maininfo">
@@ -80,7 +81,72 @@
                 </div>
                 <div id="partes">
                      <div class="closed"><p>Parte1 01/01/24</p><ico>i</ico></div>
-                     <div class="open"></div>
+                     <div class="open">
+                        <p>Parte2 01/01/2024</p>
+                        <div>
+                            <div>
+                                <label for="intensidad">Intensidad</label>
+                                <select name="intensidad" id="intensidad">
+                                    <option value="Leve">Leve</option>
+                                    <option value="Grave">Grave</option>
+                                </select>
+                            </div>
+                            <fieldset>
+                                <legend>Sancion(es)</legend>
+                                <input type="checkbox" name="S1" id="S1">
+                                <label for="S1">Sanción 1</label>
+                                <br>
+                                <input type="checkbox" name="S2" id="S2">
+                                <label for="S2">Sanción 2</label>
+                                <br>
+                                <input type="checkbox" name="S3" id="S3">
+                                <label for="S3">Sanción 3</label>
+                                <br>
+                                <input type="checkbox" name="S4" id="S4">
+                                <label for="S4">Sanción 4</label>
+                                <br>
+                                <input type="checkbox" name="S5" id="S5">
+                                <label for="S5">Sanción 5</label>
+                                <br>
+                                <input type="checkbox" name="Sotra" id="Sotra">
+                                <label for="Sotra">Otro:</label>
+                                <br>
+                                <textarea name="Sotratxt" id="Sotratxt"></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Causa(s)</legend>
+                                <input type="checkbox" name="C1" id="C1">
+                                <label for="C1">Causa 1</label>
+                                <br>
+                                <input type="checkbox" name="C2" id="C2">
+                                <label for="C2">Causa 2</label>
+                                <br>
+                                <input type="checkbox" name="C3" id="C3">
+                                <label for="C3">Causa 3</label>
+                                <br>
+                                <input type="checkbox" name="C4" id="C4">
+                                <label for="C4">Causa 4</label>
+                                <br>
+                                <input type="checkbox" name="C5" id="C5">
+                                <label for="C5">Causa 5</label>
+                                <br>
+                                <input type="checkbox" name="Cotra" id="Cotra">
+                                <label for="Cotra">Otro:</label>
+                                <br>
+                                <textarea name="Cotratxt" id="Cotratxt"></textarea>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend>Observaciones profesor</legend>
+                                <textarea name="oprof" id="oprof"></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Observaciones alumno</legend>
+                                <textarea name="oalum" id="oalum"></textarea>
+                            </fieldset>
+                        </div>
+                     </div>
                 </div>
             </div>
         </div>

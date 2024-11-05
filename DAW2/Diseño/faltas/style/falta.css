@@ -253,6 +253,89 @@ input[type=text]::placeholder{
 }
 .open{
     width: 100%;
-    height: max-content;
-    background-color: #275a5e;
+    height: 80%;
+    background-color: #fff;
+    border: #275a5e 2px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #275a5e;
+    font-weight: bold;
+}
+.open p{
+    margin-left: 18px;
+}
+.open div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.open div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+}
+.open div div{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    color: #275a5e;
+    font-weight: bold;
+    gap: 20px;
+    width: 20%;
+}
+.open div fieldset textarea{
+    padding: 2px;
+    border: #275a5e 2px solid;
+    border-radius: 5px;
+    color: #275a5e;
+}
+.open div fieldset{
+    border: #275a5e 2px solid;
+    border-radius: 5px;
+    color: #275a5e;
+    font-weight: bold;
+    width: 40%;
+}
+select{
+    width: 100px;
+    border: #275a5e 2px solid;
+    border-radius: 10px;
+    color: #275a5e;
+}
+.open div:nth-child(3) fieldset{
+    width: 50%;
+    height: 100%;
+}
+.open div:nth-child(3) fieldset textarea{
+    overflow: auto;
+    outline: none;
+    border:  none;
+    width: 100%;
+    height: 100%;
+}
+.open div:nth-child(3) fieldset textarea:focus{
+    border:  none;
+    width: 100%;
+    height: 100%;
+}
+main>button{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    right: 10%;
+    top: -8%;
+    background-color: white;
+    border: #275a5e 2px solid;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+main>button:hover{
+    background-color: #54abad;
+    cursor: pointer;
 }
