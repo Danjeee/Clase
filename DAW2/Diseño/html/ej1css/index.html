@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <p>Ejercicio 1 CSS</p>
+        
+    </header>
+    <nav>
+        <p onclick="window.scrollTo(0,0)">Header 1</p>
+        <p onclick="window.scrollTo(0, 965)">Header 2</p>
+        <p onclick="window.scrollTo(0, 1920)">Header 3</p>
+        <p onclick="window.scrollTo(0, 99999999999)">Footer</p>
+    </nav>
+    <main id="main">
+        <h1>Lorem ipsum</h1>
+        <p class="txt"></p>
+        <div class="newheader" style="background-color: cadetblue;">Cambiamos el header</div>
+        <h1>Header 2</h1>
+        <p class="txt"></p>
+        <div class="newheader" style="background-color: tomato;">Cambiamos el header de nuevo</div>
+        <h1>Header 3</h1>
+        <p class="txt"></p>
+        <p class="txt"></p>
+    </main>
+    <footer>Hola soy el pie de pagina</footer>
+</body>
+<script>
+    Array.from(document.getElementsByClassName('txt')).forEach(e => {
+        e.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ligula ante, faucibus sit amet lorem ut, suscipit euismod lacus. Suspendisse vehicula felis in vulputate lacinia. Proin ac ullamcorper augue. Vestibulum ornare vitae est eu pellentesque. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean luctus eros quis diam dapibus, scelerisque condimentum sapien fermentum. Sed ullamcorper convallis dui eu euismod. Integer ut tempus nibh. Sed congue massa in sem commodo, ac dignissim nibh placerat. Cras varius, massa nec condimentum porta, justo odio vehicula velit, nec rhoncus eros massa id neque. Aenean euismod sodales purus in egestas. Proin ut consequat ante. Aliquam auctor, eros non finibus gravida, nisl leo finibus velit, eu ornare leo ligula sit amet quam. Integer ut dui laoreet, efficitur lorem nec, molestie dolor. Nulla ac lectus mi. Curabitur condimentum velit odio, et varius lacus faucibus nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ac egestas tellus, non lobortis ante. Nam aliquet mi et ipsum tincidunt vulputate. Sed blandit dolor in diam hendrerit cursus. Vivamus lobortis lobortis condimentum. Etiam ac ante erat. Quisque convallis vehicula orci, at aliquam elit fringilla ac. Sed vel porttitor nisl, non dignissim ipsum. Praesent nec gravida eros. In accumsan justo commodo, laoreet orci sit amet, placerat ex. Quisque feugiat, ligula et vulputate bibendum, justo nisi consequat nulla, ullamcorper tincidunt urna leo ut neque. Nam consequat ultrices urna, accumsan scelerisque urna consequat quis. Ut condimentum magna dui, quis gravida sapien faucibus et. Integer imperdiet volutpat elementum. Curabitur ac mauris vel felis auctor commodo. In quis quam quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean in egestas lorem, eget interdum justo. Phasellus vitae rhoncus metus, sit amet varius eros. Pellentesque sed tristique lorem. Maecenas et imperdiet erat. Cras consequat dictum diam, gravida viverra nulla fermentum id. Praesent sit amet ullamcorper urna, a congue justo. Maecenas nec arcu quis nibh tempus suscipit ac id mauris. Nunc viverra erat eu scelerisque semper. Nunc volutpat dolor at erat consectetur dignissim. Donec commodo suscipit ligula molestie interdum. Maecenas at purus et nunc pulvinar placerat. Suspendisse potenti. Praesent ut consequat mauris, ut commodo ipsum. Nam et nibh posuere, euismod magna ut, feugiat enim. Vivamus ut libero sit amet lectus viverra efficitur vel in magna. Pellentesque mi est, ullamcorper ac nunc et, venenatis malesuada sem. Vestibulum vulputate blandit mauris eu ullamcorper. Donec blandit sit amet odio id posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin accumsan tortor ac risus malesuada, vel aliquet lorem dignissim. Vivamus maximus volutpat tincidunt. Donec quis erat sit amet eros luctus porta ut ut lorem. Nunc vel tempus tellus. Mauris blandit nisl libero, eget venenatis ex scelerisque mattis. Nulla et tincidunt est. Donec laoreet est et nulla varius, dictum mollis nibh pulvinar. Curabitur leo orci, facilisis quis tellus sed, tincidunt dictum sem."
+        e.innerHTML += "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ligula ante, faucibus sit amet lorem ut, suscipit euismod lacus. Suspendisse vehicula felis in vulputate lacinia. Proin ac ullamcorper augue. Vestibulum ornare vitae est eu pellentesque. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean luctus eros quis diam dapibus, scelerisque condimentum sapien fermentum. Sed ullamcorper convallis dui eu euismod. Integer ut tempus nibh. Sed congue massa in sem commodo, ac dignissim nibh placerat. Cras varius, massa nec condimentum porta, justo odio vehicula velit, nec rhoncus eros massa id neque. Aenean euismod sodales purus in egestas. Proin ut consequat ante. Aliquam auctor, eros non finibus gravida, nisl leo finibus velit, eu ornare leo ligula sit amet quam. Integer ut dui laoreet, efficitur lorem nec, molestie dolor. Nulla ac lectus mi. Curabitur condimentum velit odio, et varius lacus faucibus nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ac egestas tellus, non lobortis ante. Nam aliquet mi et ipsum tincidunt vulputate. Sed blandit dolor in diam hendrerit cursus. Vivamus lobortis lobortis condimentum. Etiam ac ante erat. Quisque convallis vehicula orci, at aliquam elit fringilla ac. Sed vel porttitor nisl, non dignissim ipsum. Praesent nec gravida eros. In accumsan justo commodo, laoreet orci sit amet, placerat ex. Quisque feugiat, ligula et vulputate bibendum, justo nisi consequat nulla, ullamcorper tincidunt urna leo ut neque. Nam consequat ultrices urna, accumsan scelerisque urna consequat quis. Ut condimentum magna dui, quis gravida sapien faucibus et. Integer imperdiet volutpat elementum. Curabitur ac mauris vel felis auctor commodo. In quis quam quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean in egestas lorem, eget interdum justo. Phasellus vitae rhoncus metus, sit amet varius eros. Pellentesque sed tristique lorem. Maecenas et imperdiet erat. Cras consequat dictum diam, gravida viverra nulla fermentum id. Praesent sit amet ullamcorper urna, a congue justo. Maecenas nec arcu quis nibh tempus suscipit ac id mauris. Nunc viverra erat eu scelerisque semper. Nunc volutpat dolor at erat consectetur dignissim. Donec commodo suscipit ligula molestie interdum. Maecenas at purus et nunc pulvinar placerat. Suspendisse potenti. Praesent ut consequat mauris, ut commodo ipsum. Nam et nibh posuere, euismod magna ut, feugiat enim. Vivamus ut libero sit amet lectus viverra efficitur vel in magna. Pellentesque mi est, ullamcorper ac nunc et, venenatis malesuada sem. Vestibulum vulputate blandit mauris eu ullamcorper. Donec blandit sit amet odio id posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin accumsan tortor ac risus malesuada, vel aliquet lorem dignissim. Vivamus maximus volutpat tincidunt. Donec quis erat sit amet eros luctus porta ut ut lorem. Nunc vel tempus tellus. Mauris blandit nisl libero, eget venenatis ex scelerisque mattis. Nulla et tincidunt est. Donec laoreet est et nulla varius, dictum mollis nibh pulvinar. Curabitur leo orci, facilisis quis tellus sed, tincidunt dictum sem."
+    });
+    window.addEventListener('scroll', function () {
+        let a = Array.from(document.getElementsByClassName('newheader'))
+        
+        document.getElementById('header').style.backgroundColor = "cornflowerblue"
+        for (let i = 0; i < a.length; i++) {
+            var rect = a[i].getBoundingClientRect();
+            if (rect.top == 0) {
+                document.getElementById('header').style.backgroundColor = a[i].style.backgroundColor
+            }
+
+        }
+    })
+</script>
+
+</html>
