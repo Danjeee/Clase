@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javinoticias</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div id="newarts">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="mainart">
+            <div></div>
+        </div>
+        <div id="otherarts">
+            <div></div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script>
+    let newarts = document.getElementById("newarts")
+    Array.from(newarts.children).forEach(e => {
+        let img = document.createElement('img')
+        img.src = "./img/descarga.jfif"
+        let tit = document.createElement('h3')
+        tit.innerHTML = "Lorem ipsum "+Math.floor(Math.random() * 10)
+        let cont = document.createElement('p')
+        cont.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at ultricies velit. Morbi et enim lacus. Donec lorem enim, dignissim id sapien a, mattis hendrerit nunc. Nunc hendrerit quam lectus, id consectetur nisl consequat id. Nullam a euismod lorem, vehicula viverra erat. Quisque enim diam, dignissim sed volutpat et, pharetra a est. Donec purus odio, aliquet sed tortor sit amet, volutpat vehicula urna. Ut justo neque, consectetur quis ultricies vitae, rutrum tincidunt diam."
+        e.appendChild(img)
+        e.appendChild(tit)
+        e.appendChild(cont)
+    })
+
+</script>
