@@ -9,12 +9,12 @@ function login(){
         .then(response => response.text())
         .then(data => {
             if(data === "error"){
-                alert("El usuario no existe")
+                alert("Contraseña o email incorrectos")
             } else {
                 data = JSON.parse(data)
                 console.log(data[0])
                 sessionStorage.setItem("user",JSON.stringify(data[0]))
-                //window.location.href = "./inicio.html"
+                window.location.href = "./inicio.html"
             }
         })
 }

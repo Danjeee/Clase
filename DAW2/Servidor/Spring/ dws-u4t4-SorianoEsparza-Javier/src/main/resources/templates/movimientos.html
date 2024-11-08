@@ -23,8 +23,8 @@
 		<tr th:each="movimiento : ${movimientos}">
 			<td th:text="${movimiento.id}"></td>
 			<td th:text="${movimiento.tipo}"></td>
-			<td><a th:text="${movimiento.idEmisor}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idEmisor}) }"></a></td>
-			<td><a th:text="${movimiento.idReceptor}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idReceptor}) }"></a></td>
+			<td><a th:text="${movimiento.idEmisor.id}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idEmisor.id}) }"></a></td>
+			<td><a th:text="${movimiento.idReceptor.id}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idReceptor.id}) }"></a></td>
 			<td th:text="${movimiento.cant}" class="saldo"></td>
 		</tr>
 	</table>

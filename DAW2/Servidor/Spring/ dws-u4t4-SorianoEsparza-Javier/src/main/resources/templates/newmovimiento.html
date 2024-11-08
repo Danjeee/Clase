@@ -16,7 +16,7 @@
 		<table border="0">
 			<tr>
 				<td>Emisor</td>
-				<td><input type="text" th:field="*{idEmisor}"/> </td>
+				<td><input type="text" th:field="*{idEmisor.id}" readonly/> </td>
 			</tr>
 			<tr>
 				<td>Tipo/Concepto</td>
@@ -24,11 +24,11 @@
 			</tr>
 			<tr>
 				<td>Cantidad</td>
-				<td><input type="number" th:field="*{cant}" required/> </td>
+				<td><input type="number" th:field="*{cant}" required min=0/> </td>
 			</tr>
             <tr>
 				<td>Receptor</td>
-				<td><input type="number" th:field="*{idReceptor}" required/> </td>
+				<td><input type="number" th:field="*{idReceptor.id}" required min=0/> </td>
 			</tr>
 		</table>
 		<input type="submit" value="Realizar"/>

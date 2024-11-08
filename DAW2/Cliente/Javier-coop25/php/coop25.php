@@ -5,8 +5,8 @@ header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 
 $servidor = "localhost";   // Configuración BD
 $basedatos = "coop25";
-$usuario = "coop25";
-$password = "coop25";
+$usuario = "root";
+$password = "";
 
 // --  Crear la conexión al servidor y ejecutar la consulta.
 $conexion = mysqli_connect($servidor, $usuario, $password) or die(mysqli_error($conexion));

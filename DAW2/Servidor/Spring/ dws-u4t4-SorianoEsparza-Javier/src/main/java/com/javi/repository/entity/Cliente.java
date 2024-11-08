@@ -41,4 +41,8 @@ public class Cliente {
 		this.clave = clave;
 		this.email = email;
 	}
+	public Cliente() {
+		super();
+		this.recomendacion = new Recomendacion();
+	}
 }

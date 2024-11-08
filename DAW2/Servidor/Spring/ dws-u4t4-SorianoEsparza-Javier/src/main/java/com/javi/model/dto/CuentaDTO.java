@@ -74,6 +74,7 @@ public class CuentaDTO {
 	public CuentaDTO() {
 		
 		super();
+		this.clienteDTO = new ClienteDTO();
 		this.id = -1;
 	}
 }

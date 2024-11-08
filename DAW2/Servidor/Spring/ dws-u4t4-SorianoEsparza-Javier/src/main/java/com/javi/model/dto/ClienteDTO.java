@@ -93,6 +93,7 @@ public class ClienteDTO implements Serializable {
 
 	public ClienteDTO() {
 		super();
+		this.recomendacionDTO = new RecomendacionDTO();
 		id = -1;
 	}
 }

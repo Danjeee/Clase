@@ -37,4 +37,8 @@ public class Cuenta {
 		this.nombre = nombre;
 		this.saldo = saldo;
 	}
+	public Cuenta(){
+		super();
+		this.cliente = new Cliente();
+	}
 }

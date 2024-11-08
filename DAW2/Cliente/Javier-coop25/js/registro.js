@@ -49,7 +49,7 @@ f.addEventListener('submit', event => {
     if (pass.value == passc.value) {
         register()
         setUser(mail.value, pass.value)
-        window.location.href = "./inicio.html"
+        window.location.href = "./login.html"
 
 
     } else {

@@ -1,0 +1,102 @@
+body{
+    padding-top: 17vh;
+    margin: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    background-color: lightskyblue;
+    border-bottom: #000 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+str{
+    font-weight: bold;
+}
+#cs{
+    position: absolute;
+    right: 30px;
+    top: 11vh; 
+    width: 150px;
+    height: 30px;
+    padding: 0;
+    background-color: maroon;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header>div{
+    top: 1vh;
+    position: absolute;
+    right: 20px;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: aliceblue;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    transition: 0.5s;
+    border: #000 2px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+header>div:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+#user{
+    z-index: 1;
+}
+#closeuser{
+    padding: 2px;
+    background-color: maroon;
+    color: white;
+}
+#main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.art{
+    border: #000 2px solid;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.desc{
+    font-size: 0px;
+    transition: 0.5s;
+    text-align: center;
+}
+.art:hover>.desc{
+    font-size: 15px;
+}
+.art:hover{
+    height: 300px;
+}
+button{
+    border: #000 1.5px solid;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.5s;
+    padding: 15px;
+}
+button:hover{
+    background-color: lightsteelblue;
+    cursor: pointer;
+}

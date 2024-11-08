@@ -3,6 +3,8 @@ package com.javi.web.controller;
 
 import java.util.ArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -24,6 +26,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MovimientoController {
+	
+	private static final Logger log = LoggerFactory.getLogger(MovimientoController.class);
 
 	@Autowired
 	private MovimientoService ms;
@@ -69,7 +73,9 @@ public class MovimientoController {
 		cu.setClienteDTO(cli);
 		cu = cs.findById(cu);
 		MovimientoDTO mov = new MovimientoDTO();
-		mov.setIdEmisor(idCuenta);
+		CuentaDTO emisor = new CuentaDTO();
+		emisor.setId(idCuenta);
+		mov.setIdEmisor(emisor);
 		ModelAndView mvc = new ModelAndView("newmovimiento");
 		mvc.addObject("cliente", cli);
 		mvc.addObject("cuenta", cu);
@@ -84,7 +90,7 @@ public class MovimientoController {
 		cli.setRecomendacionDTO(new RecomendacionDTO());
 		cli = clis.findById(cli);
 		CuentaDTO cu = new CuentaDTO();
-		cu.setId(mdto.getIdReceptor());
+		cu.setId(mdto.getIdReceptor().getId());
 		cu.setClienteDTO(cli);
 		try {
 			cs.findById(cu);
@@ -98,6 +104,9 @@ public class MovimientoController {
 			ModelAndView mvc = new ModelAndView("redirect:/clientes/error/saldoInsuficiente");
 			return mvc;
 		}
+		CuentaDTO emis = new CuentaDTO();
+		emis.setId(idCuenta);
+		mdto.setIdEmisor(emis);
 		ms.save(mdto);
 		ModelAndView mvc = new ModelAndView("redirect:/clientes/"+idCliente+"/cuentas/"+idCuenta+"/movimientos");
 		return mvc;

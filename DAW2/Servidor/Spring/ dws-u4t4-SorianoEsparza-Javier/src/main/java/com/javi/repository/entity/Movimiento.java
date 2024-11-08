@@ -10,9 +10,9 @@ public class Movimiento {
 	public long id;
 	public String tipo;
 	@ToString.Exclude
-	private int idEmisor;
+	private Cuenta idEmisor;
 	@ToString.Exclude
-	private int idReceptor;
+	private Cuenta idReceptor;
 	public float cant;
 
 	@Override
@@ -36,7 +36,11 @@ public class Movimiento {
 		this.id = id;
 		this.tipo = tipo;
 		this.cant = cant;
-		this.idEmisor = emisor;
-		this.idReceptor = receptor;
+		Cuenta emisoracc = new Cuenta();
+		emisoracc.setId(emisor);
+		this.idEmisor = emisoracc;
+		Cuenta rec = new Cuenta();
+		rec.setId(receptor);
+		this.idReceptor = rec;
 	}
 }

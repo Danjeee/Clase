@@ -44,14 +44,14 @@ public class clienteRepositoryImp implements clienteRepository {
 		c2.getCuentas().add(cu3);
 		Movimiento m = new Movimiento();
 		m.setId(0);
-		m.setIdEmisor(cu3.getId());
-		m.setIdReceptor(cu1.getId());
+		m.setIdEmisor(cu3);
+		m.setIdReceptor(cu1);
 		cu3.getMovimientos().add(m);
 		cu1.getMovimientos().add(m);
 		Movimiento m2 = new Movimiento();
 		m2.setId(1);
-		m2.setIdEmisor(cu3.getId());
-		m2.setIdReceptor(cu2.getId());
+		m2.setIdEmisor(cu3);
+		m2.setIdReceptor(cu2);
 		cu3.getMovimientos().add(m2);
 		cu1.getMovimientos().add(m2);
 		datos.add(c1);

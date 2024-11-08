@@ -22,12 +22,12 @@ public class MovimientoRepositoryImpl implements MovimientoRepository {
 	@Override
 	public void save(Movimiento mov) {
 		Cuenta auxemi = new Cuenta();
-		auxemi.setId(mov.getIdEmisor());
+		auxemi.setId(mov.getIdEmisor().getId());
 		Cuenta auxrec = new Cuenta();
-		auxrec.setId(mov.getIdReceptor());
+		auxrec.setId(mov.getIdReceptor().getId());
 		Cuenta emisor = cr.findById(auxemi);
 		Cuenta receptor = cr.findById(auxrec);
-		String id = mov.getIdEmisor() + "" +mov.getIdReceptor() +"" +findByAccount(emisor).size() + "" + findByAccount(receptor).size();
+		String id = mov.getIdEmisor().getId() + "" +mov.getIdReceptor().getId() +"" +findByAccount(emisor).size() + "" + findByAccount(receptor).size();
 		mov.setId(Integer.parseInt(id));
 		emisor.getMovimientos().add(mov);
 		receptor.getMovimientos().add(mov);

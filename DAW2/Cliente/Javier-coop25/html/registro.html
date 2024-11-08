@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
     <link rel="stylesheet" href="../style/registro.css">
 </head>
+
 <body>
-    <h1>Registro</h1>
+
     <form id="f">
-        <label for="name">Nombre</label>
-        <input type="text" name="nombre" id="nombre" required>
-        <label for="aps">Apellidos</label>
-        <input type="text" name="aps" id="aps" required>
-        <label for="mail">Email</label>
-        <input type="email" name="mail" id="mail" required>
-        <label for="foto">Foto de perfil</label>
-        <input type="file" name="foto" id="foto" accept="image/png, image/jpeg">
-        <img id="imgfile" src="../imgs/socios/user.png" alt="user.png">
-        <label for="pass">Password</label>
-        <input type="password" name="pass" id="pass" required>
-        <label for="passc">Confirm Password</label>
-        <input type="password" name="passc" id="passc" required>
-        <input type="submit" name="submit" id="submit" value="Crear usuario">
+        <fieldset>
+            <legend>Crear usuario</legend>
+            <div class="input"><label for="name">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="input"><label for="aps">Apellidos</label>
+                <input type="text" name="aps" id="aps" required>
+            </div>
+            <div class="input"><label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div class="input"><label for="foto">Foto de perfil</label>
+                <input type="file" name="foto" id="foto" accept="image/png, image/jpeg">
+                <img id="imgfile" src="../imgs/socios/user.png" alt="user.png">
+            </div>
+            
+            <div class="input"><label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" required>
+                <label for="passc">Confirm Password</label>
+                <input type="password" name="passc" id="passc" required>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Crear usuario">
+            <div id="filter"></div>
+        </fieldset>
+
     </form>
 </body>
 <script src="../js/registro.js" type="text/javascript"></script>
+
 </html>
