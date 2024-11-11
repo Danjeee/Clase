@@ -1,5 +1,6 @@
 package com.javi.model.dto;
 
+import java.util.Date;
 import java.util.Objects;
 
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ public class MovimientoDTO {
 	@ToString.Exclude
 	private CuentaDTO idReceptor;
 	private float cant;
+	private Date fecha;
 
 	@Override
 	public boolean equals(Object obj) {
@@ -53,6 +55,7 @@ public class MovimientoDTO {
 		CuentaDTO receptor = new CuentaDTO();
 		receptor.setId(mov.getIdReceptor().getId());
 		this.idReceptor = receptor;
+		this.fecha = mov.getFecha();
 	}
 
 	public static MovimientoDTO convertToDTO(Movimiento mov) {
@@ -72,6 +75,7 @@ public class MovimientoDTO {
 		receptor.setId(mdto.getIdReceptor().getId());
 		mov.setIdEmisor(emisor);
 		mov.setIdReceptor(receptor);
+		mov.setFecha(mdto.getFecha());
 
 		return mov;
 	}

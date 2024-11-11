@@ -1,5 +1,6 @@
 package com.javi.repository.entity;
 
+import java.util.Date;
 import java.util.Objects;
 
 import lombok.Data;
@@ -14,6 +15,7 @@ public class Movimiento {
 	@ToString.Exclude
 	private Cuenta idReceptor;
 	public float cant;
+	private Date fecha;
 
 	@Override
 	public boolean equals(Object obj) {

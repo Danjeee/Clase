@@ -18,6 +18,7 @@ public class CuentaDTO {
 	@ToString.Exclude
 	private ClienteDTO clienteDTO;
 	private ArrayList<MovimientoDTO> movimientos = new ArrayList<>();
+	private String banco;
 
 	@Override
 	public boolean equals(Object obj) {
@@ -49,6 +50,7 @@ public class CuentaDTO {
 		for (Movimiento m : c.getMovimientos()) {
 			this.movimientos.add(MovimientoDTO.convertToDTO(m));
 		}
+		this.banco = c.getBanco();
 	}
 
 	public static CuentaDTO convertToDTO(Cuenta cuenta, ClienteDTO cdto) {
@@ -64,6 +66,7 @@ public class CuentaDTO {
 		c.setNombre(cdto.getNombre());
 		c.setSaldo(cdto.getSaldo());
 		c.setCliente(cli);
+		c.setBanco(cdto.getBanco());
 		return c;
 	}
 	

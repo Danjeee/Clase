@@ -15,6 +15,7 @@
 	<table th:if="${!cliente.cuentasDTO.isEmpty()}">
 		<tr>
 			<th>Id</th>
+			<th>Banco</th>
 			<th>Nombre</th>
 			<th>Saldo</th>
 			<th>Movimientos</th>
@@ -25,6 +26,7 @@
 			<td><a th:text="${cuenta.id}"
 					th:href="@{/clientes/{idCliente}/cuentas/{idCuenta} (idCliente=${cliente.id}, idCuenta=${cuenta.id})}"></a>
 			</td>
+			<td th:text="${cuenta.banco}"></td>
 			<td th:text="${cuenta.nombre}"></td>
 			<td th:text="${cuenta.saldo}" class="saldo"></td>
 			<td><a th:href="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos (idCliente=${cliente.id}, idCuenta=${cuenta.id}) }">Ver Movimientos</a></td>

@@ -1,6 +1,9 @@
 
 package com.javi.repository.dao;
 
+import java.sql.Date;
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +32,7 @@ public class MovimientoRepositoryImpl implements MovimientoRepository {
 		Cuenta receptor = cr.findById(auxrec);
 		String id = mov.getIdEmisor().getId() + "" +mov.getIdReceptor().getId() +"" +findByAccount(emisor).size() + "" + findByAccount(receptor).size();
 		mov.setId(Integer.parseInt(id));
+		mov.setFecha(Date.valueOf(LocalDate.now()));
 		emisor.getMovimientos().add(mov);
 		receptor.getMovimientos().add(mov);
 		emisor.setSaldo(emisor.getSaldo()-mov.cant);

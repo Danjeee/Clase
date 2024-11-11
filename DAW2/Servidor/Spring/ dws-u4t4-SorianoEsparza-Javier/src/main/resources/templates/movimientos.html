@@ -19,6 +19,7 @@
 			<th>Emisor</th>
 			<th>Receptor</th>
 			<th>Cantidad</th>
+			<th>Fecha</th>
 		</tr>
 		<tr th:each="movimiento : ${movimientos}">
 			<td th:text="${movimiento.id}"></td>
@@ -26,6 +27,7 @@
 			<td><a th:text="${movimiento.idEmisor.id}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idEmisor.id}) }"></a></td>
 			<td><a th:text="${movimiento.idReceptor.id}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idReceptor.id}) }"></a></td>
 			<td th:text="${movimiento.cant}" class="saldo"></td>
+			<td th:text="${movimiento.fecha}"></td>
 		</tr>
 	</table>
 	<a th:href="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos/new (idCliente=${cuenta.clienteDTO.id}, idCuenta=${cuenta.id})}">Nuevo movimiento</a>

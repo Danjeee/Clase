@@ -2,6 +2,7 @@ package com.javi.model.dto;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import com.javi.repository.entity.Cliente;
@@ -20,7 +21,7 @@ public class ClienteDTO implements Serializable {
 	private String clave;
 	private String email;
 	private RecomendacionDTO recomendacionDTO;
-	private ArrayList<CuentaDTO> cuentasDTO = new ArrayList<>();
+	private List<CuentaDTO> cuentasDTO = new ArrayList<>();
 
 	@Override
 	public boolean equals(Object obj) {
@@ -94,6 +95,7 @@ public class ClienteDTO implements Serializable {
 	public ClienteDTO() {
 		super();
 		this.recomendacionDTO = new RecomendacionDTO();
+		this.cuentasDTO = new ArrayList<>();
 		id = -1;
 	}
 }

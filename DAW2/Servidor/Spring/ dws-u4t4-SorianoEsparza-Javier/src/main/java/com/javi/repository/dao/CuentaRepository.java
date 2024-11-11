@@ -15,5 +15,7 @@ public interface CuentaRepository {
 	public void delete(Cuenta cuv);
 
 	public Cuenta findById(Cuenta cu);
+	
+	public List<Cuenta> findAllByCliente(Cliente c);
 
 }

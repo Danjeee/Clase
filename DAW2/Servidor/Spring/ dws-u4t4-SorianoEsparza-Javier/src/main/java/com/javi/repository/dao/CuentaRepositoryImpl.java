@@ -1,5 +1,7 @@
 package com.javi.repository.dao;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +52,12 @@ public class CuentaRepositoryImpl implements CuentaRepository {
 		cli.getCuentas().remove(cli.getCuentas().indexOf(cuv));
 		cr.update(cli);
 
+	}
+
+	@Override
+	public List<Cuenta> findAllByCliente(Cliente c) {
+		c = cr.findById(c);
+		return c.getCuentas();
 	}
 
 }

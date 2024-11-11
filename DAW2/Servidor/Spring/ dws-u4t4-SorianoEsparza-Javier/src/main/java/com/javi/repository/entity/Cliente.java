@@ -1,6 +1,7 @@
 package com.javi.repository.entity;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import lombok.Data;
@@ -14,7 +15,7 @@ public class Cliente {
 	private String clave;
 	private String email;
 	private Recomendacion recomendacion;
-	private ArrayList<Cuenta> cuentas = new ArrayList<>();
+	private List<Cuenta> cuentas = new ArrayList<>();
 
 	@Override
 	public boolean equals(Object obj) {
@@ -44,5 +45,6 @@ public class Cliente {
 	public Cliente() {
 		super();
 		this.recomendacion = new Recomendacion();
+		this.cuentas = new ArrayList<>();
 	}
 }

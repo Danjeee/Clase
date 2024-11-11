@@ -14,6 +14,7 @@ public class Cuenta {
 	@ToString.Exclude
 	private Cliente cliente;
 	private ArrayList<Movimiento> movimientos = new ArrayList<>();
+	private String banco;
 
 	@Override
 	public boolean equals(Object obj) {
@@ -32,10 +33,11 @@ public class Cuenta {
 		return Objects.hash(id);
 	}
 
-	public void setCuenta(int id, String nombre, float saldo) {
+	public void setCuenta(int id, String nombre, float saldo, String banco) {
 		this.id = id;
 		this.nombre = nombre;
 		this.saldo = saldo;
+		this.banco = banco;
 	}
 	public Cuenta(){
 		super();
