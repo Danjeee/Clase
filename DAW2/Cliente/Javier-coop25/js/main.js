@@ -29,26 +29,38 @@ function createitem(e){
     desc.innerHTML = e.descripcion
     let buy = document.createElement("button")
     buy.innerHTML = "Comprar"
+    let img = document.createElement("img")
+    img.src = "../imgs/articulos/"+e.imagen
     cont.appendChild(nom)
+    cont.appendChild(img)
     cont.appendChild(prec)
-    cont.appendChild(desc)
+   
     cont.appendChild(buy)
+    cont.appendChild(desc)
     document.getElementById("main").appendChild(cont)
 }
 load()
-document.getElementById("user").addEventListener("click", showuser)
-document.getElementById("userdata").innerHTML = "<str>"+user.nombre+"</str><p2>"+user.email+"</p2><button id='closeuser'>X</button>"
-document.getElementById("closeuser").addEventListener("click", function(){
-    document.getElementById("userdata").style.zIndex = 0
-    document.getElementById("userdata").style.opacity = 0
-})
-function showuser(){
-    document.getElementById("userdata").style.zIndex = 2
-    document.getElementById("userdata").style.opacity = 1
-}
 document.getElementById("cs").addEventListener("click", function(){
-    if (confirm("¿Quieres cerrar sesión?").valueOf(true)) {
-        sessionStorage.setItem("user", null)
-        window.location.href="./login.html"
-    }
+    Swal.fire({
+        icon: "warning",
+        title: "Cerrar sesión",
+        text: "¿Seguro que quiere cerrar la sesión?",
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: 'Cerrar sesión',
+        denyButtonText: `Cancelar`,
+      }).then(result => {
+        if (result.isConfirmed) {
+            sessionStorage.setItem("user", null)
+            window.location.href = "./login.html"
+        }
+      })
+})
+document.getElementById("user").addEventListener("click", function(){
+    Swal.fire({
+        icon: "info",
+        title: user.nombre,
+        text: user.email
+      })
+      
 })

@@ -9,7 +9,7 @@ $usuario = "root";
 $password = "";
 
 // --  Crear la conexión al servidor y ejecutar la consulta.
-$conexion = mysqli_connect($servidor, $usuario, $password) or die(mysqli_error($conexion));
+$conexion = mysqli_connect($servidor, $usuario, $password);
 mysqli_query($conexion, "SET NAMES 'utf8'");
 mysqli_select_db($conexion, $basedatos) or die(mysqli_error($conexion));
 
@@ -76,9 +76,9 @@ if ( $opc == "SR" || $opc == "AV" || $opc == "SC") {
       }
       echo json_encode($datos);
     } else
-      echo "error";
+    echo json_encode(['error'=>'Sin datos en la consulta']);
   } catch (Exception $e) {
-    echo false;
+    echo json_encode(['error'=>'Error en el consulta']);
   }
 } else {
   switch ($opc) {
@@ -124,13 +124,13 @@ if ( $opc == "SR" || $opc == "AV" || $opc == "SC") {
   try {
     $resultados = mysqli_query($conexion, $sql);
     if ($resultados == 1) {
-      echo "ok";
+      echo json_encode(['ok'=>'Exito en la actualización']);
     } else {
-      echo "error";
+      echo json_encode(['error'=>'Error en la actualización']);
     }
     ;
   } catch (Exception $e) {
-    echo "error";
+    echo json_encode(['error'=>'Error']);
   }
 }
 mysqli_close($conexion);

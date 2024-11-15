@@ -1,63 +1,51 @@
 body{
-    padding-top: 17vh;
+    padding-top: 18vh;
     margin: 0;
 }
 header{
     position: fixed;
     top: 0;
-    height: 15vh;
+    height: 16vh;
     width: 100%;
-    background-color: lightskyblue;
+    background-color: #7d4cdf;
     border-bottom: #000 1px solid;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+header h1{
+    color: white;
+    font-weight: bold;
 }
 str{
     font-weight: bold;
 }
-#cs{
-    position: absolute;
-    right: 30px;
-    top: 11vh; 
-    width: 150px;
-    height: 30px;
-    padding: 0;
-    background-color: maroon;
-    color: white;
-    display: flex;
+#buttons{
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
 }
-header>div{
-    top: 1vh;
-    position: absolute;
-    right: 20px;
-    padding: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: aliceblue;
-    width: 150px;
-    height: 50px;
+#buttons *{
+    z-index: 1;
+    background-color: #4E3486;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    width: 8vw;
     text-align: center;
     transition: 0.5s;
-    border: #000 2px solid;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-}
-header>div:hover{
-    background-color: cadetblue;
+} 
+#buttons *:hover{
+    background-color: #7d4cdf;
     cursor: pointer;
-}
-#user{
-    z-index: 1;
-}
-#closeuser{
-    padding: 2px;
-    background-color: maroon;
-    color: white;
-}
+    border: #4E3486 2px solid;
+} 
+
 #main{
     display: flex;
     width: 100%;
@@ -71,12 +59,14 @@ header>div:hover{
 .art{
     border: #000 2px solid;
     width: 250px;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
     border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .desc{
     font-size: 0px;
@@ -87,7 +77,8 @@ header>div:hover{
     font-size: 15px;
 }
 .art:hover{
-    height: 300px;
+    height: 350px;
+    cursor: default;
 }
 button{
     border: #000 1.5px solid;
@@ -99,4 +90,8 @@ button{
 button:hover{
     background-color: lightsteelblue;
     cursor: pointer;
+}
+img{
+    width: 50px;
+    height: fit-content;
 }

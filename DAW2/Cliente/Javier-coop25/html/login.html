@@ -6,14 +6,22 @@
     <link rel="stylesheet" href="../style/login.css">
 </head>
 <body>
-    <h1>Iniciar sesion</h1>
     <form id="f">
-        <label for="mail">Email</label>
-        <input type="email" name="mail" id="mail" required>
-        <label for="pass">Password</label>
-        <input type="password" name="pass" id="pass" required>
+        <fieldset>
+            <legend>Iniciar sesion</legend>
+        <div class="input">
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" required>
+        </div>
+        <div class="input">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required>
+        </div>
         <input type="submit" name="submit" id="submit" value="Iniciar sesion">
+        <div id="filter"></div>
+        </fieldset>
     </form>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../js/login.js" type="text/javascript"></script>
 </html>

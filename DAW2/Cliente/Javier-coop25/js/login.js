@@ -8,8 +8,12 @@ function login(){
     })
         .then(response => response.text())
         .then(data => {
-            if(data === "error"){
-                alert("Contraseña o email incorrectos")
+            if(data === "error" || JSON.parse(data)[0]===undefined){
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: "El usuario no existe o la contraseña es incorrecta"
+                  })
             } else {
                 data = JSON.parse(data)
                 console.log(data[0])

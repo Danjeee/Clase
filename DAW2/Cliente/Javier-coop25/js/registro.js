@@ -6,7 +6,22 @@ let foto = document.getElementById("foto")
 let pass = document.getElementById("pass")
 let passc = document.getElementById("passc")
 let img = document.getElementById("imgfile")
+var corr = false;
+const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+      );
+  };
+  const validatePass = (pass) => {
+    return String(pass)
+      .match(
+        /^(?=(.*[a-zA-Z]){5,})(?=(.*\d)){1,}/
+      );
+  };
 function register() {
+    document.getElementById("errorlist").innerHTML = ""
     let params = new FormData()
     params.append("opcion", "RS")
     params.append("nombre", nombre.value)
@@ -18,8 +33,83 @@ function register() {
     }
     params.append("password", pass.value)
     const data = new URLSearchParams(params);
-    sendRegister(data)
+    var corr = true;
+    if (nombre.value=="") {
+        corr=false
+        errormsg("errnom", "El nombre no puede estar vacio")
+    } else {
+        removeerror("errnom")
+    }
+    if (aps.value=="") {
+        corr=false
+        errormsg("erraps", "El/los apellido(s) no puede(n) estar vacio(s)")
+    } else {
+        removeerror("erraps")
+    }
+    if (mail.value=="") {
+        corr=false
+        errormsg("errmail", "El mail no puede estar vacio")
+    } else {
+        if (!validateEmail(mail.value)) {
+            corr = false
+            errormsg("errmail", "Mail incorrecto")
+        } else {
+            removeerror("errmail")
+        }
+    }
+    if (pass.value=="") {
+        corr=false
+        errormsg("errpass", "La contraseña no puede estar vacia")
+    } else {
+        if (!validatePass(pass.value)) {
+            corr = false
+            errormsg("errpass", "La contraseña es incorrecta (Debe contener 6 caracteres de los cuales 1 es un numero)")
+        } else {
+            removeerror("errpass")
+        }
+        
+    }
+    if (passc.value=="") {
+        corr=false
+        errormsg("errpassc", "La confirmación de contraseña no puede estar vacia")
+    } else {
+        removeerror("errpassc")
+    }
 
+    if (pass.value!=passc.value) {
+        corr=false
+        errormsg("errconf", "Las contraseñas no coinciden")
+    } else {
+        removeerror("errconf")
+    }
+    
+    if (corr) {
+        sendRegister(data)
+    }
+ 
+
+}
+function errormsg(id, text){
+    var has = false
+    Array.from(document.getElementById("errorlist").childNodes).forEach(child => {
+        if (child.id == id) {
+            has = true
+        }
+    });
+    if (!has) {
+        let error = document.createElement("div")
+        error.id = id
+        error.innerHTML = text
+        error.className = "error"
+        document.getElementById("errorlist").appendChild(error)
+    }
+}
+function removeerror(id){
+    Array.from(document.body.childNodes).forEach(child => {
+        if (child.id == id) {
+            document.getElementById("errorlist").remove(child)
+        }
+    });
 }
 function sendRegister(params) {
     fetch("../php/coop25.php", {
@@ -29,9 +119,17 @@ function sendRegister(params) {
         .then(response => response.text())
         .then(data => {
             if (data === "error") {
-                alert("Error al registrar el usuario")
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Ha habido un error al registrar el usuario"
+                  });
             } else {
-                alert("Usuario registrado")
+                Swal.fire({
+                    icon: "success",
+                    title: "¡Realizado!",
+                    text: "Usuario registrado"
+                  });
             }
         })
 }
@@ -46,17 +144,19 @@ function setUser(mail, passwd) {
 }
 f.addEventListener('submit', event => {
     event.preventDefault()
-    if (pass.value == passc.value) {
-        register()
-        setUser(mail.value, pass.value)
-        window.location.href = "./login.html"
-
-
-    } else {
+    register()
+    if (corr == true) {
+        if (pass.value == passc.value) {
+            setUser(mail.value, pass.value)
+            window.location.href = "./login.html"
+    
+    
+        } else {
+            event.preventDefault()
+            alert("Las contraseñas no coinciden")
+        }
         event.preventDefault()
-        alert("Las contraseñas no coinciden")
     }
-    event.preventDefault()
 })
 foto.addEventListener('change', function () {
     img.src = window.URL.createObjectURL(foto.files[0])
