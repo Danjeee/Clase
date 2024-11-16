@@ -8,6 +8,7 @@ function login(){
     })
         .then(response => response.text())
         .then(data => {
+            console.log(data)
             if(data === "error" || JSON.parse(data)[0]===undefined){
                 Swal.fire({
                     icon: "error",

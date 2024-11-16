@@ -34,7 +34,47 @@ function createitem(e){
     cont.appendChild(nom)
     cont.appendChild(img)
     cont.appendChild(prec)
-   
+    buy.addEventListener("click", function(){
+        Swal.fire({
+            icon: "warning",
+            title: "Comprar artículo",
+            text: "¿Seguro que quiere comprar el articulo?",
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: 'Comprar',
+            denyButtonText: `Cancelar`,
+          }).then(result => {
+            if (result.isConfirmed) {
+                datos = new FormData()
+                datos.append("opcion", "CA")
+                datos.append("idarticulo", e.id)
+                fetch("../php/coop25.php", {
+                    method: "POST",
+                    body: datos
+                })
+                .then(response => response.text())
+                .then(data => {
+                    if (data==="error") {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Error",
+                            text: "Ha habido un error al comprar el articulo",
+                          })
+                    } else {
+                        Swal.fire({
+                            icon: "success",
+                            title: "Articulo comprado",
+                            text: "Esperamos que disfrute de su nuevo articulo",
+                          })
+                            .then(function(){
+                                window.location.href = "./inicio.html"
+                            })
+                          
+                    }
+                })
+            }
+          })
+    })
     cont.appendChild(buy)
     cont.appendChild(desc)
     document.getElementById("main").appendChild(cont)
