@@ -84,7 +84,7 @@ function register() {
     }
     
     if (corr) {
-        sendRegister(data)
+        sendRegister(params)
     }
  
 
@@ -129,7 +129,11 @@ function sendRegister(params) {
                     icon: "success",
                     title: "¡Realizado!",
                     text: "Usuario registrado"
-                  });
+                  })
+                  .then(function(){
+                    setUser(mail.value, pass.value)
+                    window.location.href = "./inicio.html"
+                })
             }
         })
 }

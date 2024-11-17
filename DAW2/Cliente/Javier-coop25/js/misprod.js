@@ -9,8 +9,11 @@ function load(){
     })
     .then(response => response.json())
     .then(data => {
+        if (data.length == 0) {
+            document.getElementById("errmsg").innerHTML = "No hay articulos"
+        }
         data.forEach(e => {
-            if (e.vendedor != user.id) {
+            if (e.vendedor == user.id) {
                 createitem(e)
             }
         });
@@ -28,7 +31,7 @@ function createitem(e){
     desc.className = "desc"
     desc.innerHTML = e.descripcion
     let buy = document.createElement("button")
-    buy.innerHTML = "Comprar"
+    buy.innerHTML = "Retirar"
     let img = document.createElement("img")
     img.src = "../imgs/articulos/"+e.imagen
     cont.appendChild(nom)
@@ -37,11 +40,11 @@ function createitem(e){
     buy.addEventListener("click", function(){
         Swal.fire({
             icon: "warning",
-            title: "Comprar artículo",
-            text: "¿Seguro que quiere comprar el articulo?",
+            title: "Retirar artículo",
+            text: "¿Seguro que quiere retirar el articulo?",
             showDenyButton: true,
             showCancelButton: false,
-            confirmButtonText: 'Comprar',
+            confirmButtonText: 'Retirar',
             denyButtonText: `Cancelar`,
           }).then(result => {
             if (result.isConfirmed) {
@@ -58,16 +61,16 @@ function createitem(e){
                         Swal.fire({
                             icon: "error",
                             title: "Error",
-                            text: "Ha habido un error al comprar el articulo",
+                            text: "Ha habido un error al retirar el articulo",
                           })
                     } else {
                         Swal.fire({
                             icon: "success",
-                            title: "Articulo comprado",
-                            text: "Esperamos que disfrute de su nuevo articulo",
+                            title: "Articulo retirado",
+                            text: "Articulo retirado exitosamente",
                           })
                             .then(function(){
-                                window.location.href = "./inicio.html"
+                                window.location.href = "./misproductos.html"
                             })
                           
                     }
@@ -79,7 +82,6 @@ function createitem(e){
     cont.appendChild(desc)
     document.getElementById("main").appendChild(cont)
 }
-load()
 document.getElementById("cs").addEventListener("click", function(){
     Swal.fire({
         icon: "warning",
@@ -105,5 +107,9 @@ document.getElementById("user").addEventListener("click", function(){
       
 })
 document.getElementById("misprod").addEventListener("click", function(){
-    window.location.href = "./misproductos.html"
+    window.location.href = "./inicio.html"
 })
+document.getElementById("newprod").addEventListener("click", function(){
+    window.location.href = "./newprod.html"
+})
+load()
