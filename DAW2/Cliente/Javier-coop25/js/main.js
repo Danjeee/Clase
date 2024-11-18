@@ -22,7 +22,8 @@ function createitem(e){
     let nom = document.createElement("h3")
     nom.innerHTML = e.nombre
     let prec = document.createElement("p")
-    prec.innerHTML = e.precio
+    let n = Number.parseFloat(e.precio)
+    prec.innerHTML = n.toFixed(2) + "€"
     prec.className = "precio"
     let desc = document.createElement("p")
     desc.className = "desc"
@@ -52,6 +53,17 @@ function createitem(e){
                     method: "POST",
                     body: datos
                 })
+                var datos2 = new FormData()
+                datos2.append("fecha", new Date(Date.now()).toISOString())
+                datos2.append("opcion", "RV")
+                datos2.append("vendedor", e.vendedor)
+                datos2.append("idarticulo", e.id)
+                datos2.append("precio", e.precio)
+                datos2.append("idsocio", user.id)
+                fetch("../php/coop25.php", {
+                    method: "POST",
+                    body: datos2,
+                })
                 .then(response => response.text())
                 .then(data => {
                     if (data==="error") {
@@ -80,30 +92,3 @@ function createitem(e){
     document.getElementById("main").appendChild(cont)
 }
 load()
-document.getElementById("cs").addEventListener("click", function(){
-    Swal.fire({
-        icon: "warning",
-        title: "Cerrar sesión",
-        text: "¿Seguro que quiere cerrar la sesión?",
-        showDenyButton: true,
-        showCancelButton: false,
-        confirmButtonText: 'Cerrar sesión',
-        denyButtonText: `Cancelar`,
-      }).then(result => {
-        if (result.isConfirmed) {
-            sessionStorage.setItem("user", null)
-            window.location.href = "./login.html"
-        }
-      })
-})
-document.getElementById("user").addEventListener("click", function(){
-    Swal.fire({
-        icon: "info",
-        title: user.nombre,
-        text: user.email
-      })
-      
-})
-document.getElementById("misprod").addEventListener("click", function(){
-    window.location.href = "./misproductos.html"
-})

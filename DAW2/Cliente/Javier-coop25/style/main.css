@@ -29,8 +29,9 @@ str{
     flex-direction: row;
     gap: 5%;
 }
-#buttons *{
+#buttons *:not(.selected){
     z-index: 1;
+    border: #4E3486 2px solid;
     background-color: #4E3486;
     color: white;
     font-weight: bold;
@@ -40,11 +41,20 @@ str{
     text-align: center;
     transition: 0.5s;
 } 
-#buttons *:hover{
+#buttons *:hover:not(.selected){
     background-color: #7d4cdf;
     cursor: pointer;
     border: #4E3486 2px solid;
 } 
+.selected{
+    border: rgba(0,0,0,0) 2px solid;
+    z-index: 1;
+    width: 8vw;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;    
+}
 
 #main{
     display: flex;
@@ -57,7 +67,7 @@ str{
     flex-wrap: wrap;
 }
 .art{
-    border: #000 2px solid;
+    border: #4E3486 2px solid;
     width: 250px;
     height: 300px;
     display: flex;
@@ -81,14 +91,15 @@ str{
     cursor: default;
 }
 button{
-    border: #000 1.5px solid;
+    border: #4E3486 1.5px solid;
     border-radius: 10px;
-    background-color: white;
+    background-color: #4E3486;
+    color: white;
     transition: 0.5s;
     padding: 15px;
 }
 button:hover{
-    background-color: lightsteelblue;
+    background-color: #7d4cdf;
     cursor: pointer;
 }
 img{

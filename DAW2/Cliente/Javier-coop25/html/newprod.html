@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registro</title>
-    <link rel="stylesheet" href="../style/login.css">
+    <title>Nuevo articulo</title>
+    <link rel="stylesheet" href="../style/newprod.css">
 </head>
 <body>
+    <header>
+        <h1>La javitienda</h1>
+        <div id="buttons">
+            <div id="miperf">Mi perfil</div>
+            <div id="misprod">Mis articulos</div>
+            <div id="inicio">Inicio</div>
+            <div id="user">User</div>
+            <div id="cs">Cerrar sesion</div>
+        </div>
+    </header>
     <form id="f">
         <fieldset>
-            <legend>Nuevo producto</legend>
+            <legend>Nuevo articulo</legend>
         <div class="input">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" >
@@ -35,15 +45,18 @@
         </div>
         <input type="submit" name="submit" id="submit" value="Crear articulo">
         <div id="filter"></div>
-        <div id="errorlist">
+        
 
         </div>
         
         </fieldset>
+        <div id="errorlist"></div>
         
     </form>
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/comprobarlogged.js"></script>
+<script src="../js/botones.js"></script>
 <script src="../js/newprod.js" type="text/javascript"></script>
 </html>

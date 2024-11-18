@@ -5,7 +5,7 @@ body{
 header{
     position: fixed;
     top: 0;
-    height: 12vh;
+    height: 16vh;
     width: 100%;
     background-color: #7d4cdf;
     border-bottom: #000 1px solid;
@@ -17,6 +17,43 @@ header{
 header h1{
     color: white;
     font-weight: bold;
+}
+str{
+    font-weight: bold;
+}
+#buttons{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+#buttons *:not(.selected){
+    z-index: 1;
+    border: #4E3486 2px solid;
+    background-color: #4E3486;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    width: 8vw;
+    text-align: center;
+    transition: 0.5s;
+} 
+#buttons *:hover:not(.selected){
+    background-color: #7d4cdf;
+    cursor: pointer;
+    border: #4E3486 2px solid;
+} 
+.selected{
+    border: rgba(0,0,0,0) 2px solid;
+    z-index: 1;
+    width: 8vw;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;    
 }
 fieldset{
     display: flex;

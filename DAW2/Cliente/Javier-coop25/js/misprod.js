@@ -1,7 +1,8 @@
 let user = JSON.parse(sessionStorage.getItem("user"))
 function load(){
     let params = new FormData()
-    params.append("opcion", "AV")
+    params.append("opcion", "AS")
+    params.append("idsocio", user.id)
     const data = new URLSearchParams(params);
     fetch("../php/coop25.php", {
         method: "POST",
@@ -13,9 +14,12 @@ function load(){
             document.getElementById("errmsg").innerHTML = "No hay articulos"
         }
         data.forEach(e => {
-            if (e.vendedor == user.id) {
-                createitem(e)
-            }
+                if (e.estado != "V") {
+                    createitem(e)
+                } else {
+                    createsolditem(e)
+                }
+            
         });
     })
 }
@@ -25,31 +29,41 @@ function createitem(e){
     let nom = document.createElement("h3")
     nom.innerHTML = e.nombre
     let prec = document.createElement("p")
-    prec.innerHTML = e.precio
+    let n = Number.parseFloat(e.precio)
+    prec.innerHTML = n.toFixed(2) + "€"
     prec.className = "precio"
     let desc = document.createElement("p")
     desc.className = "desc"
     desc.innerHTML = e.descripcion
     let buy = document.createElement("button")
-    buy.innerHTML = "Retirar"
+    buy.innerHTML = "Eliminar"
+    let edit = document.createElement("button")
+    edit.innerHTML = "Editar"
     let img = document.createElement("img")
     img.src = "../imgs/articulos/"+e.imagen
+    let buttons = document.createElement("div")
+    buttons.style.display = "flex"
+    buttons.style.gap = "5px"
     cont.appendChild(nom)
     cont.appendChild(img)
     cont.appendChild(prec)
+    edit.addEventListener("click", function(){
+        sessionStorage.setItem("art", e.id)
+        window.location.href = "editprod.html"
+    })
     buy.addEventListener("click", function(){
         Swal.fire({
             icon: "warning",
-            title: "Retirar artículo",
-            text: "¿Seguro que quiere retirar el articulo?",
+            title: "Eliminar artículo",
+            text: "¿Seguro que quiere eliminar el articulo?",
             showDenyButton: true,
             showCancelButton: false,
-            confirmButtonText: 'Retirar',
+            confirmButtonText: 'Eliminar',
             denyButtonText: `Cancelar`,
           }).then(result => {
             if (result.isConfirmed) {
                 datos = new FormData()
-                datos.append("opcion", "CA")
+                datos.append("opcion", "BA")
                 datos.append("idarticulo", e.id)
                 fetch("../php/coop25.php", {
                     method: "POST",
@@ -61,13 +75,13 @@ function createitem(e){
                         Swal.fire({
                             icon: "error",
                             title: "Error",
-                            text: "Ha habido un error al retirar el articulo",
+                            text: "Ha habido un error al eliminar el articulo",
                           })
                     } else {
                         Swal.fire({
                             icon: "success",
                             title: "Articulo retirado",
-                            text: "Articulo retirado exitosamente",
+                            text: "Articulo eliminado exitosamente",
                           })
                             .then(function(){
                                 window.location.href = "./misproductos.html"
@@ -78,37 +92,38 @@ function createitem(e){
             }
           })
     })
+    buttons.appendChild(edit)
+    buttons.appendChild(buy)
+    cont.appendChild(buttons)
+    cont.appendChild(desc)
+    document.getElementById("main").appendChild(cont)
+    
+}
+function createsolditem(e){
+    let cont = document.createElement('div')
+    cont.className = "art"
+    let nom = document.createElement("h3")
+    nom.innerHTML = e.nombre
+    let prec = document.createElement("p")
+    let n = Number.parseFloat(e.precio)
+    prec.innerHTML = n.toFixed(2) + "€"
+    prec.className = "precio"
+    let desc = document.createElement("p")
+    desc.className = "desc"
+    desc.innerHTML = e.descripcion
+    let buy = document.createElement("button")
+    buy.innerHTML = "Vendido"
+    buy.className = "vendido"
+    let img = document.createElement("img")
+    img.src = "../imgs/articulos/"+e.imagen
+    
+    cont.appendChild(nom)
+    cont.appendChild(img)
+    cont.appendChild(prec)
     cont.appendChild(buy)
     cont.appendChild(desc)
     document.getElementById("main").appendChild(cont)
 }
-document.getElementById("cs").addEventListener("click", function(){
-    Swal.fire({
-        icon: "warning",
-        title: "Cerrar sesión",
-        text: "¿Seguro que quiere cerrar la sesión?",
-        showDenyButton: true,
-        showCancelButton: false,
-        confirmButtonText: 'Cerrar sesión',
-        denyButtonText: `Cancelar`,
-      }).then(result => {
-        if (result.isConfirmed) {
-            sessionStorage.setItem("user", null)
-            window.location.href = "./login.html"
-        }
-      })
-})
-document.getElementById("user").addEventListener("click", function(){
-    Swal.fire({
-        icon: "info",
-        title: user.nombre,
-        text: user.email
-      })
-      
-})
-document.getElementById("misprod").addEventListener("click", function(){
-    window.location.href = "./inicio.html"
-})
 document.getElementById("newprod").addEventListener("click", function(){
     window.location.href = "./newprod.html"
 })

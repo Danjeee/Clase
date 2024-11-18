@@ -17,7 +17,8 @@ const validateEmail = (email) => {
   const validatePass = (pass) => {
     return String(pass)
       .match(
-        /^(?=(.*[a-zA-Z]){5,})(?=(.*\d)){1,}/
+       // /^(?=(.*[a-zA-Z]){5,})(?=(.*\d)){1,}/ antiguo
+       /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{5,10}$/
       );
   };
 function register() {
@@ -132,7 +133,9 @@ function sendRegister(params) {
                   })
                   .then(function(){
                     setUser(mail.value, pass.value)
-                    window.location.href = "./inicio.html"
+                    setTimeout(() => {
+                        window.location.href = "./inicio.html" 
+                    }, 100);
                 })
             }
         })
@@ -149,18 +152,6 @@ function setUser(mail, passwd) {
 f.addEventListener('submit', event => {
     event.preventDefault()
     register()
-    if (corr == true) {
-        if (pass.value == passc.value) {
-            setUser(mail.value, pass.value)
-            window.location.href = "./login.html"
-    
-    
-        } else {
-            event.preventDefault()
-            alert("Las contraseñas no coinciden")
-        }
-        event.preventDefault()
-    }
 })
 foto.addEventListener('change', function () {
     img.src = window.URL.createObjectURL(foto.files[0])

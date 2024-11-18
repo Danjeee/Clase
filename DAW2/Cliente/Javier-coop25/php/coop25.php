@@ -42,11 +42,7 @@ if (isset($_GET['foto']))
 else if (isset($_POST['foto']))
   $img = $_POST['foto'];
 
-// -- parámetro idsocio (SC)
-if (isset($_GET['idsocio']))
-  $ids = $_GET['idsocio'];
-else if (isset($_POST['idsocio']))
-  $ids = $_POST['idsocio'];
+
 
 //-- parametros articulo para registrar articulo en venta (RA) y modificar artículo (MA)
 if (isset($_GET['categoria']))
@@ -70,20 +66,46 @@ if (isset($_GET['imagen']))
 else if (isset($_POST['imagen']))
   $img = $_POST['imagen'];
 
+// -- parámetro vendedor
 if (isset($_GET['vendedor']))
   $ven = $_GET['vendedor'];
 else if (isset($_POST['vendedor']))
   $ven = $_POST['vendedor'];
 
-// -- parámetro idarticulo (CA) y (AC)
+// -- parámetro idsocio
+if (isset($_GET['idsocio']))
+  $ids = $_GET['idsocio'];
+else if (isset($_POST['idsocio']))
+  $ids = $_POST['idsocio'];
+
+// -- parámetro fecha 
+if (isset($_GET['fecha']))
+  $fec = $_GET['fecha'];
+else if (isset($_POST['fecha']))
+  $fec = $_POST['fecha'];
+
+// -- parámetro idarticulo
 if (isset($_GET['idarticulo']))
   $ida = $_GET['idarticulo'];
 else if (isset($_POST['idarticulo']))
   $ida = $_POST['idarticulo'];
 
+  if (isset($_GET['camb']))
+  $fto = $_GET['camb'];
+else if (isset($_POST['camb']))
+  $fto = $_POST['camb'];
 
-// (SR) = Socio Registrado; (AV) = Articulos en Venta; (SC) = un Socio Consulta; 
-if ($opc == "SR" || $opc == "AV" || $opc == "SC" || $opc == "TC") {
+
+
+// (SR) = Socio Registrado; 
+// (SC) = Socio Consulta; 
+// (AC) =  Articulo Consulta;
+// (AV) = Articulos en Venta;
+// (AS) = Artículos Socio;
+// (TC) = Todas las categorías;
+if (
+  $opc == "SR" || $opc == "SC" || $opc == "AC" || $opc == "AV" || $opc == "AS" || $opc == "TC"
+) {
   switch ($opc) {
     case "SR": // Socio Registrado
       $sql = "select * from socios where email = '" . $ema . "' and password = '" . $pas . "'";
@@ -91,16 +113,18 @@ if ($opc == "SR" || $opc == "AV" || $opc == "SC" || $opc == "TC") {
     case "SC": // Socio Consulta 
       $sql = "select * from socios where id = '" . $ids . "'";
       break;
-
+    case "AC": // Articulo Consulta
+      $sql = "select * from articulos where id = '" . $ida . "'";
+      break;
     case "AV": // Articulos en Venta
       $sql = "select * from articulos where estado = 'D'";
       break;
-
-      
-      case "TC": // Todas las Categorias
-        $sql = "select id, nombre, imagen from categorias";
-        break;
-
+    case "AS": // Artículos del Socio
+      $sql = "select * from articulos where vendedor = '" . $ids . "' order by estado";
+      break;
+    case "TC": // Todas las Categorias
+      $sql = "select id, nombre, imagen from categorias";
+      break;
   }
   $datos = null;
   try {
@@ -116,9 +140,19 @@ if ($opc == "SR" || $opc == "AV" || $opc == "SC" || $opc == "TC") {
     echo json_encode(['error' => 'Error en el consulta']);
   }
 } else {
+  // (RS) = Registrar Socio; 
+  // (MS) = Modificar Socio; 
+  // (RA) = Registrar Artículo; 
+  // (MA) = Modificar Artículo; 
+  // (BA) = Borrar Artículo; 
+  // (CA) = Comprar Artículo; 
+  // (RV) = Registro Venta; 
+
   switch ($opc) {
-    case "RS": // Registro nuevo Socio
-      $archivoImagen = (isset($_FILES['foto'])) ? $_FILES['foto'] : null; // subir el archivo al servidor 
+    case "RS": // Registro nuevo Socio ------------------------------------------------------------
+      
+        $archivoImagen = (isset($_FILES['foto'])) ? $_FILES['foto'] : null;
+       // subir el archivo al servidor 
       if ($archivoImagen) {
         $ruta_destino_archivo = "../imgs/socios/";
         $nombre_archivo = $archivoImagen['name'];
@@ -135,30 +169,37 @@ if ($opc == "SR" || $opc == "AV" || $opc == "SC" || $opc == "TC") {
                values ('" . $nom . "','" . $ape . "','" . $ema . "','" . $nombre_archivo . "','" . $pas . "')";
       break;
 
-
-
-
-    case "MS": // Modificar Socio
-      $archivoImagen = (isset($_FILES['foto'])) ? $_FILES['foto'] : null; // subir el archivo al servidor 
-      if ($archivoImagen) {
-        $ruta_destino_archivo = "../imgs/socios/";
-        $nombre_archivo = $archivoImagen['name'];
-        $nombre_archivo = str_replace(' ', '', $nombre_archivo);
-        if (is_file($ruta_destino_archivo . $nombre_archivo)) {
-          $idunico = time();
-          $nombre_archivo = $idunico . "_" . $nombre_archivo;
-        }
-        $archivo_ok = move_uploaded_file($archivoImagen['tmp_name'], $ruta_destino_archivo . $nombre_archivo);
+    case "MS": // Modificar Socio ------------------------------------------------------------
+      
+      
+      if (isset($_POST['camb']) == "nocamb") {
+        $nombre_archivo = $img;
       } else {
+        $archivoImagen = (isset($_FILES['foto'])) ? $_FILES['foto'] : null; // subir el archivo al servidor 
+        if ($archivoImagen) {
+          
+          $ruta_destino_archivo = "../imgs/socios/";
+          $nombre_archivo = $archivoImagen['name'];
+          $nombre_archivo = str_replace(' ', '', $nombre_archivo);
+          if (is_file($ruta_destino_archivo . $nombre_archivo)) {
+            $idunico = time();
+            $nombre_archivo = $idunico . "_" . $nombre_archivo;
+          }
+          $archivo_ok = move_uploaded_file($archivoImagen['tmp_name'], $ruta_destino_archivo . $nombre_archivo);
+        } else {
+          $nombre_archivo = $img;
+        }
+      }
+      if (isset($_POST['camb']) == "nocamb") {
         $nombre_archivo = $img;
       }
       $sql = "update socios SET nombre='" . $nom . "', apellidos='" . $ape . "', email='" . $ema . "', foto='" . $nombre_archivo . "', password='" . $pas . "' WHERE id='" . $ids . "'";
       break;
-  
-      case "RA": // Registro nuevo Articulo
+
+    case "RA": // Registro nuevo Articulo --------------------------------------------------------
       $archivoImagen = (isset($_FILES['imagen'])) ? $_FILES['imagen'] : null; // subir el archivo al servidor 
       if ($archivoImagen) {
-        $ruta_destino_archivo = "../imgs/articulos/";
+        $ruta_destino_archivo = "../archivos/";
         $nombre_archivo = $archivoImagen['name'];
         $nombre_archivo = str_replace(' ', '', $nombre_archivo);
         if (is_file($ruta_destino_archivo . $nombre_archivo)) {
@@ -171,11 +212,41 @@ if ($opc == "SR" || $opc == "AV" || $opc == "SC" || $opc == "TC") {
                  values ('" . $cat . "','" . $art . "','" . $des . "','" . $pre . "','" . $nombre_archivo . "','" . $ven . "')";
       break;
 
+    case "MA": // Modificar Artículo -----------------------------------------------------
+      $archivoImagen = (isset($_FILES['imagen'])) ? $_FILES['imagen'] : null; // subir el archivo al servidor 
+      if ($archivoImagen) {
+        $ruta_destino_archivo = "../archivos/";
+        $nombre_archivo = $archivoImagen['name'];
+        $nombre_archivo = str_replace(' ', '', $nombre_archivo);
+        if (is_file($ruta_destino_archivo . $nombre_archivo)) {
+          $idunico = time();
+          $nombre_archivo = $idunico . "_" . $nombre_archivo;
+        }
+        $archivo_ok = move_uploaded_file($archivoImagen['tmp_name'], $ruta_destino_archivo . $nombre_archivo);
+      } else {
+        $nombre_archivo = $img;
+      }
+      if (isset($_POST['camb']) == "nocamb") {
+        $nombre_archivo = $img;
+      }
+      $sql = "update articulos SET categoria='" . $cat . "', nombre='" . $art . "', descripcion='" . $des . "', imagen='" . $nombre_archivo . "', precio='" . $pre . "', estado='D' WHERE id='" . $ida . "'";
+      break;
+
+    case "BA": // Borrar Articulo --------------------------------------------------------------
+      $sql = "delete from articulos where id = '" . $ida . "'";
+      break;
+
+
     case "CA": // Compra Artículo (al comprar se cambia el estado de 'D' (disponible) a 'V' (vendido)     
       $sql = "update articulos set estado = 'V' where id = '" . $ida . "'";
       break;
 
+    case "RV": // Registro Venta -----------------------------------------------------------------
+      $sql = "insert into ventas (fecha, socio, articulo, precio, comprador) 
+              values ('" . $fec . "','" . $ven . "','" . $ida . "','" . $pre . "','" . $ids . "')";
+      break;
   }
+
   try {
     $resultados = mysqli_query($conexion, $sql);
     if ($resultados == 1) {
