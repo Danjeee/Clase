@@ -1,0 +1,100 @@
+body{
+    text-align: center;
+    margin-top: 10%;
+    background-color: #fbe8f6;
+}
+.logo{
+    width: 5%;
+    height: 5%;
+}
+.profile{
+    width: 20%;
+    height: 40%;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d03291;
+    color: #f8d2ee;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main>p{
+    color: #a12269;
+}
+table td{
+    border: #f8d2ee 2px solid;
+}
+table {
+    border-collapse: collapse;
+}
+.enlaces{
+    text-align: start;
+    padding-left: 10%;
+    display: flex;
+}
+.enlaces a:first-of-type{
+    padding-right: 5%;
+    border-right: #a12269 2px solid;
+}
+.enlaces a:last-of-type{
+    margin-left: 5%;
+}
+.tareas {
+    align-items: center;
+    padding: 10%;
+    background-color: #a12269;
+    display: flex;
+    justify-content: center;
+    color: #f8d2ee;
+}
+.tareas table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.calendario{
+    margin-right: 7%;
+    width: 20%;
+    border: #a12269 2px solid;
+    padding: 4%;
+}
+.todo{
+    background-color: #a12269;
+    display: flex;
+    justify-content: space-around;
+}
+.todo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo div div{
+    height: 70%;
+    width: 100%;
+    border: #f8d2ee 2px solid;
+}
+.todo div img{
+    width: 150px;
+}
+.todo h3, .todo p{
+    color: #f8d2ee;
+    width: 100%;
+    
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}

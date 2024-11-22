@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+    margin-top: 10%;
+    background-color: #fbe8f6;
+}
+.logo{
+    width: 5%;
+    height: 5%;
+}
+.profile{
+    width: 20%;
+    height: 40%;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d03291;
+    color: #f8d2ee;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}
+.enlaces{
+    text-align: start;
+    padding-left: 10%;
+    display: flex;
+}
+.enlaces a:first-of-type{
+    padding-right: 5%;
+    border-right: #000 2px solid;
+}
+.enlaces a:last-of-type{
+    margin-left: 5%;
+}
+form{
+    width: 50%;
+    border: #d03291 2px solid;
+    background-color: #d03291;
+    margin-top: 7%;
+    align-self: center;
+    padding-bottom: 2%;
+    color: #f8d2ee;
+    border-radius: 15px;
+}
+form>div{
+    margin-top: 10%;
+}
+.submitbuts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.prios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.prios div{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea, .submitbuts>div{
+    color: #d03291;
+    background-color: #f8d2ee;
+    border: #d03291 2px solid;
+    padding: 1%;
+}

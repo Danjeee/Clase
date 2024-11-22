@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The planner - Nueva tarea</title>
+    <link rel="stylesheet" href="../styles/nuevatarea.css">
+</head>
+<body>
+    <header>
+        <img src="../recursos/logo2.png" alt="logo.png" class="logo">
+        <h1>The planner</h1>
+        <div>
+            <img src="../recursos/user-circle-solid-60_magenta.png" alt="pfp.png" class="profile">
+            <p>Nombre usuario</p>
+        </div>
+    </header>
+    <main>
+        <h1>Crea una nueva tarea</h1>
+        <div class="enlaces">
+            <a href="./listatareas.html">Inicio</a>
+            <a href="./nuevatarea.html">Nueva tarea</a>
+        </div>
+        <form action="#">
+            <div>
+                <label for="nombre">Nombre tarea:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="fi">Fecha inicio:</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="ff">Fecha fin:</label>
+                <input type="date">
+            </div>
+            <div class="prios">
+                <label for="prio">Prioridad:</label>
+                <div><input type="checkbox" name="prio" id="prio">Alta</div>
+                <div><input type="checkbox" name="prio" id="prio">Media</div>
+                <div><input type="checkbox" name="prio" id="prio">Baja</div>
+            </div>
+            <div>
+                <label for="est">Estado:</label>
+                <select name="est" id="est">
+                    <option value="1">TO-DO</option>
+                    <option value="2">DOING</option>
+                    <option value="3">DO</option>
+                </select>
+            </div>
+            <div>
+                <label for="desc">Descripcion:</label>
+                <textarea name="desc" id="desc"></textarea>
+            </div>
+            <div class="submitbuts">
+                <input type="submit" value="Crear">
+                <div onclick="window.location.href = './nuevatarea.html'">Limpiar</div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Desarrollado por Javier Soriano | Curso 24-25 - DIW
+    </footer>
+</body>
+</html>
