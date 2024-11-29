@@ -1,0 +1,20 @@
+<div class="container mt-4">
+  <h1>Artículos en Venta</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let articulo of articulos">
+        <td>{{ articulo.id }}</td>
+        <td>{{ articulo.nombre }}</td>
+        <td>{{ articulo.precio }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

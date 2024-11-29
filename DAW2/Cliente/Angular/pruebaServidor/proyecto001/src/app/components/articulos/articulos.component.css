@@ -1,0 +1,94 @@
+/* Estilo general para el contenedor */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Centrar la tabla */
+.table {
+  width: 60%; /* Limita el tamaño de la tabla */
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+/* Encabezados de la tabla */
+.table thead th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Celdas del cuerpo de la tabla */
+.table tbody td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+/* Ajustar tamaño de las columnas */
+.table td:first-child, /* Columna ID */
+.table th:first-child {
+  width: 15%; /* Ajusta al 15% del ancho */
+}
+
+.table td:nth-child(2), /* Columna Nombre */
+.table th:nth-child(2) {
+  text-align: left !important; /* Forzar alineación izquierda */
+  padding-left: 15px; /* Espacio adicional a la izquierda */
+  width: 45%; /* Ajusta al 45% del ancho */
+}
+
+.table td:last-child, /* Columna Precio */
+.table th:last-child {
+  width: 20%; /* Ajusta al 20% del ancho */
+  text-align: right !important; /* Forzar alineación izquierda */
+  padding-left: 15px; /* Espacio adicional a la izquierda */
+}
+
+/* Fila alternante para mejor visualización */
+.table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Fila al pasar el cursor */
+.table tbody tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+/* Texto de las celdas */
+.table td {
+  font-size: 1rem;
+}
+
+/* Adaptabilidad para dispositivos pequeños */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .table {
+    width: 90%; /* Reduce el ancho para pantallas pequeñas */
+    font-size: 0.9rem;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 6px;
+  }
+}
