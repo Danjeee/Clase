@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevo movimiento</title>
+	<link rel="stylesheet" th:href="@{../../../../../cssdefault.css}">
+</head>
+
+<body>
+	<br>
+	<br>
+	<form th:action="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos/save (idCliente=${cliente.id}, idCuenta=${cuenta.id})}" th:object="${movimiento}" method="POST">
+		<fieldset>
+			<legend th:text="'Nuevo movimiento de '+ ${cuenta.nombre}"></legend>
+		<table border="0">
+			<tr>
+				<td>Emisor</td>
+				<td><input type="text" th:field="*{idEmisor.id}" readonly/> </td>
+			</tr>
+			<tr>
+				<td>Tipo/Concepto</td>
+				<td><input type="text" th:field="*{tipo}" required/> </td>
+			</tr>
+			<tr>
+				<td>Cantidad</td>
+				<td><input type="number" th:field="*{cant}" required min=0/> </td>
+			</tr>
+            <tr>
+				<td>Receptor</td>
+				<td><input type="number" th:field="*{idReceptor.id}" required min=0/> </td>
+			</tr>
+		</table>
+		<input type="submit" value="Realizar"/>
+		</fieldset>
+	</form>
+	<br>
+	<a th:href="@{/clientes/{idCliente}/cuentas (idCliente=${cliente.id})}">Volver</a>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://thymeleaf.org">
+
+<head>
+	<title th:text="${n}"></title>
+	<link rel="stylesheet" th:href="@{../../../../cssclientes.css}">
+</head>
+
+<body>
+	<h1 th:text="${n}"></h1>
+	<br>
+	<h1 th:if="${movimientos.isEmpty()}" th:text="${cuenta.nombre} + ' no tiene movimientos'"></h1>
+	<br th:if="${movimientos.isEmpty()}">
+	<h1 th:if="${!movimientos.isEmpty()}" th:text="'Movimientos de ' + ${cuenta.nombre}"></h1>
+	<table th:if="${!movimientos.isEmpty()}">
+		<tr>
+			<th>Id</th>
+            <th>Tipo/Concepto</th>
+			<th>Emisor</th>
+			<th>Receptor</th>
+			<th>Cantidad</th>
+			<th>Fecha</th>
+		</tr>
+		<tr th:each="movimiento : ${movimientos}">
+			<td th:text="${movimiento.id}"></td>
+			<td th:text="${movimiento.tipo}"></td>
+			<td><a th:text="${movimiento.idEmisor.id}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idEmisor.id}) }"></a></td>
+			<td><a th:text="${movimiento.idReceptor.id}" th:href="@{/clientes/buscarcuenta/{idCuenta} (idCuenta=${movimiento.idReceptor.id}) }"></a></td>
+			<td th:text="${movimiento.cant}" class="saldo"></td>
+			<td th:text="${movimiento.fecha}"></td>
+		</tr>
+	</table>
+	<a th:href="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos/new (idCliente=${cuenta.clienteDTO.id}, idCuenta=${cuenta.id})}">Nuevo movimiento</a>
+	<a th:href="@{/clientes/{idCliente} (idCliente=${cuenta.clienteDTO.id})}">Volver</a>
+</body>
+<script>
+	Array.from(document.getElementsByClassName("saldo")).forEach(e => {
+		let n = Number.parseFloat(e.innerHTML)
+		e.innerHTML = n.toFixed(2) + "€"
+	});
+</script>
+
+</html>

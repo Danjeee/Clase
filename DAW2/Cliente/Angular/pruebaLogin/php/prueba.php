@@ -14,7 +14,7 @@ if($method == "OPTIONS") {
 $servidor = "localhost";   // Configuración BD
 $basedatos = "prueba";
 $usuario = "root";
-$password = "";
+$password = "javi00";
 
 // --  Crear la conexión al servidor y ejecutar la consulta.
 $conexion = mysqli_connect($servidor, $usuario, $password);
