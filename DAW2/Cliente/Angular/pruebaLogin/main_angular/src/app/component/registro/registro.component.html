@@ -1,0 +1,75 @@
+<form [formGroup]="form" id="form" (ngSubmit)="registro()">
+    <h3>Registro</h3>
+
+    <div >
+      <input type="text" id="nombre" name="nombre" formControlName="nombre" placeholder="Nombre">
+      <label for="nombre">Nombre</label>
+
+      <div *ngIf="errors('nombre') && touched('nombre')">
+        <span *ngIf="errors('nombre')?.['required']">Campo obligatorio</span>
+        <span *ngIf="errors('nombre')?.['minlength']">Minimo 2 caracteres</span>
+        <span *ngIf="errors('nombre')?.['maxlength']">Maximo 20 caracteres</span>
+      </div>
+    </div>
+
+    <div>
+      <input type="text" id="apellidos" name="apellidos" formControlName="apellidos"
+        placeholder="Apellidos">
+      <label for="apellidos">Apellidos</label>
+
+      <div *ngIf="errors('apellidos') && touched('apellidos')">
+        <span *ngIf="errors('apellidos')?.['required']">Campo obligatorio</span>
+        <span *ngIf="errors('apellidos')?.['minlength']">Minimo 3 caracteres</span>
+        <span *ngIf="errors('apellidos')?.['maxlength']">Maximo 30 caracteres</span>
+      </div>
+    </div>
+
+    <div>
+      <input type="email" id="email" name="email" formControlName="email"
+        placeholder="Email">
+      <label for="email">Email</label>
+
+      <div *ngIf="errors('email') && touched('email')">
+        <span *ngIf="errors('email')?.['required']">Campo obligatorio</span>
+        <span *ngIf="errors('email')?.['pattern']">Formato incorrecto</span>
+      </div>
+    </div>
+
+    <div>
+      <input type="password" id="password" name="password" formControlName="password"
+        placeholder="Password">
+      <label for="password">Contraseña</label>
+
+      <div *ngIf="errors('password') && touched('password')">
+        <span *ngIf="errors('password')?.['required']">Campo obligatorio</span>
+        <div *ngIf="errors('password')?.['pattern']">
+          <p>Formato incorrecto, la contraseña debe contener:</p>
+          <ul>
+            <li>Minimo 8 caracteres</li>
+            <li>Una letra</li>
+            <li>Un numero</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <input type="password" id="passc" name="passc"
+        formControlName="passc" placeholder="Repeat Password">
+      <label for="password">Repetir contraseña</label>
+
+      <div *ngIf="errors('passc') && touched('passc')">
+        <span *ngIf="errors('passc')?.['required']">Campo obligatorio</span>
+        <span *ngIf="errors('passc')?.['eq']">Las contraseñas deben coincidir</span>
+      </div>
+    </div>
+    <div>
+      <input type="file" name="foto" id="foto" [defaultValue]="'user.png'">
+      <img src="user.png" alt="user.png">
+    </div>
+
+    <button type="submit">Registrarse</button>
+    <div *ngIf="alrExistError">
+      <span>El usuario ya existe</span>
+    </div>
+  </form>

@@ -1,4 +1,4 @@
-package com.javi.service;
+/*package com.javi.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,4 +47,4 @@ public class CuentaServiceImpl implements CuentaService {
 		//CuentaDTO.convertToDTO(c, ClienteDTO.convertToDTO(c.getCliente()));
 	}
 
-}
+}*/

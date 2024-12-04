@@ -4,11 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -36,8 +40,10 @@ public class Cliente {
 	
 	@Column(name="email")
 	private String email;
+	
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "cliente")
 	private Recomendacion recomendacion;
-	private List<Cuenta> cuentas = new ArrayList<>();
+	//private List<Cuenta> cuentas = new ArrayList<>();
 
 	@Override
 	public boolean equals(Object obj) {
@@ -67,6 +73,6 @@ public class Cliente {
 	public Cliente() {
 		super();
 		this.recomendacion = new Recomendacion();
-		this.cuentas = new ArrayList<>();
+		//this.cuentas = new ArrayList<>();
 	}
 }
