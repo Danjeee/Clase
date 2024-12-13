@@ -21,7 +21,7 @@ public class ClienteDTO implements Serializable {
 	private String clave;
 	private String email;
 	private RecomendacionDTO recomendacionDTO;
-	//private List<CuentaDTO> cuentasDTO = new ArrayList<>();
+	private List<CuentaDTO> cuentasDTO = new ArrayList<>();
 
 	@Override
 	public boolean equals(Object obj) {
@@ -48,9 +48,9 @@ public class ClienteDTO implements Serializable {
 		this.clave = (c.getClave());
 		this.email = (c.getEmail());
 		this.recomendacionDTO = (RecomendacionDTO.convertToDTO(c.getRecomendacion(), cdto));
-		/*for (Cuenta i : c.getCuentas()) {
+		for (Cuenta i : c.getCuentas()) {
 			this.cuentasDTO.add(CuentaDTO.convertToDTO(i, cdto));
-		}*/
+		}
 	}
 
 	public static ClienteDTO convertToDTO(Cliente cliente) {

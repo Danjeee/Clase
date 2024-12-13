@@ -1,7 +1,13 @@
-<form (submit)="login(); $event.preventDefault()">
-    <label for="email">Email:</label>
-    <input type="text" name="email" id="email" required>
-    <label for="pass">Contraseña:</label>
-    <input type="pass" name="pass" id="pass">
+<form [formGroup]="form" id="form" (submit)="login(); $event.preventDefault()">
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" formControlName="email" required>
+        <p *ngIf="errors('email') && touched('email')">El campo no puede estar vacío</p>
+    </div>
+    <div>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="password" id="password" formControlName="password">
+        <p *ngIf="errors('pass') && touched('pass')">El campo no puede estar vacío</p>
+    </div>
     <input type="submit" value="Iniciar sesion" id="subm">
 </form>

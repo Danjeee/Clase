@@ -11415,3 +11415,103 @@ Caused by: org.eclipse.core.runtime.OperationCanceledException: null
 2024-12-04 10:52:00,720 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-12-04 10:52:00,727 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
 2024-12-04 10:52:00,740 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:18:53,335 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-09 10:38:17,728 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:38:17,777 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:38:17,803 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:39:39,302 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:39:39,311 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:39:39,326 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:40:13,575 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:40:13,586 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:40:13,610 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:42:10,200 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:42:10,209 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:42:10,224 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:45:32,982 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:45:32,990 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:45:33,003 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:45:49,678 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:45:49,686 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:45:49,706 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:47:30,049 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:47:30,056 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:47:30,070 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:47:39,195 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:47:39,204 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:47:39,217 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:47:57,794 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:47:57,805 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:47:57,819 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:48:37,676 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:48:37,683 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:48:37,697 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:51:15,139 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:51:15,146 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:51:15,162 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:51:16,400 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:51:16,407 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:51:16,422 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:52:14,646 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:52:14,654 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:52:14,668 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:53:52,629 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:53:52,637 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:53:52,653 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:54:17,394 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:54:17,402 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:54:17,422 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:54:21,437 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:54:21,443 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:54:21,456 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:55:25,179 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:55:25,186 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:55:25,202 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:56:11,035 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:56:11,044 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:56:11,060 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:56:33,628 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:56:33,635 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:56:33,649 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:57:54,716 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:57:54,723 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:57:54,737 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:58:03,904 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:58:03,911 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:58:03,925 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:58:46,050 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:58:46,058 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:58:46,072 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:58:54,234 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:58:54,241 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:58:54,255 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 10:59:32,540 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 10:59:32,547 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 10:59:32,566 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:33:21,560 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:33:21,568 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:33:21,583 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:33:32,755 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:33:32,762 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:33:32,777 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:37:52,293 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:37:52,301 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:37:52,315 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:38:01,121 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:38:01,129 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:38:01,144 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:38:22,577 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:38:22,584 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:38:22,598 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:39:50,770 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:39:50,777 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:39:50,791 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:40:22,989 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:40:22,996 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:40:23,011 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 11:51:19,982 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 11:51:19,992 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 11:51:20,009 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources
+2024-12-09 12:00:37,969 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-09 12:00:37,983 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 14 resources from src\main\resources to target\classes
+2024-12-09 12:00:38,006 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\Clase\DAW2\Servidor\Spring\BBDD_test1\src\test\resources

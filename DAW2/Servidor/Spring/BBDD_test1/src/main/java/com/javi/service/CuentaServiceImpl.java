@@ -1,4 +1,8 @@
-/*package com.javi.service;
+package com.javi.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,10 +45,23 @@ public class CuentaServiceImpl implements CuentaService {
 
 	@Override
 	public CuentaDTO findById(CuentaDTO cu) {
-		Cuenta c = cr.findById(CuentaDTO.convertToEntity(cu, ClienteDTO.convertToEntity(cu.getClienteDTO())));
+		Optional<Cuenta> cuaux = cr.findById(cu.getId());
+		CuentaDTO c = new CuentaDTO();
+		if (cuaux.isPresent()) {
+			c = CuentaDTO.convertToDTO(cu);
+		}
+		return c;
 		
-		return null;
-		//CuentaDTO.convertToDTO(c, ClienteDTO.convertToDTO(c.getCliente()));
 	}
 
-}*/
+	@Override
+	public List<CuentaDTO> findAllByCliente(ClienteDTO c) {
+		List<CuentaDTO> listadtos = new ArrayList<CuentaDTO>();
+		for (Cuenta cu : cr.findAllByCliente(c.getId())) {
+			listadtos.add(CuentaDTO.convertToDTO(cu, c));
+		}
+		
+		return listadtos;
+	}
+
+}

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, inject, Inject, type OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { SociosService } from "../../service/socios.service";
 import {
   AbstractControl,
@@ -10,7 +10,7 @@ import {
   ValidatorFn,
   Validators,
 } from "@angular/forms";
-import { CommonModule, DOCUMENT } from "@angular/common";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-register",
@@ -19,15 +19,9 @@ import { CommonModule, DOCUMENT } from "@angular/common";
   templateUrl: "./registro.component.html",
   styleUrl: "./registro.component.css",
 })
-export class RegistroComponent implements AfterViewInit{
+export class RegistroComponent{
   alrExistError = false
   foto: any
-  ngAfterViewInit(): void {
-    const form = document.getElementById("form") as HTMLFormElement;
-    const body = new FormData(form);
-      this.foto = body.get("foto")[0]
-      console.log(this.foto)
-  }
   
   checkfoto(){
     
@@ -86,17 +80,15 @@ export class RegistroComponent implements AfterViewInit{
 
   registro() {
     if (this.form.valid) {
-      const form = document.getElementById("form") as HTMLFormElement;
-      const body = new FormData(form);
+      const formdata = document.getElementById("form") as HTMLFormElement;
+      const body = new FormData(formdata);
       body.append("opcion", "RS")
-      console.log(body.get("foto")?["name"]:["name"])
       this.sociosService.register(body).subscribe({
         
         next: (data) => {
           const resp = JSON.parse(JSON.stringify(data));
           if (resp.ok) {
-            //window.location.href = "/login";
-            console.log(data)
+            window.location.href = "/login";
           } else if (resp.error) {
             this.alrExistError = true
             console.log("Usuario ya existe");

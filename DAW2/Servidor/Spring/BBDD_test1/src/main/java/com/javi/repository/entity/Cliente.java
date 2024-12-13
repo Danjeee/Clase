@@ -12,6 +12,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -43,7 +44,8 @@ public class Cliente {
 	
 	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "cliente")
 	private Recomendacion recomendacion;
-	//private List<Cuenta> cuentas = new ArrayList<>();
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "cliente")
+	private List<Cuenta> cuentas = new ArrayList<>();
 
 	@Override
 	public boolean equals(Object obj) {
