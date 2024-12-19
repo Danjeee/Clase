@@ -12,6 +12,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
@@ -46,6 +48,9 @@ public class Cliente {
 	private Recomendacion recomendacion;
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "cliente")
 	private List<Cuenta> cuentas = new ArrayList<>();
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinTable(name="clientesdirecciones", joinColumns = @JoinColumn(name="idcliente"))
+	private List<Direccion> direcciones = new ArrayList<>();
 
 	@Override
 	public boolean equals(Object obj) {

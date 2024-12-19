@@ -13,7 +13,9 @@ import lombok.ToString;
 @Data
 public class CuentaDTO {
 	private int id;
-	private String nombre;
+	private String sucursal;
+	private String dc;
+	private String numerocuenta;
 	private float saldo;
 	@ToString.Exclude
 	private ClienteDTO clienteDTO;
@@ -39,7 +41,6 @@ public class CuentaDTO {
 
 	public void setCuenta(int id, String nombre, float saldo) {
 		this.id = id;
-		this.nombre = nombre;
 		this.saldo = saldo;
 	}
 
@@ -50,7 +51,9 @@ public class CuentaDTO {
 		this.dc = c.getDc();
 		this.numerocuenta = c.getNumerocuenta();
 		this.saldo = c.getSaldo();
-		this.cliente = c.getCliente();
+		ClienteDTO caux = new ClienteDTO();
+		caux.setId(c.getCliente().getId());
+		this.clienteDTO = caux;
 		/*for (Movimiento m : c.getMovimientos()) {
 			this.movimientos.add(MovimientoDTO.convertToDTO(m));
 		}*/
@@ -59,22 +62,20 @@ public class CuentaDTO {
 	public static CuentaDTO convertToDTO(Cuenta cuenta) {
 		CuentaDTO c = new CuentaDTO();
 		c.set(cuenta);
-		c.setClienteDTO(cdto);
 		return c;
 	}
 
 	public static Cuenta convertToEntity(CuentaDTO cdto) {
 		Cuenta c = new Cuenta();
 		c.setId(cdto.getId());
-		c.setNombre(cdto.getNombre());
 		c.setSaldo(cdto.getSaldo());
-		c.setCliente(cli);
+		c.setCliente(ClienteDTO.convertToEntity(cdto.getClienteDTO()));
 		c.setBanco(cdto.getBanco());
 		return c;
 	}
 	
 	public String toString() {
-		return this.id + " " + this.nombre + " " + this.clienteDTO.getNombre();
+		return this.id+ " " + this.clienteDTO.getNombre();
 	}
 
 	public CuentaDTO() {

@@ -49,7 +49,7 @@ public class ClienteDTO implements Serializable {
 		this.email = (c.getEmail());
 		this.recomendacionDTO = (RecomendacionDTO.convertToDTO(c.getRecomendacion(), cdto));
 		for (Cuenta i : c.getCuentas()) {
-			this.cuentasDTO.add(CuentaDTO.convertToDTO(i, cdto));
+			this.cuentasDTO.add(CuentaDTO.convertToDTO(i));
 		}
 	}
 

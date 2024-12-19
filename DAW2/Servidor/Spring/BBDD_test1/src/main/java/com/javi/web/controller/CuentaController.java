@@ -22,7 +22,7 @@ import ch.qos.logback.core.net.server.Client;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-
+@Controller
 public class CuentaController {
 	
 	private static final Logger log = LoggerFactory.getLogger(CuentaController.class);

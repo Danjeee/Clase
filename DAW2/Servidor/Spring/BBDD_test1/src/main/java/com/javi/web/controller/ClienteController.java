@@ -58,7 +58,7 @@ public class ClienteController {
 	public ModelAndView save(@ModelAttribute("clienteDTO") ClienteDTO cdto) {
 		log.info("Salvando " + cdto);
 		cdto.getRecomendacionDTO().setClienteDTO(cdto);
-		//cs.save(cdto);
+		cs.save(cdto);
 		ModelAndView mvc = new ModelAndView("redirect:/clientes");
 		return mvc;
 	}
@@ -71,7 +71,7 @@ public class ClienteController {
 		RecomendacionDTO r = new RecomendacionDTO();
 		r.setClienteDTO(cdto);
 		cdto.setRecomendacionDTO(r);
-		//cs.delete(cdto);
+		cs.delete(cdto);
 		ModelAndView mvc = new ModelAndView("redirect:/clientes");
 		return mvc;
 	}

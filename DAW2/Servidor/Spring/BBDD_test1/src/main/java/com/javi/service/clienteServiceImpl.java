@@ -32,16 +32,17 @@ public class clienteServiceImpl implements clienteService {
 		return listaClientesDTO;
 	}
 
-	/*
+	
 	@Override
 	public void save(ClienteDTO cdto) {
 		if (cdto.getId() != -1) {
 			log.info("Aqui actualizamos el cliente");
-			cr.update(ClienteDTO.convertToEntity(cdto));
+			cr.update(cdto.getNif(), cdto.getNombre(), cdto.getApellidos(), cdto.getClave(), cdto.getEmail(), cdto.getId());
 		} else {
 			log.info("Aqui salvamos el cliente");
 			cdto.getRecomendacionDTO().setId(findAll().size());
 			cdto.setId(findAll().size());
+			log.info(String.valueOf(cdto.getId()));
 			cr.save(ClienteDTO.convertToEntity(cdto));
 		}
 
@@ -49,9 +50,9 @@ public class clienteServiceImpl implements clienteService {
 
 	@Override
 	public void delete(ClienteDTO cdto) {
-		cr.delete(ClienteDTO.convertToEntity(cdto));
+		cr.deleteById(cdto.getId());
 	}
-	*/
+	
 
 	@Override
 	public ClienteDTO findById(ClienteDTO cdto) {

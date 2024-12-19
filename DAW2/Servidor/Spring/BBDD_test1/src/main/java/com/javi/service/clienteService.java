@@ -16,4 +16,8 @@ public interface clienteService {
 	*/
 
 	public ClienteDTO findById(ClienteDTO cdto);
+
+	void delete(ClienteDTO cdto);
+
+	void save(ClienteDTO cdto);
 }
