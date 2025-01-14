@@ -1,0 +1,21 @@
+@import "_var";
+@import "_mix";
+@import "_func";
+
+body{
+    @include reset_pad;
+    @include col;
+}
+.header{
+    background-color: $pcolor;
+    @include col;
+    align-items: center;
+    h1{
+        color: $scolor;
+    }
+}
+.def_div{
+    @include div;
+    background-color: $pcolor;
+    color: $scolor;
+}

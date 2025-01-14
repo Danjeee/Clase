@@ -1,0 +1,40 @@
+RELACIONES STS
+-----------------------1:1-------------------------------
+CLASE 1 (Independiente):
+	
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "clase1")
+	private Clase2 clase2;
+
+CLASE 2 (Dependiente):
+
+	@ToString.Exclude
+	@OneToOne(fetch = FetchType.LAZY, optional = false)
+	@JoinColumn(name="idclase1")
+	private Clase1 clase1;
+
+-----------------------1:N-------------------------------
+CLASE 1 (1):
+
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "atrclase1")
+	private List<Clase2> clases2 = new ArrayList<>();
+
+CLASE 2 (N):
+	
+	@ManyToOne
+	@JoinColumn(name="idclase1")
+	private Clase1 atrclase1;
+
+
+-----------------------N:N-------------------------------
+CLASE 1:
+
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinTable(name="clase1joinclase2", joinColumns = @JoinColumn(name="idclase1"), inverseJoinColumns = @JoinColumn(name = "idclase2"))
+	private List<Clase2> clases2 = new ArrayList<>();
+
+CLASE 2:
+
+	@ToString.Exclude
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "clases2") // NOTA: "clases2" es el nombre del atributo que hace referencia a la clase 2 en clase 1
+	private List<Cliente> listaclientes;
+

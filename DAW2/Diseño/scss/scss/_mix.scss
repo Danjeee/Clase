@@ -1,0 +1,13 @@
+@import "_var";
+@mixin reset_pad(){
+    padding: 0;
+    margin: 0;
+}
+@mixin col(){
+    display: flex;
+    flex-direction: column;
+}
+@mixin div{
+    width: 100px;
+    height: 100px;
+}

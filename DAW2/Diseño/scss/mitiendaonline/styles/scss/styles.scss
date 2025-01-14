@@ -1,0 +1,48 @@
+@import "var_.scss";
+body{
+    font-family: $font-family;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    color: $primary-color;
+}
+p{
+    font-size: 1.2rem;
+    color: #555;
+}
+button{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.product{
+    background-color: #fff;
+    border: #000 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+    transition: filter .3s;
+    &:hover{
+    filter: drop-shadow(0 0 0.75rem #000);
+    }
+}
+img{
+    max-width: 100%;
+    width: auto;
+}
+h3{
+    font-size: 1.5rem;
+}
+.important-tex{
+    font-weight: bold;
+    color: $secondary-color;
+}
+@each $button-styles, $color in $button-styles {
+    .#{$button-styles} {background-color: $color; &:hover{background-color: darken($color, 10%);}}
+}
+.centered{
+    @include center;
+}

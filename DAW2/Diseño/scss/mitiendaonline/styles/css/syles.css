@@ -1,0 +1,77 @@
+body {
+  font-family: Arial;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #3498db;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.product {
+  background-color: #fff;
+  border: #000 1px solid;
+  border-radius: 5px;
+  margin: 10px;
+  transition: filter 0.3s;
+}
+.product:hover {
+  filter: drop-shadow(0 0 0.75rem #000);
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.important-tex {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.primary-button {
+  background-color: #3498db;
+}
+.primary-button:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+.secondary-button {
+  background-color: #2ecc71;
+}
+.secondary-button:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+
+.buy-button {
+  background-color: #f39c12;
+}
+.buy-button:hover {
+  background-color: rgb(199.8795180723, 126.5060240964, 10.1204819277);
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=syles.css.map */
