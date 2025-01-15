@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title
+      th:text="${add} ? 'Nuevo movimiento' : 'Actualizar movimiento'"
+    ></title>
+  </head>
+
+  <body>
+    <div>
+      <h1 th:text="${add} ? 'Nuevo movimiento' : 'Actualizar movimiento'"></h1>
+    </div>
+    <div>
+      <form
+        th:action="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos/save (idCliente=${clienteDTO.id}, idCuenta=${cuentaDTO.id})}"
+        th:object="${movimientoDTO}"
+        method="post"
+      >
+        <div th:if="${movimientoDTO.id}">
+          <label for="id">ID</label>
+          <input
+            type="text"
+            id="id"
+            th:field="*{id}"
+            readonly
+          />
+        </div>
+        <div>
+          <label for="tipo">TIPO</label>
+          <input
+            type="text"
+            id="tipo"
+            th:field="*{tipo}"
+          />
+        </div>
+        <div>
+          <label for="descripcion">DESCRIPCION</label>
+          <input
+            type="text"
+            id="descripcion"
+            th:field="*{descripcion}"
+          />
+        </div>
+        <div>
+          <label for="importe">IMPORTE</label>
+          <input
+            type="number"
+            min="0"
+            step=".01"
+            id="importe"
+            th:field="*{importe}"
+          />
+        </div>
+        <label for="idCuentaOrigen">Selecciona una cuenta origen</label>
+        <select name="idCuentaOrigen" id="idCuentaOrigen">
+          <option value="" disabled>Selecciona una cuenta origen</option>
+          <option
+            th:each="c : ${cuentas}"
+            th:value="${c.id}"
+            th:text="${c.numeroCuenta}"
+          ></option>
+        </select>
+        <label for="idCuentaDestino">Selecciona una cuenta destino</label>
+        <select name="idCuentaDestino" id="idCuentaDestino">
+          <option value="" disabled>Selecciona una cuenta destino</option>
+          <option
+            th:each="c : ${cuentasReverse}"
+            th:value="${c.id}"
+            th:text="${c.numeroCuenta}"
+          ></option>
+        </select>
+        <div th:if="${errorMessage}">
+          <pre th:utext="${errorMessage}" class="error"></pre>
+        </div>
+        <br />
+        <input
+          type="submit"
+          th:value="${add} ? 'Nuevo' : 'Actualizar'"
+        />
+      </form>
+      <a
+        th:href="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos (idCliente=${clienteDTO.id}, idCuenta=${cuentaDTO.id})}"
+        >Volver a la lista de movimientos</a
+      >
+    </div>
+  </body>
+</html>
