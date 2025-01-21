@@ -1,0 +1,48 @@
+@font-face {
+    font-family: main;
+    src: url(../../resources/font/main_font.ttf);
+}
+@font-face {
+    font-family: title;
+    src: url(../../resources/font/title_font.ttf);
+}
+$primary-color: #07a209;
+$secondary-color: #0a8b0c;
+$button-primary: #37f138;
+$button-secondary: #79fc79;
+$button-warn: #aa3c52;
+$font-color: #daffd9;
+$font-dark: #0e5911;
+$border-color: #0e5911;
+$font_main: main;
+$font_title: title;
+$transparent: rgba(0,0,0,0);
+
+@mixin botones($tipo){
+    padding: 1vh;
+    border: $border_color 1px solid;
+    transition: background-color .3s;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @if $tipo == primary{
+        background-color: $button-primary;
+        &:hover{
+            background-color: darken($button-primary, 20);
+        }
+    }
+    @else if $tipo == secondary{
+        background-color: $button-secondary;
+        &:hover{
+            background-color: darken($button-secondary, 20);
+        }
+    }
+    @else if $tipo == warn{
+        background-color: $button-warn;
+        &:hover{
+            background-color: darken($button-warn, 20);
+        }
+    }
+}

@@ -1,0 +1,79 @@
+body, main{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 0;
+}
+*{
+    font-family: $font_main;
+}
+p, div{
+    font-size: 2.3vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: $secondary-color;
+    color: $font-color;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    h1{
+        font-family: $font_title;
+        font-weight: lighter;
+        margin-left: -8vh;
+    }
+    img{
+        width: 8vh;
+        height: 8vh;
+    }
+    div{
+        max-height: 25px;
+        right: 8vw;
+        padding: 1vh;
+        position: absolute;
+        background-color: $primary-color;
+        border: $border-color 1px solid;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: background-color .3s;
+        &:hover:not(.menuitems){
+            background-color: $border-color;
+        }
+        &:hover>div{
+            display: flex;
+        }
+        div{
+            right: 0;
+            position: absolute;
+            background-color: $transparent;
+            border: 0;
+            top: 2vh;
+            width: 10vw;
+            height: 10vh;
+            display: none;
+            flex-direction: column;
+            div{
+                background-color: $primary-color;
+                border-radius: 0;
+                display: flex;
+                position: relative;
+            }
+        }
+    }
+}
+.btn{
+    @include botones(primary);
+    &.big{
+        width: 20vw;
+        height: 5vw;
+        padding: 5vw;
+        font-size: 5vw;
+    }
+}

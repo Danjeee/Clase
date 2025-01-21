@@ -1,0 +1,38 @@
+@import "res_.scss";
+@import "anim_.scss";
+@import "important.scss";
+
+.wp{
+    filter: blur(7px);
+    position: absolute;
+    top: 10vw;
+    height: 140vh;
+    width: 100vw;
+    z-index: -1;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: $font-color;
+    text-align: center;
+}
+h1:not(:first-of-type){
+    margin-top: 10vh;
+}
+table, td, tr, th{
+    border: $border-color 2px solid;
+    border-collapse: collapse;
+    font-size: 3vw;
+    text-align: center;
+    padding: 1vw;
+}
+th{
+    background-color: $border-color;
+    color: $font-color;
+}
+td{
+    background-color: $font-color;
+}

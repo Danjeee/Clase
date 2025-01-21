@@ -1,0 +1,25 @@
+@keyframes carrousel {
+    0% {
+        z-index: 1;
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    5% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    55% {
+        z-index: 0;
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+$carrousel: carrousel;

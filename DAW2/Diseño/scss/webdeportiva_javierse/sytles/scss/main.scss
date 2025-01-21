@@ -1,0 +1,92 @@
+@import "res_.scss";
+@import "anim_.scss";
+@import "important.scss";
+
+.btn-container{
+    width: 100vw;
+    .selector{
+        top: 40vh;
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        cursor: pointer;
+        transition:  .5s;
+        h1{
+            font-size: 7vw;
+            color: #fff;
+            z-index: 1;
+            transition: font-size .5s;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            background-color: $border-color;
+            z-index: 0;
+            transition: filter .5s;
+        }
+        &:hover>img{
+            filter: blur(7px);
+        }
+    }
+    .selector:first-of-type{
+        background-color: $button-primary;
+        clip-path: polygon(0 0, 30% 0, 75% 100%, 0% 100%);
+        &:hover{
+            clip-path: polygon(0 0, 40% 0, 85% 100%, 0% 100%);
+        }
+        &:hover ~ .selector:not(:first-of-type){
+            clip-path: polygon(35% 0, 100% 0, 100% 100%, 85% 100%);
+        }
+        h1{
+            position: absolute;
+            left: 10vw;
+            top: 40vh;
+            
+        }
+    }
+    .selector:not(:first-of-type){
+        background-color: $border-color;
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 75% 100%);
+        &:hover{
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 65% 100%);
+        }
+        &:hover ~ .selector:first-of-type{
+            clip-path: polygon(0 0, 20% 0, 65% 100%, 0% 100%);
+        }
+        h1{
+            position: absolute;
+            right: 10vw;
+            top: 30vh;
+        }
+    }
+    
+}
+.carroussel{
+    height: 30vh;
+    width: 100vw;
+    background-color: $border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        img{
+            width: 50%;
+            height: 20%;
+            position: absolute;
+            background-color: $button-primary;
+            left: 25%;
+            top: 15%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: $carrousel 15s linear infinite;
+        }
+        .item:nth-of-type(1){
+            animation-delay: 0;
+        }
+        .item:nth-of-type(2){
+            animation-delay: 5s;
+        }
+        .item:nth-of-type(3){
+            animation-delay: 10s;
+        }
+}
