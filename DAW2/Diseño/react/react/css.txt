@@ -1,0 +1,26 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+  width: 300px; /* Ajusta el tamaño del tablero */
+  height: 300px;
+  border: 2px solid #333; /* Borde del tablero */
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 100px; /* Tamaño de cada celda */
+  height: 100px;
+  border: 1px solid #333; /* Borde de las celdas */
+  display: flex;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  font-size: 40px; /* Tamaño de la 'X' y la 'O' */
+  cursor: pointer; /* Indica que la celda es clickable */
+}
+
+.cell:hover {
+  background-color: #eee; /* Color de fondo al pasar el ratón */
+}

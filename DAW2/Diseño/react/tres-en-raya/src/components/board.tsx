@@ -1,0 +1,106 @@
+import React, { useState } from 'react';
+import '../styles/css/board.css';
+
+interface BoardProps {
+  onGameEnd: (winner: number | null) => void;
+}
+
+const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
+  const [board, setBoard] = useState<Array<Array<number | null>>>(
+    Array(3).fill(null).map(() => Array(3).fill(null))
+  );
+  const [currentPlayer, setCurrentPlayer] = useState(1);
+
+  const handleClick = (row: number, col: number) => {
+    if (board[row][col] === null) {
+      const newBoard = [...board];
+      newBoard[row][col] = currentPlayer;
+      setBoard(newBoard);
+      setCurrentPlayer(currentPlayer === 1 ? 2 : 1);
+      checkWinner();
+    }
+  };
+
+  const checkWinner = () => {
+    const lines = [
+      [
+        [0, 0],
+        [0, 1],
+        [0, 2],
+      ],
+      [
+        [1, 0],
+        [1, 1],
+        [1, 2],
+      ],
+      [
+        [2, 0],
+        [2, 1],
+        [2, 2],
+      ],
+      [
+        [0, 0],
+        [1, 0],
+        [2, 0],
+      ],
+      [
+        [0, 1],
+        [1, 1],
+        [2, 1],
+      ],
+      [
+        [0, 2],
+        [1, 2],
+        [2, 2],
+      ],
+      [
+        [0, 0],
+        [1, 1],
+        [2, 2],
+      ],
+      [
+        [0, 2],
+        [1, 1],
+        [2, 0],
+      ],
+    ];
+
+    for (let i = 0; i < lines.length; i++) {
+      const [a, b, c] = lines[i];
+      if (
+        board[a[0]][a[1]] &&
+        board[a[0]][a[1]] === board[b[0]][b[1]] &&
+        board[a[0]][a[1]] === board[c[0]][c[1]]
+      ) {
+        onGameEnd(board[a[0]][a[1]]);
+        return;
+      }
+    }
+
+    if (board.flat().every((cell) => cell !== null)) {
+      onGameEnd(null); // Empate
+      return;
+    }
+  };
+
+  return (
+    <div className="board">
+      {board.map((row, rowIndex) => (
+        <div key={rowIndex} className="row">
+          {row.map((cell, colIndex) => (
+            <div
+              key={colIndex}
+              className="cell"
+              onClick={() => handleClick(rowIndex, colIndex)}
+            >
+              {cell !== null && (cell === 1 ? 'X' : 'O')}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Board;
+
