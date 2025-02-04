@@ -1,0 +1,38 @@
+@import "main.scss";
+main{
+    
+    img{
+        @include main_size_e1;
+        position: absolute;
+        top: 24.99vh;
+        z-index: -1;
+        left: 0;
+    }
+    .cont{
+        @include column;
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        background-color: rgba($color: #fff, $alpha: .7);
+        border: #000 2px solid;
+        p:not(.but>p){
+            margin-top: 10vh;
+            font-size: $default_font_size;
+            color: $secondary-color;
+            font-weight: bold;
+        }
+        .but{
+            @include shadow;
+            @include center;
+            width: 30%;
+            height: 50px;
+            background-color: $secondary-color;
+            border: #000 1px solid;
+            cursor: pointer;
+            p{
+                color: $default_font_color;
+            }
+            margin-bottom: 4vh;
+        }
+    }
+}

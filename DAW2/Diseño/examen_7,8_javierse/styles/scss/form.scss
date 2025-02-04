@@ -1,0 +1,26 @@
+@import "main.scss";
+form{
+    @include column;
+    width: 40%;
+    background-color: $default_font_color;
+    padding: 5vh;
+    label{
+        color: $secondary-color;
+        font-weight: bold;
+    }
+    input{
+        border: $secondary-color 1px solid;
+    }
+    input[type=submit]{
+        background-color: $secondary-color;
+        color: $default_font_color;
+        padding: 5px;
+        cursor: pointer;
+        transition: color .7s;
+        transition: background-color .7s;
+        &:hover{
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+    }
+}

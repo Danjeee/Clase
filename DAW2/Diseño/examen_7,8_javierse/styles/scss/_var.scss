@@ -1,0 +1,24 @@
+$primary-color: #F58B45;
+$secondary-color: #7A3137;
+$default_font_color: #fff;
+$default_font_size: 20px;
+@mixin shadow{
+    box-shadow: #000 3px 3px 3px 3px;
+}
+@mixin shadow_2{
+    box-shadow: $primary-color 0px 0px 3px 3px;
+}
+@mixin main_size_e1{
+    width: 100vw;
+    height: 65.99vh;
+}
+@mixin center{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+}
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

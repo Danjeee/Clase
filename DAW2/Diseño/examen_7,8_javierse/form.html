@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./styles/css/form.css">
+</head>
+<body>
+    <header>
+        <img src="./images/boton.png" alt="boton">
+        <h1>COSTURAS LA BOTONERA</h1>
+    </header>
+    <main>
+        <div id="nav">
+            <div onclick="window.location.href='/ej1.html'">Inicio</div>
+            <div onclick="window.location.href='/ej2.html'">Servicios</div>
+            <div>Quienes somos</div>
+            <div onclick="window.location.href='/form.html'">Contacto</div>
+        </div>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
+            <label for="mail">Correo electronico:</label>
+            <input type="email" name="mail">
+            <label for="tlf">Numero telefono:</label>
+            <input type="text" name="tlf" maxlength="9">
+            <label for="msg">Mensaje:</label>
+            <textarea name="msg" id="msg"></textarea>
+            <input type="submit" name="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <img src="./images/bocadillo.png" alt="bocata">
+        <p>Diseño de interfaces web</p>
+        <p>Curso 24-25</p>
+        <p>Javier Soriano Esparza</p>
+    </footer>
+</body>
+</html>

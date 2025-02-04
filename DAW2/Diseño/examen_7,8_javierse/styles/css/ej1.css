@@ -1,0 +1,131 @@
+body {
+  background-image: url(../../images/banner_costura.jpg);
+  margin: 0;
+  background-size: cover;
+  background-position: 0px -10vh;
+  margin-top: 24.99vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  background-color: #F58B45;
+}
+header img {
+  height: 80%;
+}
+header h1 {
+  color: #fff;
+}
+
+main {
+  width: 100vw;
+  height: 65.99vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+  padding-left: 4vw;
+  gap: 4vh;
+}
+main #nav {
+  box-shadow: #000 3px 3px 3px 3px;
+  background-color: #7A3137;
+  min-width: 500px;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  width: 30%;
+  justify-content: space-around;
+}
+main #nav div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: color, font-size 0.7s;
+}
+main #nav div:not(:first-of-type) {
+  padding-left: 30px;
+  border-left: 2px #fff solid;
+}
+main #nav div:hover {
+  font-size: 20px;
+  color: #F58B45;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  gap: 25px;
+  background-color: #F58B45;
+}
+footer img {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 5vh;
+  height: 80%;
+}
+footer p {
+  color: #fff;
+}
+footer p:not(:first-of-type) {
+  padding-left: 25px;
+  border-left: 1px #fff solid;
+}
+
+main img {
+  width: 100vw;
+  height: 65.99vh;
+  position: absolute;
+  top: 24.99vh;
+  z-index: -1;
+  left: 0;
+}
+main .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: #000 2px solid;
+}
+main .cont p:not(.but > p) {
+  margin-top: 10vh;
+  font-size: 20px;
+  color: #7A3137;
+  font-weight: bold;
+}
+main .cont .but {
+  box-shadow: #000 3px 3px 3px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  background-color: #7A3137;
+  border: #000 1px solid;
+  cursor: pointer;
+  margin-bottom: 4vh;
+}
+main .cont .but p {
+  color: #fff;
+}
+
+/*# sourceMappingURL=ej1.css.map */

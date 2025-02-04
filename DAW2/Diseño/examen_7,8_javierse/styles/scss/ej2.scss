@@ -1,0 +1,67 @@
+@import "main.scss";
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    margin-top: 5vh;
+    padding-right: 4vw;
+    background-color: $default_font_color;
+    width: 85vw;
+    height: 54.99vh;
+    h1{
+        color: $secondary-color;
+        align-self: center;
+    }
+    #servicios{
+        display: flex;
+        justify-content: space-around;
+        display: flex;
+        div{
+            @include column;
+            width: 25%;
+            height: 60%;
+            img{
+                height: 100%;
+            }
+            .button{
+                align-self: center;
+                background-color: $secondary-color;
+                padding: 15px;
+                text-align: center;
+                padding-left: 25px;
+                padding-right: 25px;
+                color: $default_font_color;
+                @include shadow_2;
+                cursor: pointer;
+                transition: color, box-shadow .7s;
+                transition: background-color .7s;
+                &:hover{
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    box-shadow: $secondary-color 0px 0px 3px 3px;
+                }
+                .ad{
+                    opacity: 0;
+                    transform: translateY(-10vh);
+                    transition: opacity .7s;
+                }
+            }
+            .button:hover>.ad{
+                opacity: 1;
+            }
+            div:not(.button){
+                align-self: center;
+                position: absolute;
+                text-align: center;
+                background-color: rgba($color: #fff, $alpha: .7);
+                color: $secondary-color;
+                border: #fff 1px solid;
+                height: 40px;
+                width: 150px;
+                @include shadow;
+            }
+        }
+    }
+}

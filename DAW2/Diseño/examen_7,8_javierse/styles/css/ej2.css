@@ -1,0 +1,161 @@
+body {
+  background-image: url(../../images/banner_costura.jpg);
+  margin: 0;
+  background-size: cover;
+  background-position: 0px -10vh;
+  margin-top: 24.99vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  background-color: #F58B45;
+}
+header img {
+  height: 80%;
+}
+header h1 {
+  color: #fff;
+}
+
+main {
+  width: 100vw;
+  height: 65.99vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+  padding-left: 4vw;
+  gap: 4vh;
+}
+main #nav {
+  box-shadow: #000 3px 3px 3px 3px;
+  background-color: #7A3137;
+  min-width: 500px;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  width: 30%;
+  justify-content: space-around;
+}
+main #nav div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: color, font-size 0.7s;
+}
+main #nav div:not(:first-of-type) {
+  padding-left: 30px;
+  border-left: 2px #fff solid;
+}
+main #nav div:hover {
+  font-size: 20px;
+  color: #F58B45;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  gap: 25px;
+  background-color: #F58B45;
+}
+footer img {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 5vh;
+  height: 80%;
+}
+footer p {
+  color: #fff;
+}
+footer p:not(:first-of-type) {
+  padding-left: 25px;
+  border-left: 1px #fff solid;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin-top: 5vh;
+  padding-right: 4vw;
+  background-color: #fff;
+  width: 85vw;
+  height: 54.99vh;
+}
+main h1 {
+  color: #7A3137;
+  align-self: center;
+}
+main #servicios {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+}
+main #servicios div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 25%;
+  height: 60%;
+}
+main #servicios div img {
+  height: 100%;
+}
+main #servicios div .button {
+  align-self: center;
+  background-color: #7A3137;
+  padding: 15px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  box-shadow: #F58B45 0px 0px 3px 3px;
+  cursor: pointer;
+  transition: color, box-shadow 0.7s;
+  transition: background-color 0.7s;
+}
+main #servicios div .button:hover {
+  background-color: #F58B45;
+  color: #7A3137;
+  box-shadow: #7A3137 0px 0px 3px 3px;
+}
+main #servicios div .button .ad {
+  opacity: 0;
+  transform: translateY(-10vh);
+  transition: opacity 0.7s;
+}
+main #servicios div .button:hover > .ad {
+  opacity: 1;
+}
+main #servicios div div:not(.button) {
+  align-self: center;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #7A3137;
+  border: #fff 1px solid;
+  height: 40px;
+  width: 150px;
+  box-shadow: #000 3px 3px 3px 3px;
+}
+
+/*# sourceMappingURL=ej2.css.map */

@@ -1,0 +1,12 @@
+.usercont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.usercont div{
+    width: 25%;
+    border: #000 2px solid;
+    border-radius: 15px;
+    padding: 2vh;
+    box-shadow: 3px 3px 10px #000;
+}

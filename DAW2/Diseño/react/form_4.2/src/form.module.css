@@ -1,0 +1,34 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #FF7C7E;
+    border: #86010D 1px solid;
+    border-radius: 10px;
+    padding: 70px;
+}
+.form label, .form h3, .form input[type="submit"]{
+    color: #fff;
+}
+.form label{
+    margin-top: 20px;
+}
+.form input:not(input[type="submit"]) {
+    background-color: #fff;
+    border: 0;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.form input[type="submit"]{
+    background-color: #86010D;
+    cursor: pointer;
+    transition: background-color .5s;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.form input[type="submit"]:hover{
+    background-color: #0093FA;
+}
