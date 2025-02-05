@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar servicio</title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea4/cssviews.css}">
+</head>
+
+<body>
+    <div>
+        <h1>Mostrar servicio</h1>
+    </div>
+    <div>
+
+        <table>
+            <tr>
+                <td>ID</td>
+                <td th:text="${servicioDTO.id}"></td>
+            </tr>
+            <tr>
+                <td>NOMBRE</td>
+                <td th:text="${servicioDTO.nombre}"></td>
+            </tr>
+            <tr>
+                <td>DESCRIPCION</td>
+                <td th:text="${servicioDTO.descripcion}"></td>
+            </tr>
+        </table>
+        <a th:href="@{/clientes/{idCliente}/servicios (idCliente=${idCliente})}">Volver a la
+            lista
+            de
+            servicios</a>
+    </div>
+</body>
+
+</html>
+W

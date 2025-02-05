@@ -31,6 +31,7 @@
               <td>FECHA DE NACIMIENTO</td>
               <td>VER CUENTAS</td>
               <td>VER DIRECCIONES</td>
+			  <td>VER SERVICIOS CONTRATADOS</td>
               <td>EDITAR</td>
               <td>ELIMINAR</td>
             </tr>
@@ -60,6 +61,12 @@
                   >Ver direcciones</a
                 >
               </td>
+			  <td>
+			      <a
+			       th:href="@{/clientes/{idCliente}/servicios (idCliente=${c.id})}"
+			       >Ver servicios</a
+			       >
+			  </td>
               <td>
                 <a th:href="@{/clientes/update/{idCliente}(idCliente=${c.id})}"
                   >Editar</a

@@ -45,7 +45,7 @@ public class ClienteDTO {
     public static Cliente convertToEntity(ClienteDTO clienteDTO, Set<Cuenta> cuentas) {
         Cliente cliente = new Cliente(clienteDTO.getId(), clienteDTO.getNif(), clienteDTO.getNombre(),
                 clienteDTO.getApellidos(), clienteDTO.getClaveSeguridad(), clienteDTO.getEmail(),
-                clienteDTO.getFechaNacimiento(), null, null, null );
+                clienteDTO.getFechaNacimiento(), null, null, null, null );
 
         Recomendacion recomendacion = RecomendacionDTO.convertToEntity(clienteDTO.getRecomendacionDTO(), cliente);
         cliente.setRecomendacion(recomendacion);

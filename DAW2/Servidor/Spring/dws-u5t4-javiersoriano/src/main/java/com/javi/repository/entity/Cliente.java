@@ -61,6 +61,10 @@ public class Cliente {
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "cliente")
     @ToString.Exclude
     private Set<ClienteDireccion> listaClienteDirecciones = new HashSet<>();
+    
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "cliente")
+    @ToString.Exclude
+    private Set<ClienteServicio> listaClienteServicios = new HashSet<>();
 
     @Override
     public int hashCode() {
