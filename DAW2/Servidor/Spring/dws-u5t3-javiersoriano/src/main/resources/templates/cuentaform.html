@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${add} ? 'Nueva cuenta' : 'Actualizar cuenta'"></title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea3/cssforms.css}">
+</head>
+
+<body>
+    <div>
+        <h1 th:text="${add} ? 'Nueva cuenta' : 'Actualizar cuenta'"></h1>
+    </div>
+    <div>
+        <form th:action="@{/clientes/{idCliente}/cuentas/save (idCliente=${clienteDTO.id})}" th:object="${cuentaDTO}"
+            method="post">
+            <div th:if="${cuentaDTO.id}">
+                <label for="id">ID</label>
+                <input type="text" id="id" th:field="*{id}" readonly>
+            </div>
+            <div>
+                <label for="banco">BANCO</label>
+                <input type="text" id="banco" th:field="*{banco}" required>
+            </div>
+            <div>
+                <label for="sucursal">SUCURSAL</label>
+                <input type="text" id="sucursal" th:field="*{sucursal}" required>
+            </div>
+            <div>
+                <label for="dc">DC</label>
+                <input type="number" id="dc" th:field="*{dc}" required min="0" max="99">
+            </div>
+            <div>
+                <label for="numeroCuenta">NUMERO CUENTA</label>
+                <input type="number" id="numeroCuenta" th:field="*{numeroCuenta}" required
+                    min="1000000000" max="9999999999">
+            </div>
+            <div>
+                <label for="saldoActual">SALDO ACTUAL</label>
+                <input type="number" id="saldoActual" th:field="*{saldoActual}" min="0" step=".01">
+            </div>
+            <div th:if="${errorMessage}">
+                <pre th:utext="${errorMessage}" class="error"></pre>
+            </div>
+            <input type="submit" th:value="${add} ? 'Nueva' : 'Actualizar'">
+        </form>
+        <a th:href="@{/clientes/{idCliente}/cuentas (idCliente=${clienteDTO.id})}" class="btn btn-primary">Volver a la
+            lista
+            de
+            cuentas</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Añadir direccion existente</title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea3/cssforms.css}">
+  </head>
+  <body>
+    <div th:if="${listaDireccionesDTO.isEmpty()}">
+      <div>
+        <h1>Listado vacio</h1>
+      </div>
+      <div>
+        <a
+          th:href="@{/clientes/{idCliente}/direcciones (idCliente=${clienteDTO.id})}"
+          >Volver al listado de direcciones</a
+        >
+        <a
+          th:href="@{/clientes/{idCliente}/direcciones/add (idCliente=${clienteDTO.id})}"
+          >Nueva direccion</a
+        >
+      </div>
+    </div>
+    <div th:if="${!listaDireccionesDTO.isEmpty()}">
+      <div
+        class="container-fluid d-flex flex-column align-items-center p-2 bg-primary text-light"
+      >
+        <h1
+          th:text="${'Añadir nueva direccion a ' + clienteDTO.getNombre() + ' ' + clienteDTO.getApellidos()}"
+        ></h1>
+      </div>
+      <div class="container text-center">
+        <form
+          th:action="@{/clientes/{idCliente}/direcciones/update (idCliente=${clienteDTO.id})}"
+          th:object="${direccionDTO}"
+        >
+          <label for="direcciones">Selecciona una direccion:</label>
+          <select
+            name="direcciones"
+            id="direcciones"
+            th:field="*{id}"
+          >
+            <option value="" disabled>Selecciona una direccion</option>
+            <option
+              th:each="d : ${listaDireccionesDTO}"
+              th:value="${d.id}"
+              th:text="${d.descripcion}"
+            ></option>
+          </select>
+          <input type="submit" class="btn-primary btn" value="Guardar" />
+        </form>
+
+        <a
+          th:href="@{/clientes/{idCliente}/direcciones (idCliente=${clienteDTO.id})}"
+          >Volver al listado de direcciones</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

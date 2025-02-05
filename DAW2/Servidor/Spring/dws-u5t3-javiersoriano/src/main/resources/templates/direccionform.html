@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title
+      th:text="${add} ? 'Nueva direccion' : 'Actualizar direccion'"
+    ></title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea3/cssforms.css}">
+  </head>
+
+  <body>
+    <div>
+      <h1 th:text="${add} ? 'Nueva direccion' : 'Actualizar direccion'"></h1>
+    </div>
+    <div>
+      <form
+        th:action="@{/clientes/{idCliente}/direcciones/save (idCliente=${idCliente})}"
+        th:object="${direccionDTO}"
+        method="post"
+      >
+        <div th:if="${direccionDTO.id}">
+          <label for="id">ID</label>
+          <input
+            type="text"
+            id="id"
+            th:field="*{id}"
+            readonly
+          />
+        </div>
+        <div>
+          <label for="descripcion">Descripcion</label>
+          <input
+            type="text"
+            id="descripcion"
+            th:field="*{descripcion}"
+          />
+        </div>
+        <div>
+          <label for="pais">Pais</label>
+          <input
+            type="text"
+            id="pais"
+            th:field="*{pais}"
+          />
+        </div>
+        <div>
+          <label for="cp">Codigo Postal</label>
+          <input class="form-control" type="text" id="cp" th:field="*{cp}" />
+        </div>
+        <input
+          type="submit"
+          th:value="${add} ? 'Nueva' : 'Actualizar'"
+        />
+      </form>
+      <a
+        th:href="@{/clientes/{idCliente}/direcciones (idCliente=${idCliente})}"
+        >Volver a la lista de direcciones</a
+      >
+    </div>
+  </body>
+</html>

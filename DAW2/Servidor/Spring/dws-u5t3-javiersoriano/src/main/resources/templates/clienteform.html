@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title th:text="${add} ? 'Nuevo cliente' : 'Actualizar cliente'"></title>
+		<link rel="stylesheet" th:href="@{http://localhost:8888/tarea3/cssforms.css}">
+  <body>
+    <div>
+      <h1 th:text="${add} ? 'Nuevo cliente' : 'Actualizar cliente'"></h1>
+    </div>
+    <div>
+      <form
+        th:action="@{/clientes/save}"
+        th:object="${clienteDTO}"
+        method="post"
+      >
+        <div th:if="${clienteDTO.id}">
+          <label for="id">ID</label>
+          <input
+            type="text"
+            id="id"
+            th:field="*{id}"
+            readonly
+          />
+        </div>
+        <div>
+          <label for="nif">NIF <small>(formato NNNNNNNN[A-Z])</small></label>
+          <input
+            type="text"
+            id="nif"
+            th:field="*{nif}"
+            required
+            minlength="9"
+            pattern="\d{8}[A-Z]{1}"
+            oninput="this.value = this.value.toUpperCase()"
+          />
+        </div>
+        <div>
+          <label for="nombre">NOMBRE</label>
+          <input
+            type="text"
+            id="nombre"
+            class="form-control"
+            th:field="*{nombre}"
+            required
+          />
+        </div>
+        <div>
+          <label for="apellidos">APELLIDOS</label>
+          <input
+            type="text"
+            id="apellidos"
+            th:field="*{apellidos}"
+            required
+          />
+        </div>
+        <div>
+          <label for="claveSeguridad">CLAVE SEGURIDAD</label>
+          <input
+            type="text"
+            id="claveSeguridad"
+            th:field="*{claveSeguridad}"
+            required
+            minlength="8"
+          />
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input
+            type="text"
+            id="email"
+            th:field="*{email}"
+          />
+        </div>
+        <div>
+          <label for="fechaNacimiento">FECHA NACIMIENTO</label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+            th:field="*{fechaNacimiento}"
+          />
+        </div>
+        <div>
+          <label for="recomendacion">OBSERVACIONES</label>
+          <textarea
+            type="text"
+            id="recomendacion"
+            th:field="*{recomendacionDTO.observaciones}"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <a class="btn btn-danger" th:href="@{/clientes}">Volver</a>
+        <input
+          type="submit"
+          th:value="${add} ? 'Nuevo' : 'Actualizar'"
+        />
+      </form>
+    </div>
+  </body>
+</html>

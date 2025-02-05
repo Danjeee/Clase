@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Listado clientes</title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea4/csslists.css}">
+  </head>
+
+  <body>
+    <div th:if="${listaClientesDTO.isEmpty()}">
+      <div>
+        <h1>Listado vacio</h1>
+      </div>
+      <div>
+        <a th:href="@{/clientes/add}">Nuevo cliente</a>
+      </div>
+    </div>
+    <div th:if="${!listaClientesDTO.isEmpty()}">
+      <div>
+        <h1>Listado de clientes</h1>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>NIF</td>
+              <td>NOMBRE</td>
+              <td>APELLIDOS</td>
+              <td>EMAIL</td>
+              <td>FECHA DE NACIMIENTO</td>
+              <td>VER CUENTAS</td>
+              <td>VER DIRECCIONES</td>
+              <td>EDITAR</td>
+              <td>ELIMINAR</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="c : ${listaClientesDTO}">
+              <td>
+                <a
+                  th:href="@{/clientes/{idCliente}(idCliente=${c.id})}"
+                  th:text="${c.id}"
+                ></a>
+              </td>
+              <td th:text="${c.nif}"></td>
+              <td th:text="${c.nombre}"></td>
+              <td th:text="${c.apellidos}"></td>
+              <td th:text="${c.email}"></td>
+              <td th:text="${c.fechaNacimiento}"></td>
+              <td>
+                <a
+                  th:href="@{/clientes/{idCliente}/cuentas (idCliente=${c.id})}"
+                  >Ver cuentas</a
+                >
+              </td>
+              <td>
+                <a
+                  th:href="@{/clientes/{idCliente}/direcciones (idCliente=${c.id})}"
+                  >Ver direcciones</a
+                >
+              </td>
+              <td>
+                <a th:href="@{/clientes/update/{idCliente}(idCliente=${c.id})}"
+                  >Editar</a
+                >
+              </td>
+              <td>
+                <a th:href="@{/clientes/delete/{idCliente}(idCliente=${c.id})}"
+                  >Eliminar</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a th:href="@{/clientes/add}">Nuevo cliente</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Listado cuentas</title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea2/csslists.css}">
+  </head>
+
+  <body>
+    <div th:if="${listaCuentasDTO.isEmpty()}">
+      <div>
+        <h1>Listado vacio</h1>
+      </div>
+      <div>
+        <a th:href="@{/clientes}"
+          >Volver al listado de clientes</a
+        >
+        <a
+          th:href="@{/clientes/{idCliente}/cuentas/add (idCliente=${idCliente})}"
+          >Nueva cuenta</a
+        >
+      </div>
+    </div>
+    <div th:if="${!listaCuentasDTO.isEmpty()}">
+      <div>
+        <h1
+          th:text="${'Listado de cuentas de ' + clienteDTO.getNombre() + ' ' + clienteDTO.getApellidos()}"
+        ></h1>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>BANCO</td>
+              <td>SUCURSAL</td>
+              <td>DC</td>
+              <td>NUMERO CUENTA</td>
+              <td>EDITAR</td>
+              <td>ELIMINAR</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="c : ${listaCuentasDTO}">
+              <td>
+                <a
+                  th:href="@{/clientes/{idCliente}/cuentas/{id} (idCliente=${clienteDTO.id}, id=${c.id})}"
+                  th:text="${c.id}"
+                ></a>
+              </td>
+              <td th:text="${c.banco}"></td>
+              <td th:text="${c.sucursal}"></td>
+              <td th:text="${c.dc}"></td>
+              <td th:text="${c.numeroCuenta}"></td>
+              <td>
+                <a
+                  th:href="@{/clientes/{idCliente}/cuentas/update/{idCuenta} (idCliente=${clienteDTO.id}, idCuenta=${c.id})}"
+                  >Editar</a
+                >
+              </td>
+              <td>
+                <a
+                  th:href="@{/clientes/{idCliente}/cuentas/delete/{idCuenta} (idCliente=${clienteDTO.id}, idCuenta=${c.id})}"
+                  >Eliminar</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a th:href="@{/clientes}"
+          >Volver al listado de clientes</a
+        >
+        <a
+          th:href="@{/clientes/{idCliente}/cuentas/add (idCliente=${clienteDTO.id})}"
+          >Nueva cuenta</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
