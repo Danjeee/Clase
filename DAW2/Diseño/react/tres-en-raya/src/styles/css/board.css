@@ -1,8 +1,74 @@
+@font-face {
+  font-family: fichas;
+  src: url(../../assets/fichas.ttf);
+}
+@font-face {
+  font-family: fichas;
+  src: url(../../assets/fichas.ttf);
+}
+@keyframes boardglow {
+  0% {
+    box-shadow: #E38BDA 10px -10px 20px 2px;
+  }
+  25% {
+    box-shadow: #FFA4A4 10px 10px 20px 2px;
+  }
+  50% {
+    box-shadow: #FDD39B -10px 10px 20px 2px;
+  }
+  75% {
+    box-shadow: #FFA4A4 -10px -10px 20px 2px;
+  }
+  100% {
+    box-shadow: #E38BDA 10px -10px 20px 2px;
+  }
+}
+@keyframes cellglow {
+  0% {
+    box-shadow: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0px 0px 0px 0px;
+  }
+  25% {
+    box-shadow: #E38BDA 0px 0px 20px 10px;
+  }
+  100% {
+    box-shadow: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0px 0px 0px 0px;
+  }
+}
+@keyframes test {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: #000 2px 2px 2px 2px;
+  }
+}
+@keyframes win {
+  0% {
+    border-width: 5px;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    border-width: 1000px;
+    width: 105vw;
+    height: 105vh;
+    display: none;
+  }
+}
 .board {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
-  height: 300px;
+  width: 455px;
+  height: 455px;
+  gap: 0;
+  transition: box-shadow -5s;
+}
+.board:hover {
+  animation: boardglow 5s linear infinite;
 }
 
 .row {
@@ -10,17 +76,52 @@
 }
 
 .cell {
-  width: 100px;
-  height: 100px;
+  background-color: #fff;
+  font-family: fichas;
+  font-size: 10px;
+  width: 150px;
+  height: 150px;
   border: 1px solid #333;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  padding: 0;
+  font-size: 80px;
+  transition: box-shadow 0.5s;
   cursor: pointer;
 }
-.cell:hover {
+.cell:hover:not(.X, .O) {
   background-color: #eee;
+  animation: cellglow 3s linear infinite;
+  z-index: 1;
+}
+.cell.X {
+  box-shadow: inset #800 0px 0px 15px 0px;
+  color: #800;
+  cursor: default;
+}
+.cell.O {
+  box-shadow: inset #0E4C92 0px 0px 15px 0px;
+  color: #0E4C92;
+  cursor: default;
+}
+
+#particle {
+  background-color: #302244;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 20px;
+  width: 150px;
+  height: 150px;
+  z-index: 3;
+  animation: win 1s forwards;
 }
 
 /*# sourceMappingURL=board.css.map */

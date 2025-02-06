@@ -20,8 +20,17 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
       checkWinner();
     }
   };
+  const setClass = (row: number, col: number) => {
+    var class_ = "cell "
+    if (board[row][col] !== null) {
+       var bool_ = board[row][col] === 1
+       class_ += bool_ ? "X" : "O";
+    }
+    return class_;
+  }
 
   const checkWinner = () => {
+    const winpart = document.getElementById("particle") as HTMLElement
     const lines = [
       [
         [0, 0],
@@ -71,14 +80,20 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
         board[a[0]][a[1]] &&
         board[a[0]][a[1]] === board[b[0]][b[1]] &&
         board[a[0]][a[1]] === board[c[0]][c[1]]
-      ) {
-        onGameEnd(board[a[0]][a[1]]);
+      ) { //Ganador
+        setTimeout(() => {
+          onGameEnd(board[a[0]][a[1]]);
+        }, 1000);
+        winpart.style.display = "flex"
         return;
       }
     }
 
-    if (board.flat().every((cell) => cell !== null)) {
-      onGameEnd(null); // Empate
+    if (board.flat().every((cell) => cell !== null)) { //Empate
+      winpart.style.display = "flex"
+      setTimeout(() => {
+        onGameEnd(null);
+      }, 1000);
       return;
     }
   };
@@ -90,7 +105,7 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
           {row.map((cell, colIndex) => (
             <div
               key={colIndex}
-              className="cell"
+              className={setClass(rowIndex, colIndex)}
               onClick={() => handleClick(rowIndex, colIndex)}
             >
               {cell !== null && (cell === 1 ? 'X' : 'O')}
@@ -98,7 +113,9 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
           ))}
         </div>
       ))}
+      <div id='particle'></div>
     </div>
+    
   );
 };
 

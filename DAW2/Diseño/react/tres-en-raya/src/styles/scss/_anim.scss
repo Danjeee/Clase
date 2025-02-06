@@ -1,0 +1,50 @@
+@import "_var.scss";
+@keyframes boardglow {
+    0%{
+        box-shadow: #E38BDA 10px -10px 20px 2px;
+    }
+    25%{
+        box-shadow: #FFA4A4 10px 10px 20px 2px;
+    }
+    50%{
+        box-shadow: #FDD39B -10px 10px 20px 2px;
+    }
+    75%{
+        box-shadow: #FFA4A4 -10px -10px 20px 2px;
+    }
+    100%{
+        box-shadow: #E38BDA 10px -10px 20px 2px;
+    }
+}
+@keyframes cellglow {
+    0%{
+        box-shadow: $rainbow 0px 0px 0px 0px;
+    }
+    25%{
+        box-shadow: #E38BDA 0px 0px 20px 10px;
+    }
+    100%{
+        box-shadow: $rainbow 0px 0px 0px 0px;
+    }
+}
+@keyframes test {
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: #000 2px 2px 2px 2px;
+    }
+}
+@keyframes win {
+    0%{
+        border-width: 5px;
+        width: 0;
+        height: 0;
+    }
+    100%{
+        border-width: 1000px;
+        width: 105vw;
+        height: 105vh;
+        display: none;
+    }
+}

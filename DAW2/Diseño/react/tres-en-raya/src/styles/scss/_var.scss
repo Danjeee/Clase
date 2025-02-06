@@ -1,0 +1,22 @@
+@font-face {
+    font-family: fichas;
+    src: url(../../assets/fichas.ttf);
+}
+$rainbow: linear-gradient(rgba(255, 0, 0, 1) 0%,
+rgba(255, 154, 0, 1) 10%,
+rgba(208, 222, 33, 1) 20%,
+rgba(79, 220, 74, 1) 30%,
+rgba(63, 218, 216, 1) 40%,
+rgba(47, 201, 226, 1) 50%,
+rgba(28, 127, 238, 1) 60%,
+rgba(95, 21, 242, 1) 70%,
+rgba(186, 12, 248, 1) 80%,
+rgba(251, 7, 217, 1) 90%,
+rgba(255, 0, 0, 1) 100%);
+
+@mixin rborder{
+    background-color: #302244;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
