@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { AlertService } from '../../services/alerts.service';
 import { VentasService } from '../../services/ventas.service';
 import { CommonModule } from '@angular/common';
+import { ArticulosService } from '../../services/articulos.service';
+import { SessionService } from '../../services/session.service';
 
 @Component({
   selector: 'app-vender',
@@ -13,11 +15,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './vender.component.css'
 })
 export class VenderComponent {
+
+  categorias: any
+
 /**
    * FormGroup que agrupa los campos del formulario de registro.
    * Maneja la validación de cada control.
    */
-  registroForm: FormGroup;
+  ventaForm: FormGroup;
 
   /**
    * Variable que almacena la URL (o SafeUrl) de la imagen a mostrar en la previsualización.
@@ -37,12 +42,14 @@ export class VenderComponent {
   constructor(
     private fb: FormBuilder,
     private ventasService: VentasService,
+    private artService: ArticulosService,
+    private session: SessionService,
     private router: Router,
     private sanitizer: DomSanitizer,
     private alertService: AlertService
   ) {
-    // Se inicializa el registroForm con sus campos y validadores.
-    this.registroForm = this.fb.group({
+    // Se inicializa el ventaForm con sus campos y validadores.
+    this.ventaForm = this.fb.group({
       nombre: [
         '',
         [
@@ -61,17 +68,26 @@ export class VenderComponent {
           Validators.required,
         ],
       ],
-      imagen: [
+      foto: [
         '',
         [
           Validators.required,
         ],
       ],
+      cat: [],
     });
   }
 
   // Ciclo de vida de Angular: ngOnInit se ejecuta después de crear el componente.
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.artService.getCategorias().subscribe({
+      next: (data) => {this.categorias = data
+        console.log(data)
+      },
+      error: (err) => {console.error("Error: ",err)}
+    })
+
+  }
 
   /**
    * Método para previsualizar la imagen antes de subirla.
@@ -85,7 +101,7 @@ export class VenderComponent {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files[0]) {
       const file = input.files[0];
-      this.registroForm.patchValue({ foto: file }); // Actualizar el campo foto con el archivo
+      this.ventaForm.patchValue({ foto: file }); // Actualizar el campo foto con el archivo
       const objectUrl = URL.createObjectURL(file);
       // bypassSecurityTrustUrl evita que Angular marque la URL como insegura.
       this.imagenPreview = this.sanitizer.bypassSecurityTrustUrl(objectUrl);
@@ -103,12 +119,12 @@ export class VenderComponent {
    *    - Si es exitoso, muestra una alerta de éxito y redirige al login.
    *    - Si hay un error, muestra una alerta de error.
    */
-  registrarSocio(): void {
+  subir(): void {
     // Verifica si el formulario es inválido
-    if (this.registroForm.invalid) {
+    if (this.ventaForm.invalid) {
       // Marca los campos como "touched" para que se muestren mensajes de error correspondientes
-      Object.keys(this.registroForm.controls).forEach((field) => {
-        const control = this.registroForm.get(field);
+      Object.keys(this.ventaForm.controls).forEach((field) => {
+        const control = this.ventaForm.get(field);
         control?.markAsTouched(); // Marcar todos los campos como tocados para mostrar errores
       });
       this.alertService.error(
@@ -118,29 +134,26 @@ export class VenderComponent {
       return;
     }
 
-    // Verificar que las contraseñas coincidan
-    const password = this.registroForm.value.password;
-    const repitePassword = this.registroForm.value.repitePassword;
-    if (password !== repitePassword) {
-      this.alertService.error('Error', 'Las contraseñas no coinciden.');
-      return;
-    }
-
     // Preparar los datos para enviar al servidor usando FormData
     const formData = new FormData();
-    formData.append('opcion', 'RS');
-    formData.append('nombre', this.registroForm.value.nombre);
-    formData.append('apellidos', this.registroForm.value.apellidos);
-    formData.append('email', this.registroForm.value.email);
-    formData.append('password', password);
+    formData.append('opcion', 'RA');
+    formData.append('nombre', this.ventaForm.value.nombre);
+    formData.append('descripcion', this.ventaForm.value.descripcion);
+    formData.append('categoria', this.ventaForm.value.cat);
+    formData.append('precio', this.ventaForm.value.precio);
+    formData.append('vendedor', this.session.obtenerUsuario().id);
     // Si se seleccionó una foto, se añade a formData; de lo contrario, se usa una imagen por defecto.
-    if (this.registroForm.value.foto) {
-      formData.append('foto', this.registroForm.value.foto);
+    if (this.ventaForm.value.foto) {
+      formData.append('imagen', this.ventaForm.value.foto);
     } else {
-      formData.append('foto', 'user.png'); // Imagen por defecto
+      formData.append('imagen', 'user.png'); // Imagen por defecto
     }
 
     // Llamada al servicio para registrar al socio en el backend
+    this.ventasService.registrarVenta(formData).subscribe({
+      next: (data) => {console.log(data)},
+      error: (err) => {console.log("Error: "+ err)}
+    })
     
   }
 
@@ -151,7 +164,7 @@ export class VenderComponent {
    * @returns boolean indicando si el control tiene ese error y está "tocado".
    */
   mostrarError(controlName: string, errorName: string): boolean {
-    const control = this.registroForm.get(controlName);
+    const control = this.ventaForm.get(controlName);
     //return control?.hasError(errorName) && control.touched;
     return control!.hasError(errorName) && control!.touched;
   }

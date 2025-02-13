@@ -49,13 +49,18 @@ export class ArticulosService {
       `${this.apiUrl}?opcion=AS&idsocio=${usuarioId}`
     );
   }
+  getArticulosComprados(usuarioId: number): Observable<Articulo[]> {
+    return this.http.get<Articulo[]>(
+      `${this.apiUrl}?opcion=SVS&idsocio=${usuarioId}`
+    );
+  }
 
   /**
    * Elimina un artículo por su ID (opcion=BA).
    * @param articuloId ID del artículo a eliminar.
    */
   eliminarArticulo(articuloId: number): Observable<any> {
-    return this.http.delete(
+    return this.http.get(
       `${this.apiUrl}?opcion=BA&idarticulo=${articuloId}`
     );
   }
