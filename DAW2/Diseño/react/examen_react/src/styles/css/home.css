@@ -1,0 +1,17 @@
+#home {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  gap: 5px;
+}
+
+.views {
+  color: grey;
+}
+
+.video {
+  width: 60vw;
+  height: 20vh;
+}
+
+/*# sourceMappingURL=home.css.map */

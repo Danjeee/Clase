@@ -1,0 +1,36 @@
+@import "_var.scss";
+#form{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-self: center;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: grey 5px 5px 15px 1px;
+  margin-top: 7vh;
+  &>label{
+    margin-top: 20px;
+  }
+  &>input:not([type=submit]),>textarea{
+    border: grey 1px solid;
+    padding: 5px;
+  }
+  &>h2{
+    align-self: center;
+    margin: 0;
+  }
+  &>input[type=submit]{
+    background-color: $blue;
+    border: 0;
+    color: white;
+    width: 30%;
+    align-self: center;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: filter .5s;
+    &:hover{
+      filter: brightness(.8);
+    }
+  }
+}

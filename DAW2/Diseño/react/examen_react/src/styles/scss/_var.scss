@@ -1,0 +1,7 @@
+$red: #ff0004;
+$blue: #1482fe;
+@mixin col_center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

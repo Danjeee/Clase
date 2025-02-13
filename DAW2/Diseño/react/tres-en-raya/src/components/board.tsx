@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/css/board.css';
+import Confetti from 'react-confetti';
 
 interface BoardProps {
   onGameEnd: (winner: number | null) => void;
@@ -31,6 +32,7 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
 
   const checkWinner = () => {
     const winpart = document.getElementById("particle") as HTMLElement
+    const confetti = document.getElementById("confetti") as HTMLElement
     const lines = [
       [
         [0, 0],
@@ -83,17 +85,15 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
       ) { //Ganador
         setTimeout(() => {
           onGameEnd(board[a[0]][a[1]]);
-        }, 1000);
+        }, 1500);
         winpart.style.display = "flex"
+        confetti.style.display = "flex"
         return;
       }
     }
 
     if (board.flat().every((cell) => cell !== null)) { //Empate
-      winpart.style.display = "flex"
-      setTimeout(() => {
-        onGameEnd(null);
-      }, 1000);
+      onGameEnd(null);
       return;
     }
   };
@@ -114,6 +114,10 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
         </div>
       ))}
       <div id='particle'></div>
+      <div id='confetti'>
+        <Confetti></Confetti>
+      </div>
+      <div id='tie'>Empate</div>
     </div>
     
   );

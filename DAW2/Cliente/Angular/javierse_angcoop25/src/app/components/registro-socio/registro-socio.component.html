@@ -1,0 +1,147 @@
+<!--
+  Plantilla del formulario de registro para un nuevo socio.
+  Está basado en Angular Reactive Forms, utilizando [formGroup] y formControlName.
+-->
+<div class="container col-6 mt-4">
+  <!--
+    Se vincula el formulario HTML al FormGroup definido en el componente TS mediante [formGroup].
+    Se utiliza (ngSubmit) para ejecutar el método registrarSocio() al enviar el formulario.
+    La propiedad enctype="multipart/form-data" es esencial para cargar archivos.
+  -->
+  <form
+    [formGroup]="registroForm"
+    (ngSubmit)="registrarSocio()"
+    enctype="multipart/form-data"
+  >
+    <!-- Campo de nombre -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <!-- Vincula el input al control 'nombre' del FormGroup -->
+      <input
+        type="text"
+        id="nombre"
+        class="form-control"
+        formControlName="nombre"
+      />
+      <!--
+        Se muestran mensajes de error específicos si el control 'nombre' está
+        marcado como "tocado" (touched) y si su validez falla en 'required' o 'pattern'.
+        mostrarError() es un método del componente que encapsula la lógica de validación.
+      -->
+      <div *ngIf="mostrarError('nombre', 'required')" class="text-danger">
+        El nombre es obligatorio.
+      </div>
+      <div *ngIf="mostrarError('nombre', 'pattern')" class="text-danger">
+        El nombre debe tener entre 2 y 20 caracteres y solo puede contener
+        letras, números y espacios.
+      </div>
+    </div>
+
+    <!-- Campo de apellidos -->
+    <div class="mb-3">
+      <label for="apellidos" class="form-label">Apellidos</label>
+      <input
+        type="text"
+        id="apellidos"
+        class="form-control"
+        formControlName="apellidos"
+      />
+      <div *ngIf="mostrarError('apellidos', 'required')" class="text-danger">
+        Los apellidos son obligatorios.
+      </div>
+      <div *ngIf="mostrarError('apellidos', 'pattern')" class="text-danger">
+        Los apellidos deben tener entre 2 y 30 caracteres y solo pueden contener
+        letras, números y espacios.
+      </div>
+    </div>
+
+    <!-- Campo de email -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        formControlName="email"
+      />
+      <div *ngIf="mostrarError('email', 'required')" class="text-danger">
+        El email es obligatorio.
+      </div>
+      <div *ngIf="mostrarError('email', 'email')" class="text-danger">
+        Ingresa un formato de email válido.
+      </div>
+    </div>
+
+    <!-- Sección para subir y previsualizar la foto -->
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="foto" class="form-label">Foto</label>
+        <!--
+          El evento (change) llama a previsualizarImagen($event),
+          donde se lee el archivo y se actualiza el campo 'foto' en el FormGroup.
+        -->
+        <input
+          type="file"
+          id="foto"
+          class="form-control"
+          (change)="previsualizarImagen($event)"
+        />
+      </div>
+      <!--
+        Muestra la previsualización de la imagen seleccionada.
+        Se ajusta con clases de Bootstrap y se limita el tamaño máximo.
+      -->
+      <div
+        class="col-md-6 mb-3 d-flex align-items-center justify-content-center"
+      >
+        <img
+          [src]="imagenPreview"
+          alt="Previsualización"
+          class="img-thumbnail"
+          style="max-width: 150px"
+        />
+      </div>
+    </div>
+
+    <!-- Campos de contraseña y repetición de contraseña -->
+    <div class="row">
+      <!-- Contraseña -->
+      <div class="col-md-6 mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          formControlName="password"
+        />
+        <div *ngIf="mostrarError('password', 'required')" class="text-danger">
+          La contraseña es obligatoria.
+        </div>
+        <div *ngIf="mostrarError('password', 'pattern')" class="text-danger">
+          La contraseña debe tener entre 5 y 10 caracteres, incluir al menos una
+          letra y un número.
+        </div>
+      </div>
+
+      <!-- Repetir contraseña -->
+      <div class="col-md-6 mb-3">
+        <label for="repitePassword" class="form-label">Repite Contraseña</label>
+        <input
+          type="password"
+          id="repitePassword"
+          class="form-control"
+          formControlName="repitePassword"
+        />
+        <div
+          *ngIf="mostrarError('repitePassword', 'required')"
+          class="text-danger"
+        >
+          Repite la contraseña.
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de envío del formulario -->
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+  </form>
+</div>

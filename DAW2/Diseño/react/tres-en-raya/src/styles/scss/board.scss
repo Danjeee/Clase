@@ -64,4 +64,22 @@
   z-index: 3;
   animation: win 1s forwards;
 }
-  
+#confetti{
+  width: 2000vw;
+  position: absolute;
+  transform: translate(-20vw, -30vh);
+  display: none;
+  z-index: 4;
+}
+#tie{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(-26vw, -26vh);
+  background-color: #000000;
+  color: #fff;
+  font-size: 200px;
+  width: 105vw;
+  height: 105vh;
+}

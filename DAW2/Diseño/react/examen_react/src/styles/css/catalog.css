@@ -1,0 +1,13 @@
+#catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+#catalog > iframe {
+  cursor: pointer;
+  width: 45%;
+  height: 20vw;
+}
+
+/*# sourceMappingURL=catalog.css.map */

@@ -1,0 +1,75 @@
+<!--
+  Plantilla del formulario de registro para un nuevo socio.
+  Está basado en Angular Reactive Forms, utilizando [formGroup] y formControlName.
+-->
+<div class="container col-6 mt-4">
+    <form
+      [formGroup]="registroForm"
+      (ngSubmit)="registrarSocio()"
+      enctype="multipart/form-data"
+    >
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          class="form-control"
+          formControlName="nombre"
+        />
+        <div *ngIf="mostrarError('nombre', 'required')" class="text-danger">
+          El nombre es obligatorio.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          class="form-control"
+          formControlName="nombre"
+        />
+        <div *ngIf="mostrarError('nombre', 'required')" class="text-danger">
+          El nombre es obligatorio.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          class="form-control"
+          formControlName="nombre"
+        />
+        <div *ngIf="mostrarError('nombre', 'required')" class="text-danger">
+          El nombre es obligatorio.
+        </div>
+      </div>
+  
+      
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="foto" class="form-label">Foto</label>
+          <input
+            type="file"
+            id="foto"
+            class="form-control"
+            (change)="previsualizarImagen($event)"
+          />
+        </div>
+        <div
+          class="col-md-6 mb-3 d-flex align-items-center justify-content-center"
+        >
+          <img
+            [src]="imagenPreview"
+            alt="Previsualización"
+            class="img-thumbnail"
+            style="max-width: 150px"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+  
