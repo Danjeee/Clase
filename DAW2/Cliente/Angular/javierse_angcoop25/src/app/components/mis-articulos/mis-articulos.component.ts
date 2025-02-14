@@ -28,6 +28,7 @@ export class MisArticulosComponent implements OnInit {
 
   // ID del usuario que ha iniciado sesión (null si no hay sesión activa)
   usuarioId: number | null = null; // ID del usuario logueado
+  hayArtComprados: boolean = false;
 
   constructor(
     private articulosService: ArticulosService,
@@ -65,13 +66,22 @@ export class MisArticulosComponent implements OnInit {
   cargarArticulos(): void {
     this.articulosService.getMisArticulos(this.sessionService.obtenerUsuario().id).subscribe({
       next: (data) => {
-        this.articulos = data
+        if (data.error == "Sin datos en la consulta") {
+          this.articulos = []
+        } else {
+          this.articulos = data
+        }
       },
       error: (error) => console.error('Error al obtener los artículos:', error),
     });
     this.articulosService.getArticulosComprados(this.sessionService.obtenerUsuario().id).subscribe({
       next: (data) => {
-        this.articulosComprados = data
+        if (data.error == "Sin datos en la consulta") {
+          this.articulosComprados = []
+        } else {
+          this.articulosComprados = data
+        }
+        
       },
       error: (error) => console.error('Error al obtener los artículos:', error),
     });

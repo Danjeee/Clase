@@ -52,7 +52,7 @@ export class SociosService {
    * @param id Identificador numérico del socio
    * @returns Observable con un objeto Socio
    */
-  getSocioById(id: number): Observable<Socio> {
-    return this.http.get<Socio>(`${this.apiUrl}?opcion=GS&id=${id}`);
+  getSocioById(id: number): Observable<any> {
+    return this.http.get<Socio>(`${this.apiUrl}?opcion=GS&idsocio=${id}`);
   }
 }

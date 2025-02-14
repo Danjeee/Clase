@@ -82,6 +82,16 @@
           </a>
         </li>
 
+        <li class="nav-item" *ngIf="usuarioLogueado">
+          <a
+            class="nav-link"
+            [routerLink]="['/perfil']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-person-fill"></i> Perfil
+          </a>
+        </li>
+
         <!-- Opción de Mis Artículos, visible solo si el usuario está logueado. -->
         <li class="nav-item" *ngIf="usuarioLogueado">
           <a

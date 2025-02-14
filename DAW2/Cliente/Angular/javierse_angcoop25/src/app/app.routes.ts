@@ -8,6 +8,8 @@ import { RegistroSocioComponent } from './components/registro-socio/registro-soc
 import { GaleriaArticulosComponent } from './components/galeria-articulos/galeria-articulos.component';
 import { VenderComponent } from './components/vender/vender.component';
 import { MisArticulosComponent } from './components/mis-articulos/mis-articulos.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { EditarArticuloComponent } from './components/editar-articulo/editar-articulo.component';
 
 // Define un array de objetos con la forma { path: string, component: any },
 // que representan la configuración de rutas de la aplicación.
@@ -28,6 +30,10 @@ export const routes: Routes = [
   { path: 'vender', component: VenderComponent },
 
   { path: 'mis-articulos', component: MisArticulosComponent },
+
+  { path: 'perfil', component: PerfilComponent },
+
+  { path: 'editar-articulo', component: EditarArticuloComponent },
 
   // Ruta comodín. Si el usuario intenta acceder a una ruta que no existe,
   // se redirecciona automáticamente a '/login'.

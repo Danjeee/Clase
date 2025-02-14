@@ -17642,3 +17642,12 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.javi:BBDD
 2025-02-13 10:45:17,839 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-02-13 10:45:17,846 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-13 10:45:17,852 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\onthewayrecipes\BACKEND\OnTheWayRecipes\src\test\resources
+2025-02-13 11:42:25,553 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-13 11:42:25,559 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 11:42:25,566 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\onthewayrecipes\BACKEND\OnTheWayRecipes\src\test\resources
+2025-02-13 11:42:54,541 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 11:42:54,552 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 13 resources from src\main\resources to target\classes
+2025-02-13 11:42:54,567 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\onthewayrecipes\BACKEND\OnTheWayRecipes\src\test\resources
+2025-02-13 11:42:57,842 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-13 11:42:57,850 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 13 resources from src\main\resources to target\classes
+2025-02-13 11:42:57,865 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Users\ciclom\Documents\GitHub\onthewayrecipes\BACKEND\OnTheWayRecipes\src\test\resources

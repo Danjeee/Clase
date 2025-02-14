@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { catchError, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 // Importa las interfaces que se usarán para tipar los resultados
@@ -44,15 +44,15 @@ export class ArticulosService {
    * Obtiene todos los artículos publicados por un usuario específico (articulos del socio que inicia sesión) (opcion=AS).
    * @param usuarioId ID del usuario vendedor
    */
-  getMisArticulos(usuarioId: number): Observable<Articulo[]> {
+  getMisArticulos(usuarioId: number): Observable<Articulo[]> | Observable<any>{
     return this.http.get<Articulo[]>(
       `${this.apiUrl}?opcion=AS&idsocio=${usuarioId}`
-    );
+    ).pipe( catchError(err => {throw err}));
   }
-  getArticulosComprados(usuarioId: number): Observable<Articulo[]> {
+  getArticulosComprados(usuarioId: number): Observable<Articulo[]> | Observable<any> {
     return this.http.get<Articulo[]>(
       `${this.apiUrl}?opcion=SVS&idsocio=${usuarioId}`
-    );
+    ).pipe( catchError(err => {throw err}));
   }
 
   /**
@@ -78,7 +78,7 @@ export class ArticulosService {
    * Obtiene la información de un artículo por su ID (opcion=AC).
    * @param articuloId Identificador del artículo.
    */
-  getArticuloById(articuloId: number): Observable<Articulo> {
+  getArticuloById(articuloId: number | null): Observable<any> {
     return this.http.get<Articulo>(
       `${this.apiUrl}?opcion=AC&idarticulo=${articuloId}`
     );

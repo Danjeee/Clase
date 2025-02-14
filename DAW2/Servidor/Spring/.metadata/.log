@@ -4761,3 +4761,6 @@ java.util.concurrent.CompletionException: org.eclipse.lsp4j.jsonrpc.ResponseErro
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 	... 11 more
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-02-13 12:25:22.117
+!MESSAGE The workspace will exit with unsaved changes in this session.
