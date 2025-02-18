@@ -18,7 +18,7 @@ public class ClientesEmpresaDTO {
 	private EmpresaDTO empresaDTO;
 	private ClienteDTO clienteDTO;
 	
-	public ClientesEmpresaDTO convertToDTO(ClienteEmpresa ce, ClienteDTO cli, EmpresaDTO e) {
+	public static ClientesEmpresaDTO convertToDTO(ClienteEmpresa ce, ClienteDTO cli, EmpresaDTO e) {
 		return ClientesEmpresaDTO.builder()
 				.id(ce.getId())
 				.puesto(ce.getPuesto())

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Listado clientes</title>
-	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea4/csslists.css}">
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea5/csslists.css}">
   </head>
 
   <body>
@@ -32,6 +32,7 @@
               <td>VER CUENTAS</td>
               <td>VER DIRECCIONES</td>
 			  <td>VER SERVICIOS CONTRATADOS</td>
+			  <td>VER EMPRESAS</td>
               <td>EDITAR</td>
               <td>ELIMINAR</td>
             </tr>
@@ -65,6 +66,12 @@
 			      <a
 			       th:href="@{/clientes/{idCliente}/servicios (idCliente=${c.id})}"
 			       >Ver servicios</a
+			       >
+			  </td>
+			  <td>
+			      <a
+			       th:href="@{/clientes/{idCliente}/empresas (idCliente=${c.id})}"
+			       >Ver empresas</a
 			       >
 			  </td>
               <td>

@@ -302,6 +302,13 @@ CREATE TABLE `demospringboot`.`empresas` (
   `nombre` VARCHAR(45) NOT NULL,
   `descripcion` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`));
+  
+  INSERT INTO `empresas`(nombre, descripcion) 
+  VALUES
+  ("Sanrio", "Kawaii"),
+  ("Naruto", "Shipudden"),
+  ("Alaska", "Kawasaki"),
+  ("Buho","Coches");
 
 CREATE TABLE `demospringboot`.`clientesempresas` (
   `id` BIGINT NOT NULL AUTO_INCREMENT,
@@ -322,3 +329,15 @@ CREATE TABLE `demospringboot`.`clientesempresas` (
     REFERENCES `demospringboot`.`clientes` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
+    
+      INSERT INTO `clientesempresas`(id_cliente, id_empresa, puesto, anos_en_empresa) 
+  VALUES
+  (1, 1, "Admin", 2),
+  (1, 2, "Trabajador", 1),
+  (1, 3, "Trabajador", 1),
+  (1,4, "Trabajador", 2),
+  (2, 1, "Trabajador", 1),
+  (2, 2,"Admin", 2),
+  (2, 3, "Trabajador", 3),
+  (2,4, "Trabajador", 4);
+  
