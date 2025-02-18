@@ -18058,3 +18058,301 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.javi:BBDD
 2025-02-18 18:33:47,973 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-18 18:33:47,980 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 25 resources from src\main\resources to target\classes
 2025-02-18 18:33:47,995 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:34:59,237 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-02-18 18:38:47,029 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:38:47,092 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:38:47,115 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:41:50,267 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 18:41:50,277 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:41:50,285 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:42:00,866 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 18:42:00,874 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:42:00,880 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:45:31,114 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:45:31,124 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:45:31,144 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:47:34,596 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:47:34,610 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:47:34,630 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:47:36,793 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:47:36,802 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:47:36,820 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:51:47,713 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:51:47,726 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:51:47,747 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:52:04,240 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:52:04,254 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:52:04,275 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:52:22,534 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:52:22,542 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:52:22,562 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:54:50,347 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:54:50,357 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:54:50,377 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:58:48,314 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:58:48,323 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:58:48,350 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 18:59:57,079 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 18:59:57,088 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 18:59:57,113 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:01:42,140 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:01:42,151 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:01:42,176 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:05:46,544 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:05:46,553 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:05:46,576 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:07:18,013 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:07:18,024 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:07:18,049 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:08:00,400 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:08:00,409 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:08:00,428 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:10:06,820 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:10:06,830 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:10:06,847 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:11:48,693 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:11:48,703 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:11:48,724 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:12:06,694 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:12:06,726 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:12:06,757 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:13:03,342 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:13:03,352 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:13:03,372 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:13:41,577 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:13:41,586 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:13:41,609 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:13:50,057 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:13:50,068 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:13:50,088 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:13:58,803 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:13:58,812 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:13:58,834 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:15:54,443 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:15:54,451 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:15:54,475 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:17:25,143 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:17:25,175 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:17:25,214 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 19:19:46,518 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 19:19:46,529 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 19:19:46,543 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:13:44,067 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:13:44,082 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:13:44,102 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:14:00,163 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:14:00,186 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:14:00,204 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:14:04,475 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:14:04,485 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:14:04,508 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:14:16,609 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:14:16,640 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:14:16,668 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:16:34,342 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:16:34,350 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:16:34,365 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:16:48,498 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:16:48,506 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:16:48,524 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:18:04,881 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:18:04,891 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:18:04,909 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:21:00,660 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:21:00,674 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:21:00,709 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:21:43,675 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:21:43,683 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:21:43,701 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:22:27,581 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:22:27,590 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:22:27,597 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:22:55,018 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:22:55,026 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:22:55,032 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:23:07,966 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:23:07,974 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:23:07,979 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:23:16,870 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:23:16,878 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:23:16,886 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:23:31,585 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:23:31,594 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:23:31,601 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:23:50,124 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:23:50,132 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:23:50,137 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:24:00,598 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:24:00,606 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:24:00,610 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:24:53,777 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:24:53,785 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:24:53,805 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:25:11,325 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:25:11,333 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:25:11,348 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:26:01,244 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:26:01,253 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:26:01,271 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:26:11,292 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:26:11,299 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:26:11,305 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:26:18,196 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:26:18,203 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:26:18,208 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:26:24,300 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:26:24,309 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:26:24,315 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:27:39,740 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:27:39,748 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:27:39,762 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:28:19,678 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 22:28:19,685 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:28:19,690 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:28:30,647 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:28:30,653 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:28:30,688 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:29:45,578 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:29:45,586 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:29:45,602 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:32:16,677 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:32:16,688 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:32:16,703 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:33:57,806 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:33:57,814 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:33:57,830 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:36:13,381 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:36:13,389 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:36:13,406 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:37:05,631 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:37:05,639 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:37:05,653 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:37:58,276 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:37:58,284 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:37:58,299 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:38:48,863 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:38:48,870 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:38:48,885 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:39:21,102 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:39:21,110 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:39:21,124 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:39:27,013 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:39:27,021 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:39:27,037 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:40:54,313 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:40:54,321 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:40:54,338 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:41:48,391 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:41:48,398 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:41:48,414 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:41:51,881 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:41:51,890 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:41:51,905 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:42:16,283 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:42:16,292 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:42:16,309 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:46:48,684 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:46:48,699 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:46:48,714 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:47:04,050 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:47:04,058 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:47:04,087 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:48:35,342 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:48:35,352 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:48:35,368 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:49:19,307 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:49:19,316 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:49:19,331 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:50:01,337 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:50:01,344 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:50:01,377 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:50:25,592 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:50:25,600 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:50:25,616 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:51:13,256 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:51:13,264 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:51:13,280 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:51:39,305 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:51:39,312 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:51:39,327 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:54:57,473 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:54:57,482 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:54:57,497 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:55:08,767 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:55:08,775 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:55:08,790 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:57:15,213 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:57:15,220 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:57:15,234 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:58:22,245 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:58:22,253 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:58:22,268 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:58:54,997 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:58:55,005 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:58:55,022 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 22:59:44,839 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 22:59:44,847 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 22:59:44,861 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:01:22,489 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:01:22,496 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:01:22,511 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:05:08,299 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:05:08,307 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:05:08,322 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:06:20,153 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:06:20,161 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:06:20,176 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:06:37,563 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:06:37,570 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:06:37,584 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:09:20,013 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:09:20,022 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:09:20,039 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:09:32,176 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:09:32,200 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:09:32,218 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:09:38,995 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:09:39,005 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:09:39,021 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:10:09,139 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:10:09,148 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:10:09,165 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:11:34,713 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:11:34,721 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:11:34,737 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:12:57,891 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:12:57,916 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:12:57,934 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:13:05,172 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:13:05,181 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:13:05,198 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:13:35,977 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:13:35,985 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:13:36,010 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:14:34,265 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:14:34,274 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:14:34,291 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:15:42,706 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:15:42,716 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:15:42,732 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:15:48,334 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:15:48,356 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:15:48,372 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:17:05,755 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-18 23:17:05,763 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:17:05,769 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:18:46,605 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:18:46,614 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:18:46,629 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:20:56,509 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:20:56,518 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:20:56,534 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:22:57,603 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:22:57,611 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:22:57,626 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:23:37,714 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:23:37,722 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:23:37,738 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources
+2025-02-18 23:25:40,362 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-18 23:25:40,372 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 26 resources from src\main\resources to target\classes
+2025-02-18 23:25:40,390 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\javis\OneDrive\Documentos\GitHub\Clase\DAW2\Servidor\Spring\dws-u5t5-javiersoriano\src\test\resources

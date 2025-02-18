@@ -1,5 +1,6 @@
 package com.javi.repository.entity;
 
+import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.CascadeType;
@@ -31,6 +32,6 @@ public class Empresa {
 	private String descripcion;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "empresa")
-	private Set<ClienteEmpresa> listaclientesempresa;
+	private List<ClienteEmpresa> listaclientesempresa;
 	
 }
