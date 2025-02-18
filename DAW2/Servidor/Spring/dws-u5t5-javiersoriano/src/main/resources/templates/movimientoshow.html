@@ -1,0 +1,41 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ver movimiento</title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea4/cssviews.css}">
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>Ver movimiento</h1>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>TIPO</td>
+              <td>FECHA OPERACION</td>
+              <td>DESCRIPCION</td>
+              <td>IMPORTE</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td th:text="${movimientoDTO.id}"></td>
+              <td th:text="${movimientoDTO.tipo}"></td>
+              <td th:text="${movimientoDTO.fechaOperacion}"></td>
+              <td th:text="${movimientoDTO.descripcion}"></td>
+              <td th:text="${movimientoDTO.importe}"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          th:href="@{/clientes/{idCliente}/cuentas/{idCuenta}/movimientos (idCliente=${clienteDTO.id}, idCuenta=${cuentaDTO.id})}"
+          >Volver al listado de movimientos</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

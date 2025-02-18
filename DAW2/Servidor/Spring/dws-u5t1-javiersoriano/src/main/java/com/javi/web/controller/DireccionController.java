@@ -29,7 +29,7 @@ public class DireccionController {
         @GetMapping("/clientes/{idCliente}/direcciones")
         public ModelAndView findAllByCliente(@PathVariable Long idCliente) {
                 log.info(this.getClass().getSimpleName()
-                                + " findAllByCliente: devolver todas las direcciones asociadas al cliente con id: {}",
+                                + " devolvemos todas las direcciones asociadas al cliente con id: "+
                                 idCliente);
 
                 return new ModelAndView("direcciones")
@@ -41,8 +41,8 @@ public class DireccionController {
         public ModelAndView addDireccionExistente(@PathVariable Long idCliente,
                         @ModelAttribute DireccionDTO direccionDTO) {
                 log.info(this.getClass().getSimpleName()
-                                + " addDireccionExistente: guardar direccion existente: {} para el cliente con id: {}",
-                                direccionDTO, idCliente);
+                                + " guardamos direccion existente: "+direccionDTO+"para el cliente con id: "+
+                                idCliente);
 
                 direccionDTO = this.direccionService.findById(direccionDTO.getId());
 
@@ -53,7 +53,7 @@ public class DireccionController {
 
         @GetMapping("/clientes/{idCliente}/direcciones/{id}")
         public ModelAndView findById(@PathVariable Long idCliente, @PathVariable Long id) {
-                log.info(this.getClass().getSimpleName() + " findById: devolver direccion con id: {}", id);
+                log.info(this.getClass().getSimpleName() + " devolvemos direccion con id: "+ id);
 
                 return new ModelAndView("direccionview")
                                 .addObject("direccionDTO", this.direccionService.findById(id))
@@ -62,7 +62,7 @@ public class DireccionController {
 
         @PostMapping("/clientes/{idCliente}/direcciones/save")
         public ModelAndView save(@PathVariable Long idCliente, @ModelAttribute DireccionDTO direccionDTO) {
-                log.info(this.getClass().getSimpleName() + " save: guardar direccion con datos: {}", direccionDTO);
+                log.info(this.getClass().getSimpleName() + " guardamos direccion con datos: "+ direccionDTO);
 
                 this.direccionService.save(direccionDTO, idCliente);
 
@@ -71,7 +71,7 @@ public class DireccionController {
 
         @GetMapping("/clientes/{idCliente}/direcciones/add")
         public ModelAndView add(@PathVariable Long idCliente) {
-                log.info(this.getClass().getSimpleName() + " add: redigir a vista nueva direccion");
+                log.info(this.getClass().getSimpleName() + " vamos a vista nueva direccion");
 
                 return new ModelAndView("direccionform")
                                 .addObject("direccionDTO", new DireccionDTO())
@@ -81,7 +81,7 @@ public class DireccionController {
 
         @GetMapping("/clientes/{idCliente}/direcciones/update/{id}")
         public ModelAndView update(@PathVariable Long idCliente, @PathVariable Long id) {
-                log.info(this.getClass().getSimpleName() + " update: redigir a vista actualizar direccion con id: {}",
+                log.info(this.getClass().getSimpleName() + " actualizamos direccion con id: "+
                                 id);
 
                 return new ModelAndView("direccionform")

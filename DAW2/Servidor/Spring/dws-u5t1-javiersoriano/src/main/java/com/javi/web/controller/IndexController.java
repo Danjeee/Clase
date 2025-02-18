@@ -20,7 +20,7 @@ public class IndexController {
 
     @GetMapping("/")
     public ModelAndView index() {
-        log.info(this.getClass().getSimpleName() + " index: mostrar pagina principal");
+        log.info(this.getClass().getSimpleName() + "Pagina principal");
 
         return new ModelAndView("index").addObject("nombreAplicacion", nombreAplicacion).addObject("nombreAsignatura",
                 nombreAsignatura);

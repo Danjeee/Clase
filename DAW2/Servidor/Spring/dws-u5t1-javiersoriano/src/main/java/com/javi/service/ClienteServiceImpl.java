@@ -24,7 +24,7 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public List<ClienteDTO> findAll() {
-        log.info(this.getClass().getSimpleName() + " findAll: devolver todos los clientes");
+        log.info(this.getClass().getSimpleName() + " devolvemos todos los clientes");
 
         return this.clienteRepository.findAll().stream().map(c -> ClienteDTO.convertToDTO(c))
                 .collect(Collectors.toList());
@@ -32,14 +32,14 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public ClienteDTO findById(Long id) {
-        log.info(this.getClass().getSimpleName() + " findById: devolver cliente con id: {}", id);
+        log.info(this.getClass().getSimpleName() + " devolvemos el cliente con id: " + id);
 
         return this.clienteRepository.findById(id).map(ClienteDTO::convertToDTO).orElse(null);
     }
 
     @Override
     public void save(ClienteDTO clienteDTO) {
-        log.info(this.getClass().getSimpleName() + " save: guardar cliente con datos: {}", clienteDTO);
+        log.info(this.getClass().getSimpleName() + " guardamos cliente con datos: " + clienteDTO);
 
         Set<Cuenta> cuentas = new HashSet<>();
 
@@ -52,7 +52,7 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public void deleteById(Long id) {
-        log.info(this.getClass().getSimpleName() + " deleteById: borrar cliente con id: {}", id);
+        log.info(this.getClass().getSimpleName() + " borramos cliente con id: " + id);
 
         this.clienteRepository.deleteById(id);
     }

@@ -36,10 +36,7 @@ public class DireccionServiceImpl implements DireccionService {
 
         @Override
         public List<ClienteDireccionDTO> findAllByCliente(Long idCliente) {
-                log.info(this.getClass().getSimpleName()
-                                + " findAllByCliente: devolver todas las direccion asociadas al cliente con id: {}",
-                                idCliente);
-
+                log.info(this.getClass().getSimpleName() + " devolvemos todas las direcciones asociadas al cliente con id: " + idCliente);
                 Cliente cliente = this.clienteRepository.findById(idCliente).orElse(null);
                 List<ClienteDireccion> listaClienteDirecciones = this.clienteDireccionRepository
                                 .findByClienteId(idCliente);
@@ -53,7 +50,7 @@ public class DireccionServiceImpl implements DireccionService {
 
         @Override
         public List<DireccionDTO> findAll() {
-                log.info(this.getClass().getSimpleName() + " findAll: devolver todas las direcciones");
+                log.info(this.getClass().getSimpleName() + " devolvemos todas las direcciones");
 
                 return this.direccionRepository.findAll().stream().map(DireccionDTO::convertToDTO)
                                 .collect(Collectors.toList());
@@ -61,14 +58,14 @@ public class DireccionServiceImpl implements DireccionService {
 
         @Override
         public DireccionDTO findById(Long id) {
-                log.info(this.getClass().getSimpleName() + " findById: devolver direccion con id: {}", id);
+                log.info(this.getClass().getSimpleName() + " devolvemos la direccion con id: " + id);
 
                 return this.direccionRepository.findById(id).map(DireccionDTO::convertToDTO).orElse(null);
         }
 
         @Override
         public void save(DireccionDTO direccionDTO, Long idCliente) {
-                log.info(this.getClass().getSimpleName() + " save: guardar direccion con datos: {}", direccionDTO);
+                log.info(this.getClass().getSimpleName() + " guardamos la direccion con datos: "+ direccionDTO);
 
                 Set<ClienteDireccion> listaClienteDirecciones = this.clienteDireccionRepository
                                 .findByClienteId(idCliente)
@@ -87,9 +84,7 @@ public class DireccionServiceImpl implements DireccionService {
 
         @Override
         public void addExistente(DireccionDTO direccionDTO, Long idCliente) {
-                log.info(this.getClass().getSimpleName()
-                                + " addExistente: anyadir direccion existente a cliente con id: {}",
-                                idCliente);
+                log.info(this.getClass().getSimpleName() + " añadimos la direccion existente a cliente con id: " +idCliente);
 
                 Set<ClienteDireccion> listaClienteDirecciones = this.clienteDireccionRepository
                                 .findByClienteId(idCliente)
@@ -112,7 +107,7 @@ public class DireccionServiceImpl implements DireccionService {
 
         @Override
         public void deleteById(Long id) {
-                log.info(this.getClass().getSimpleName() + " deleteById: borrar direccion con id: {}", id);
+                log.info(this.getClass().getSimpleName() + " borramos la direccion con id: " + id);
 
                 this.direccionRepository.deleteById(id);
         }

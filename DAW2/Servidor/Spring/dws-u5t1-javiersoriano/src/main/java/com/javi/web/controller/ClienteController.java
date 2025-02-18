@@ -24,21 +24,21 @@ public class ClienteController {
 
     @GetMapping("/clientes")
     public ModelAndView findAll() {
-        log.info(this.getClass().getSimpleName() + " findAll: devolver todos los cliente");
+        log.info(this.getClass().getSimpleName() + " devolvemos todos los clientes");
 
         return new ModelAndView("clientes").addObject("listaClientesDTO", this.clienteService.findAll());
     }
 
     @GetMapping("/clientes/{id}")
     public ModelAndView findById(@PathVariable Long id) {
-        log.info(this.getClass().getSimpleName() + " findById: devolver cliente con id: {}", id);
+        log.info(this.getClass().getSimpleName() + " devolvemos el cliente con id: " + id);
 
         return new ModelAndView("clienteview").addObject("clienteDTO", this.clienteService.findById(id));
     }
 
     @PostMapping("clientes/save")
     public ModelAndView save(@ModelAttribute ClienteDTO clienteDTO) {
-        log.info(this.getClass().getSimpleName() + " save: guardar cliente con datos: {}", clienteDTO);
+        log.info(this.getClass().getSimpleName() + " guardamos el cliente: " + clienteDTO);
 
         this.clienteService.save(clienteDTO);
 
@@ -47,14 +47,14 @@ public class ClienteController {
 
     @GetMapping("clientes/add")
     public ModelAndView add() {
-        log.info(this.getClass().getSimpleName() + " add: redigir a vista nuevo cliente");
+        log.info(this.getClass().getSimpleName() + " redirigimos a nuevo cliente");
 
         return new ModelAndView("clienteform").addObject("clienteDTO", new ClienteDTO()).addObject("add", true);
     }
 
     @GetMapping("clientes/update/{id}")
     public ModelAndView update(@PathVariable Long id) {
-        log.info(this.getClass().getSimpleName() + " update: redigir a vista actualizar cliente con id: {}", id);
+        log.info(this.getClass().getSimpleName() + " redirigimos actualizar cliente con id: " + id);
 
         return new ModelAndView("clienteform").addObject("clienteDTO", this.clienteService.findById(id))
                 .addObject("add", false);
@@ -62,7 +62,7 @@ public class ClienteController {
 
     @GetMapping("clientes/delete/{id}")
     public ModelAndView deleteById(@PathVariable Long id) {
-        log.info(this.getClass().getSimpleName() + " deleteById: borrar cliente con id: {}", id);
+        log.info(this.getClass().getSimpleName() + " borramos cliente con id: " + id);
 
         this.clienteService.deleteById(id);
 

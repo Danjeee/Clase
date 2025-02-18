@@ -31,7 +31,7 @@ public class CuentaServiceImpl implements CuentaService {
     @Override
     public List<CuentaDTO> findAllByCliente(Long idCliente) {
         log.info(this.getClass().getSimpleName()
-                + " findAllByCliente: devolver todas las cuentas del cliente con id: {}", idCliente);
+                + " devolvemos todas las cuentas del cliente con id: " + idCliente);
 
         return this.cuentaRepository.findAllByCliente(idCliente).stream().map(c -> CuentaDTO.convertToDTO(c))
                 .collect(Collectors.toList());
@@ -39,14 +39,14 @@ public class CuentaServiceImpl implements CuentaService {
 
     @Override
     public CuentaDTO findById(Long id) {
-        log.info(this.getClass().getSimpleName() + " findById: devolver cuenta con id: {}", id);
+        log.info(this.getClass().getSimpleName() + "  devolvemos la cuenta con el id: " + id);
 
         return this.cuentaRepository.findById(id).map(CuentaDTO::convertToDTO).orElse(null);
     }
 
     @Override
     public void save(CuentaDTO cuentaDTO, Long idCliente) {
-        log.info(this.getClass().getSimpleName() + " save: guardar cuenta con datos: {}", cuentaDTO);
+        log.info(this.getClass().getSimpleName() + " guardamos la cuenta con datos: " + cuentaDTO);
 
         if (cuentaDTO.getId() != null) {
             Cliente cliente = this.clienteRepository.findById(idCliente).orElse(null);
@@ -64,7 +64,7 @@ public class CuentaServiceImpl implements CuentaService {
 
     @Override
     public void deleteById(Long id) {
-        log.info(this.getClass().getSimpleName() + " deleteById: borrar cuenta con id: {}", id);
+        log.info(this.getClass().getSimpleName() + " borramos cuenta con el id: " + id);
 
         this.cuentaRepository.deleteById(id);
     }

@@ -292,4 +292,33 @@ CREATE TABLE `clientesservicios` (
     ON DELETE CASCADE
     ON UPDATE CASCADE);
         
-INSERT INTO `clientesservicios` VALUES (1,17,1,'2023-01-10 22:14:15', rand()*100*100),(2,1,1,'2023-01-10 22:14:15', rand()*100),(3,10,3,'2023-01-10 22:14:15', rand()*100),(4,2,2,'2023-01-10 22:14:15', rand()*100),(5,12,3,'2023-01-10 22:14:15', rand()*100)
+INSERT INTO `clientesservicios` VALUES (1,17,1,'2023-01-10 22:14:15', rand()*100*100),(2,1,1,'2023-01-10 22:14:15', rand()*100),(3,10,3,'2023-01-10 22:14:15', rand()*100),(4,2,2,'2023-01-10 22:14:15', rand()*100),(5,12,3,'2023-01-10 22:14:15', rand()*100);
+
+DROP TABLE IF EXISTS `clientesempresas`;
+DROP TABLE IF EXISTS `empresas`;
+
+CREATE TABLE `demospringboot`.`empresas` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(45) NOT NULL,
+  `descripcion` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `demospringboot`.`clientesempresas` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `id_cliente` INT NOT NULL,
+  `id_empresa` BIGINT NOT NULL,
+  `puesto` VARCHAR(20) NOT NULL,
+  `anos_en_empresa` INTEGER NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_empresa_idx` (`id_empresa` ASC) INVISIBLE,
+  INDEX `fk_cliente_cemp_idx` (`id_cliente` ASC) VISIBLE,
+  CONSTRAINT `fk_empresa`
+    FOREIGN KEY (`id_empresa`)
+    REFERENCES `demospringboot`.`empresas` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_cliente_cemp`
+    FOREIGN KEY (`id_cliente`)
+    REFERENCES `demospringboot`.`clientes` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(Ubuntu-Regular.ttf);
+}
+*{
+    font-family: defaultFont;
+    font-size: 15px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #6a5acd, #5a96cd);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+h1{
+    font-size: 35px;
+}
+table{
+    border-collapse: collapse;
+    border: #000 2px solid;
+}
+td{
+    font-size: 25px;
+    font-weight: bold;
+    border: #000 2px solid;
+    text-align: center;
+}
+th{
+    border: #000 2px solid;
+    font-weight: bold;
+}
+tr{
+    border: #000 2px solid;
+}
+td,tr,th{
+    padding: 7px;
+    background-color: #cfd4f6;
+}
+a{
+    color: royalblue;
+    text-decoration: underline;
+}
+a:not(td>a){
+    border-radius: 5px;
+    background-color: white;
+    border: #000 2px solid;
+    padding: 5px;
+    margin-top: 30px;
+}
+a:hover{
+    cursor: pointer;
+}
