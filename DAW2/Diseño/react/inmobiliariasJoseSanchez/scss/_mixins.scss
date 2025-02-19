@@ -1,0 +1,8 @@
+@import 'variables';
+
+@mixin maquetadohorizontal($gap:0px){
+  display: flex;
+  flex-direction:row;
+  gap:$gap;
+
+}

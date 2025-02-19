@@ -1,0 +1,97 @@
+body {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+nav {
+  border-bottom: dotted 2px blue;
+  border-top: dotted 2px blue;
+}
+
+.casa {
+  border: 1px solid black;
+}
+
+.detalles-casa {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.tipo_vivienda {
+  margin-left: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Verdana";
+}
+
+.titulologo {
+  color: blue;
+  font-size: 40px;
+  text-shadow: 2px 5px 2px rgba(50, 50, 50, 0.7);
+}
+
+input {
+  border: dotted 2px blue;
+  background-color: white;
+}
+
+.boton-azul {
+  background-color: blue;
+  color: white;
+}
+
+.mapa-google {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: solid blue 2px;
+}
+
+.logo {
+  animation: mover 3000ms ease-out;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(40px) rotate(-40deg);
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

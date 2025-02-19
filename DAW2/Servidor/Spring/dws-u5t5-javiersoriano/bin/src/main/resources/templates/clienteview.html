@@ -1,0 +1,48 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar cliente</title>
+	<link rel="stylesheet" th:href="@{http://localhost:8888/tarea5/cssviews.css}">
+</head>
+
+<body>
+    <div>
+        <h1>Mostrar cliente</h1>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td th:text="${clienteDTO.id}"></td>
+            </tr>
+            <tr>
+                <td>NIF</td>
+                <td th:text="${clienteDTO.nif}"></td>
+            </tr>
+            <tr>
+                <td>NOMBRE</td>
+                <td th:text="${clienteDTO.nombre}"></td>
+            </tr>
+            <tr>
+                <td>APELLIDOS</td>
+                <td th:text="${clienteDTO.apellidos}"></td>
+            </tr>
+            <tr>
+                <td>CLAVE SEGURIDAD</td>
+                <td th:text="${clienteDTO.claveSeguridad}"></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td th:text="${clienteDTO.email}"></td>
+            </tr>
+            <tr>
+                <td>RECOMENDACION</td>
+                <td th:text="${clienteDTO.recomendacionDTO.observaciones}"></td>
+            </tr>
+        </table>
+        <a th:href="@{/clientes}">Volver a la lista de clientes</a>
+    </div>
+</body>
+
+</html>

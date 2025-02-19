@@ -1,0 +1,87 @@
+@import 'mixins';
+@import 'variables';
+body{
+  display:grid;
+  grid-template-rows:1fr 1fr auto;
+}
+
+header{
+ @include maquetadohorizontal();
+  justify-content:space-between;
+}
+main{
+  @include maquetadohorizontal(50px);
+}
+nav{
+  border-bottom: dotted 2px $color-fuente-titulo-logo;
+  border-top: dotted 2px $color-fuente-titulo-logo;
+}
+
+
+.casa{
+  border:1px solid black;
+
+}
+.detalles-casa{
+  @include maquetadohorizontal(20px);
+}
+
+.tipo_vivienda{
+  margin-left:10px;
+}
+
+ul{
+  @include maquetadohorizontal(25px);
+}
+li{
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color:black;
+
+}
+h3{
+  font-size:$tamaño-fuente-h3;
+  font-family:$fuente-titulos;
+}
+
+.titulologo{
+  color:$color-fuente-titulo-logo;
+  font-size:$tamaño-fuente-titulo-logo;
+  text-shadow: 2px 5px 2px rgba(50,50,50, 0.7);
+
+}
+input{
+  border: dotted 2px $color-fuente-titulo-logo;
+  background-color:white;
+}
+
+.boton-azul{
+  background-color: $color-fuente-titulo-logo;
+  color:white;
+}
+
+.mapa-google{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border:solid blue 2px;
+}
+.logo{
+  animation: mover 3000ms ease-out;
+
+}
+
+@keyframes mover{
+  0%{
+    transform: translateY(0)rotate(0);
+  }
+  50%{
+    transform:translateY(40px);
+  }
+  100%{
+    transform:translateY(40px)rotate(-40deg);
+  }
+
+}
