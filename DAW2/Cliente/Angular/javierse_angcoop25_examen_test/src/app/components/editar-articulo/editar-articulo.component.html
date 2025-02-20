@@ -1,0 +1,92 @@
+<!--
+  Plantilla del formulario de registro para un nuevo socio.
+  Está basado en Angular Reactive Forms, utilizando [formGroup] y formControlName.
+-->
+<div class="container col-6 mt-4">
+    <form
+      [formGroup]="ventaForm"
+      (ngSubmit)="subir()"
+      enctype="multipart/form-data"
+    >
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          class="form-control"
+          formControlName="nombre"
+        />
+        <div *ngIf="mostrarError('nombre', 'required')" class="text-danger">
+          El nombre es obligatorio.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="descripcion" class="form-label">Descripción</label>
+        <input
+          type="text"
+          id="descripcion"
+          class="form-control"
+          formControlName="descripcion"
+        />
+        <div *ngIf="mostrarError('descripcion', 'required')" class="text-danger">
+          La descripción es obligatoria.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="precio" class="form-label">Precio</label>
+        <input
+          type="number"
+          step="0.01"
+          id="precio"
+          class="form-control"
+          formControlName="precio"
+        />
+        <div *ngIf="mostrarError('precio', 'required')" class="text-danger">
+          El precio es obligatorio.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="cat" class="form-label">Categoria</label>
+        <select name="cat" id="cat" class="form-control" formControlName="cat">
+          <option *ngFor="let cat of categorias" value="{{cat.id}}">{{cat.nombre}}</option>
+        </select>
+        <div *ngIf="mostrarError('precio', 'required')" class="text-danger">
+          El precio es obligatorio.
+        </div>
+      </div>
+  
+      
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="foto" class="form-label">Foto</label>
+          <input
+            type="file"
+            id="foto"
+            class="form-control"
+            accept="image/*"
+            (change)="previsualizarImagen($event)"
+          />
+        </div>
+        <div
+          class="col-md-6 mb-3 d-flex align-items-center justify-content-center"
+        >
+          <img
+            [src]="imagenPreview"
+            alt="Previsualización"
+            class="img-thumbnail"
+            style="max-width: 150px"
+            id="imagen"
+          />
+        </div>
+        <div *ngIf="mostrarError('foto', 'required')" class="text-danger">
+          La imagen es obligatoria.
+        </div>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Editar</button>
+    </form>
+  </div>
+  

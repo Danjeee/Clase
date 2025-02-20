@@ -33,6 +33,7 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
   const checkWinner = () => {
     const winpart = document.getElementById("particle") as HTMLElement
     const confetti = document.getElementById("confetti") as HTMLElement
+    const empate = document.getElementById("empate") as HTMLElement
     const lines = [
       [
         [0, 0],
@@ -93,7 +94,10 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
     }
 
     if (board.flat().every((cell) => cell !== null)) { //Empate
-      onGameEnd(null);
+      setTimeout(() => {
+        onGameEnd(null);
+      }, 1500);
+      empate.style.display = "flex"
       return;
     }
   };
@@ -117,7 +121,7 @@ const Board: React.FC<BoardProps> = ({ onGameEnd }) => {
       <div id='confetti'>
         <Confetti></Confetti>
       </div>
-      <div id='tie'>Empate</div>
+      <div id='empate'>Empate</div>
     </div>
     
   );

@@ -71,13 +71,13 @@
   display: none;
   z-index: 4;
 }
-#tie{
+#empate{
   display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
-  transform: translate(-26vw, -26vh);
-  background-color: #000000;
+  transform: translate(-40vw, -27vh);
+  background-color: rgba(0,0,0,.5);
   color: #fff;
   font-size: 200px;
   width: 105vw;

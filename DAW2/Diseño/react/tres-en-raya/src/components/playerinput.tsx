@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/css/score.css';
 
 interface PlayerInputProps {
   onNamesEntered: (name1: string, name2: string) => void;
@@ -15,7 +16,7 @@ const PlayerInput: React.FC<PlayerInputProps> = ({ onNamesEntered, onStartGame }
   };
 
   return (
-    <form onSubmit={handleNamesSubmit}>
+    <form onSubmit={handleNamesSubmit} id='input'>
       <label htmlFor="player1Name">Jugador 1:</label>
       <input
         type="text"

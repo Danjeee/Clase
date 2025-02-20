@@ -1,0 +1,168 @@
+<!--
+  Este archivo define la barra de navegación (navbar) de la aplicación.
+  Utiliza clases de Bootstrap (navbar, container, etc.) para el estilo.
+  Además, hace uso de directivas de Angular como *ngIf para
+  mostrar/ocultar opciones según si el usuario está logueado.
+-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!--
+      Logo o branding de la aplicación.
+      Se utiliza [routerLink] para navegar a la raíz '/',
+      que redirige a '/login' (según configuración de rutas).
+    -->
+    <a class="navbar-brand" routerLink="/">
+      <i class="bi bi-house"></i> AngularCoop25
+    </a>
+
+    <!-- Botón para modo responsive (colapsar/expandir el menú en pantallas pequeñas) -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenedor colapsable del navbar -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!--
+        Clases de Bootstrap para alinear el contenido a la derecha (ms-auto).
+        Se usan *ngIf para mostrar diferentes opciones dependiendo
+        de la variable 'usuarioLogueado'.
+      -->
+      <ul class="navbar-nav ms-auto">
+        <!-- Opción de Login, visible solo si "usuarioLogueado" es falso/undefined. -->
+        <li class="nav-item" *ngIf="!usuarioLogueado">
+          <!-- routerLink -> navega a /login; routerLinkActive -> agrega la clase "active" si está en esa ruta. -->
+          <a
+            class="nav-link"
+            [routerLink]="['/login']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-box-arrow-in-right"></i> Login
+          </a>
+        </li>
+
+        <!-- Opción de Registro, visible solo si el usuario NO está logueado. -->
+        <li class="nav-item" *ngIf="!usuarioLogueado">
+          <a
+            class="nav-link"
+            [routerLink]="['/registrosocio']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-person-plus"></i> Registro
+          </a>
+        </li>
+
+        <!-- Opción de Galería, visible solo si el usuario SÍ está logueado. -->
+        <li class="nav-item" *ngIf="usuarioLogueado">
+          <a
+            class="nav-link"
+            [routerLink]="['/galeria']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-images"></i> Galería
+          </a>
+        </li>
+
+        <!-- Opción de Vender, visible solo si el usuario está logueado. -->
+        <li class="nav-item" *ngIf="usuarioLogueado">
+          <a
+            class="nav-link"
+            [routerLink]="['/vender']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-cart-check"></i> Vender
+          </a>
+        </li>
+
+        <li class="nav-item" *ngIf="admin">
+          <a
+            class="nav-link"
+            [routerLink]="['/admin']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-person-fill-gear"></i> Admin
+          </a>
+        </li>
+
+        <li class="nav-item" *ngIf="usuarioLogueado">
+          <a
+            class="nav-link"
+            [routerLink]="['/perfil']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-person-fill"></i> Perfil
+          </a>
+        </li>
+
+        <!-- Opción de Mis Artículos, visible solo si el usuario está logueado. -->
+        <li class="nav-item" *ngIf="usuarioLogueado">
+          <a
+            class="nav-link"
+            [routerLink]="['/mis-articulos']"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-list-check"></i> Mis artículos
+          </a>
+        </li>
+
+        <!-- Opción de Logout, visible solo si el usuario está logueado.
+             Muestra un mensaje con el nombre del usuario.
+        -->
+        <li class="nav-item" *ngIf="usuarioLogueado">
+          <!-- Al hacer click, se llama al método logout() definido en el componente TS. -->
+          <a class="nav-link" href="#" (click)="logout()">
+            <i class="bi bi-box-arrow-right"></i> Logout ({{ usuario?.nombre }})
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Instalar Bootstrap: Desde la raíz de tu proyecto (donde está tu package.json), ejecuta:
+npm install bootstrap
+Esto agregará Bootstrap a tus dependencias.
+
+2. Instalar Bootstrap Icons
+Para las íconos de Bootstrap, ejecuta:
+npm install bootstrap-icons
+
+3. Integrar Bootstrap (en Angular)
+La forma más común es a través del archivo angular.json:
+•	Abre el archivo angular.json que se encuentra en la raíz del proyecto.
+•	Ubica la sección "architect" -> "build" -> "options".
+•	Dentro de "styles", agrega la ruta a la hoja de estilos de Bootstrap.
+•	Dentro de "scripts", agrega el script de Bootstrap (si utilizas funcionalidades que requieran JavaScript de Bootstrap, sobre todo para componentes interactivos).
+Por ejemplo:
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+],
+"scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
+4. Integrar Bootstrap Icons
+Para usar los íconos, basta con incluir la hoja de estilos de Bootstrap Icons:
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+  "src/styles.css"
+],
+"scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
+
+Ahora ya puedes usar las clases de Bootstrap directamente en tus componentes y plantillas, por ejemplo:
+<button class="btn btn-primary">Mi Botón</button>
+Y para los íconos de Bootstrap Icons, puedes usar la sintaxis con <i>:
+<i class="bi bi-alarm"></i>
+Esto mostrará el ícono con clase bi-alarm.
+-->

@@ -1,0 +1,10 @@
+<h1 style="justify-self: center; margin-bottom: 5vh; margin-top: 5vh;">Vista de ventas</h1>
+<div class="d-flex flex-column gap-3 align-items-center">
+    <div *ngFor="let venta of ventas" class="border w-75 d-flex justify-content-around align-items-center">
+        <h6>{{venta.idventa}}</h6>
+        <p>{{'Comprador: ' + venta.socio}}</p>
+        <p>{{venta.precio+'€'}}</p>
+        <p>{{venta.fecha}}</p>
+        <p>{{'Vendedor: ' + venta.socio}}</p>
+    </div>
+</div>

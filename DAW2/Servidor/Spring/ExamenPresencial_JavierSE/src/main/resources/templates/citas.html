@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<header style="margin-bottom: 5vh;">
+		<form th:action="@{/auth/logout}" method="post">
+			<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
+			<input type="submit" value="Cerrar sesión"></input>
+		</form>
+	</header>
+	<div th:if="${listaCitasDTO.isEmpty()}">
+		<h1>Listado vacio</h1>
+		<a th:href="@{/principal}">Volver al principal</a>
+	</div>
+	<div th:if="${!listaCitasDTO.isEmpty()}">
+
+		<div>
+			<h1>Mantenimiento de citas</h1>
+		</div>
+		<div>
+			<table border="1">
+				<thead>
+					<tr>
+						<td>ID</td>
+						<td>NOMBRE PACIENTE</td>
+						<td>APELLIDOS PACIENTE</td>
+						<td>NIF PACIENTE</td>
+						<td>TELEFONO PACIENTE</td>
+						<td>NOMBRE MEDICO</td>
+						<td>APELLIDOS MEDICO</td>
+						<td>FECHA CITA</td>
+						<td>ESTADO</td>
+						<td>EDITAR</td>
+						<td>ELIMINAR</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="c : ${listaCitasDTO}">
+						<td>
+							<a th:href="@{/citas/{idCita}/edit (idCita=${c.id})}" th:text="${c.id}"></a>
+						</td>
+						<td th:text="${c.pacienteDTO.nombre}"></td>
+						<td th:text="${c.pacienteDTO.apellidos}"></td>
+						<td th:text="${c.pacienteDTO.nif}"></td>
+						<td th:text="${c.pacienteDTO.telefono}"></td>
+						<td th:text="${c.medicoDTO.nombre}"></td>
+						<td th:text="${c.medicoDTO.apellidos}"></td>
+						<td th:text="${c.fechahora}"></td>
+						<td>
+							<input th:if="${c.estado}" type="checkbox" disabled checked>
+							<input th:if="!${c.estado}" type="checkbox" disabled>
+						</td>
+						<td>
+							<a th:href="@{/citas/{idCita}/edit (idCita=${c.id})}">Editar</a>
+						</td>
+						<td>
+							<a th:href="@{/citas/{idCita}/delete (idCita=${c.id})}">Eliminar</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a th:href="@{/principal}">Volver al principal</a>
+		</div>
+	</div>
+</body>
+
+</html>

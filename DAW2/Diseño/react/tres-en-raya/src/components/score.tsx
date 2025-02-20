@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/css/score.css';
 
 interface ScoreboardProps {
   player1Name: string;
@@ -14,7 +15,7 @@ const Scoreboard: React.FC<ScoreboardProps> = ({
   player2Score,
 }) => {
   return (
-    <div>
+    <div id="score">
       <h2>Marcador</h2>
       <p>{player1Name}: {player1Score}</p>
       <p>{player2Name}: {player2Score}</p>

@@ -1,0 +1,53 @@
+<!--
+  Este componente representa el formulario de inicio de sesión.
+  Se utiliza un formulario de plantilla (Template-Driven Form) con
+  directivas de Angular para enlazar variables y manejar la validación básica.
+-->
+
+<div class="container col-6 mt-4">
+  <h2>Iniciar Sesión</h2>
+
+  <!--
+    Se agrega un template reference variable (#loginForm="ngForm")
+    para poder acceder a las propiedades del formulario en Angular,
+    como la validez o el estado.
+  -->
+  <form (ngSubmit)="login()">
+    <!-- Grupo de entrada para el email -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <!--
+        Con [(ngModel)] enlazamos el valor del input con la propiedad "email" del componente.
+        El atributo name es esencial para usar la directiva ngModel.
+        También agregamos la directiva required para indicar que este campo
+        es obligatorio.
+      -->
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        [(ngModel)]="email"
+        name="email"
+        required
+        #emailModel="ngModel"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input
+        type="password"
+        id="password"
+        class="form-control"
+        [(ngModel)]="password"
+        name="password"
+        required
+      />
+    </div>
+    <div class="d-grid d-md-flex justify-content-md-end">
+      <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+    </div>
+  </form>
+  <div *ngIf="error" class="alert alert-danger mt-3">
+    {{ error }}
+  </div>
+</div>

@@ -1,0 +1,71 @@
+@import "_var.scss";
+@import "_anim.scss";
+
+* {
+    color: white;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-self: start;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    border: #000 2px solid;
+    h2{
+        font-size: calc(20px + 3vw);
+    }
+    p{
+        font-size: calc(20px + 1vw);
+    }
+
+    * {
+        margin: 0;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+}
+#input{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #def;
+    background-image:
+      radial-gradient(transparent 0.6em, #def 0.6em),
+      conic-gradient(at 1em 1em, transparent 270deg, #4203 270deg),
+      conic-gradient(at 1em 1em, transparent 270deg, #4204 270deg),
+      conic-gradient(at 1em 1em, transparent 270deg, #4205 270deg),
+      conic-gradient(at 1em 1em, transparent 270deg, #4206 270deg);
+    background-size: 1em 1em, 4em 4em, 4em 4em, 4em 4em, 4em 4em;
+    animation: bpx 20s infinite, bpy 20s -3.75s infinite;
+    padding: 15vw;
+    border-radius: 5px;
+    border: #000 4px solid;
+    label{
+        margin-top: 10px;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-weight: bold;
+        font-size: calc(20px + 1vw);
+        color: #fff;
+    }
+    button{
+        color: #000;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #e5e5f7;
+        border-radius: 10px;
+    }
+    input{
+        border-radius: 10px;
+        padding: 5px;
+        color: #000;
+    }
+}

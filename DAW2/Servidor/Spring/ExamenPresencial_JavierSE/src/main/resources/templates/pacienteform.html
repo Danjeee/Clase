@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<header style="margin-bottom: 5vh;">
+		<form th:action="@{/auth/logout}" method="post">
+			<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
+			<input type="submit" value="Cerrar sesión"></input>
+		</form>
+	</header>
+
+	<form th:action="@{/pacientes/save}" th:object="${paciente}" method="post">
+		<div th:if="${editar}">
+			<p th:text="'Id: ' + ${paciente.id}"></p>
+			<input type="number" th:field="*{id}" hidden>
+		</div>
+		<label for="nombre">Nombre: </label>
+		<input type="text" th:field="*{nombre}" required>
+		<br>
+		<label for="apellidos">Apellidos: </label>
+		<input type="text" th:field="*{apellidos}" required>
+		<br>
+		<label for="nif">NIF: </label>
+		<input type="text" th:field="*{nif}" maxlength="9" required>
+		<br>
+		<label for="fn">Fecha nacimiento: </label>
+		<input type="date" th:field="*{fechanacimiento}" required>
+		<br>
+		<label for="tlf">Telefono: </label>
+		<input type="number" th:field="*{telefono}" min="100000000" max="999999999" step="1" required>
+		<br>
+		<label for="dir">Direccion: </label>
+		<input type="text" th:field="*{direccion}" required>
+		<br>
+		<input type="submit" th:value="${editar} ? 'Actualizar' : 'Nuevo'" required>
+	</form>
+	<a th:href="@{/pacientes}">Volver a la lista de pacientes</a>
+</body>
+
+</html>

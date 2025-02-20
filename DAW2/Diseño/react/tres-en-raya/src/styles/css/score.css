@@ -1,0 +1,174 @@
+@font-face {
+  font-family: fichas;
+  src: url(../../assets/fichas.ttf);
+}
+@font-face {
+  font-family: fichas;
+  src: url(../../assets/fichas.ttf);
+}
+@keyframes boardglow {
+  0% {
+    box-shadow: #E38BDA 10px -10px 20px 2px;
+  }
+  25% {
+    box-shadow: #FFA4A4 10px 10px 20px 2px;
+  }
+  50% {
+    box-shadow: #FDD39B -10px 10px 20px 2px;
+  }
+  75% {
+    box-shadow: #FFA4A4 -10px -10px 20px 2px;
+  }
+  100% {
+    box-shadow: #E38BDA 10px -10px 20px 2px;
+  }
+}
+@keyframes cellglow {
+  0% {
+    box-shadow: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0px 0px 0px 0px;
+  }
+  25% {
+    box-shadow: #E38BDA 0px 0px 20px 10px;
+  }
+  100% {
+    box-shadow: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0px 0px 0px 0px;
+  }
+}
+@keyframes test {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: #000 2px 2px 2px 2px;
+  }
+}
+@keyframes win {
+  0% {
+    border-width: 5px;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    border-width: 1000px;
+    width: 105vw;
+    height: 105vh;
+    display: none;
+  }
+}
+@keyframes bpx {
+  0%, 7.5%, 100% {
+    background-position-x: 0, 0, 1em, 2em, 3em;
+  }
+  12.5%, 20% {
+    background-position-x: 0, 1em, 0, 3em, 2em;
+  }
+  25%, 32.5% {
+    background-position-x: 0, -1em, -2em, 5em, 4em;
+  }
+  37.5%, 45% {
+    background-position-x: 0, 1em, -4em, 7em, 2em;
+  }
+  50%, 57.5% {
+    background-position-x: 0, -2em, -5em, 8em, 5em;
+  }
+  62.5%, 70% {
+    background-position-x: 0, -3em, -4em, 7em, 6em;
+  }
+  75%, 82.5% {
+    background-position-x: 0, -1em, -2em, 5em, 4em;
+  }
+  87.5%, 95% {
+    background-position-x: 0, -3em, 0, 3em, 6em;
+  }
+}
+@keyframes bpy {
+  0%, 7.5%, 100% {
+    background-position-y: 0, 0, 1em, 2em, 3em;
+  }
+  12.5%, 20% {
+    background-position-y: 0, 1em, 0, 3em, 2em;
+  }
+  25%, 32.5% {
+    background-position-y: 0, -1em, -2em, 5em, 4em;
+  }
+  37.5%, 45% {
+    background-position-y: 0, 1em, -4em, 7em, 2em;
+  }
+  50%, 57.5% {
+    background-position-y: 0, -2em, -5em, 8em, 5em;
+  }
+  62.5%, 70% {
+    background-position-y: 0, -3em, -4em, 7em, 6em;
+  }
+  75%, 82.5% {
+    background-position-y: 0, -1em, -2em, 5em, 4em;
+  }
+  87.5%, 95% {
+    background-position-y: 0, -3em, 0, 3em, 6em;
+  }
+}
+* {
+  color: white;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: start;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 10px;
+  border: #000 2px solid;
+}
+#score h2 {
+  font-size: calc(20px + 3vw);
+}
+#score p {
+  font-size: calc(20px + 1vw);
+}
+#score * {
+  margin: 0;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#input {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #def;
+  background-image: radial-gradient(transparent 0.6em, #def 0.6em), conic-gradient(at 1em 1em, transparent 270deg, rgba(68, 34, 0, 0.2) 270deg), conic-gradient(at 1em 1em, transparent 270deg, rgba(68, 34, 0, 0.2666666667) 270deg), conic-gradient(at 1em 1em, transparent 270deg, rgba(68, 34, 0, 0.3333333333) 270deg), conic-gradient(at 1em 1em, transparent 270deg, rgba(68, 34, 0, 0.4) 270deg);
+  background-size: 1em 1em, 4em 4em, 4em 4em, 4em 4em, 4em 4em;
+  animation: bpx 20s infinite, bpy 20s -3.75s infinite;
+  padding: 15vw;
+  border-radius: 5px;
+  border: #000 4px solid;
+}
+#input label {
+  margin-top: 10px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: bold;
+  font-size: calc(20px + 1vw);
+  color: #fff;
+}
+#input button {
+  color: #000;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #e5e5f7;
+  border-radius: 10px;
+}
+#input input {
+  border-radius: 10px;
+  padding: 5px;
+  color: #000;
+}
+
+/*# sourceMappingURL=score.css.map */

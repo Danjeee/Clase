@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PlayerInput from './components/playerinput';
 import Scoreboard from './components/score';
 import Board from './components/board';
+import "./App.css"
 
 const App: React.FC = () => {
   const [player1Name, setPlayer1Name] = useState('');
@@ -48,7 +49,7 @@ const App: React.FC = () => {
         player2Score={player2Score}
       />
       {gameResult !== null && (
-        <p>
+        <p id='result'>
           {gameResult === 1
             ? `${player1Name} gana!`
             : gameResult === 2
