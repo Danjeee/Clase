@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<header>
+		<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
+		<a th:href="@{/auth/logout}">Cerrar sesión</a>
+	</header>
+	<form th:action="@{/citas/save/{idPaciente} (idPaciente=${cita.pacienteDTO.id})}" th:object="${cita}" method="post">
+		<div th:if="${editar}">
+			<p th:text="'Id: ' + ${cita.id}"></p>
+			<input type="number" th:field="*{id}" hidden>
+		</div>
+		<input type="number" th:field="*{medicoDTO.id}" hidden>
+		<p th:text="'Nombre paciente: '+ ${cita.pacienteDTO.nombre}"></p>
+		<p th:text="'Apellidos paciente: '+ ${cita.pacienteDTO.apellidos}"></p>
+		<p th:text="'NIF paciente: '+ ${cita.pacienteDTO.nif}"></p>
+		<p th:text="'Fecha nacimiento: '+ ${cita.pacienteDTO.fechanacimiento}"></p>
+		<label for="fn">Fecha cita: </label>
+		<input type="date"  th:field="*{fechahora}" th:value="${#dates.format(cita.fechahora, 'dd/MM/yyyy HH:mm')}" required>
+		<br>
+		<label for="est">Estado: </label>
+		<input type="checkbox" th:field="*{estado}">
+		<br>
+		<input type="submit" th:value="${editar} ? 'Actualizar' : 'Nueva'">
+		</form>
+	<a th:href="@{/citas/{idPaciente} (idPaciente=${cita.pacienteDTO.id})}">Volver a la lista de citas</a>
+</body>
+
+</html>

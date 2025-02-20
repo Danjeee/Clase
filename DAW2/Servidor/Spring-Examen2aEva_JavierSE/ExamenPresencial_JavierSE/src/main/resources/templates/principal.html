@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header style="margin-bottom: 5vh;">
+			<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
+			<a th:href="@{/auth/logout}">Cerrar sesión</a>
+		</header>
+		<div>
+			<a th:href="@{/pacientes}">Gestión de pacientes</a>
+			<br>
+			<a th:href="@{/citas}">Gestión de citas</a>
+			<br>
+			<a th:if="${usuario.administrador}" th:href="@{/medicos}">Gestión de medicos</a>
+			<br>
+			<a th:if="${usuario.administrador}" th:href="@{/especialidades}">Gestión de especialidades</a>
+			
+		</div>
+	</body>
+</html>
+	
+

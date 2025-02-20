@@ -1,0 +1,15 @@
+{
+    "id": 0,
+    "nombre": "Gwendolyn4",
+    "apellidos": "Marks3",
+    "matricula": "13488",
+    "telefono": 633776114,
+    "contrasenya": "78078",
+    "administrador": false,
+    "especialidadDTO": {
+        "id": 4
+    }
+}
+
+
+//Enviar como raw

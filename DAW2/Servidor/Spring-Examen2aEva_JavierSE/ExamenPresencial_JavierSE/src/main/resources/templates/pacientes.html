@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<header>
+		<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
+		<a th:href="@{/auth/logout}">Cerrar sesión</a>
+	</header>
+	<div  th:if="${listaPacientesDTO.isEmpty()}">
+		<h1>Listado vacio</h1>
+	</div>
+	<div th:if="${!listaPacientesDTO.isEmpty()}">
+		<div>
+			<h1>Listado de paciente</h1>
+			<a th:href="@{/pacientes/add}">Nuevo paciente</a>
+		</div>
+		<div>
+			<table border="1">
+				<thead>
+					<tr>
+						<td>ID</td>
+						<td>NOMBRE</td>
+						<td>APELLIDOS</td>
+						<td>NIF</td>
+						<td>FECHA DE NACIMIENTO</td>
+						<td>TELEFONO</td>
+						<td>EDITAR</td>
+						<td>ELIMINAR</td>
+						<td>CREAR CITA</td>
+						<td>VER CITAS</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="p : ${listaPacientesDTO}">
+						<td>
+							<a th:href="@{/pacientes/{idPaciente}/edit (idPaciente=${p.id})}" th:text="${p.id}"></a>
+						</td>
+						<td th:text="${p.nombre}"></td>
+						<td th:text="${p.apellidos}"></td>
+						<td th:text="${p.nif}"></td>
+						<td th:text="${p.fechanacimiento}"></td>
+						<td th:text="${p.telefono}"></td>
+						<td>
+							<a th:href="@{/pacientes/{idPaciente}/edit (idPaciente=${p.id})}">Editar</a>
+						</td>
+						<td>
+							<a th:href="@{/pacientes/{idPaciente}/delete (idPaciente=${p.id})}">Eliminar</a>
+						</td>
+						<td>
+							<a th:href="@{/citas/add/{idPaciente} (idPaciente=${p.id})}">Crear cita</a>
+						</td>
+						<td>
+							<a th:href="@{/citas/{idPaciente} (idPaciente=${p.id})}">Ver citas</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a th:href="@{/pacientes/add}">Nuevo paciente</a>
+		</div>
+	</div>
+	<a th:href="@{/principal}">Volver</a>
+</body>
+
+</html>
