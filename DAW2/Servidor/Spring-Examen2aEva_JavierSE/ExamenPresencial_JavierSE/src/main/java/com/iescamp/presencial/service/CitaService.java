@@ -18,5 +18,4 @@ public interface CitaService {
 
 	List<CitaDTO> findAllByMedico(Integer id);
 
-
 }

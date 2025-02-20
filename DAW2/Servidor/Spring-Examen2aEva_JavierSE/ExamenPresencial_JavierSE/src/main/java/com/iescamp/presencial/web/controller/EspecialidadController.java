@@ -17,21 +17,21 @@ import jakarta.servlet.http.HttpSession;
 @RequestMapping("/especialidades")
 public class EspecialidadController {
 	private static final Logger log = LoggerFactory.getLogger(EspecialidadController.class);
-	
-	@Autowired
-	EspecialidadService es;
 
-		@GetMapping("")
-		public ModelAndView showall(HttpSession http) {
-			if (((MedicoDTO)http.getAttribute("usuario")).isAdministrador()) {
-				log.info("Mostramos todas las especialidades");
-				ModelAndView mvc = new ModelAndView("especialidades");
-				mvc.addObject("listaEspecialidadesDTO", es.findAll());
-				return LoginController.checkLogged(http, mvc);
-			} else {
-				log.info("No eres admin, no puede acceder aqui");
-				return new ModelAndView("redirect:/principal");
-			}
+	@Autowired
+	EspecialidadService especialidadService;
+
+	@GetMapping("")
+	public ModelAndView showall(HttpSession http) { // Muestra todas las especialidades
+		if (((MedicoDTO) http.getAttribute("usuario")).isAdministrador()) { // Si eres admin, puedes acceder
+			log.info("Mostramos todas las especialidades");
+			ModelAndView mvc = new ModelAndView("especialidades");
+			mvc.addObject("listaEspecialidadesDTO", especialidadService.findAll());
+			return LoginController.checkLogged(http, mvc);
+		} else { // Si no eres admin no te deja acceder
+			log.info("No eres admin, no puede acceder aqui");
+			return new ModelAndView("redirect:/principal");
 		}
-		
+	}
+
 }

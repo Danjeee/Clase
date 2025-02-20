@@ -16,5 +16,4 @@ public interface MedicoService {
 
 	void save(MedicoDTO medicoDTO);
 
-
 }

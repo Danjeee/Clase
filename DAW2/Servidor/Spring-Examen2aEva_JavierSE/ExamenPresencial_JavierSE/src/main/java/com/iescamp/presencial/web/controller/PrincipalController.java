@@ -9,9 +9,10 @@ import jakarta.servlet.http.HttpSession;
 @Controller
 public class PrincipalController {
 	@GetMapping("/principal")
-	public ModelAndView principal(HttpSession http) {
+	public ModelAndView principal(HttpSession http) { // Vista principal
 
-		return LoginController.checkLogged(http, new ModelAndView("principal").addObject("usuario", http.getAttribute("usuario")));
+		return LoginController.checkLogged(http,
+				new ModelAndView("principal").addObject("usuario", http.getAttribute("usuario")));
 	}
-	
+
 }

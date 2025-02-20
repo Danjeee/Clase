@@ -23,13 +23,13 @@ import lombok.ToString;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name= "especialidades")
+@Table(name = "especialidades")
 public class Especialidad {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nombre;
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "especialidad")
-    @ToString.Exclude
+	@ToString.Exclude
 	private List<Medico> medicos;
 }

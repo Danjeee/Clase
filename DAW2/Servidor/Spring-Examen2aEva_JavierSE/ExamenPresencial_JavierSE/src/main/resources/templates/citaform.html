@@ -7,9 +7,11 @@
 </head>
 
 <body>
-	<header>
-		<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
-		<a th:href="@{/auth/logout}">Cerrar sesión</a>
+	<header style="margin-bottom: 5vh;">
+		<form th:action="@{/auth/logout}" method="post">
+			<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
+			<input type="submit" value="Cerrar sesión"></input>
+		</form>
 	</header>
 	<form th:action="@{/citas/save/{idPaciente} (idPaciente=${cita.pacienteDTO.id})}" th:object="${cita}" method="post">
 		<div th:if="${editar}">
@@ -22,13 +24,14 @@
 		<p th:text="'NIF paciente: '+ ${cita.pacienteDTO.nif}"></p>
 		<p th:text="'Fecha nacimiento: '+ ${cita.pacienteDTO.fechanacimiento}"></p>
 		<label for="fn">Fecha cita: </label>
-		<input type="date"  th:field="*{fechahora}" th:value="${#dates.format(cita.fechahora, 'dd/MM/yyyy HH:mm')}" required>
+		<input type="datetime-local" th:field="*{fechahora}"
+			th:value="${#dates.format(cita.fechahora, 'dd/MM/yyyy HH:mm')}" required>
 		<br>
 		<label for="est">Estado: </label>
 		<input type="checkbox" th:field="*{estado}">
 		<br>
 		<input type="submit" th:value="${editar} ? 'Actualizar' : 'Nueva'">
-		</form>
+	</form>
 	<a th:href="@{/citas/{idPaciente} (idPaciente=${cita.pacienteDTO.id})}">Volver a la lista de citas</a>
 </body>
 

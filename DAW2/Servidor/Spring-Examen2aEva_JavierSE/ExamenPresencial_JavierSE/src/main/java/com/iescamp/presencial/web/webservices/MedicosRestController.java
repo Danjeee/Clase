@@ -16,21 +16,22 @@ import com.iescamp.presencial.model.dto.MedicoDTO;
 import com.iescamp.presencial.service.MedicoService;
 
 @RestController
-@RequestMapping("/medicos")
+@RequestMapping("/ws/medicos")
 public class MedicosRestController {
-	
+
 	@Autowired
-	MedicoService ms;
+	MedicoService medicoService;
 
 	@GetMapping("all")
-	public ResponseEntity<List<MedicoDTO>> mostrarRest() {
-		return new ResponseEntity<>(ms.findAll(), HttpStatus.OK);
+	public ResponseEntity<List<MedicoDTO>> mostrarRest() { // Devuelve todos los medicos como JSON
+		return new ResponseEntity<>(medicoService.findAll(), HttpStatus.OK);
 	}
-	
+
 	@PostMapping("add")
-	public ResponseEntity<String> addRest(@RequestBody MedicoDTO medicoDTO) {
-		ms.save(medicoDTO);
-		return new ResponseEntity<>("Successfully saved", HttpStatus.OK);
+	public ResponseEntity<String> addRest(@RequestBody MedicoDTO medicoDTO) { // Devuelve el medico creado despues de buscarlo en la bbdd para corroborar que se ha creado
+		medicoService.save(medicoDTO);
+		medicoDTO = medicoService.findAll().getLast();
+		return new ResponseEntity<>("Guardado con exito el medico: " + medicoDTO, HttpStatus.OK);
 	}
-	
+
 }

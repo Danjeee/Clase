@@ -20,21 +20,23 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class EspecialidadDTO implements Serializable{
+public class EspecialidadDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private int id;
 	private String nombre;
-	
+
 	public static EspecialidadDTO convertToDTO(Especialidad e) {
 		return EspecialidadDTO.builder().id(e.getId())
-										.nombre(e.getNombre()).build();
+										.nombre(e.getNombre())
+										.build();
 	}
+
 	public static Especialidad convertToEntity(EspecialidadDTO e, List<Medico> m) {
 		return Especialidad.builder().id(e.id)
 									 .nombre(e.getNombre())
 									 .medicos(m)
 									 .build();
 	}
-	
+
 }

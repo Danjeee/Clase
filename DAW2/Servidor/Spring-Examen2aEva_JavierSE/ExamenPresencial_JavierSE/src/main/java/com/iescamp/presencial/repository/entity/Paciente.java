@@ -28,7 +28,7 @@ import lombok.ToString;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="pacientes")
+@Table(name = "pacientes")
 public class Paciente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,14 +36,14 @@ public class Paciente {
 	private String nombre;
 	private String apellidos;
 	private String nif;
-	
+
 	@Temporal(TemporalType.DATE)
-    @DateTimeFormat(iso = ISO.DATE)
+	@DateTimeFormat(iso = ISO.DATE)
 	private Date fechanacimiento;
 	private String telefono;
 	private String direccion;
-	
+
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "paciente")
-    @ToString.Exclude
+	@ToString.Exclude
 	private List<Cita> citas;
 }

@@ -18,42 +18,43 @@ import jakarta.servlet.http.HttpSession;
 public class LoginController {
 	private static final Logger log = LoggerFactory.getLogger(EspecialidadController.class);
 	@Autowired
-	MedicoService ms;
-	
-	public static ModelAndView checkLogged(HttpSession http, ModelAndView mvc) { //Metodo estatico para comprobar que estes loggeado, se usa en la mayoria de vistas
-		if (http.getAttribute("usuario") != null) {
-			mvc.addObject("usuario",http.getAttribute("usuario"));
+	MedicoService medicoService;
+
+	public static ModelAndView checkLogged(HttpSession http, ModelAndView mvc) { // Metodo estatico para comprobar que
+																					// estes loggeado, se usa en la
+																					// mayoria de vistas
+		if (http.getAttribute("usuario") != null) { // Si el usuario no es nulo, es decir, está logeado, devuelve el ModelAndView que se le ha pasado añadiendole el objeto usuario
+			mvc.addObject("usuario", http.getAttribute("usuario"));
 			return mvc;
 		} else {
-			return new ModelAndView("redirect:/");
+			return new ModelAndView("redirect:/"); // Si el usuario es nulo, redirecciona a / (login)
 		}
 	}
-	
+
 	@GetMapping("/")
-	public ModelAndView loginform(HttpSession http) {
+	public ModelAndView loginform(HttpSession http) { // Formulario de login
 		ModelAndView mvc = new ModelAndView("login");
 		mvc.addObject("usuario", new MedicoDTO());
 		return mvc;
 	}
-	
+
 	@PostMapping("/auth/login")
-	public ModelAndView login(HttpSession http, @ModelAttribute MedicoDTO usuario) {
-		MedicoDTO registro = ms.login(usuario);
+	public ModelAndView login(HttpSession http, @ModelAttribute MedicoDTO usuario) { // Metodo login
+		MedicoDTO registro = medicoService.login(usuario);
 		if (registro == null) {
-			 log.info("Inicio de sesion incorrecto");
-			 return new ModelAndView("redirect:/");
+			log.info("Inicio de sesion incorrecto");
+			return new ModelAndView("redirect:/");
 		} else {
-			 http.setAttribute("usuario", registro);
-			 log.info("Sesion iniciada correctamente como: "+registro);
-			 return new ModelAndView("redirect:/principal");
-		}	
+			http.setAttribute("usuario", registro);
+			log.info("Sesion iniciada correctamente como: " + registro);
+			return new ModelAndView("redirect:/principal");
+		}
 	}
-	
-	@GetMapping("/auth/logout")
-	public ModelAndView logout(HttpSession http) {
+
+	@PostMapping("/auth/logout")
+	public ModelAndView logout(HttpSession http) { // Metodo logout
 		log.info("Sesion cerrada");
 		http.setAttribute("usuario", null);
 		return new ModelAndView("redirect:/");
 	}
 }
-	

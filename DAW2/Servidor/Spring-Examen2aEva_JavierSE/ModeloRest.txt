@@ -12,4 +12,4 @@
 }
 
 
-//Enviar como raw
+//Enviar como body -> raw (JSON) en post a 'http://localhost:8888/ws/medicos/add'

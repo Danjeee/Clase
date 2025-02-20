@@ -47,14 +47,14 @@ public class PacienteDTO implements Serializable{
 	}
 	public static Paciente convertToEntity(PacienteDTO p, List<Cita> c) {
 		return Paciente.builder().id(p.getId())
-									.nombre(p.getNombre())
-									.apellidos(p.getApellidos())
-									.nif(p.getNif())
-									.fechanacimiento(p.getFechanacimiento())
-									.telefono(String.valueOf(p.getTelefono()))
-									.direccion(p.getDireccion())
-									.citas(c)
-									.build();
+								 .nombre(p.getNombre())
+								 .apellidos(p.getApellidos())
+								 .nif(p.getNif())
+								 .fechanacimiento(p.getFechanacimiento())
+								 .telefono(String.valueOf(p.getTelefono()))
+								 .direccion(p.getDireccion())
+								 .citas(c)
+								 .build();
 	}
 
 }

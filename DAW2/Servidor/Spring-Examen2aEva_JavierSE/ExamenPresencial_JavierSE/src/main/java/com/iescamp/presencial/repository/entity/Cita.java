@@ -25,22 +25,22 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="citas")
+@Table(name = "citas")
 public class Cita {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Temporal(TemporalType.DATE)
-	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date fechahora;
 	private boolean estado;
 	@ManyToOne
-	@JoinColumn(name= "idpaciente")
+	@JoinColumn(name = "idpaciente")
 	private Paciente paciente;
 	@ManyToOne
-	@JoinColumn(name= "idmedico")
+	@JoinColumn(name = "idmedico")
 	private Medico medico;
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -52,6 +52,7 @@ public class Cita {
 		Cita other = (Cita) obj;
 		return id == other.id;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);

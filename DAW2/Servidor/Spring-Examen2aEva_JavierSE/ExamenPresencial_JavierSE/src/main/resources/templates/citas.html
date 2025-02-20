@@ -6,16 +6,18 @@
 </head>
 
 <body>
-	<header>
-		<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
-		<a th:href="@{/auth/logout}">Cerrar sesión</a>
+	<header style="margin-bottom: 5vh;">
+		<form th:action="@{/auth/logout}" method="post">
+			<h1 th:text="'Bienvenido, '+ ${usuario.nombre}"></h1>
+			<input type="submit" value="Cerrar sesión"></input>
+		</form>
 	</header>
 	<div th:if="${listaCitasDTO.isEmpty()}">
 		<h1>Listado vacio</h1>
 		<a th:href="@{/principal}">Volver al principal</a>
 	</div>
 	<div th:if="${!listaCitasDTO.isEmpty()}">
-		
+
 		<div>
 			<h1>Mantenimiento de citas</h1>
 		</div>
@@ -49,8 +51,8 @@
 						<td th:text="${c.medicoDTO.apellidos}"></td>
 						<td th:text="${c.fechahora}"></td>
 						<td>
-								<input th:if="${c.estado}" type="checkbox" disabled checked>
-								<input th:if="!${c.estado}" type="checkbox" disabled>
+							<input th:if="${c.estado}" type="checkbox" disabled checked>
+							<input th:if="!${c.estado}" type="checkbox" disabled>
 						</td>
 						<td>
 							<a th:href="@{/citas/{idCita}/edit (idCita=${c.id})}">Editar</a>

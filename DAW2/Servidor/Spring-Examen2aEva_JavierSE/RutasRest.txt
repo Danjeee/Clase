@@ -1,2 +1,2 @@
-http://localhost:8888/medicos/all
-http://localhost:8888/medicos/add
+http://localhost:8888/ws/medicos/all - GET
+http://localhost:8888/ws/medicos/add - POST
