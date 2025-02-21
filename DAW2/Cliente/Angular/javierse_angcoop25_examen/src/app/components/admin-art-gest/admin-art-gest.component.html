@@ -1,0 +1,31 @@
+<div id="botones" class="d-flex gap-2 btn-group w-25" role="group">
+    <div id="todos" class="btn btn-outline-primary rounded active" (click)="toggleFilter('todos')">Todos</div>
+    <div id="venta" class="btn btn-outline-primary rounded" (click)="toggleFilter('venta')">En venta</div>
+    <div id="vendidos" class="btn btn btn-outline-primary rounded rounded" (click)="toggleFilter('vendidos')">Vendidos</div>
+    <div id="bloqueados" class="btn btn btn-outline-primary rounded rounded" (click)="toggleFilter('bloqueados')">Bloqueados</div>
+</div>
+<h3 id="txt">Todos los articulos</h3>
+<div *ngIf="filtrado" class="btn btn-primary mb-3" (click)="doubleFilter('R')">Quitar filtro</div>
+<table *ngIf="articulos.length > 0"  class="w-100 d-flex flex-column gap-5">
+    <tr class="w-100 d-flex flex-row justify-content-around">
+        <th>ID ARTICULO</th>
+        <th>FAMILIA</th>
+        <th>NOMBRE FAMILIA</th>
+        <th>NOMBRE ARTICULO</th>
+        <th>PRECIO</th>
+        <th>VENDEDOR</th>
+        <th>NOMBRE VENDEDOR</th>
+        <th>ESTADO</th>
+    </tr>
+    <tr *ngFor="let a of articulos" class="w-100 d-flex flex-row justify-content-around">
+        <td>{{a.id}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="doubleFilter('C', a.categoria)">{{a.categoria}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="doubleFilter('C', a.categoria)">{{getCategoria(a.categoria)}}</td>
+        <td>{{a.nombre}}</td>
+        <td>{{a.precio + '€'}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="doubleFilter('V', a.vendedor)">{{a.vendedor}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="doubleFilter('V', a.vendedor)">{{getVendedor(a.vendedor)}}</td>
+        <td>{{a.estado}}</td>
+    </tr>
+</table>
+<h1 *ngIf="articulos.length == 0" class="align-self-center">No hay articulos</h1>

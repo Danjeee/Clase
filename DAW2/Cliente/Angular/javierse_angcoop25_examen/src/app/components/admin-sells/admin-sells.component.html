@@ -1,0 +1,26 @@
+<h1 style="justify-self: center; margin-bottom: 5vh; margin-top: 5vh;">Vista de ventas</h1>
+<div *ngIf="filtrado" class="btn btn-primary mb-3" (click)="filter('R')">Quitar filtro</div>
+<table class="w-100 d-flex flex-column gap-5">
+    <tr class="w-100 d-flex flex-row justify-content-around">
+        <th>ID VENTA</th>
+        <th>FECHA</th>
+        <th>VENDEDOR</th>
+        <th>NOMBRE VENDEDOR</th>
+        <th>ARTICULO</th>
+        <th>NOMBRE ARTICULO</th>
+        <th>PRECIO</th>
+        <th>COMPRADOR</th>
+        <th>NOMBRE COMPRADOR</th>
+    </tr>
+    <tr *ngFor="let v of ventas" class="w-100 d-flex flex-row justify-content-around">
+        <td>{{v.idventa}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="filter('F', v.fecha)">{{v.fecha}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="filter('V', v.socio)">{{v.socio}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="filter('V', v.socio)">{{v.nomvendedor + " "+ v.apevendedor}}</td>
+        <td>{{v.articulo}}</td>
+        <td>{{v.nomarticulo}}</td>
+        <td>{{v.precio + '€'}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="filter('C', v.comprador)" >{{v.comprador}}</td>
+        <td class="link-info" style="cursor: pointer;" (click)="filter('C', v.comprador)" >{{v.nomcomprador + " " +v.apecomprador}}</td>
+    </tr>
+</table>

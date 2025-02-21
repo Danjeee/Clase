@@ -1,0 +1,50 @@
+<!--
+  Plantilla para mostrar una galería de artículos disponibles para comprar.
+  Cada tarjeta (card) muestra la imagen, nombre y precio del artículo.
+  Incluye un botón para "Comprar".
+-->
+<div class="container col-8 mt-4">
+    <h1>Mis artículos</h1>
+    <h3 *ngIf="articulos.length == 0">No has puesto a la venta ningún articulo aun</h3>
+    <div class="row">
+      <!-- Usamos col-md para mostrar múltiples columnas en pantallas medianas o más grandes -->
+      <!-- Recorre la lista de artículos con *ngFor y crea una card por cada uno. -->
+      <div class="col-md-3 col-sm-6 mb-3" *ngFor="let articulo of articulos">
+        <div class="card align-contend-center">
+          <!-- Ajustamos el tamaño imagen-card de la imagen con una clase personalizada -->
+          <!--
+            Muestra la imagen del artículo.
+            El prefijo de la URL ('http://localhost/pruebaServidor/imgs/articulos/')
+            podría configurarse en environment o ser dinámico.
+          -->
+          <img
+            [src]="
+              'http://localhost/pruebaServidor/imgs/articulos/' + articulo.imagen
+            "
+            class="card-img-top imagen-fluid"
+            alt="{{ articulo.nombre }}"
+          />
+  
+          <div class="card-body">
+            <!-- Título y precio del artículo -->
+            <h6 class="card-title">{{ articulo.nombre }}</h6>
+            <p class="card-text">
+              <strong>Precio:</strong> {{ articulo.precio }}€
+            </p>
+  
+            <!-- Botón para ejecutar la compra del artículo -->
+            <button *ngIf="articulo.estado == 'D'" class="btn btn-primary" style="margin-right: 20px;" (click)="editar(articulo)">
+                Editar
+              </button>
+              <button *ngIf="articulo.estado == 'D'" class="btn btn-danger" (click)="borrar(articulo)">
+                Borrar
+              </button>
+              <div *ngIf="articulo.estado != 'D'" class="btn btn-secondary">
+                Vendido
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
